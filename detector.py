@@ -27,6 +27,7 @@ CFG_PATH = os.path.join(HERE, 'config.json')
 CFG = json.load(open(CFG_PATH)) if os.path.exists(CFG_PATH) else {"equity_usd": 10.0, "leverage": 50, "maintenance_margin": 0.01, "pairs": {}}
 NOTIONAL = CFG.get('equity_usd', 10.0) * CFG.get('leverage', 50)
 LIQ_PCT = CFG.get('liq_adverse_pct', 1.0) / 100.0
+VERBOSE = CFG.get('verbose', True)
 PAIRS = list(CFG.get('pairs', {}).keys()) or ['EURUSD','GBPUSD','USDJPY','AUDUSD','USDCHF','USDCAD','NZDUSD','EURGBP','EURJPY','GBPJPY','AUDJPY','AUDCAD']
 COSTS = CFG.get('pairs', {})
 MFB_EXTREME = 80.0   # fade when >=80% or <=20% one-sided
@@ -304,6 +305,7 @@ def tg_handle_commands(st):
             if not text.startswith('/'):
                 continue
             reply = cmd_reply(st, text)
+            runlog_line(cmd=text, replied=bool(reply))
             if reply:
                 tg_call('sendMessage', chat_id=cid, text=reply)
     except Exception as e:
@@ -344,6 +346,7 @@ def main():
     print(f'bot run at {datetime.now(timezone.utc).isoformat()}')
     tg_discover_chat(st)
     tg_hello(st)
+    tg_handle_commands(st)
 
     errs = 0
     pool = []
@@ -435,10 +438,26 @@ def main():
         except Exception:
             mfb_missing = True
     status_heartbeat(st, mfb_count, errs, len(tzmap), mfb_missing)
-    tg_handle_commands(st)
     closed = close_matured(st, now_ms)
     runlog_line(time=datetime.now(timezone.utc).strftime('%H:%M'), mfb=mfb_count, mql5_errs=f'{errs}/{len(tzmap)}',
                 mql5_opens=len(pool), active=len(st['active']), closed=len(closed))
+    if VERBOSE:
+        # find the most extreme sentiment pair for the narration
+        extreme = ''
+        if os.path.exists(MFB_JSON):
+            try:
+                rows = json.load(open(MFB_JSON))
+                best = max(rows, key=lambda r: abs(r.get('long_pct', 50) - 50), default=None)
+                if best:
+                    extreme = f' | most one-sided: {best["symbol"]} {best["long_pct"]}% long'
+            except Exception:
+                pass
+        clusters_checked = len(st.get('clusters_seen', {}))
+        line = (f'🔍 {datetime.now(timezone.utc).strftime("%H:%M")} UTC run | '
+                f'mfb: {mfb_count} pairs{extreme} | '
+                f'MQL5: {errs}/{len(tzmap)} errors, {len(pool)} opens | '
+                f'clusters seen ever: {clusters_checked} | active: {len(st["active"])} | closed this run: {len(closed)}')
+        tg_send(line, st)
     save_state(st)
     write_ledger_md(st)
     daily_summary(st)
