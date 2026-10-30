@@ -1,0 +1,8 @@
+{
+  "name": "fade-bot",
+  "version": "2.0.0",
+  "private": true,
+  "dependencies": {
+    "puppeteer-core": "^23.0.0"
+  }
+}
