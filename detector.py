@@ -18,13 +18,17 @@ STATE = os.path.join(HERE, 'state.json')
 LEDGER = os.path.join(HERE, 'ledger.jsonl')
 LEDGER_MD = os.path.join(HERE, 'LEDGER.md')
 MFB_JSON = os.path.join(HERE, 'mfb.json')
-COOKIE = os.environ.get('MQL5_COOKIE', '')
+COOKIE = os.environ.get('MQL5_COOKIE', '').strip().replace('\n', '').replace('\r', '')
 TG_TOKEN = os.environ.get('TELEGRAM_BOT_TOKEN', '')
 HOLD_H = 8
 MC = 5
 COST_BPS = 1.5
-PAIRS = ['EURUSD','GBPUSD','USDJPY','AUDUSD','USDCHF','USDCAD','NZDUSD',
-         'EURGBP','EURJPY','GBPJPY','AUDJPY','AUDCAD']
+CFG_PATH = os.path.join(HERE, 'config.json')
+CFG = json.load(open(CFG_PATH)) if os.path.exists(CFG_PATH) else {"equity_usd": 10.0, "leverage": 50, "maintenance_margin": 0.01, "pairs": {}}
+NOTIONAL = CFG.get('equity_usd', 10.0) * CFG.get('leverage', 50)
+LIQ_PCT = CFG.get('liq_adverse_pct', 1.0) / 100.0
+PAIRS = list(CFG.get('pairs', {}).keys()) or ['EURUSD','GBPUSD','USDJPY','AUDUSD','USDCHF','USDCAD','NZDUSD','EURGBP','EURJPY','GBPJPY','AUDJPY','AUDCAD']
+COSTS = CFG.get('pairs', {})
 MFB_EXTREME = 80.0   # fade when >=80% or <=20% one-sided
 MFB_MIN_LOTS = 300.0 # ignore tiny pairs
 
@@ -156,6 +160,21 @@ def open_paper_trade(st, pair, fade_dir, source):
     tg_send(f'{emoji} FADE SIGNAL ({source}): crowd one-sided on {pair} → paper {fade_dir.upper()} @ {px} (exit in {HOLD_H}h)', st)
     return tid
 
+def yahoo_series(pair, start_ms, end_ms):
+    url = f'https://query1.finance.yahoo.com/v8/finance/chart/{pair}=X?interval=15m&range=5d'
+    try:
+        d = json.loads(get(url, cookie=False, timeout=30))
+        res = d['chart']['result'][0]
+        ts, q = res['timestamp'], res['indicators']['quote'][0]
+        out = []
+        for i, t in enumerate(ts):
+            tms = int(t) * 1000
+            if start_ms <= tms <= end_ms and q['low'][i] is not None and q['high'][i] is not None:
+                out.append((tms, float(q['low'][i]), float(q['high'][i])))
+        return out
+    except Exception:
+        return []
+
 def close_matured(st, now_ms):
     closed = []
     for tid, tr in list(st['active'].items()):
@@ -165,16 +184,35 @@ def close_matured(st, now_ms):
         if not px:
             continue
         sign = 1 if tr['fade_dir'] == 'Buy' else -1
-        pnl_bps = sign * (px / tr['entry_px'] - 1) * 10000 - COST_BPS
+        pnl_bps = sign * (px / tr['entry_px'] - 1) * 10000 - COSTS.get(tr['pair'], COST_BPS)
+        # intrabar check: would the position have liquidated during the hold?
+        series = yahoo_series(tr['pair'], tr['open_t'], tr['exit_t'])
+        liquidated = False
+        worst = 0.0
+        for t, lo, hi in series:
+            if tr['fade_dir'] == 'Buy':
+                mae = (lo / tr['entry_px'] - 1)
+            else:
+                mae = (1 - hi / tr['entry_px'])
+            worst = min(worst, mae)
+            if mae <= -LIQ_PCT:
+                liquidated = True
+                break
+        if liquidated:
+            pnl_bps = -CFG['equity_usd'] * 10000 / NOTIONAL  # full margin lost
+        pnl_usd = round(pnl_bps / 10000 * NOTIONAL, 4)
         rec = dict(trade=tid, pair=tr['pair'], fade_dir=tr['fade_dir'], source=tr.get('source','?'),
                    open_utc=datetime.fromtimestamp(tr['open_t']/1000, timezone.utc).isoformat(),
                    close_utc=datetime.fromtimestamp(bar_t/1000, timezone.utc).isoformat(),
-                   entry_px=tr['entry_px'], exit_px=px, pnl_bps=round(pnl_bps, 2))
+                   entry_px=tr['entry_px'], exit_px=px, pnl_bps=round(pnl_bps, 2),
+                   pnl_usd=pnl_usd, liquidated=liquidated,
+                   equity_usd=CFG['equity_usd'], leverage=CFG['leverage'])
         with open(LEDGER, 'a') as f:
             f.write(json.dumps(rec) + '\n')
         closed.append(rec)
         del st['active'][tid]
-        tg_send(f'✅ CLOSED ({tr.get("source","?")}): {tr["pair"]} {tr["fade_dir"].upper()} → {pnl_bps:+.1f} bps after costs', st)
+        liq_txt = ' 💥LIQUIDATED' if liquidated else ''
+        tg_send(f'✅ CLOSED ({tr.get("source","?")}): {tr["pair"]} {tr["fade_dir"].upper()} → {pnl_bps:+.1f} bps = {pnl_usd:+.3f} USD on ${CFG["equity_usd"]}@{CFG["leverage"]}x{liq_txt}', st)
     return closed
 
 def write_ledger_md(st):
@@ -188,10 +226,30 @@ def write_ledger_md(st):
     with open(LEDGER_MD, 'w') as f:
         f.write('# Fade Bot — paper ledger\n\n')
         f.write(f'Updated: {datetime.now(timezone.utc).isoformat()}\n\n')
-        f.write(f'- Trades: **{len(pnls)}** | Avg: **{sum(pnls)/len(pnls):.1f} bps** (after {COST_BPS}bps costs) | Win: **{wins/len(pnls)*100:.0f}%** | Cumulative: **{sum(pnls):.1f} bps** | Open: **{len(st["active"])}**\n\n')
+        usd = [r.get('pnl_usd', 0) for r in recs]
+        liqs = sum(1 for r in recs if r.get('liquidated'))
+        f.write(f'- Trades: **{len(pnls)}** | Avg: **{sum(pnls)/len(pnls):.1f} bps** (after {COST_BPS}bps costs) | Win: **{wins/len(pnls)*100:.0f}%** | Cumulative: **{sum(pnls):.1f} bps**\n')
+        f.write(f'- Simulated money: equity **${CFG.get("equity_usd")}** at **{CFG.get("leverage")}x** → PnL **{sum(usd):+.3f} USD** | Liquidations: **{liqs}** | Open: **{len(st["active"])}**\n\n')
         f.write('| Trade | Pair | Dir | Src | Open (UTC) | Close (UTC) | PnL bps |\n|---|---|---|---|---|---|---|\n')
         for r in recs[-30:]:
             f.write(f"| {r['trade']} | {r['pair']} | {r['fade_dir']} | {r['source']} | {r['open_utc'][:16]} | {r['close_utc'][:16]} | {r['pnl_bps']:+.1f} |\n")
+
+def status_heartbeat(st, mfb_count, errs, total, mfb_missing):
+    now_ms = int(time.time() * 1000)
+    last = st.get('status_last', 0)
+    if now_ms - last < 4 * 3600 * 1000:
+        return
+    st['status_last'] = now_ms
+    parts = []
+    parts.append(f'📡 STATUS {datetime.now(timezone.utc).strftime("%H:%M")} UTC')
+    parts.append(f'myfxbook pairs parsed: {mfb_count}' + (' (SCRAPER EMPTY — check workflow log)' if mfb_missing else ''))
+    parts.append(f'MQL5 provider errors: {errs}/{total}')
+    parts.append(f'active paper trades: {len(st["active"])}')
+    if os.path.exists(LEDGER):
+        recs = [json.loads(l) for l in open(LEDGER) if l.strip()]
+        if recs:
+            parts.append(f'ledger: {len(recs)} closed, cum {sum(r["pnl_bps"] for r in recs):+.1f} bps')
+    tg_send('\n'.join(parts), st)
 
 def daily_summary(st):
     now = datetime.now(timezone.utc)
@@ -220,18 +278,24 @@ def main():
 
     errs = 0
     pool = []
+    fail_fetch = 0
+    fail_auth = 0
     if COOKIE:
         for sid, tzinfo in tzmap.items():
             opens, err = fetch_opens(sid, tzinfo)
             if opens is None:
                 errs += 1
+                if err == 'not-csv':
+                    fail_auth += 1
+                else:
+                    fail_fetch += 1
                 continue
             for t, sym, d in opens:
                 if t >= now_ms - 4 * 3600 * 1000:
                     pool.append((t, sid, sym, d))
     else:
         errs = len(tzmap)
-    print(f'MQL5 opens pooled: {len(pool)} | errors: {errs}/{len(tzmap)}')
+    print(f'MQL5 opens pooled: {len(pool)} | errors: {errs}/{len(tzmap)} (conn {fail_fetch}, auth {fail_auth})')
     tg_alarm(st, errs, len(tzmap))
 
     # A. MQL5 clusters
@@ -287,6 +351,16 @@ def main():
         except Exception as e:
             print('mfb parse error:', str(e)[:100])
 
+    mfb_missing = False
+    mfb_count = 0
+    if os.path.exists(MFB_JSON):
+        try:
+            mfb_rows = json.load(open(MFB_JSON))
+            mfb_count = len(mfb_rows)
+            mfb_missing = (mfb_count == 0)
+        except Exception:
+            mfb_missing = True
+    status_heartbeat(st, mfb_count, errs, len(tzmap), mfb_missing)
     closed = close_matured(st, now_ms)
     save_state(st)
     write_ledger_md(st)
