@@ -36,6 +36,6 @@ jobs:
         run: |
           git config user.name "fade-bot"
           git config user.email "fade-bot@users.noreply.github.com"
-          git add state.json ledger.jsonl LEDGER.md 2>/dev/null || true
+          git add state.json ledger.jsonl LEDGER.md RUNLOG.md 2>/dev/null || true
           git commit -m "bot update $(date -u +%Y%m%d-%H%M%S)" 2>/dev/null || true
           git push 2>/dev/null || true
