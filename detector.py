@@ -251,6 +251,75 @@ def status_heartbeat(st, mfb_count, errs, total, mfb_missing):
             parts.append(f'ledger: {len(recs)} closed, cum {sum(r["pnl_bps"] for r in recs):+.1f} bps')
     tg_send('\n'.join(parts), st)
 
+def cmd_reply(st, cmd):
+    def ledger_stats():
+        if not os.path.exists(LEDGER):
+            return None
+        recs = [json.loads(l) for l in open(LEDGER) if l.strip()]
+        if not recs:
+            return None
+        pnls = [r['pnl_bps'] for r in recs]
+        usd = [r.get('pnl_usd', 0) for r in recs]
+        liqs = sum(1 for r in recs if r.get('liquidated'))
+        return (f'📊 {len(recs)} trades | avg {sum(pnls)/len(pnls):+.1f} bps | cum {sum(pnls):+.1f} bps\n'
+                f'💵 sim ${CFG.get("equity_usd")}@{CFG.get("leverage")}x: {sum(usd):+.3f} USD | liquidations: {liqs} | open: {len(st["active"])}')
+    if cmd == '/status':
+        mfb_n = 0
+        if os.path.exists(MFB_JSON):
+            try: mfb_n = len(json.load(open(MFB_JSON)))
+            except Exception: pass
+        return (f'📡 run: {datetime.now(timezone.utc).strftime("%H:%M")} UTC\n'
+                f'myfxbook parsed: {mfb_n} pairs\n'
+                f'active paper trades: {len(st["active"])}\n'
+                f'ledger: ' + (ledger_stats() or 'no trades yet'))
+    if cmd == '/stats':
+        return ledger_stats() or 'no trades yet'
+    if cmd == '/trades':
+        if not os.path.exists(LEDGER):
+            return 'no trades yet'
+        recs = [json.loads(l) for l in open(LEDGER) if l.strip()][-5:]
+        if not recs:
+            return 'no trades yet'
+        lines = [f'{r["pair"]} {r["fade_dir"]} {r["pnl_bps"]:+.1f}bps' + (' 💥LIQ' if r.get('liquidated') else '') for r in recs]
+        return '\n'.join(lines)
+    if cmd == '/pairs':
+        items = [f'{p} ({COSTS.get(p, COST_BPS)}bps)' for p in PAIRS]
+        return '\n'.join(items)
+    if cmd == '/config':
+        return f'equity ${CFG.get("equity_usd")} | {CFG.get("leverage")}x → notional ${NOTIONAL:,.0f} | liq at {CFG.get("liq_adverse_pct")}% adverse | mc={MC} | hold={HOLD_H}h'
+    return ('commands: /status /stats /trades /pairs /config\n'
+            'signals: 🔥=MQL5 cluster fade, 🧠=sentiment fade')
+
+def tg_handle_commands(st):
+    if not TG_TOKEN:
+        return
+    last = st.get('last_update_id', 0)
+    r = tg_call('getUpdates', offset=last + 1, timeout=0)
+    try:
+        for upd in r.get('result') or []:
+            st['last_update_id'] = upd['update_id']
+            msg = upd.get('message') or {}
+            text = (msg.get('text') or '').strip().lower()
+            cid = msg.get('chat', {}).get('id')
+            if not text.startswith('/'):
+                continue
+            reply = cmd_reply(st, text)
+            if reply:
+                tg_call('sendMessage', chat_id=cid, text=reply)
+    except Exception as e:
+        print('cmd err:', str(e)[:100])
+
+def runlog_line(**kw):
+    line = datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M') + ' | ' + ' | '.join(f'{k}={v}' for k, v in kw.items())
+    with open(os.path.join(HERE, 'RUNLOG.md'), 'a') as f:
+        f.write(line + '\n')
+    try:
+        lines = open(os.path.join(HERE, 'RUNLOG.md')).readlines()
+        if len(lines) > 400:
+            open(os.path.join(HERE, 'RUNLOG.md'), 'w').writelines(lines[-300:])
+    except Exception:
+        pass
+
 def daily_summary(st):
     now = datetime.now(timezone.utc)
     if now.hour != 0:
@@ -297,6 +366,11 @@ def main():
         errs = len(tzmap)
     print(f'MQL5 opens pooled: {len(pool)} | errors: {errs}/{len(tzmap)} (conn {fail_fetch}, auth {fail_auth})')
     tg_alarm(st, errs, len(tzmap))
+    if fail_auth > 0 and not st.get('auth_alert_sent'):
+        if tg_send(f'⚠️ AUTH: {fail_auth} provider exports returned the login page — MQL5 cookie is dead. Update MQL5_COOKIE secret.', st):
+            st['auth_alert_sent'] = True
+    elif fail_auth == 0:
+        st['auth_alert_sent'] = False
 
     # A. MQL5 clusters
     evs = sorted(pool, key=lambda x: x[0])
@@ -361,7 +435,10 @@ def main():
         except Exception:
             mfb_missing = True
     status_heartbeat(st, mfb_count, errs, len(tzmap), mfb_missing)
+    tg_handle_commands(st)
     closed = close_matured(st, now_ms)
+    runlog_line(time=datetime.now(timezone.utc).strftime('%H:%M'), mfb=mfb_count, mql5_errs=f'{errs}/{len(tzmap)}',
+                mql5_opens=len(pool), active=len(st['active']), closed=len(closed))
     save_state(st)
     write_ledger_md(st)
     daily_summary(st)
