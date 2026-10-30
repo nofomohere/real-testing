@@ -21,7 +21,7 @@ MFB_JSON = os.path.join(HERE, 'mfb.json')
 COOKIE = os.environ.get('MQL5_COOKIE', '').strip().replace('\n', '').replace('\r', '')
 TG_TOKEN = os.environ.get('TELEGRAM_BOT_TOKEN', '')
 HOLD_H = 8
-MC = 5
+MC = int(CFG.get('min_cluster', 5))
 COST_BPS = 1.5
 CFG_PATH = os.path.join(HERE, 'config.json')
 CFG = json.load(open(CFG_PATH)) if os.path.exists(CFG_PATH) else {"equity_usd": 10.0, "leverage": 50, "maintenance_margin": 0.01, "pairs": {}}
@@ -30,7 +30,7 @@ LIQ_PCT = CFG.get('liq_adverse_pct', 1.0) / 100.0
 VERBOSE = CFG.get('verbose', True)
 PAIRS = list(CFG.get('pairs', {}).keys()) or ['EURUSD','GBPUSD','USDJPY','AUDUSD','USDCHF','USDCAD','NZDUSD','EURGBP','EURJPY','GBPJPY','AUDJPY','AUDCAD']
 COSTS = CFG.get('pairs', {})
-MFB_EXTREME = 80.0   # fade when >=80% or <=20% one-sided
+MFB_EXTREME = CFG.get('extreme_default', 80.0)   # fade when >=thr% one-sided
 MFB_MIN_LOTS = 300.0 # ignore tiny pairs
 
 def load_state():
@@ -335,7 +335,8 @@ def daily_summary(st):
     day = [r for r in recs if r['close_utc'][:10] == now.strftime('%Y-%m-%d')]
     if day:
         pnls = [r['pnl_bps'] for r in day]
-        tg_send(f'📊 DAILY: {len(day)} closes | avg {sum(pnls)/len(pnls):+.1f} bps | total {sum(pnls):+.1f} bps', st)
+        usd = [r.get('pnl_usd', 0) for r in day]
+        tg_send(f'📊 DAILY: {len(day)} closes | avg {sum(pnls)/len(pnls):+.1f} bps | total {sum(pnls):+.1f} bps | ${sum(usd):+.3f} USD', st)
     st['last_summary'] = key
 
 # ---------------- main ----------------
@@ -414,10 +415,11 @@ def main():
                 lots = row.get('total_lots', 0)
                 if pct is None or lots < MFB_MIN_LOTS:
                     continue
+                thr = CFG.get('extreme', {}).get(sym, MFB_EXTREME)
                 fade = None
-                if pct >= MFB_EXTREME:
+                if pct >= thr:
                     fade = 'Sell'
-                elif pct <= 100 - MFB_EXTREME:
+                elif pct <= 100 - thr:
                     fade = 'Buy'
                 if fade:
                     key = f'{sym}|{fade}'
