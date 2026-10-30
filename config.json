@@ -4,11 +4,39 @@
   "maintenance_margin": 0.01,
   "liq_adverse_pct": 1.0,
   "pairs": {
-    "EURUSD": 1.5, "GBPUSD": 1.5, "USDJPY": 1.5, "AUDUSD": 1.5, "USDCHF": 1.5,
-    "USDCAD": 1.5, "NZDUSD": 2.0, "EURGBP": 2.0, "EURJPY": 2.0, "GBPJPY": 3.0,
-    "AUDJPY": 2.5, "AUDCAD": 2.5, "XAUUSD": 2.5, "GBPAUD": 3.0, "GBPCAD": 3.0,
-    "EURAUD": 3.0, "EURCAD": 3.0, "EURTRY": 12.0, "USDTRY": 12.0, "USDZAR": 12.0,
-    "EURNOK": 8.0, "USDNOK": 8.0, "US30": 2.0, "NAS100": 2.5, "SPX500": 2.0,
-    "BTCUSD": 8.0, "ETHUSD": 8.0
-  }
+    "EURUSD": 1.5,
+    "GBPUSD": 1.5,
+    "USDJPY": 1.5,
+    "AUDUSD": 1.5,
+    "USDCHF": 1.5,
+    "USDCAD": 1.5,
+    "NZDUSD": 2.0,
+    "EURGBP": 2.0,
+    "EURJPY": 2.0,
+    "GBPJPY": 3.0,
+    "AUDJPY": 2.5,
+    "AUDCAD": 2.5,
+    "XAUUSD": 2.5,
+    "GBPAUD": 3.0,
+    "GBPCAD": 3.0,
+    "EURAUD": 3.0,
+    "EURCAD": 3.0,
+    "EURTRY": 12.0,
+    "USDTRY": 12.0,
+    "USDZAR": 12.0,
+    "EURNOK": 8.0,
+    "USDNOK": 8.0,
+    "US30": 2.0,
+    "NAS100": 2.5,
+    "SPX500": 2.0,
+    "BTCUSD": 8.0,
+    "ETHUSD": 8.0
+  },
+  "extreme": {
+    "BTCUSD": 85.0,
+    "ETHUSD": 85.0
+  },
+  "verbose": true,
+  "extreme_default": 75.0,
+  "min_cluster": 3
 }
