@@ -1,8 +1,18 @@
 {
   "equity_usd": 10.0,
   "leverage": 50,
-  "maintenance_margin": 0.01,
   "liq_adverse_pct": 1.0,
+  "min_cluster": 3,
+  "hold_hours": 8,
+  "extreme_default": 75.0,
+  "extreme": {
+    "BTCUSD": 80.0,
+    "ETHUSD": 80.0
+  },
+  "min_lots": 300.0,
+  "verbose": true,
+  "status_hours": 4,
+  "chat_id_fallback": 1192863557,
   "pairs": {
     "EURUSD": 1.5,
     "GBPUSD": 1.5,
@@ -32,11 +42,71 @@
     "BTCUSD": 8.0,
     "ETHUSD": 8.0
   },
-  "extreme": {
-    "BTCUSD": 85.0,
-    "ETHUSD": 85.0
+  "scalp": {
+    "enabled": true,
+    "move_bps": 25.0,
+    "tp_bps": 10.0,
+    "hold_min": 30,
+    "max_open": 3,
+    "move_override": {
+      "XAUUSD": 60.0,
+      "GBPJPY": 40.0,
+      "BTCUSD": 60.0,
+      "ETHUSD": 60.0,
+      "US30": 40.0,
+      "NAS100": 45.0
+    }
   },
-  "verbose": true,
-  "extreme_default": 75.0,
-  "min_cluster": 3
+  "strategies": {
+    "crowd_fade": {
+      "enabled": true,
+      "mc": 3,
+      "hold_h": 8
+    },
+    "crowd_follow": {
+      "enabled": true,
+      "mc": 3,
+      "hold_h": 8
+    },
+    "close_fade": {
+      "enabled": true,
+      "mc": 3,
+      "hold_h": 4
+    },
+    "sentiment_fade": {
+      "enabled": true
+    },
+    "sentiment_follow": {
+      "enabled": true
+    },
+    "scalp": {
+      "enabled": true,
+      "move_bps": 25.0,
+      "tp_bps": 10.0,
+      "hold_min": 30,
+      "max_open": 3,
+      "move_override": {
+        "XAUUSD": 60.0,
+        "GBPJPY": 40.0,
+        "BTCUSD": 60.0,
+        "ETHUSD": 60.0,
+        "US30": 40.0,
+        "NAS100": 45.0
+      }
+    },
+    "breakout": {
+      "enabled": true,
+      "bps": 20.0,
+      "hold_h": 4,
+      "sl_bps": 20.0,
+      "tp_bps": 40.0
+    },
+    "meanrev": {
+      "enabled": true,
+      "bps": 50.0,
+      "hold_h": 2,
+      "sl_bps": 50.0,
+      "tp_bps": 25.0
+    }
+  }
 }
