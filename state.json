@@ -1,8 +1,14 @@
 {
- "clusters_seen": {},
- "active": {},
- "mfb_last": {},
- "chat_id": null,
- "tg_hello_sent": false,
- "alarm_sent": false
+  "version": 3,
+  "clusters_seen": {},
+  "active": {},
+  "mfb_last": {},
+  "chat_id": null,
+  "tg_hello_sent": false,
+  "alarm_sent": false,
+  "auth_alert_sent": false,
+  "status_last": 0,
+  "last_summary": "",
+  "last_update_id": 0,
+  "scalp_last": {}
 }
