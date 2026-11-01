@@ -63,6 +63,19 @@ DEFAULT_CFG = {
               "move_override": {"XAUUSD": 60.0, "GBPJPY": 40.0, "BTCUSD": 80.0,
                                 "ETHUSD": 80.0, "US30": 40.0, "NAS100": 45.0}},
     "chat_id_fallback": 1192863557,
+    "strategies": {
+        "crowd_fade": {"enabled": True, "mc": 3, "hold_h": 8},
+        "crowd_follow": {"enabled": True, "mc": 3, "hold_h": 8},
+        "close_fade": {"enabled": True, "mc": 3, "hold_h": 4},
+        "sentiment_fade": {"enabled": True},
+        "sentiment_follow": {"enabled": True},
+        "scalp": {"enabled": True, "move_bps": 25.0, "tp_bps": 10.0, "hold_min": 30,
+                  "max_open": 3,
+                  "move_override": {"XAUUSD": 60.0, "GBPJPY": 40.0, "BTCUSD": 60.0,
+                                    "ETHUSD": 60.0, "US30": 40.0, "NAS100": 45.0}},
+        "breakout": {"enabled": True, "bps": 20.0, "hold_h": 4, "sl_bps": 20.0, "tp_bps": 40.0},
+        "meanrev": {"enabled": True, "bps": 50.0, "hold_h": 2, "sl_bps": 50.0, "tp_bps": 25.0}
+    },
 }
 
 def load_cfg():
@@ -76,6 +89,9 @@ def load_cfg():
     cfg['pairs'] = {**DEFAULT_CFG['pairs'], **cfg.get('pairs', {})}
     cfg['extreme'] = {**DEFAULT_CFG['extreme'], **cfg.get('extreme', {})}
     cfg['scalp'] = {**DEFAULT_CFG['scalp'], **cfg.get('scalp', {})}
+    for name, spec in DEFAULT_CFG['strategies'].items():
+        merged = {**spec, **cfg.get('strategies', {}).get(name, {})}
+        cfg.setdefault('strategies', {})[name] = merged
     return cfg
 
 CFG = load_cfg()
@@ -144,10 +160,11 @@ def to_utc_ms(raw, tz):
     off = tz['summer'] if is_summer(dt0) else tz['winter']
     return int((dt0 - timedelta(hours=off)).timestamp() * 1000)
 
-def fetch_mql5_opens(tzmap, since_ms):
-    """Returns (opens, stats). opens: (utc_ms, provider, symbol, dir).
-    stats: {ok, conn_err, auth_err, empty}."""
-    opens, stats = [], {'ok': 0, 'conn_err': 0, 'auth_err': 0, 'empty': 0}
+def fetch_mql5_activity(tzmap, since_ms):
+    """Returns (opens, closes, stats).
+    opens/closes: (utc_ms, provider, symbol, dir). stats: classified errors."""
+    opens, closes = [], []
+    stats = {'ok': 0, 'conn_err': 0, 'auth_err': 0, 'empty': 0}
     if not COOKIE:
         stats['conn_err'] = len(tzmap)
         return opens, stats
@@ -165,7 +182,7 @@ def fetch_mql5_opens(tzmap, since_ms):
         rows = list(csv.reader(io.StringIO(text), delimiter=';'))
         found = 0
         for r in rows[1:]:
-            if len(r) != 10 or r[3] != 'In':
+            if len(r) != 10 or r[3] not in ('In', 'Out'):
                 continue
             sym = norm_symbol(r[1])
             if sym not in PAIRS:
@@ -175,21 +192,35 @@ def fetch_mql5_opens(tzmap, since_ms):
             except Exception:
                 continue
             if t >= since_ms:
-                opens.append((t, sid, sym, r[2]))
+                (opens if r[3] == 'In' else closes).append((t, sid, sym, r[2]))
                 found += 1
         if found:
             stats['ok'] += 1
         else:
             stats['empty'] += 1
         time.sleep(0.35)
-    return opens, stats
+    return opens, closes, stats
 
 _series_cache = {}
+_dead_pairs = set()
 
 def _yahoo_series(pair, interval='15m', range_='2d'):
-    url = (f'https://query1.finance.yahoo.com/v8/finance/chart/{pair}=X'
-           f'?interval={interval}&range={range_}')
-    d = json.loads(http_get(url, cookie=False, timeout=30))
+    last_err = None
+    for host in ('query1', 'query2'):
+        url = (f'https://{host}.finance.yahoo.com/v8/finance/chart/{pair}=X'
+               f'?interval={interval}&range={range_}')
+        for attempt in range(2):
+            try:
+                d = json.loads(http_get(url, cookie=False, timeout=30))
+                break
+            except Exception as e:
+                last_err = e
+                time.sleep(1.5 * (attempt + 1))
+        else:
+            continue
+        break
+    else:
+        raise last_err if last_err else RuntimeError('yahoo failed')
     res = d['chart']['result'][0]
     ts, q = res['timestamp'], res['indicators']['quote'][0]
     out = []
@@ -233,13 +264,16 @@ def price_series(pair, interval='15m', range_='2d'):
     if len(out) < 2:
         try:
             out = _kraken_series(pair, 15)
-            if len(out) < 2:
-                out = []
+            if len(out) >= 2:
+                out = out
             else:
-                log(f'price {pair}: kraken fallback ({len(out)} bars)')
-        except Exception as e:
-            log(f'kraken {pair} failed: {str(e)[:60]}')
+                out = []
+        except Exception:
             out = []
+        if len(out) < 2:
+            if pair not in _dead_pairs:
+                _dead_pairs.add(pair)
+                log(f'price {pair}: no source available (yahoo+kraken)')
     _series_cache[key] = out
     return out
 
@@ -294,14 +328,18 @@ def cmd_reply(st, cmd):
         pnls = [r['pnl_bps'] for r in recs]
         usd = [r.get('pnl_usd', 0) for r in recs]
         liqs = sum(1 for r in recs if r.get('liquidated'))
-        srcs = defaultdict(int)
+        lines = [f'📊 TOTAL: {len(recs)} trades | avg {sum(pnls)/len(pnls):+.1f} bps | '
+                 f'cum {sum(pnls):+.1f} bps | ${sum(usd):+.3f} USD | liqs {liqs} | '
+                 f'open {len(st["active"])}']
+        by = defaultdict(list)
         for r in recs:
-            srcs[r.get('source', '?')] += 1
-        return (f'📊 {len(recs)} trades | avg {sum(pnls)/len(pnls):+.1f} bps | '
-                f'cum {sum(pnls):+.1f} bps\n'
-                f'💵 ${CFG["equity_usd"]}@{CFG["leverage"]}x: {sum(usd):+.3f} USD | '
-                f'liquidations: {liqs}\n'
-                f'sources: {dict(srcs)} | open: {len(st["active"])}')
+            by[r.get('source', '?')].append(r)
+        for src, rs in sorted(by.items(), key=lambda kv: -len(kv[1])):
+            rp = [r['pnl_bps'] for r in rs]
+            ru = [r.get('pnl_usd', 0) for r in rs]
+            lines.append(f'  {src}: {len(rs)} trades | win {sum(1 for p in rp if p > 0)/len(rp)*100:.0f}% '
+                         f'| avg {sum(rp)/len(rp):+.1f} bps | cum {sum(rp):+.1f} bps | ${sum(ru):+.3f}')
+        return '\n'.join(lines)
     if cmd == '/status':
         mfb_n = 0
         if os.path.exists(MFB_F):
@@ -332,8 +370,15 @@ def cmd_reply(st, cmd):
                 f'sentiment fade: ≥{CFG["extreme_default"]}% one-sided\n'
                 f'scalp demo: {"ON" if CFG["scalp"]["enabled"] else "OFF"} '
                 f'({CFG["scalp"]["move_bps"]}bps move, {CFG["scalp"]["tp_bps"]}bps TP)')
-    return ('commands: /status /stats /trades /pairs /config\n'
-            'signals: 🔥 crowd-fade · 🧠 sentiment-fade · ⚡ scalp-demo')
+    if cmd == '/strategies':
+        lines = []
+        for name, spec in CFG['strategies'].items():
+            state = 'ON' if spec.get('enabled') else 'off'
+            lines.append(f'{name}: {state}')
+        return '\n'.join(lines)
+    return ('commands: /status /stats /trades /pairs /config /strategies\n'
+            'sources: 🔥 crowd-fade · 👥 crowd-follow · 🚪 close-fade · '
+            '🧠 sentiment-fade · 🙃 sentiment-follow · 🚀 breakout · 🔁 meanrev · ⚡ scalp')
 
 def tg_handle_commands(st):
     if not TG_TOKEN:
@@ -384,11 +429,11 @@ def find_clusters(opens, mc):
         i = j
     return out
 
-def open_trade(st, pair, fade_dir, source, tp_bps=None, sl_bps=None, hold_ms=None):
+def open_trade(st, pair, fade_dir, source, tp_bps=None, sl_bps=None, hold_ms=None, note=''):
     if pair not in PAIRS:
         return None
-    if any(t['pair'] == pair for t in st['active'].values()):
-        return None                                   # one position per pair max
+    if any(t['pair'] == pair and t['source'] == source for t in st['active'].values()):
+        return None                                   # one position per pair+strategy
     t, px = yahoo_latest(pair)
     if not px:
         return None
@@ -398,9 +443,15 @@ def open_trade(st, pair, fade_dir, source, tp_bps=None, sl_bps=None, hold_ms=Non
                              open_t=t, entry_px=px,
                              exit_t=t + (hold_ms or HOLD_MS),
                              tp_bps=tp_bps, sl_bps=sl_bps, cost_bps=cost)
-    emoji = {'crowd': '🔥', 'sentiment': '🧠', 'scalp': '⚡'}.get(source, '🔔')
-    tg_send(st, f'{emoji} {source.upper()} SIGNAL: {pair} → paper {fade_dir.upper()} '
-                f'@ {px} (exit in {(hold_ms or HOLD_MS)//3600000}h)')
+    emoji = {'crowd': '🔥', 'crowd_follow': '👥', 'close_fade': '🚪',
+             'sentiment': '🧠', 'sentiment_follow': '🙃', 'scalp': '⚡',
+             'breakout': '🚀', 'meanrev': '🔁'}.get(source, '🔔')
+    method = {'crowd': 'CROWD-FADE', 'crowd_follow': 'CROWD-FOLLOW',
+              'close_fade': 'CLOSE-MOMENTUM', 'sentiment': 'SENTIMENT-FADE',
+              'sentiment_follow': 'SENTIMENT-FOLLOW', 'scalp': 'SCALP (price)',
+              'breakout': 'BREAKOUT (price)', 'meanrev': 'MEAN-REVERSION (price)'}.get(source, source)
+    note_txt = f' [{note}]' if note else ''
+    tg_send(st, f'{emoji} {method}{note_txt} | {pair} -> paper {fade_dir.upper()} @ {px} (exit in {(hold_ms or HOLD_MS)//3600000}h)')
     log(f'OPEN {tid} {fade_dir} @ {px}')
     return tid
 
@@ -452,11 +503,79 @@ def close_trades(st, now_ms):
             f.write(json.dumps(rec) + '\n')
         closed.append(rec)
         del st['active'][tid]
-        tg_send(st, f'✅ CLOSED ({tr["source"]}): {tr["pair"]} {tr["fade_dir"].upper()} '
+        tg_send(st, f'✅ CLOSED [{tr["source"].upper()}] {tr["pair"]} {tr["fade_dir"].upper()} '
                     f'→ {pnl_bps:+.1f} bps = {rec["pnl_usd"]:+.3f} USD'
                     + (' 💥LIQUIDATED' if reason == 'liq' else ''))
         log(f'CLOSE {tid} reason={reason} pnl={pnl_bps:+.1f}bps')
     return closed
+
+def cluster_trades(st, clusters, direction, source, mc_key=None, hold_h=None):
+    """clusters: (t0, sym, dir) events. direction: 'fade' or 'follow'."""
+    opened = 0
+    for t0, sym, dirn in clusters:
+        if mc_key:
+            key = f'{source}|{sym}|{dirn}|{t0 // (30 * 60000)}'
+            if key in st['clusters_seen']:
+                continue
+            st['clusters_seen'][key] = True
+        trade_dir = ('Sell' if dirn == 'Buy' else 'Buy') if direction == 'fade' else dirn
+        n = len({e[1] for e in clusters if isinstance(e, tuple) and len(e) > 2 and e[1]})
+        if open_trade(st, sym, trade_dir, source,
+                      hold_ms=(hold_h or CFG['hold_hours']) * 3600 * 1000,
+                      note=f'{n}+ providers {dirn.lower()}'):
+            opened += 1
+    return opened
+
+def breakout_signals(st, now_ms):
+    spec = CFG['strategies'].get('breakout') or {}
+    if not spec.get('enabled'):
+        return 0
+    opened = 0
+    for pair in PAIRS:
+        series = price_series(pair, '15m', '5d')
+        if len(series) < 100:
+            continue
+        prev_hi = max(b['h'] for b in series[-100:-1])
+        prev_lo = min(b['l'] for b in series[-100:-1])
+        px = series[-1]['c']
+        thr = spec['bps'] / 10000
+        if px > prev_hi * (1 + thr):
+            opened += open_trade(st, pair, 'Buy', 'breakout',
+                                 tp_bps=spec['tp_bps'], sl_bps=spec['sl_bps'],
+                                 hold_ms=spec['hold_h'] * 3600 * 1000,
+                                 note='new 100-bar high') is not None
+        elif px < prev_lo * (1 - thr):
+            opened += open_trade(st, pair, 'Sell', 'breakout',
+                                 tp_bps=spec['tp_bps'], sl_bps=spec['sl_bps'],
+                                 hold_ms=spec['hold_h'] * 3600 * 1000,
+                                 note='new 100-bar low') is not None
+    return opened
+
+def meanrev_signals(st, now_ms):
+    spec = CFG['strategies'].get('meanrev') or {}
+    if not spec.get('enabled'):
+        return 0
+    opened = 0
+    for pair in PAIRS:
+        series = price_series(pair, '15m', '5d')
+        if len(series) < 100:
+            continue
+        closes = [b['c'] for b in series[-97:-1]]
+        mean = sum(closes) / len(closes)
+        px = series[-1]['c']
+        dev = (px / mean - 1)
+        thr = spec['bps'] / 10000
+        if dev >= thr:
+            opened += open_trade(st, pair, 'Sell', 'meanrev',
+                                 tp_bps=spec['tp_bps'], sl_bps=spec['sl_bps'],
+                                 hold_ms=spec['hold_h'] * 3600 * 1000,
+                                 note='stretched above 24h mean') is not None
+        elif dev <= -thr:
+            opened += open_trade(st, pair, 'Buy', 'meanrev',
+                                 tp_bps=spec['tp_bps'], sl_bps=spec['sl_bps'],
+                                 hold_ms=spec['hold_h'] * 3600 * 1000,
+                                 note='stretched below 24h mean') is not None
+    return opened
 
 def scalp_signals(st, now_ms):
     if not CFG['scalp'].get('enabled'):
@@ -468,7 +587,7 @@ def scalp_signals(st, now_ms):
             break
         if st['scalp_last'].get(pair, 0) > now_ms - 30 * 60000:
             continue
-        series = price_series(pair, '15m', '1d')
+        series = price_series(pair, '15m', '5d')
         if len(series) < 4:
             continue
         now_bar, prev = series[-1], series[-3]        # ~30 min apart
@@ -495,6 +614,9 @@ def write_ledger_md(st):
     usd = [r.get('pnl_usd', 0) for r in recs]
     wins = sum(1 for p in pnls if p > 0)
     liqs = sum(1 for r in recs if r.get('liquidated'))
+    by = defaultdict(list)
+    for r in recs:
+        by[r.get('source', '?')].append(r)
     with open(LEDGER_MD, 'w') as f:
         f.write('# Fade Bot — paper ledger\n\n')
         f.write(f'Updated: {datetime.now(timezone.utc).isoformat()}\n\n')
@@ -503,7 +625,17 @@ def write_ledger_md(st):
         f.write(f'- Money sim (${CFG["equity_usd"]} @ {CFG["leverage"]}x): '
                 f'**{sum(usd):+.3f} USD** | Liquidations: **{liqs}** | '
                 f'Open: **{len(st["active"])}**\n\n')
-        f.write('| Trade | Pair | Dir | Src | Open (UTC) | PnL bps | PnL USD |\n'
+        f.write('## Results per strategy\n\n')
+        f.write('| Strategy | Trades | Win% | Avg bps | Cum bps | Cum USD | Liqs |\n'
+                '|---|---|---|---|---|---|---|\n')
+        for src, rs in sorted(by.items(), key=lambda kv: -len(kv[1])):
+            rp = [r['pnl_bps'] for r in rs]
+            ru = [r.get('pnl_usd', 0) for r in rs]
+            rl = sum(1 for r in rs if r.get('liquidated'))
+            f.write(f'| {src} | {len(rs)} | {sum(1 for p in rp if p > 0)/len(rp)*100:.0f}% '
+                    f'| {sum(rp)/len(rp):+.1f} | {sum(rp):+.1f} | {sum(ru):+.3f} | {rl} |\n')
+        f.write('\n## Recent trades\n\n')
+        f.write('| Trade | Pair | Dir | Strategy | Open (UTC) | PnL bps | PnL USD |\n'
                 '|---|---|---|---|---|---|---|\n')
         for r in recs[-30:]:
             f.write(f"| {r['trade']} | {r['pair']} | {r['fade_dir']} | {r['source']} | "
@@ -525,18 +657,25 @@ def main():
 
     # 1. crowd fade (MQL5)
     since = now_ms - 4 * 3600 * 1000
-    opens, stats = fetch_mql5_opens(tzmap, since)
+    opens, closes, stats = fetch_mql5_activity(tzmap, since)
     if stats['auth_err'] > 0 and not st.get('auth_alert_sent'):
         if tg_send(st, f'⚠️ AUTH: {stats["auth_err"]} exports returned the login page '
                        f'— MQL5 cookie is dead. Update the MQL5_COOKIE secret.'):
             st['auth_alert_sent'] = True
     if stats['auth_err'] == 0:
         st['auth_alert_sent'] = False
-    for t0, sym, dirn in find_clusters(opens, MC):
-        key = f'{sym}|{dirn}|{t0 // (30 * 60000)}'
-        if key not in st['clusters_seen']:
-            st['clusters_seen'][key] = True
-            open_trade(st, sym, 'Sell' if dirn == 'Buy' else 'Buy', 'crowd')
+    crowd_spec = CFG['strategies']['crowd_fade']
+    if crowd_spec.get('enabled'):
+        cluster_trades(st, find_clusters(opens, crowd_spec.get('mc', MC)), 'fade',
+                       'crowd', mc_key=True, hold_h=crowd_spec.get('hold_h'))
+    follow_spec = CFG['strategies']['crowd_follow']
+    if follow_spec.get('enabled'):
+        cluster_trades(st, find_clusters(opens, follow_spec.get('mc', MC)), 'follow',
+                       'crowd_follow', mc_key=True, hold_h=follow_spec.get('hold_h'))
+    close_spec = CFG['strategies']['close_fade']
+    if close_spec.get('enabled'):
+        cluster_trades(st, find_clusters(closes, close_spec.get('mc', MC)), 'fade',
+                       'close_fade', mc_key=True, hold_h=close_spec.get('hold_h'))
 
     # 2. sentiment fade (myfxbook json from the node step)
     mfb_rows = []
@@ -556,10 +695,20 @@ def main():
             key = f'{sym}|{fade}'
             if now_ms - st['mfb_last'].get(key, 0) > 24 * 3600 * 1000:
                 st['mfb_last'][key] = now_ms
-                open_trade(st, sym, fade, 'sentiment')
+                if CFG['strategies']['sentiment_fade'].get('enabled'):
+                    open_trade(st, sym, fade, 'sentiment',
+                               note=f'retail {pct}% long')
+                if CFG['strategies']['sentiment_follow'].get('enabled'):
+                    open_trade(st, sym, 'Buy' if fade == 'Sell' else 'Sell',
+                               'sentiment_follow', note=f'retail {pct}% long')
 
-    # 3. fast scalp demo
-    scalp_n = scalp_signals(st, now_ms)
+    # 3. price-only strategies (breakout, meanrev, scalp) — throttled to 10 min
+    brk_n = mr_n = scalp_n = 0
+    if now_ms - st.get('price_last', 0) > 10 * 60 * 1000:
+        st['price_last'] = now_ms
+        brk_n = breakout_signals(st, now_ms)
+        mr_n = meanrev_signals(st, now_ms)
+        scalp_n = scalp_signals(st, now_ms)
 
     closed = close_trades(st, now_ms)
     save_state(st)
@@ -578,8 +727,13 @@ def main():
         if day:
             pnls = [r['pnl_bps'] for r in day]
             usd = [r.get('pnl_usd', 0) for r in day]
+            by = defaultdict(list)
+            for r in day:
+                by[r.get('source', '?')].append(r)
+            per = ' | '.join(f'{src} {sum(r["pnl_bps"] for r in rs):+.1f}bps'
+                             for src, rs in sorted(by.items()))
             tg_send(st, f'📊 DAILY: {len(day)} closes | avg {sum(pnls)/len(pnls):+.1f} '
-                        f'bps | ${sum(usd):+.3f} USD')
+                        f'bps | ${sum(usd):+.3f} USD\n{per}')
         st['last_summary'] = now.strftime('%Y%m%d')
     # verbose per-run line
     if CFG['verbose']:
@@ -591,7 +745,8 @@ def main():
                 extreme = f' | most one-sided: {best["symbol"]} {best["long_pct"]}% long'
         tg_send(st, f'🔍 {now.strftime("%H:%M")} UTC | mfb {len(mfb_rows)}{extreme} | '
                     f'MQL5 {stats["ok"]}ok/{stats["conn_err"]}conn/{stats["auth_err"]}auth, '
-                    f'{len(opens)} opens | 🔥0 new | ⚡{scalp_n} | active {len(st["active"])} '
+                    f'{len(opens)} opens/{len(closes)} closes | '
+                    f'new: ⚡{scalp_n} 🚀{brk_n} 🔁{mr_n} | active {len(st["active"])} '
                     f'| closed {len(closed)}')
     save_state(st)
 
@@ -609,13 +764,13 @@ def selftest():
     check('telegram token set', bool(TG_TOKEN))
     if TG_TOKEN:
         me = tg_call('getMe')
-        check('telegram getMe', bool(me and me.get('ok')),
-              (me.get('result') or {}).get('username', ''))
+        uname = ((me or {}).get('result') or {}).get('username', '')
+        check('telegram getMe', bool(me and me.get('ok')), uname)
     tzmap = json.load(open(TZMAP_F))
     check('tz map', len(tzmap) >= 30, f'{len(tzmap)} providers')
     check('MQL5 cookie set', bool(COOKIE))
     if COOKIE:
-        opens, stats = fetch_mql5_opens(dict(list(tzmap.items())[:2]), 0)
+        opens, closes, stats = fetch_mql5_activity(dict(list(tzmap.items())[:2]), 0)
         check('MQL5 export fetch', stats['ok'] >= 1 or stats['empty'] >= 1,
               f'ok={stats["ok"]} empty={stats["empty"]} auth={stats["auth_err"]}')
     # signal math sanity: 5-provider one-sided cluster is found; opposition blocks it
@@ -626,6 +781,9 @@ def selftest():
            (5030, 'p8', 'USDJPY', 'Sell')]
     sigs = find_clusters(evs, 5)
     check('cluster logic', sigs == [(1000, 'EURUSD', 'Buy')], str(sigs))
+    known = set(CFG['strategies'].keys())
+    check('strategy registry', known >= {'crowd_fade', 'scalp', 'breakout', 'meanrev'},
+          f'{len(known)} strategies')
     print('\nSELFTEST ' + ('FAILED: ' + ', '.join(fails) if fails else 'ALL PASS'))
     return 1 if fails else 0
 
