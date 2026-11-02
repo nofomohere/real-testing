@@ -1,14 +1,51 @@
 {
-  "version": 3,
-  "clusters_seen": {},
-  "active": {},
-  "mfb_last": {},
-  "chat_id": null,
-  "tg_hello_sent": false,
-  "alarm_sent": false,
-  "auth_alert_sent": false,
-  "status_last": 0,
-  "last_summary": "",
-  "last_update_id": 0,
-  "scalp_last": {}
+ "version": 3,
+ "clusters_seen": {},
+ "active": {
+  "EURJPY-Sell-1793524500000-meanrev": {
+   "pair": "EURJPY",
+   "fade_dir": "Sell",
+   "source": "meanrev",
+   "open_t": 1793524500000,
+   "entry_px": 176.738,
+   "exit_t": 1793531700000,
+   "tp_bps": 25.0,
+   "sl_bps": 50.0,
+   "cost_bps": 2.0
+  },
+  "BTCUSD-Sell-1793524500000-meanrev": {
+   "pair": "BTCUSD",
+   "fade_dir": "Sell",
+   "source": "meanrev",
+   "open_t": 1793524500000,
+   "entry_px": 78091.3,
+   "exit_t": 1793531700000,
+   "tp_bps": 25.0,
+   "sl_bps": 50.0,
+   "cost_bps": 8.0
+  },
+  "ETHUSD-Sell-1793524500000-meanrev": {
+   "pair": "ETHUSD",
+   "fade_dir": "Sell",
+   "source": "meanrev",
+   "open_t": 1793524500000,
+   "entry_px": 2270.99,
+   "exit_t": 1793531700000,
+   "tp_bps": 25.0,
+   "sl_bps": 50.0,
+   "cost_bps": 8.0
+  }
+ },
+ "mfb_last": {},
+ "chat_id": 1192863557,
+ "tg_hello_sent": true,
+ "alarm_sent": false,
+ "auth_alert_sent": false,
+ "status_last": 1793524263726,
+ "last_summary": "",
+ "last_update_id": 384767161,
+ "scalp_last": {},
+ "last_close": {},
+ "cooldown": {},
+ "seen_sigs": {}
 }
