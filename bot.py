@@ -109,7 +109,7 @@ def load_state():
     base = {"version": 3, "clusters_seen": {}, "active": {}, "mfb_last": {},
             "chat_id": None, "tg_hello_sent": False, "alarm_sent": False,
             "auth_alert_sent": False, "status_last": 0, "last_summary": "",
-            "last_update_id": 0, "scalp_last": {}}
+            "last_update_id": 0, "scalp_last": {}, "last_close": {}, "cooldown": {}, "seen_sigs": {}}
     if os.path.exists(STATE_F):
         try:
             saved = json.load(open(STATE_F))
@@ -244,36 +244,38 @@ def _kraken_series(pair, interval=15):
                     'l': float(k[3]), 'c': float(k[4])})
     return out
 
+KRAKEN_PAIRS = {'EURUSD','GBPUSD','USDJPY','AUDUSD','USDCHF','USDCAD','NZDUSD','EURGBP',
+                'EURJPY','GBPJPY','AUDJPY','AUDCAD','EURAUD','EURCAD','GBPAUD','GBPCAD',
+                'ETHUSD','BTCUSD'}
+
+def _fresh(out):
+    return len(out) >= 2 and (time.time() * 1000 - out[-1]['t']) < 90 * 60 * 1000
+
 def price_series(pair, interval='15m', range_='2d'):
-    """Cached price series with provider fallback: Yahoo -> Kraken.
-    Returns list of bars {t,o,h,l,c} or [] if all sources fail."""
+    """Cached price series. FX pairs prefer Kraken (native, consistent, no stale
+    weekend quotes); everything else tries Yahoo first. Bars older than 90 min are
+    treated as unavailable so stale prices can never create phantom signals."""
     key = (pair, interval, range_)
     if key in _series_cache:
         return _series_cache[key]
     out = []
-    for attempt in range(2):
-        try:
-            out = _yahoo_series(pair, interval, range_)
-            if len(out) >= 2:
-                break
-            out = []
-        except Exception as e:
-            if attempt == 1:
-                log(f'yahoo {pair} failed: {str(e)[:60]}')
-            time.sleep(2 * (attempt + 1))
-    if len(out) < 2:
+    if pair in KRAKEN_PAIRS:
         try:
             out = _kraken_series(pair, 15)
-            if len(out) >= 2:
-                out = out
-            else:
-                out = []
         except Exception:
             out = []
-        if len(out) < 2:
-            if pair not in _dead_pairs:
-                _dead_pairs.add(pair)
-                log(f'price {pair}: no source available (yahoo+kraken)')
+    if not _fresh(out):
+        for attempt in range(2):
+            try:
+                out = _yahoo_series(pair, interval, range_)
+                break
+            except Exception:
+                time.sleep(2 * (attempt + 1))
+    if not _fresh(out):
+        if pair not in _dead_pairs:
+            _dead_pairs.add(pair)
+            log(f'price {pair}: no fresh source (stale/offline)')
+        out = []
     _series_cache[key] = out
     return out
 
@@ -302,6 +304,9 @@ def tg_send(st, text):
     return bool(r and r.get('ok'))
 
 def tg_discover_chat(st):
+    if CFG.get('webhook_mode'):
+        st['chat_id'] = CFG.get('chat_id_fallback')
+        return
     if st.get('chat_id') or not TG_TOKEN:
         return
     r = tg_call('getUpdates', offset=-1, limit=1, timeout=0)
@@ -358,7 +363,8 @@ def cmd_reply(st, cmd):
         recs = [json.loads(l) for l in open(LEDGER_F) if l.strip()][-5:]
         if not recs:
             return 'no trades yet'
-        return '\n'.join(f'{r["pair"]} {r["fade_dir"]} {r["pnl_bps"]:+.1f}bps'
+        return '\n'.join(f'{r["source"]} {r["pair"]} {r["fade_dir"]} '
+                         f'{r["pnl_bps"]:+.1f}bps = ${r.get("pnl_usd", 0):+.3f}'
                          + (' 💥LIQ' if r.get('liquidated') else '')
                          for r in recs)
     if cmd == '/pairs':
@@ -381,6 +387,8 @@ def cmd_reply(st, cmd):
             '🧠 sentiment-fade · 🙃 sentiment-follow · 🚀 breakout · 🔁 meanrev · ⚡ scalp')
 
 def tg_handle_commands(st):
+    if CFG.get('webhook_mode'):
+        return                      # commands are answered instantly by the worker
     if not TG_TOKEN:
         return
     try:
@@ -432,8 +440,14 @@ def find_clusters(opens, mc):
 def open_trade(st, pair, fade_dir, source, tp_bps=None, sl_bps=None, hold_ms=None, note=''):
     if pair not in PAIRS:
         return None
+    # FX markets are closed on weekends: block FX signals Sat/Sun (crypto stays 24/7)
+    if pair not in ('BTCUSD', 'ETHUSD') and not CFG.get('allow_weekend_fx', False):
+        if datetime.now(timezone.utc).weekday() >= 5:
+            return None
     if any(t['pair'] == pair and t['source'] == source for t in st['active'].values()):
         return None                                   # one position per pair+strategy
+    if st['cooldown'].get(f'{source}|{pair}', 0) > time.time() * 1000:
+        return None                                   # cooldown after a close
     t, px = yahoo_latest(pair)
     if not px:
         return None
@@ -443,6 +457,12 @@ def open_trade(st, pair, fade_dir, source, tp_bps=None, sl_bps=None, hold_ms=Non
                              open_t=t, entry_px=px,
                              exit_t=t + (hold_ms or HOLD_MS),
                              tp_bps=tp_bps, sl_bps=sl_bps, cost_bps=cost)
+    sig_key = f'{source}|{pair}|{fade_dir}|{px}'
+    if sig_key in st['seen_sigs']:
+        return None                                   # identical signal already traded recently
+    st['seen_sigs'][sig_key] = True
+    if len(st['seen_sigs']) > 300:
+        st['seen_sigs'] = dict(list(st['seen_sigs'].items())[-150:])
     emoji = {'crowd': '🔥', 'crowd_follow': '👥', 'close_fade': '🚪',
              'sentiment': '🧠', 'sentiment_follow': '🙃', 'scalp': '⚡',
              'breakout': '🚀', 'meanrev': '🔁'}.get(source, '🔔')
@@ -461,7 +481,27 @@ def close_trades(st, now_ms):
         if now_ms < tr['exit_t']:
             continue
         series = price_series(tr['pair'], '15m', '5d')
+        if series:
+            st['last_close'][tr['pair']] = series[-1]['c']
         if not series:
+            # price source down: close at the last known price so trades never get stuck
+            px = st['last_close'].get(tr['pair'], tr['entry_px'])
+            sign = 1 if tr['fade_dir'] == 'Buy' else -1
+            pnl_bps = sign * (px / tr['entry_px'] - 1) * 10000 - tr.get('cost_bps', 1.5)
+            rec = dict(trade=tid, pair=tr['pair'], fade_dir=tr['fade_dir'],
+                       source=tr['source'],
+                       open_utc=datetime.fromtimestamp(tr['open_t']/1000, timezone.utc).isoformat(),
+                       close_utc=datetime.now(timezone.utc).isoformat(),
+                       entry_px=tr['entry_px'], exit_px=px, pnl_bps=round(pnl_bps, 2),
+                       pnl_usd=round(pnl_bps / 10000 * NOTIONAL, 4),
+                       liquidated=False, note='no_data_close')
+            with open(LEDGER_F, 'a') as f:
+                f.write(json.dumps(rec) + '\n')
+            closed.append(rec)
+            del st['active'][tid]
+            log(f'CLOSE {tid} no_data fallback pnl={pnl_bps:+.1f}bps')
+            tg_send(st, f'✅ CLOSED [{tr["source"].upper()}] {tr["pair"]} {tr["fade_dir"].upper()} '
+                        f'→ {pnl_bps:+.1f} bps = {rec["pnl_usd"]:+.3f} USD (price source down)')
             continue
         sign = 1 if tr['fade_dir'] == 'Buy' else -1
         entry = tr['entry_px']
@@ -469,18 +509,26 @@ def close_trades(st, now_ms):
         for bar in series:
             if bar['t'] < tr['open_t']:
                 continue
-            adverse = sign * (bar['l'] / entry - 1) if tr['fade_dir'] == 'Buy' \
-                else sign * (1 - bar['h'] / entry)
-            favorable = sign * (bar['h'] / entry - 1) if tr['fade_dir'] == 'Buy' \
-                else sign * (1 - bar['l'] / entry)
-            if adverse <= -LIQ_PCT:
+            if tr['fade_dir'] == 'Buy':
+                adverse = bar['l'] / entry - 1          # negative when price drops
+                favorable = bar['h'] / entry - 1        # positive when price rises
+                stop_hit = adverse <= -tr.get('sl_bps', 0) / 10000
+                liq_hit = adverse <= -LIQ_PCT
+                stop_px, tp_px = bar['l'], bar['h']
+            else:  # SELL: profit when price falls
+                adverse = bar['h'] / entry - 1          # positive when price rises
+                favorable = 1 - bar['l'] / entry        # positive when price falls
+                stop_hit = adverse >= tr.get('sl_bps', 0) / 10000
+                liq_hit = adverse >= LIQ_PCT
+                stop_px, tp_px = bar['h'], bar['l']
+            if liq_hit:
                 exit_px, reason = None, 'liq'
                 break
-            if tr.get('sl_bps') and adverse <= -tr['sl_bps'] / 10000:
-                exit_px, reason = (bar['l'] if tr['fade_dir'] == 'Buy' else bar['h']), 'stop'
+            if tr.get('sl_bps') and stop_hit:
+                exit_px, reason = stop_px, 'stop'
                 break
             if tr.get('tp_bps') and favorable >= tr['tp_bps'] / 10000:
-                exit_px, reason = (bar['h'] if tr['fade_dir'] == 'Buy' else bar['l']), 'tp'
+                exit_px, reason = tp_px, 'tp'
                 break
             if bar['t'] >= tr['exit_t']:
                 exit_px, reason = bar['c'], 'time'
@@ -503,6 +551,7 @@ def close_trades(st, now_ms):
             f.write(json.dumps(rec) + '\n')
         closed.append(rec)
         del st['active'][tid]
+        st['cooldown'][f'{tr["source"]}|{tr["pair"]}'] = now_ms + 60 * 60 * 1000
         tg_send(st, f'✅ CLOSED [{tr["source"].upper()}] {tr["pair"]} {tr["fade_dir"].upper()} '
                     f'→ {pnl_bps:+.1f} bps = {rec["pnl_usd"]:+.3f} USD'
                     + (' 💥LIQUIDATED' if reason == 'liq' else ''))
@@ -526,12 +575,30 @@ def cluster_trades(st, clusters, direction, source, mc_key=None, hold_h=None):
             opened += 1
     return opened
 
+def slope4h(series):
+    if len(series) < 18:
+        return 0.0
+    return series[-1]['c'] / series[-17]['c'] - 1
+
+def trend_ok(pair, dirn, series):
+    """mean-reversion is only allowed WITH the longer trend (no knife-catching).
+    BUY only if the 4h slope is not falling; SELL only if not rising."""
+    if not CFG.get('trend_filter', False):
+        return True
+    s = slope4h(series)
+    if dirn == 'Buy':
+        return s > -0.0005
+    return s < 0.0005
+
 def breakout_signals(st, now_ms):
     spec = CFG['strategies'].get('breakout') or {}
     if not spec.get('enabled'):
         return 0
     opened = 0
+    excl = CFG.get('exclude', {}).get('breakout', [])
     for pair in PAIRS:
+        if pair in excl:
+            continue
         series = price_series(pair, '15m', '5d')
         if len(series) < 100:
             continue
@@ -556,7 +623,10 @@ def meanrev_signals(st, now_ms):
     if not spec.get('enabled'):
         return 0
     opened = 0
+    excl = CFG.get('exclude', {}).get('meanrev', [])
     for pair in PAIRS:
+        if pair in excl:
+            continue
         series = price_series(pair, '15m', '5d')
         if len(series) < 100:
             continue
@@ -565,12 +635,12 @@ def meanrev_signals(st, now_ms):
         px = series[-1]['c']
         dev = (px / mean - 1)
         thr = spec['bps'] / 10000
-        if dev >= thr:
+        if dev >= thr and trend_ok(pair, 'Sell', series):
             opened += open_trade(st, pair, 'Sell', 'meanrev',
                                  tp_bps=spec['tp_bps'], sl_bps=spec['sl_bps'],
                                  hold_ms=spec['hold_h'] * 3600 * 1000,
                                  note='stretched above 24h mean') is not None
-        elif dev <= -thr:
+        elif dev <= -thr and trend_ok(pair, 'Buy', series):
             opened += open_trade(st, pair, 'Buy', 'meanrev',
                                  tp_bps=spec['tp_bps'], sl_bps=spec['sl_bps'],
                                  hold_ms=spec['hold_h'] * 3600 * 1000,
@@ -581,7 +651,10 @@ def scalp_signals(st, now_ms):
     if not CFG['scalp'].get('enabled'):
         return 0
     opened = 0
+    excl = CFG.get('exclude', {}).get('scalp', [])
     for pair in PAIRS:
+        if pair in excl:
+            continue
         if len([t for t in st['active'].values() if t['source'] == 'scalp']) >= \
                 CFG['scalp'].get('max_open', 3):
             break
@@ -596,6 +669,8 @@ def scalp_signals(st, now_ms):
                      CFG['scalp']['move_bps']) / 10000
         if abs(ret) >= move_bps:
             fade = 'Sell' if ret > 0 else 'Buy'
+            if not trend_ok(pair, fade, series):
+                continue
             if open_trade(st, pair, fade, 'scalp', tp_bps=CFG['scalp']['tp_bps'],
                           sl_bps=CFG['scalp']['move_bps'],
                           hold_ms=CFG['scalp']['hold_min'] * 60000):
@@ -645,7 +720,13 @@ def write_ledger_md(st):
 def main():
     now_ms = int(time.time() * 1000)
     st = load_state()
-    tzmap = json.load(open(TZMAP_F))
+    try:
+        tzmap = json.load(open(TZMAP_F))
+    except Exception:
+        tzmap = {}
+    if len(tzmap) < 30:
+        log(f'FATAL: tz_map.json missing or too small ({len(tzmap)} providers) — MQL5 crowd strategies disabled')
+        tg_send(st, '⚠️ FATAL: tz_map.json missing/empty in the repo — MQL5 crowd strategies are DEAD until it is uploaded.')
 
     tg_discover_chat(st)
     if not st.get('tg_hello_sent'):
@@ -766,7 +847,13 @@ def selftest():
         me = tg_call('getMe')
         uname = ((me or {}).get('result') or {}).get('username', '')
         check('telegram getMe', bool(me and me.get('ok')), uname)
-    tzmap = json.load(open(TZMAP_F))
+    try:
+        tzmap = json.load(open(TZMAP_F))
+    except Exception:
+        tzmap = {}
+    if len(tzmap) < 30:
+        log(f'FATAL: tz_map.json missing or too small ({len(tzmap)} providers) — MQL5 crowd strategies disabled')
+        tg_send(st, '⚠️ FATAL: tz_map.json missing/empty in the repo — MQL5 crowd strategies are DEAD until it is uploaded.')
     check('tz map', len(tzmap) >= 30, f'{len(tzmap)} providers')
     check('MQL5 cookie set', bool(COOKIE))
     if COOKIE:
