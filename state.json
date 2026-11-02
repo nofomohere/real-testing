@@ -1,117 +1,17 @@
 {
  "version": 3,
  "clusters_seen": {},
- "active": {
-  "EURUSD-Sell-1793652300000-sentiment": {
-   "pair": "EURUSD",
-   "fade_dir": "Sell",
-   "source": "sentiment",
-   "open_t": 1793652300000,
-   "entry_px": 1.11926,
-   "exit_t": 1793681100000,
-   "tp_bps": null,
-   "sl_bps": null,
-   "cost_bps": 1.5
-  },
-  "EURUSD-Buy-1793652300000-sentiment_follow": {
-   "pair": "EURUSD",
-   "fade_dir": "Buy",
-   "source": "sentiment_follow",
-   "open_t": 1793652300000,
-   "entry_px": 1.11926,
-   "exit_t": 1793681100000,
-   "tp_bps": null,
-   "sl_bps": null,
-   "cost_bps": 1.5
-  },
-  "EURCAD-Sell-1793652300000-sentiment": {
-   "pair": "EURCAD",
-   "fade_dir": "Sell",
-   "source": "sentiment",
-   "open_t": 1793652300000,
-   "entry_px": 1.56555,
-   "exit_t": 1793681100000,
-   "tp_bps": null,
-   "sl_bps": null,
-   "cost_bps": 3.0
-  },
-  "EURCAD-Buy-1793652300000-sentiment_follow": {
-   "pair": "EURCAD",
-   "fade_dir": "Buy",
-   "source": "sentiment_follow",
-   "open_t": 1793652300000,
-   "entry_px": 1.56555,
-   "exit_t": 1793681100000,
-   "tp_bps": null,
-   "sl_bps": null,
-   "cost_bps": 3.0
-  },
-  "EURGBP-Sell-1793652300000-sentiment": {
-   "pair": "EURGBP",
-   "fade_dir": "Sell",
-   "source": "sentiment",
-   "open_t": 1793652300000,
-   "entry_px": 0.83453,
-   "exit_t": 1793681100000,
-   "tp_bps": null,
-   "sl_bps": null,
-   "cost_bps": 2.0
-  },
-  "EURGBP-Buy-1793652300000-sentiment_follow": {
-   "pair": "EURGBP",
-   "fade_dir": "Buy",
-   "source": "sentiment_follow",
-   "open_t": 1793652300000,
-   "entry_px": 0.83453,
-   "exit_t": 1793681100000,
-   "tp_bps": null,
-   "sl_bps": null,
-   "cost_bps": 2.0
-  },
-  "USDJPY-Sell-1793652300000-meanrev": {
-   "pair": "USDJPY",
-   "fade_dir": "Sell",
-   "source": "meanrev",
-   "open_t": 1793652300000,
-   "entry_px": 159.264,
-   "exit_t": 1793659500000,
-   "tp_bps": 25.0,
-   "sl_bps": 50.0,
-   "cost_bps": 1.5
-  }
- },
- "mfb_last": {
-  "EURUSD|Sell": 1793652762264,
-  "EURCAD|Sell": 1793652762264,
-  "EURGBP|Sell": 1793652762264,
-  "NZDUSD|Sell": 1793652762264
- },
+ "active": {},
+ "mfb_last": {},
  "chat_id": 1192863557,
  "tg_hello_sent": true,
  "alarm_sent": false,
  "auth_alert_sent": false,
- "status_last": 1793652762264,
+ "status_last": 0,
  "last_summary": "",
  "last_update_id": 384767161,
  "scalp_last": {},
- "last_close": {
-  "EURJPY": 176.974,
-  "BTCUSD": 76607.2,
-  "ETHUSD": 2243.8
- },
- "cooldown": {
-  "meanrev|EURJPY": 1793656362264,
-  "meanrev|BTCUSD": 1793656362264,
-  "meanrev|ETHUSD": 1793656362264
- },
- "seen_sigs": {
-  "sentiment|EURUSD|Sell|1.11926": true,
-  "sentiment_follow|EURUSD|Buy|1.11926": true,
-  "sentiment|EURCAD|Sell|1.56555": true,
-  "sentiment_follow|EURCAD|Buy|1.56555": true,
-  "sentiment|EURGBP|Sell|0.83453": true,
-  "sentiment_follow|EURGBP|Buy|0.83453": true,
-  "meanrev|USDJPY|Sell|159.264": true
- },
- "price_last": 1793652762264
+ "last_close": {},
+ "cooldown": {},
+ "seen_sigs": {}
 }
