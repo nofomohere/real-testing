@@ -88,3 +88,17 @@
 2026-11-02 23:12 | price SPX500: no fresh source (stale/offline)
 2026-11-02 23:12 | CLOSE USDJPY-Sell-1793653200000-meanrev reason=tp pnl=+185.4bps
 2026-11-02 23:12 | CLOSE EURJPY-Sell-1793653200000-meanrev reason=time pnl=-2.0bps
+2026-11-02 23:43 | price NZDUSD: no fresh source (stale/offline)
+2026-11-02 23:43 | price GBPJPY: no fresh source (stale/offline)
+2026-11-02 23:44 | price AUDCAD: no fresh source (stale/offline)
+2026-11-02 23:44 | price XAUUSD: no fresh source (stale/offline)
+2026-11-02 23:44 | price GBPAUD: no fresh source (stale/offline)
+2026-11-02 23:45 | price GBPCAD: no fresh source (stale/offline)
+2026-11-02 23:45 | price EURTRY: no fresh source (stale/offline)
+2026-11-02 23:46 | price USDTRY: no fresh source (stale/offline)
+2026-11-02 23:46 | price USDZAR: no fresh source (stale/offline)
+2026-11-02 23:46 | price EURNOK: no fresh source (stale/offline)
+2026-11-02 23:47 | price USDNOK: no fresh source (stale/offline)
+2026-11-02 23:47 | price US30: no fresh source (stale/offline)
+2026-11-02 23:48 | price NAS100: no fresh source (stale/offline)
+2026-11-02 23:48 | price SPX500: no fresh source (stale/offline)
