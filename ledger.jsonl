@@ -1,1 +1,3 @@
 
+{"trade": "USDJPY-Sell-1793653200000-meanrev", "pair": "USDJPY", "fade_dir": "Sell", "source": "meanrev", "open_utc": "2026-11-02T21:00:00+00:00", "close_utc": "2026-11-02T23:12:21.794719+00:00", "entry_px": 159.264, "exit_px": 156.288, "pnl_bps": 185.36, "pnl_usd": 9.268, "liquidated": false}
+{"trade": "EURJPY-Sell-1793653200000-meanrev", "pair": "EURJPY", "fade_dir": "Sell", "source": "meanrev", "open_utc": "2026-11-02T21:00:00+00:00", "close_utc": "2026-11-02T23:12:22.282620+00:00", "entry_px": 176.974, "exit_px": 176.974, "pnl_bps": -2.0, "pnl_usd": -0.1, "liquidated": false}
