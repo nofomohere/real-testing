@@ -39,8 +39,8 @@
     "US30": 2.0,
     "NAS100": 2.5,
     "SPX500": 2.0,
-    "BTCUSD": 8.0,
-    "ETHUSD": 8.0
+    "BTCUSD": 4.5,
+    "ETHUSD": 4.5
   },
   "scalp": {
     "enabled": true,
@@ -108,5 +108,8 @@
       "sl_bps": 50.0,
       "tp_bps": 25.0
     }
-  }
+  },
+  "webhook_mode": true,
+  "exclude": {},
+  "trend_filter": true
 }
