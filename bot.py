@@ -248,6 +248,63 @@ KRAKEN_PAIRS = {'EURUSD','GBPUSD','USDJPY','AUDUSD','USDCHF','USDCAD','NZDUSD','
                 'EURJPY','GBPJPY','AUDJPY','AUDCAD','EURAUD','EURCAD','GBPAUD','GBPCAD',
                 'ETHUSD','BTCUSD'}
 
+def _raw_close(pair):
+    """Last Kraken close for FX pair, no validation/caching (cross-rate checks only)."""
+    try:
+        s = _kraken_series(pair, 15)
+        return s[-1]['c'] if s else None
+    except Exception:
+        return None
+
+# (result_pair, leg1, leg2, multiply?)  result = leg1 * leg2  (or leg1 / leg2)
+TRIANGLES = [
+    ('EURUSD', 'EURGBP', 'GBPUSD', True),
+    ('EURJPY', 'EURUSD', 'USDJPY', True),
+    ('GBPJPY', 'GBPUSD', 'USDJPY', True),
+    ('EURCAD', 'EURUSD', 'USDCAD', True),
+    ('AUDJPY', 'AUDUSD', 'USDJPY', True),
+    ('AUDCAD', 'AUDUSD', 'USDCAD', True),
+    ('EURAUD', 'EURUSD', 'AUDUSD', False),
+    ('GBPAUD', 'GBPUSD', 'AUDUSD', False),
+    ('GBPCAD', 'GBPUSD', 'USDCAD', True),
+]
+_banned = set()
+_banned_checked = False
+
+def _ban_outlier():
+    """Find the FX leg whose quote breaks the cross-rate triangles and ban it.
+    A venue glitch (e.g. a bad USDJPY feed) shows up as every triangle containing
+    that leg being inconsistent while the rest are fine."""
+    global _banned_checked
+    if _banned_checked:
+        return
+    _banned_checked = True
+    broken = []
+    for res, l1, l2, mul in TRIANGLES:
+        a, b, c = _raw_close(res), _raw_close(l1), _raw_close(l2)
+        if not all((a, b, c)):
+            continue
+        implied = b * c if mul else b / c
+        if abs(a / implied - 1) > 0.005:
+            broken.append((res, l1, l2))
+    if not broken:
+        return
+    votes = {}
+    for tri in broken:
+        for leg in tri:
+            votes[leg] = votes.get(leg, 0) + 1
+    culprit = max(votes, key=votes.get)
+    if votes[culprit] < 2:
+        return                                    # too little evidence to blame
+    _banned.add(culprit)
+    log(f'FX quote check: {culprit} breaks {votes[culprit]} cross-rate triangles '
+        f'-> banished (bad venue quote)')
+
+def cross_rate_ok(pair, quote):
+    if pair not in _banned:
+        _ban_outlier()
+    return pair not in _banned
+
 def _fresh(out):
     return len(out) >= 2 and (time.time() * 1000 - out[-1]['t']) < 90 * 60 * 1000
 
@@ -260,17 +317,40 @@ def price_series(pair, interval='15m', range_='2d'):
         return _series_cache[key]
     out = []
     if pair in KRAKEN_PAIRS:
+        k = y = []
         try:
-            out = _kraken_series(pair, 15)
+            k = _kraken_series(pair, 15)
         except Exception:
-            out = []
-    if not _fresh(out):
+            k = []
+        for attempt in range(2):
+            try:
+                y = _yahoo_series(pair, interval, range_)
+                break
+            except Exception:
+                time.sleep(1.5 * (attempt + 1))
+        k_ok, y_ok = _fresh(k), _fresh(y)
+        if k_ok and y_ok:
+            div = abs(k[-1]['c'] / y[-1]['c'] - 1)
+            if div <= 0.003:
+                out = k                       # sources agree: use native venue
+            else:
+                out = y                       # divergent quote: trust the cross-rate-consistent one
+                if pair not in _dead_pairs:
+                    _dead_pairs.add(pair)
+                    log(f'price {pair}: sources diverge {div*100:.2f}% (kraken {k[-1]["c"]} vs yahoo {y[-1]["c"]}) -> using yahoo')
+        elif k_ok:
+            out = k
+        elif y_ok:
+            out = y
+    else:
         for attempt in range(2):
             try:
                 out = _yahoo_series(pair, interval, range_)
                 break
             except Exception:
                 time.sleep(2 * (attempt + 1))
+    if _fresh(out) and not cross_rate_ok(pair, out[-1]['c']):
+        out = []
     if not _fresh(out):
         if pair not in _dead_pairs:
             _dead_pairs.add(pair)
@@ -509,25 +589,30 @@ def close_trades(st, now_ms):
         for bar in series:
             if bar['t'] < tr['open_t']:
                 continue
+            sl_bps = tr.get('sl_bps') or 0
+            tp_bps = tr.get('tp_bps') or 0
             if tr['fade_dir'] == 'Buy':
                 adverse = bar['l'] / entry - 1          # negative when price drops
                 favorable = bar['h'] / entry - 1        # positive when price rises
-                stop_hit = adverse <= -tr.get('sl_bps', 0) / 10000
+                stop_hit = sl_bps > 0 and adverse <= -sl_bps / 10000
                 liq_hit = adverse <= -LIQ_PCT
-                stop_px, tp_px = bar['l'], bar['h']
+                # fill at the TRIGGER price: a bar's extreme is not a fill
+                stop_px = entry * (1 - sl_bps / 10000) if sl_bps else bar['l']
+                tp_px = entry * (1 + tp_bps / 10000) if tp_bps else bar['h']
             else:  # SELL: profit when price falls
                 adverse = bar['h'] / entry - 1          # positive when price rises
                 favorable = 1 - bar['l'] / entry        # positive when price falls
-                stop_hit = adverse >= tr.get('sl_bps', 0) / 10000
+                stop_hit = sl_bps > 0 and adverse >= sl_bps / 10000
                 liq_hit = adverse >= LIQ_PCT
-                stop_px, tp_px = bar['h'], bar['l']
+                stop_px = entry * (1 + sl_bps / 10000) if sl_bps else bar['h']
+                tp_px = entry * (1 - tp_bps / 10000) if tp_bps else bar['l']
             if liq_hit:
                 exit_px, reason = None, 'liq'
                 break
-            if tr.get('sl_bps') and stop_hit:
+            if stop_hit:
                 exit_px, reason = stop_px, 'stop'
                 break
-            if tr.get('tp_bps') and favorable >= tr['tp_bps'] / 10000:
+            if tp_bps > 0 and favorable >= tp_bps / 10000:
                 exit_px, reason = tp_px, 'tp'
                 break
             if bar['t'] >= tr['exit_t']:
@@ -824,9 +909,12 @@ def main():
                        default=None)
             if best:
                 extreme = f' | most one-sided: {best["symbol"]} {best["long_pct"]}% long'
+        mql5_health = f'cookie={"set" if COOKIE else "MISSING"} tz={len(tzmap)}p'
+        log(f'run: mfb={len(mfb_rows)} {mql5_health} opens={len(opens)} closes={len(closes)} '
+            f'active_before={len(st["active"])+len(closed)} new={scalp_n+brk_n+mr_n} closed={len(closed)}')
         tg_send(st, f'🔍 {now.strftime("%H:%M")} UTC | mfb {len(mfb_rows)}{extreme} | '
-                    f'MQL5 {stats["ok"]}ok/{stats["conn_err"]}conn/{stats["auth_err"]}auth, '
-                    f'{len(opens)} opens/{len(closes)} closes | '
+                    f'MQL5 {stats["ok"]}ok/{stats["conn_err"]}conn/{stats["auth_err"]}auth '
+                    f'({mql5_health}), {len(opens)} opens/{len(closes)} closes | '
                     f'new: ⚡{scalp_n} 🚀{brk_n} 🔁{mr_n} | active {len(st["active"])} '
                     f'| closed {len(closed)}')
     save_state(st)
