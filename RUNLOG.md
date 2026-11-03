@@ -1,104 +1,3 @@
-2026-11-02 20:53 | OPEN EURUSD-Sell-1793652300000-sentiment Sell @ 1.11926
-2026-11-02 20:53 | OPEN EURUSD-Buy-1793652300000-sentiment_follow Buy @ 1.11926
-2026-11-02 20:53 | OPEN EURCAD-Sell-1793652300000-sentiment Sell @ 1.56555
-2026-11-02 20:53 | OPEN EURCAD-Buy-1793652300000-sentiment_follow Buy @ 1.56555
-2026-11-02 20:53 | OPEN EURGBP-Sell-1793652300000-sentiment Sell @ 0.83453
-2026-11-02 20:53 | OPEN EURGBP-Buy-1793652300000-sentiment_follow Buy @ 0.83453
-2026-11-02 20:53 | price NZDUSD: no fresh source (stale/offline)
-2026-11-02 20:54 | price GBPJPY: no fresh source (stale/offline)
-2026-11-02 20:55 | price AUDCAD: no fresh source (stale/offline)
-2026-11-02 20:55 | price XAUUSD: no fresh source (stale/offline)
-2026-11-02 20:55 | price GBPAUD: no fresh source (stale/offline)
-2026-11-02 20:56 | price GBPCAD: no fresh source (stale/offline)
-2026-11-02 20:56 | price EURTRY: no fresh source (stale/offline)
-2026-11-02 20:57 | price USDTRY: no fresh source (stale/offline)
-2026-11-02 20:57 | price USDZAR: no fresh source (stale/offline)
-2026-11-02 20:58 | price EURNOK: no fresh source (stale/offline)
-2026-11-02 20:58 | price USDNOK: no fresh source (stale/offline)
-2026-11-02 20:58 | price US30: no fresh source (stale/offline)
-2026-11-02 20:59 | price NAS100: no fresh source (stale/offline)
-2026-11-02 20:59 | price SPX500: no fresh source (stale/offline)
-2026-11-02 20:59 | OPEN USDJPY-Sell-1793652300000-meanrev Sell @ 159.264
-2026-11-02 20:59 | CLOSE EURJPY-Sell-1793524500000-meanrev reason=time pnl=-2.0bps
-2026-11-02 20:59 | CLOSE BTCUSD-Sell-1793524500000-meanrev reason=tp pnl=+22.5bps
-2026-11-02 20:59 | CLOSE ETHUSD-Sell-1793524500000-meanrev reason=tp pnl=+19.3bps
-2026-11-02 21:07 | OPEN EURUSD-Sell-1793653200000-sentiment Sell @ 1.11891
-2026-11-02 21:07 | OPEN EURUSD-Buy-1793653200000-sentiment_follow Buy @ 1.11891
-2026-11-02 21:07 | OPEN EURCAD-Sell-1793653200000-sentiment Sell @ 1.56555
-2026-11-02 21:07 | OPEN EURCAD-Buy-1793653200000-sentiment_follow Buy @ 1.56555
-2026-11-02 21:07 | OPEN EURGBP-Sell-1793653200000-sentiment Sell @ 0.83448
-2026-11-02 21:07 | OPEN EURGBP-Buy-1793653200000-sentiment_follow Buy @ 0.83448
-2026-11-02 21:08 | price NZDUSD: no fresh source (stale/offline)
-2026-11-02 21:09 | price GBPJPY: no fresh source (stale/offline)
-2026-11-02 21:09 | price AUDCAD: no fresh source (stale/offline)
-2026-11-02 21:10 | price XAUUSD: no fresh source (stale/offline)
-2026-11-02 21:10 | price GBPAUD: no fresh source (stale/offline)
-2026-11-02 21:11 | price GBPCAD: no fresh source (stale/offline)
-2026-11-02 21:11 | price EURTRY: no fresh source (stale/offline)
-2026-11-02 21:11 | price USDTRY: no fresh source (stale/offline)
-2026-11-02 21:12 | price USDZAR: no fresh source (stale/offline)
-2026-11-02 21:12 | price EURNOK: no fresh source (stale/offline)
-2026-11-02 21:13 | price USDNOK: no fresh source (stale/offline)
-2026-11-02 21:13 | price US30: no fresh source (stale/offline)
-2026-11-02 21:14 | price NAS100: no fresh source (stale/offline)
-2026-11-02 21:14 | price SPX500: no fresh source (stale/offline)
-2026-11-02 21:14 | OPEN USDJPY-Sell-1793653200000-meanrev Sell @ 159.264
-2026-11-02 21:14 | OPEN EURJPY-Sell-1793653200000-meanrev Sell @ 176.974
-2026-11-02 21:43 | price NZDUSD: no fresh source (stale/offline)
-2026-11-02 21:43 | price GBPJPY: no fresh source (stale/offline)
-2026-11-02 21:44 | price AUDCAD: no fresh source (stale/offline)
-2026-11-02 21:44 | price XAUUSD: no fresh source (stale/offline)
-2026-11-02 21:45 | price GBPAUD: no fresh source (stale/offline)
-2026-11-02 21:45 | price GBPCAD: no fresh source (stale/offline)
-2026-11-02 21:45 | price EURTRY: no fresh source (stale/offline)
-2026-11-02 21:46 | price USDTRY: no fresh source (stale/offline)
-2026-11-02 21:46 | price USDZAR: no fresh source (stale/offline)
-2026-11-02 21:47 | price EURNOK: no fresh source (stale/offline)
-2026-11-02 21:47 | price USDNOK: no fresh source (stale/offline)
-2026-11-02 21:48 | price US30: no fresh source (stale/offline)
-2026-11-02 21:48 | price NAS100: no fresh source (stale/offline)
-2026-11-02 21:48 | price SPX500: no fresh source (stale/offline)
-2026-11-02 22:26 | price GBPJPY: no fresh source (stale/offline)
-2026-11-02 22:26 | price AUDCAD: no fresh source (stale/offline)
-2026-11-02 22:27 | price XAUUSD: no fresh source (stale/offline)
-2026-11-02 22:27 | price GBPAUD: no fresh source (stale/offline)
-2026-11-02 22:28 | price GBPCAD: no fresh source (stale/offline)
-2026-11-02 22:28 | price EURTRY: no fresh source (stale/offline)
-2026-11-02 22:28 | price USDTRY: no fresh source (stale/offline)
-2026-11-02 22:29 | price USDZAR: no fresh source (stale/offline)
-2026-11-02 22:29 | price EURNOK: no fresh source (stale/offline)
-2026-11-02 22:30 | price USDNOK: no fresh source (stale/offline)
-2026-11-02 22:30 | price US30: no fresh source (stale/offline)
-2026-11-02 22:30 | price NAS100: no fresh source (stale/offline)
-2026-11-02 22:31 | price SPX500: no fresh source (stale/offline)
-2026-11-02 22:31 | OPEN ETHUSD-Buy-1793658600000-meanrev Buy @ 2249.37
-2026-11-02 23:07 | price NZDUSD: no fresh source (stale/offline)
-2026-11-02 23:07 | price GBPJPY: no fresh source (stale/offline)
-2026-11-02 23:07 | price AUDCAD: no fresh source (stale/offline)
-2026-11-02 23:08 | price XAUUSD: no fresh source (stale/offline)
-2026-11-02 23:08 | price GBPAUD: no fresh source (stale/offline)
-2026-11-02 23:09 | price GBPCAD: no fresh source (stale/offline)
-2026-11-02 23:09 | price EURTRY: no fresh source (stale/offline)
-2026-11-02 23:09 | price USDTRY: no fresh source (stale/offline)
-2026-11-02 23:10 | price USDZAR: no fresh source (stale/offline)
-2026-11-02 23:10 | price EURNOK: no fresh source (stale/offline)
-2026-11-02 23:11 | price USDNOK: no fresh source (stale/offline)
-2026-11-02 23:11 | price US30: no fresh source (stale/offline)
-2026-11-02 23:11 | price NAS100: no fresh source (stale/offline)
-2026-11-02 23:12 | price SPX500: no fresh source (stale/offline)
-2026-11-02 23:12 | CLOSE USDJPY-Sell-1793653200000-meanrev reason=tp pnl=+185.4bps
-2026-11-02 23:12 | CLOSE EURJPY-Sell-1793653200000-meanrev reason=time pnl=-2.0bps
-2026-11-02 23:43 | price NZDUSD: no fresh source (stale/offline)
-2026-11-02 23:43 | price GBPJPY: no fresh source (stale/offline)
-2026-11-02 23:44 | price AUDCAD: no fresh source (stale/offline)
-2026-11-02 23:44 | price XAUUSD: no fresh source (stale/offline)
-2026-11-02 23:44 | price GBPAUD: no fresh source (stale/offline)
-2026-11-02 23:45 | price GBPCAD: no fresh source (stale/offline)
-2026-11-02 23:45 | price EURTRY: no fresh source (stale/offline)
-2026-11-02 23:46 | price USDTRY: no fresh source (stale/offline)
-2026-11-02 23:46 | price USDZAR: no fresh source (stale/offline)
-2026-11-02 23:46 | price EURNOK: no fresh source (stale/offline)
-2026-11-02 23:47 | price USDNOK: no fresh source (stale/offline)
 2026-11-02 23:47 | price US30: no fresh source (stale/offline)
 2026-11-02 23:48 | price NAS100: no fresh source (stale/offline)
 2026-11-02 23:48 | price SPX500: no fresh source (stale/offline)
@@ -388,3 +287,21 @@
 2026-11-03 18:04 | price NAS100: no fresh source (stale/offline)
 2026-11-03 18:04 | price SPX500: no fresh source (stale/offline)
 2026-11-03 18:04 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=7 new=0 closed=0
+2026-11-03 18:50 | FX quote check: USDJPY breaks 2 cross-rate triangles -> banished (bad venue quote)
+2026-11-03 18:52 | FX quote check: USDJPY breaks 2 cross-rate triangles -> banished (bad venue quote)
+2026-11-03 18:53 | price USDJPY: no fresh source (stale/offline)
+2026-11-03 18:53 | price NZDUSD: no fresh source (stale/offline)
+2026-11-03 18:53 | price GBPJPY: no fresh source (stale/offline)
+2026-11-03 18:53 | price AUDCAD: no fresh source (stale/offline)
+2026-11-03 18:53 | price XAUUSD: no fresh source (stale/offline)
+2026-11-03 18:53 | price GBPAUD: no fresh source (stale/offline)
+2026-11-03 18:53 | price GBPCAD: no fresh source (stale/offline)
+2026-11-03 18:53 | price EURTRY: no fresh source (stale/offline)
+2026-11-03 18:53 | price USDTRY: no fresh source (stale/offline)
+2026-11-03 18:53 | price USDZAR: no fresh source (stale/offline)
+2026-11-03 18:53 | price EURNOK: no fresh source (stale/offline)
+2026-11-03 18:53 | price USDNOK: no fresh source (stale/offline)
+2026-11-03 18:53 | price US30: no fresh source (stale/offline)
+2026-11-03 18:53 | price NAS100: no fresh source (stale/offline)
+2026-11-03 18:53 | price SPX500: no fresh source (stale/offline)
+2026-11-03 18:53 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=7 new=0 closed=0
