@@ -325,3 +325,27 @@
 2026-11-03 19:40 | OPEN ETHUSD-Sell-1793734200000-meanrev Sell @ 2286.61
 2026-11-03 19:40 | CLOSE BTCUSD-Sell-1793726100000-meanrev reason=time pnl=+3.0bps
 2026-11-03 19:40 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=8 new=1 closed=1
+2026-11-03 20:27 | FX quote check: USDJPY breaks 2 cross-rate triangles -> banished (bad venue quote)
+2026-11-03 20:30 | FX quote check: USDJPY breaks 2 cross-rate triangles -> banished (bad venue quote)
+2026-11-03 20:30 | price USDJPY: no fresh source (stale/offline)
+2026-11-03 20:30 | price NZDUSD: no fresh source (stale/offline)
+2026-11-03 20:30 | price GBPJPY: no fresh source (stale/offline)
+2026-11-03 20:30 | price AUDCAD: no fresh source (stale/offline)
+2026-11-03 20:30 | price XAUUSD: no fresh source (stale/offline)
+2026-11-03 20:30 | price GBPAUD: no fresh source (stale/offline)
+2026-11-03 20:30 | price GBPCAD: no fresh source (stale/offline)
+2026-11-03 20:30 | price EURTRY: no fresh source (stale/offline)
+2026-11-03 20:30 | price USDTRY: no fresh source (stale/offline)
+2026-11-03 20:30 | price USDZAR: no fresh source (stale/offline)
+2026-11-03 20:30 | price EURNOK: no fresh source (stale/offline)
+2026-11-03 20:30 | price USDNOK: no fresh source (stale/offline)
+2026-11-03 20:30 | price US30: no fresh source (stale/offline)
+2026-11-03 20:30 | price NAS100: no fresh source (stale/offline)
+2026-11-03 20:30 | price SPX500: no fresh source (stale/offline)
+2026-11-03 20:30 | CLOSE EURUSD-Sell-1793708100000-sentiment reason=time pnl=-11.6bps
+2026-11-03 20:30 | CLOSE EURUSD-Buy-1793708100000-sentiment_follow reason=time pnl=+8.6bps
+2026-11-03 20:30 | CLOSE EURCAD-Sell-1793708100000-sentiment reason=time pnl=-39.3bps
+2026-11-03 20:30 | CLOSE EURCAD-Buy-1793708100000-sentiment_follow reason=time pnl=+33.3bps
+2026-11-03 20:30 | CLOSE EURGBP-Sell-1793708100000-sentiment reason=time pnl=-13.2bps
+2026-11-03 20:30 | CLOSE EURGBP-Buy-1793708100000-sentiment_follow reason=time pnl=+9.2bps
+2026-11-03 20:30 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=7 new=0 closed=6
