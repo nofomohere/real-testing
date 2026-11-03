@@ -194,3 +194,28 @@
 2026-11-03 05:03 | price NAS100: no fresh source (stale/offline)
 2026-11-03 05:04 | price SPX500: no fresh source (stale/offline)
 2026-11-03 05:04 | CLOSE ETHUSD-Buy-1793672100000-meanrev reason=stop pnl=-66.0bps
+2026-11-03 11:03 | FX quote check: USDJPY breaks 2 cross-rate triangles -> banished (bad venue quote)
+2026-11-03 11:05 | price GBPAUD: no fresh source (stale/offline)
+2026-11-03 11:06 | FX quote check: USDJPY breaks 2 cross-rate triangles -> banished (bad venue quote)
+2026-11-03 11:06 | price USDJPY: no fresh source (stale/offline)
+2026-11-03 11:08 | price NZDUSD: no fresh source (stale/offline)
+2026-11-03 11:09 | price GBPJPY: no fresh source (stale/offline)
+2026-11-03 11:10 | price AUDCAD: no fresh source (stale/offline)
+2026-11-03 11:10 | price XAUUSD: no fresh source (stale/offline)
+2026-11-03 11:11 | price GBPCAD: no fresh source (stale/offline)
+2026-11-03 11:12 | price EURTRY: no fresh source (stale/offline)
+2026-11-03 11:13 | price USDTRY: no fresh source (stale/offline)
+2026-11-03 11:13 | price USDZAR: no fresh source (stale/offline)
+2026-11-03 11:13 | price EURNOK: no fresh source (stale/offline)
+2026-11-03 11:14 | price USDNOK: no fresh source (stale/offline)
+2026-11-03 11:14 | price US30: no fresh source (stale/offline)
+2026-11-03 11:15 | price NAS100: no fresh source (stale/offline)
+2026-11-03 11:15 | price SPX500: no fresh source (stale/offline)
+2026-11-03 11:16 | CLOSE EURUSD-Sell-1793653200000-sentiment reason=time pnl=-3.0bps
+2026-11-03 11:16 | CLOSE EURUSD-Buy-1793653200000-sentiment_follow reason=time pnl=+0.0bps
+2026-11-03 11:16 | CLOSE EURCAD-Sell-1793653200000-sentiment reason=time pnl=+3.5bps
+2026-11-03 11:16 | CLOSE EURCAD-Buy-1793653200000-sentiment_follow reason=time pnl=-9.5bps
+2026-11-03 11:16 | CLOSE EURGBP-Sell-1793653200000-sentiment reason=time pnl=-1.4bps
+2026-11-03 11:16 | CLOSE EURGBP-Buy-1793653200000-sentiment_follow reason=time pnl=-2.6bps
+2026-11-03 11:16 | CLOSE BTCUSD-Buy-1793678400000-meanrev reason=tp pnl=+20.5bps
+2026-11-03 11:16 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=7 new=0 closed=7
