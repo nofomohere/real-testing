@@ -1,1 +1,2 @@
 
+{"trade": "BTCUSD-Sell-1793726100000-meanrev", "pair": "BTCUSD", "fade_dir": "Sell", "source": "meanrev", "open_utc": "2026-11-03T17:15:00+00:00", "close_utc": "2026-11-03T19:40:51.306151+00:00", "entry_px": 77576.9, "exit_px": 77518.6, "pnl_bps": 3.02, "pnl_usd": 0.1508, "liquidated": false}
