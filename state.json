@@ -1,17 +1,98 @@
 {
  "version": 3,
  "clusters_seen": {},
- "active": {},
- "mfb_last": {},
+ "active": {
+  "EURUSD-Sell-1793708100000-sentiment": {
+   "pair": "EURUSD",
+   "fade_dir": "Sell",
+   "source": "sentiment",
+   "open_t": 1793708100000,
+   "entry_px": 1.11809,
+   "exit_t": 1793736900000,
+   "tp_bps": null,
+   "sl_bps": null,
+   "cost_bps": 1.5
+  },
+  "EURUSD-Buy-1793708100000-sentiment_follow": {
+   "pair": "EURUSD",
+   "fade_dir": "Buy",
+   "source": "sentiment_follow",
+   "open_t": 1793708100000,
+   "entry_px": 1.11809,
+   "exit_t": 1793736900000,
+   "tp_bps": null,
+   "sl_bps": null,
+   "cost_bps": 1.5
+  },
+  "EURCAD-Sell-1793708100000-sentiment": {
+   "pair": "EURCAD",
+   "fade_dir": "Sell",
+   "source": "sentiment",
+   "open_t": 1793708100000,
+   "entry_px": 1.5603,
+   "exit_t": 1793736900000,
+   "tp_bps": null,
+   "sl_bps": null,
+   "cost_bps": 3.0
+  },
+  "EURCAD-Buy-1793708100000-sentiment_follow": {
+   "pair": "EURCAD",
+   "fade_dir": "Buy",
+   "source": "sentiment_follow",
+   "open_t": 1793708100000,
+   "entry_px": 1.5603,
+   "exit_t": 1793736900000,
+   "tp_bps": null,
+   "sl_bps": null,
+   "cost_bps": 3.0
+  },
+  "EURGBP-Sell-1793708100000-sentiment": {
+   "pair": "EURGBP",
+   "fade_dir": "Sell",
+   "source": "sentiment",
+   "open_t": 1793708100000,
+   "entry_px": 0.83345,
+   "exit_t": 1793736900000,
+   "tp_bps": null,
+   "sl_bps": null,
+   "cost_bps": 2.0
+  },
+  "EURGBP-Buy-1793708100000-sentiment_follow": {
+   "pair": "EURGBP",
+   "fade_dir": "Buy",
+   "source": "sentiment_follow",
+   "open_t": 1793708100000,
+   "entry_px": 0.83345,
+   "exit_t": 1793736900000,
+   "tp_bps": null,
+   "sl_bps": null,
+   "cost_bps": 2.0
+  }
+ },
+ "mfb_last": {
+  "EURUSD|Sell": 1793708665846,
+  "EURCAD|Sell": 1793708665846,
+  "EURGBP|Sell": 1793708665846,
+  "NZDUSD|Sell": 1793708665846,
+  "GBPAUD|Buy": 1793708665846
+ },
  "chat_id": 1192863557,
  "tg_hello_sent": true,
  "alarm_sent": false,
  "auth_alert_sent": false,
- "status_last": 0,
+ "status_last": 1793708665846,
  "last_summary": "",
  "last_update_id": 0,
  "scalp_last": {},
  "last_close": {},
  "cooldown": {},
- "seen_sigs": {}
+ "seen_sigs": {
+  "sentiment|EURUSD|Sell|1.11809": true,
+  "sentiment_follow|EURUSD|Buy|1.11809": true,
+  "sentiment|EURCAD|Sell|1.5603": true,
+  "sentiment_follow|EURCAD|Buy|1.5603": true,
+  "sentiment|EURGBP|Sell|0.83345": true,
+  "sentiment_follow|EURGBP|Buy|0.83345": true
+ },
+ "price_last": 1793708665846
 }
