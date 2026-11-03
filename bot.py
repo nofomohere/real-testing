@@ -203,6 +203,7 @@ def fetch_mql5_activity(tzmap, since_ms):
 
 _series_cache = {}
 _dead_pairs = set()
+_yahoo_fails = [0]   # circuit breaker: yahoo is unreliable from datacenter IPs
 
 def _yahoo_series(pair, interval='15m', range_='2d'):
     last_err = None
@@ -211,7 +212,7 @@ def _yahoo_series(pair, interval='15m', range_='2d'):
                f'?interval={interval}&range={range_}')
         for attempt in range(2):
             try:
-                d = json.loads(http_get(url, cookie=False, timeout=30))
+                d = json.loads(http_get(url, cookie=False, timeout=8))
                 break
             except Exception as e:
                 last_err = e
@@ -322,12 +323,14 @@ def price_series(pair, interval='15m', range_='2d'):
             k = _kraken_series(pair, 15)
         except Exception:
             k = []
-        for attempt in range(2):
-            try:
-                y = _yahoo_series(pair, interval, range_)
-                break
-            except Exception:
-                time.sleep(1.5 * (attempt + 1))
+        if _yahoo_fails[0] < 3:                       # circuit breaker
+            for attempt in range(2):
+                try:
+                    y = _yahoo_series(pair, interval, range_)
+                    break
+                except Exception:
+                    _yahoo_fails[0] += 1
+                    time.sleep(1.0)
         k_ok, y_ok = _fresh(k), _fresh(y)
         if k_ok and y_ok:
             div = abs(k[-1]['c'] / y[-1]['c'] - 1)
@@ -343,12 +346,14 @@ def price_series(pair, interval='15m', range_='2d'):
         elif y_ok:
             out = y
     else:
-        for attempt in range(2):
-            try:
-                out = _yahoo_series(pair, interval, range_)
-                break
-            except Exception:
-                time.sleep(2 * (attempt + 1))
+        if _yahoo_fails[0] < 3:
+            for attempt in range(2):
+                try:
+                    out = _yahoo_series(pair, interval, range_)
+                    break
+                except Exception:
+                    _yahoo_fails[0] += 1
+                    time.sleep(1.0)
     if _fresh(out) and not cross_rate_ok(pair, out[-1]['c']):
         out = []
     if not _fresh(out):
