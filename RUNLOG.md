@@ -150,3 +150,17 @@
 2026-11-03 02:28 | OPEN ETHUSD-Buy-1793672100000-meanrev Buy @ 2255.02
 2026-11-03 02:28 | CLOSE USDJPY-Sell-1793664900000-meanrev reason=tp pnl=+184.1bps
 2026-11-03 02:28 | CLOSE BTCUSD-Buy-1793664900000-meanrev reason=tp pnl=+25.6bps
+2026-11-03 03:15 | price NZDUSD: no fresh source (stale/offline)
+2026-11-03 03:16 | price GBPJPY: no fresh source (stale/offline)
+2026-11-03 03:16 | price AUDCAD: no fresh source (stale/offline)
+2026-11-03 03:16 | price XAUUSD: no fresh source (stale/offline)
+2026-11-03 03:17 | price GBPAUD: no fresh source (stale/offline)
+2026-11-03 03:17 | price GBPCAD: no fresh source (stale/offline)
+2026-11-03 03:18 | price EURTRY: no fresh source (stale/offline)
+2026-11-03 03:18 | price USDTRY: no fresh source (stale/offline)
+2026-11-03 03:18 | price USDZAR: no fresh source (stale/offline)
+2026-11-03 03:19 | price EURNOK: no fresh source (stale/offline)
+2026-11-03 03:19 | price USDNOK: no fresh source (stale/offline)
+2026-11-03 03:20 | price US30: no fresh source (stale/offline)
+2026-11-03 03:20 | price NAS100: no fresh source (stale/offline)
+2026-11-03 03:20 | price SPX500: no fresh source (stale/offline)
