@@ -349,3 +349,21 @@
 2026-11-03 20:30 | CLOSE EURGBP-Sell-1793708100000-sentiment reason=time pnl=-13.2bps
 2026-11-03 20:30 | CLOSE EURGBP-Buy-1793708100000-sentiment_follow reason=time pnl=+9.2bps
 2026-11-03 20:30 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=7 new=0 closed=6
+2026-11-03 21:16 | FX quote check: USDJPY breaks 2 cross-rate triangles -> banished (bad venue quote)
+2026-11-03 21:19 | FX quote check: USDJPY breaks 2 cross-rate triangles -> banished (bad venue quote)
+2026-11-03 21:19 | price USDJPY: no fresh source (stale/offline)
+2026-11-03 21:19 | price NZDUSD: no fresh source (stale/offline)
+2026-11-03 21:19 | price GBPJPY: no fresh source (stale/offline)
+2026-11-03 21:19 | price AUDCAD: no fresh source (stale/offline)
+2026-11-03 21:19 | price XAUUSD: no fresh source (stale/offline)
+2026-11-03 21:19 | price GBPAUD: no fresh source (stale/offline)
+2026-11-03 21:19 | price GBPCAD: no fresh source (stale/offline)
+2026-11-03 21:19 | price EURTRY: no fresh source (stale/offline)
+2026-11-03 21:19 | price USDTRY: no fresh source (stale/offline)
+2026-11-03 21:19 | price USDZAR: no fresh source (stale/offline)
+2026-11-03 21:19 | price EURNOK: no fresh source (stale/offline)
+2026-11-03 21:19 | price USDNOK: no fresh source (stale/offline)
+2026-11-03 21:19 | price US30: no fresh source (stale/offline)
+2026-11-03 21:19 | price NAS100: no fresh source (stale/offline)
+2026-11-03 21:19 | price SPX500: no fresh source (stale/offline)
+2026-11-03 21:19 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=1 new=0 closed=0
