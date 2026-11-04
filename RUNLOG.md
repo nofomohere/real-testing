@@ -332,3 +332,20 @@
 2026-11-04 14:45 | CLOSE ETHUSD-Sell-1793795400000-meanrev reason=tp pnl=+20.5bps
 2026-11-04 14:45 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=10 new=0 closed=2
 2026-11-04 14:45 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-04 15:35 | tg getMe error: HTTP Error 401: Unauthorized
+2026-11-04 15:38 | price NZDUSD: no fresh source (stale/offline)
+2026-11-04 15:38 | price GBPJPY: no fresh source (stale/offline)
+2026-11-04 15:38 | price AUDCAD: no fresh source (stale/offline)
+2026-11-04 15:38 | price XAUUSD: no fresh source (stale/offline)
+2026-11-04 15:38 | price GBPAUD: no fresh source (stale/offline)
+2026-11-04 15:38 | price GBPCAD: no fresh source (stale/offline)
+2026-11-04 15:38 | price EURTRY: no fresh source (stale/offline)
+2026-11-04 15:38 | price USDTRY: no fresh source (stale/offline)
+2026-11-04 15:38 | price USDZAR: no fresh source (stale/offline)
+2026-11-04 15:38 | price EURNOK: no fresh source (stale/offline)
+2026-11-04 15:38 | price USDNOK: no fresh source (stale/offline)
+2026-11-04 15:38 | price US30: no fresh source (stale/offline)
+2026-11-04 15:38 | price NAS100: no fresh source (stale/offline)
+2026-11-04 15:38 | price SPX500: no fresh source (stale/offline)
+2026-11-04 15:38 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=8 new=0 closed=0
+2026-11-04 15:38 | tg sendMessage error: HTTP Error 401: Unauthorized
