@@ -26,7 +26,7 @@
  "alarm_sent": false,
  "auth_alert_sent": false,
  "status_last": 1793740697384,
- "last_summary": "",
+ "last_summary": "20261104",
  "last_update_id": 0,
  "scalp_last": {},
  "last_close": {
@@ -57,5 +57,5 @@
   "meanrev|ETHUSD|Sell|2286.61": true,
   "meanrev|ETHUSD|Sell|2287.75": true
  },
- "price_last": 1793748443091
+ "price_last": 1793750762970
 }
