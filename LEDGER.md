@@ -1,15 +1,15 @@
 # Fade Bot — paper ledger
 
-Updated: 2026-11-05T03:56:11.585080+00:00
+Updated: 2026-11-05T04:50:12.386861+00:00
 
-- Trades: **29** | Avg: **0.9 bps** | Win: **62%** | Cum: **24.8 bps**
-- Money sim ($10.0 @ 50x): **+1.242 USD** | Liquidations: **0** | Open: **6**
+- Trades: **30** | Avg: **-2.9 bps** | Win: **60%** | Cum: **-86.0 bps**
+- Money sim ($10.0 @ 50x): **-4.302 USD** | Liquidations: **0** | Open: **5**
 
 ## Results per strategy
 
 | Strategy | Trades | Win% | Avg bps | Cum bps | Cum USD | Liqs |
 |---|---|---|---|---|---|---|
-| meanrev | 14 | 64% | +2.2 | +31.3 | +1.567 | 0 |
+| meanrev | 15 | 60% | -5.3 | -79.5 | -3.977 | 0 |
 | sentiment | 6 | 50% | -0.6 | -3.4 | -0.171 | 0 |
 | sentiment_follow | 6 | 50% | -3.8 | -22.6 | -1.129 | 0 |
 | scalp | 3 | 100% | +6.5 | +19.5 | +0.975 | 0 |
@@ -47,3 +47,4 @@ Updated: 2026-11-05T03:56:11.585080+00:00
 | ETHUSD-Sell-1793819700000-meanrev | ETHUSD | Sell | meanrev | 2026-11-04T19:15 | +20.5 | +1.0250 |
 | USDJPY-Buy-1793831400000-meanrev | USDJPY | Buy | meanrev | 2026-11-04T22:30 | -110.7 | -5.5370 |
 | ETHUSD-Sell-1793834100000-meanrev | ETHUSD | Sell | meanrev | 2026-11-04T23:15 | +20.5 | +1.0250 |
+| USDJPY-Buy-1793844000000-meanrev | USDJPY | Buy | meanrev | 2026-11-05T02:00 | -110.9 | -5.5433 |
