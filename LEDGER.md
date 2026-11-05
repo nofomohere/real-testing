@@ -1,9 +1,9 @@
 # Fade Bot — paper ledger
 
-Updated: 2026-11-05T19:32:30.662774+00:00
+Updated: 2026-11-05T20:22:16.497617+00:00
 
-- Trades: **40** | Avg: **-4.6 bps** | Win: **55%** | Cum: **-184.0 bps**
-- Money sim ($10.0 @ 50x): **-9.198 USD** | Liquidations: **1** | Open: **9**
+- Trades: **43** | Avg: **-13.1 bps** | Win: **53%** | Cum: **-562.1 bps**
+- Money sim ($10.0 @ 50x): **-28.105 USD** | Liquidations: **3** | Open: **7**
 
 ## Results per strategy
 
@@ -13,14 +13,12 @@ Updated: 2026-11-05T19:32:30.662774+00:00
 | sentiment | 7 | 57% | +8.7 | +60.8 | +3.042 | 0 |
 | sentiment_follow | 7 | 43% | -31.8 | -222.6 | -11.129 | 1 |
 | scalp | 3 | 100% | +6.5 | +19.5 | +0.975 | 0 |
+| breakout | 3 | 33% | -126.0 | -378.1 | -18.906 | 2 |
 
 ## Recent trades
 
 | Trade | Pair | Dir | Strategy | Open (UTC) | PnL bps | PnL USD |
 |---|---|---|---|---|---|---|
-| ETHUSD-Sell-1793763000000-scalp | ETHUSD | Sell | scalp | 2026-11-04T03:30 | +5.5 | +0.2750 |
-| EURJPY-Buy-1793770200000-meanrev | EURJPY | Buy | meanrev | 2026-11-04T05:30 | -2.0 | -0.1000 |
-| EURJPY-Buy-1793791800000-meanrev | EURJPY | Buy | meanrev | 2026-11-04T11:30 | -2.0 | -0.1000 |
 | BTCUSD-Sell-1793795400000-meanrev | BTCUSD | Sell | meanrev | 2026-11-04T12:30 | +20.5 | +1.0250 |
 | ETHUSD-Sell-1793795400000-meanrev | ETHUSD | Sell | meanrev | 2026-11-04T12:30 | +20.5 | +1.0250 |
 | AUDUSD-Sell-1793799900000-meanrev | AUDUSD | Sell | meanrev | 2026-11-04T13:45 | +3.1 | +0.1529 |
@@ -48,3 +46,6 @@ Updated: 2026-11-05T19:32:30.662774+00:00
 | ETHUSD-Sell-1793865600000-meanrev | ETHUSD | Sell | meanrev | 2026-11-05T08:00 | +20.5 | +1.0250 |
 | EURJPY-Sell-1793875500000-meanrev | EURJPY | Sell | meanrev | 2026-11-05T10:45 | -2.0 | -0.1000 |
 | EURJPY-Sell-1793887200000-meanrev | EURJPY | Sell | meanrev | 2026-11-05T14:00 | -2.0 | -0.1000 |
+| AUDJPY-Sell-1793893500000-breakout | AUDJPY | Sell | breakout | 2026-11-05T15:45 | +21.9 | +1.0936 |
+| BTCUSD-Sell-1793893500000-breakout | BTCUSD | Sell | breakout | 2026-11-05T15:45 | -200.0 | -10.0000 |
+| ETHUSD-Sell-1793893500000-breakout | ETHUSD | Sell | breakout | 2026-11-05T15:45 | -200.0 | -10.0000 |
