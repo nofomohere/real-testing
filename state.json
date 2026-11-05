@@ -1,19 +1,7 @@
 {
  "version": 3,
  "clusters_seen": {},
- "active": {
-  "AUDJPY-Buy-1793909700000-meanrev": {
-   "pair": "AUDJPY",
-   "fade_dir": "Buy",
-   "source": "meanrev",
-   "open_t": 1793909700000,
-   "entry_px": 110.103,
-   "exit_t": 1793916900000,
-   "tp_bps": 25.0,
-   "sl_bps": 50.0,
-   "cost_bps": 2.5
-  }
- },
+ "active": {},
  "mfb_last": {
   "EURUSD|Sell": 1793882732931,
   "EURCAD|Sell": 1793882732931,
@@ -63,7 +51,8 @@
   "sentiment_follow|ETHUSD": 1793864884698,
   "breakout|AUDJPY": 1793913651358,
   "breakout|BTCUSD": 1793913651358,
-  "breakout|ETHUSD": 1793913651358
+  "breakout|ETHUSD": 1793913651358,
+  "meanrev|AUDJPY": 1793922145138
  },
  "seen_sigs": {
   "sentiment|EURUSD|Sell|1.11809": true,
@@ -112,5 +101,5 @@
   "breakout|ETHUSD|Sell|2238.06": true,
   "meanrev|AUDJPY|Buy|110.103": true
  },
- "price_last": 1793915825887
+ "price_last": 1793918545138
 }
