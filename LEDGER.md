@@ -1,25 +1,23 @@
 # Fade Bot — paper ledger
 
-Updated: 2026-11-05T05:47:57.855760+00:00
+Updated: 2026-11-05T06:49:25.666938+00:00
 
-- Trades: **33** | Avg: **-1.9 bps** | Win: **61%** | Cum: **-61.8 bps**
-- Money sim ($10.0 @ 50x): **-3.089 USD** | Liquidations: **0** | Open: **2**
+- Trades: **35** | Avg: **-5.6 bps** | Win: **60%** | Cum: **-197.5 bps**
+- Money sim ($10.0 @ 50x): **-9.876 USD** | Liquidations: **1** | Open: **1**
 
 ## Results per strategy
 
 | Strategy | Trades | Win% | Avg bps | Cum bps | Cum USD | Liqs |
 |---|---|---|---|---|---|---|
 | meanrev | 18 | 61% | -3.1 | -55.3 | -2.764 | 0 |
-| sentiment | 6 | 50% | -0.6 | -3.4 | -0.171 | 0 |
-| sentiment_follow | 6 | 50% | -3.8 | -22.6 | -1.129 | 0 |
+| sentiment | 7 | 57% | +8.7 | +60.8 | +3.042 | 0 |
+| sentiment_follow | 7 | 43% | -31.8 | -222.6 | -11.129 | 1 |
 | scalp | 3 | 100% | +6.5 | +19.5 | +0.975 | 0 |
 
 ## Recent trades
 
 | Trade | Pair | Dir | Strategy | Open (UTC) | PnL bps | PnL USD |
 |---|---|---|---|---|---|---|
-| EURCAD-Sell-1793708100000-sentiment | EURCAD | Sell | sentiment | 2026-11-03T12:15 | -39.3 | -1.9670 |
-| EURCAD-Buy-1793708100000-sentiment_follow | EURCAD | Buy | sentiment_follow | 2026-11-03T12:15 | +33.3 | +1.6670 |
 | EURGBP-Sell-1793708100000-sentiment | EURGBP | Sell | sentiment | 2026-11-03T12:15 | -13.2 | -0.6579 |
 | EURGBP-Buy-1793708100000-sentiment_follow | EURGBP | Buy | sentiment_follow | 2026-11-03T12:15 | +9.2 | +0.4579 |
 | ETHUSD-Sell-1793734200000-meanrev | ETHUSD | Sell | meanrev | 2026-11-03T19:30 | +20.5 | +1.0250 |
@@ -48,3 +46,5 @@ Updated: 2026-11-05T05:47:57.855760+00:00
 | EURJPY-Sell-1793847600000-meanrev | EURJPY | Sell | meanrev | 2026-11-05T03:00 | -2.0 | -0.1000 |
 | BTCUSD-Sell-1793847600000-meanrev | BTCUSD | Sell | meanrev | 2026-11-05T03:00 | +5.8 | +0.2881 |
 | ETHUSD-Sell-1793850300000-meanrev | ETHUSD | Sell | meanrev | 2026-11-05T03:45 | +20.5 | +1.0250 |
+| ETHUSD-Sell-1793831400000-sentiment | ETHUSD | Sell | sentiment | 2026-11-04T22:30 | +64.3 | +3.2129 |
+| ETHUSD-Buy-1793831400000-sentiment_follow | ETHUSD | Buy | sentiment_follow | 2026-11-04T22:30 | -200.0 | -10.0000 |
