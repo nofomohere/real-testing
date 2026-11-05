@@ -1,7 +1,19 @@
 {
  "version": 3,
  "clusters_seen": {},
- "active": {},
+ "active": {
+  "EURAUD-Buy-1793920500000-breakout": {
+   "pair": "EURAUD",
+   "fade_dir": "Buy",
+   "source": "breakout",
+   "open_t": 1793920500000,
+   "entry_px": 1.62081,
+   "exit_t": 1793934900000,
+   "tp_bps": 40.0,
+   "sl_bps": 20.0,
+   "cost_bps": 3.0
+  }
+ },
  "mfb_last": {
   "EURUSD|Sell": 1793882732931,
   "EURCAD|Sell": 1793882732931,
@@ -99,7 +111,8 @@
   "breakout|AUDJPY|Sell|110.372": true,
   "breakout|BTCUSD|Sell|75536.3": true,
   "breakout|ETHUSD|Sell|2238.06": true,
-  "meanrev|AUDJPY|Buy|110.103": true
+  "meanrev|AUDJPY|Buy|110.103": true,
+  "breakout|EURAUD|Buy|1.62081": true
  },
- "price_last": 1793918545138
+ "price_last": 1793921290952
 }
