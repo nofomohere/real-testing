@@ -67,6 +67,17 @@
    "tp_bps": null,
    "sl_bps": null,
    "cost_bps": 2.0
+  },
+  "EURJPY-Sell-1793887200000-meanrev": {
+   "pair": "EURJPY",
+   "fade_dir": "Sell",
+   "source": "meanrev",
+   "open_t": 1793887200000,
+   "entry_px": 177.6,
+   "exit_t": 1793894400000,
+   "tp_bps": 25.0,
+   "sl_bps": 50.0,
+   "cost_bps": 2.0
   }
  },
  "mfb_last": {
@@ -159,5 +170,5 @@
   "sentiment|EURGBP|Sell|0.83315": true,
   "sentiment_follow|EURGBP|Buy|0.83315": true
  },
- "price_last": 1793882732931
+ "price_last": 1793887235017
 }
