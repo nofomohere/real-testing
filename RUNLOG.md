@@ -310,3 +310,28 @@
 2026-11-06 02:24 | CLOSE BTCUSD-Buy-1793923200000-meanrev reason=time pnl=-19.7bps
 2026-11-06 02:24 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=5 new=0 closed=2
 2026-11-06 02:24 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-06 03:13 | tg getMe error: HTTP Error 401: Unauthorized
+2026-11-06 03:16 | price NZDUSD: no fresh source (stale/offline)
+2026-11-06 03:16 | price GBPJPY: no fresh source (stale/offline)
+2026-11-06 03:16 | price AUDCAD: no fresh source (stale/offline)
+2026-11-06 03:16 | price XAUUSD: no fresh source (stale/offline)
+2026-11-06 03:16 | price GBPAUD: no fresh source (stale/offline)
+2026-11-06 03:16 | price GBPCAD: no fresh source (stale/offline)
+2026-11-06 03:16 | price EURTRY: no fresh source (stale/offline)
+2026-11-06 03:16 | price USDTRY: no fresh source (stale/offline)
+2026-11-06 03:16 | price USDZAR: no fresh source (stale/offline)
+2026-11-06 03:16 | price EURNOK: no fresh source (stale/offline)
+2026-11-06 03:16 | price USDNOK: no fresh source (stale/offline)
+2026-11-06 03:16 | price US30: no fresh source (stale/offline)
+2026-11-06 03:16 | price NAS100: no fresh source (stale/offline)
+2026-11-06 03:16 | price SPX500: no fresh source (stale/offline)
+2026-11-06 03:16 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-06 03:16 | OPEN EURAUD-Sell-1793934900000-meanrev Sell @ 1.6201
+2026-11-06 03:16 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-06 03:16 | CLOSE EURAUD-Buy-1793920500000-breakout reason=time pnl=-7.4bps
+2026-11-06 03:17 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-06 03:17 | CLOSE EURJPY-Sell-1793926800000-meanrev reason=time pnl=-2.0bps
+2026-11-06 03:17 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-06 03:17 | CLOSE ETHUSD-Buy-1793926800000-meanrev reason=stop pnl=-54.5bps
+2026-11-06 03:17 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=4 new=1 closed=3
+2026-11-06 03:17 | tg sendMessage error: HTTP Error 401: Unauthorized
