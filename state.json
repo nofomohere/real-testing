@@ -68,28 +68,6 @@
    "sl_bps": null,
    "cost_bps": 2.0
   },
-  "EURJPY-Buy-1793989800000-meanrev": {
-   "pair": "EURJPY",
-   "fade_dir": "Buy",
-   "source": "meanrev",
-   "open_t": 1793989800000,
-   "entry_px": 177.306,
-   "exit_t": 1793997000000,
-   "tp_bps": 25.0,
-   "sl_bps": 50.0,
-   "cost_bps": 2.0
-  },
-  "AUDJPY-Buy-1793989800000-meanrev": {
-   "pair": "AUDJPY",
-   "fade_dir": "Buy",
-   "source": "meanrev",
-   "open_t": 1793989800000,
-   "entry_px": 108.909,
-   "exit_t": 1793997000000,
-   "tp_bps": 25.0,
-   "sl_bps": 50.0,
-   "cost_bps": 2.5
-  },
   "USDJPY-Sell-1793996100000-meanrev": {
    "pair": "USDJPY",
    "fade_dir": "Sell",
@@ -100,6 +78,17 @@
    "tp_bps": 25.0,
    "sl_bps": 50.0,
    "cost_bps": 1.5
+  },
+  "EURAUD-Sell-1793998800000-meanrev": {
+   "pair": "EURAUD",
+   "fade_dir": "Sell",
+   "source": "meanrev",
+   "open_t": 1793998800000,
+   "entry_px": 1.6296,
+   "exit_t": 1794006000000,
+   "tp_bps": 25.0,
+   "sl_bps": 50.0,
+   "cost_bps": 3.0
   }
  },
  "mfb_last": {
@@ -132,7 +121,7 @@
   "EURJPY": 177.306,
   "AUDUSD": 0.68739,
   "USDJPY": 156.275,
-  "AUDJPY": 109.017,
+  "AUDJPY": 108.909,
   "EURAUD": 1.62533
  },
  "cooldown": {
@@ -146,7 +135,7 @@
   "meanrev|ETHUSD": 1793974630016,
   "scalp|BTCUSD": 1793770308433,
   "scalp|ETHUSD": 1793770308433,
-  "meanrev|EURJPY": 1793974630016,
+  "meanrev|EURJPY": 1794002715144,
   "meanrev|AUDUSD": 1793974630016,
   "scalp|USDJPY": 1793819926986,
   "sentiment|ETHUSD": 1793864884698,
@@ -154,7 +143,7 @@
   "breakout|AUDJPY": 1793913651358,
   "breakout|BTCUSD": 1793913651358,
   "breakout|ETHUSD": 1793913651358,
-  "meanrev|AUDJPY": 1793974630016,
+  "meanrev|AUDJPY": 1794002715144,
   "breakout|EURAUD": 1793938539017,
   "meanrev|EURAUD": 1793974630016,
   "scalp|EURJPY": 1793984779782
@@ -228,7 +217,8 @@
   "scalp|EURJPY|Sell|177.306": true,
   "meanrev|EURJPY|Buy|177.306": true,
   "meanrev|AUDJPY|Buy|108.909": true,
-  "meanrev|USDJPY|Sell|161.099": true
+  "meanrev|USDJPY|Sell|161.099": true,
+  "meanrev|EURAUD|Sell|1.6296": true
  },
- "price_last": 1793996317994
+ "price_last": 1793999115144
 }
