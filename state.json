@@ -67,17 +67,6 @@
    "tp_bps": null,
    "sl_bps": null,
    "cost_bps": 2.0
-  },
-  "EURJPY-Sell-1793978100000-scalp": {
-   "pair": "EURJPY",
-   "fade_dir": "Sell",
-   "source": "scalp",
-   "open_t": 1793978100000,
-   "entry_px": 177.306,
-   "exit_t": 1793979900000,
-   "tp_bps": 10.0,
-   "sl_bps": 25.0,
-   "cost_bps": 2.0
   }
  },
  "mfb_last": {
@@ -85,7 +74,7 @@
   "EURCAD|Sell": 1793971030016,
   "EURGBP|Sell": 1793971030016,
   "NZDUSD|Sell": 1793971030016,
-  "GBPAUD|Buy": 1793893876128,
+  "GBPAUD|Buy": 1793981179782,
   "ETHUSD|Sell": 1793832102153
  },
  "chat_id": 1192863557,
@@ -107,7 +96,7 @@
   "EURCAD": 1.572,
   "EURGBP": 0.83379,
   "ETHUSD": 2238.73,
-  "EURJPY": 180.892,
+  "EURJPY": 177.306,
   "AUDUSD": 0.68739,
   "USDJPY": 156.275,
   "AUDJPY": 109.017,
@@ -134,7 +123,8 @@
   "breakout|ETHUSD": 1793913651358,
   "meanrev|AUDJPY": 1793974630016,
   "breakout|EURAUD": 1793938539017,
-  "meanrev|EURAUD": 1793974630016
+  "meanrev|EURAUD": 1793974630016,
+  "scalp|EURJPY": 1793984779782
  },
  "seen_sigs": {
   "sentiment|EURUSD|Sell|1.11809": true,
@@ -204,5 +194,5 @@
   "sentiment_follow|EURGBP|Buy|0.83381": true,
   "scalp|EURJPY|Sell|177.306": true
  },
- "price_last": 1793978202488
+ "price_last": 1793981179782
 }
