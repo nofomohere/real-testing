@@ -81,7 +81,7 @@
  "tg_hello_sent": true,
  "alarm_sent": false,
  "auth_alert_sent": false,
- "status_last": 1793960665524,
+ "status_last": 1793975393089,
  "last_summary": "20261106",
  "last_update_id": 0,
  "scalp_last": {
@@ -191,5 +191,5 @@
   "sentiment|EURGBP|Sell|0.83381": true,
   "sentiment_follow|EURGBP|Buy|0.83381": true
  },
- "price_last": 1793971030016
+ "price_last": 1793975393089
 }
