@@ -2,17 +2,6 @@
  "version": 3,
  "clusters_seen": {},
  "active": {
-  "EURAUD-Sell-1793998800000-meanrev": {
-   "pair": "EURAUD",
-   "fade_dir": "Sell",
-   "source": "meanrev",
-   "open_t": 1793998800000,
-   "entry_px": 1.6296,
-   "exit_t": 1794006000000,
-   "tp_bps": 25.0,
-   "sl_bps": 50.0,
-   "cost_bps": 3.0
-  },
   "EURJPY-Buy-1794003300000-meanrev": {
    "pair": "EURJPY",
    "fade_dir": "Buy",
@@ -37,7 +26,7 @@
  "tg_hello_sent": true,
  "alarm_sent": false,
  "auth_alert_sent": false,
- "status_last": 1793989940709,
+ "status_last": 1794006410432,
  "last_summary": "20261106",
  "last_update_id": 0,
  "scalp_last": {
@@ -56,7 +45,7 @@
   "AUDUSD": 0.68739,
   "USDJPY": 161.099,
   "AUDJPY": 108.909,
-  "EURAUD": 1.62533
+  "EURAUD": 1.6296
  },
  "cooldown": {
   "meanrev|BTCUSD": 1793974630016,
@@ -79,7 +68,7 @@
   "breakout|ETHUSD": 1793913651358,
   "meanrev|AUDJPY": 1794002715144,
   "breakout|EURAUD": 1793938539017,
-  "meanrev|EURAUD": 1793974630016,
+  "meanrev|EURAUD": 1794010010432,
   "scalp|EURJPY": 1793984779782,
   "meanrev|USDJPY": 1794007468574
  },
@@ -155,5 +144,5 @@
   "meanrev|USDJPY|Sell|161.099": true,
   "meanrev|EURAUD|Sell|1.6296": true
  },
- "price_last": 1794003868574
+ "price_last": 1794006410432
 }
