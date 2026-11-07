@@ -14,7 +14,7 @@
  "tg_hello_sent": true,
  "alarm_sent": false,
  "auth_alert_sent": false,
- "status_last": 1794036657338,
+ "status_last": 1794052741895,
  "last_summary": "20261107",
  "last_update_id": 0,
  "scalp_last": {
@@ -132,5 +132,5 @@
   "meanrev|USDJPY|Sell|161.099": true,
   "meanrev|EURAUD|Sell|1.6296": true
  },
- "price_last": 1794050393153
+ "price_last": 1794052741895
 }
