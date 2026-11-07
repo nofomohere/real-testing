@@ -3,10 +3,10 @@
  "clusters_seen": {},
  "active": {},
  "mfb_last": {
-  "EURUSD|Sell": 1793971030016,
-  "EURCAD|Sell": 1793971030016,
-  "EURGBP|Sell": 1793971030016,
-  "NZDUSD|Sell": 1793971030016,
+  "EURUSD|Sell": 1794058634620,
+  "EURCAD|Sell": 1794058634620,
+  "EURGBP|Sell": 1794058634620,
+  "NZDUSD|Sell": 1794058634620,
   "GBPAUD|Buy": 1793981179782,
   "ETHUSD|Sell": 1793832102153
  },
@@ -132,5 +132,5 @@
   "meanrev|USDJPY|Sell|161.099": true,
   "meanrev|EURAUD|Sell|1.6296": true
  },
- "price_last": 1794055344241
+ "price_last": 1794058634620
 }
