@@ -7,7 +7,7 @@
   "EURCAD|Sell": 1794145438239,
   "EURGBP|Sell": 1794145438239,
   "NZDUSD|Sell": 1794145438239,
-  "GBPAUD|Buy": 1794068267748,
+  "GBPAUD|Buy": 1794154751250,
   "ETHUSD|Sell": 1793832102153
  },
  "chat_id": 1192863557,
@@ -132,5 +132,5 @@
   "meanrev|USDJPY|Sell|161.099": true,
   "meanrev|EURAUD|Sell|1.6296": true
  },
- "price_last": 1794152500680
+ "price_last": 1794154751250
 }
