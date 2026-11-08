@@ -1,9 +1,9 @@
 # Fade Bot — paper ledger
 
-Updated: 2026-11-08T23:13:43.704517+00:00
+Updated: 2026-11-08T23:47:56.246701+00:00
 
-- Trades: **78** | Avg: **-13.3 bps** | Win: **40%** | Cum: **-1037.0 bps**
-- Money sim ($10.0 @ 50x): **-51.851 USD** | Liquidations: **5** | Open: **2**
+- Trades: **80** | Avg: **-12.8 bps** | Win: **41%** | Cum: **-1026.0 bps**
+- Money sim ($10.0 @ 50x): **-51.301 USD** | Liquidations: **5** | Open: **0**
 
 ## Results per strategy
 
@@ -12,15 +12,13 @@ Updated: 2026-11-08T23:13:43.704517+00:00
 | meanrev | 44 | 36% | -1.9 | -84.2 | -4.210 | 0 |
 | sentiment | 13 | 46% | -11.8 | -153.6 | -7.677 | 1 |
 | sentiment_follow | 13 | 38% | -33.2 | -431.3 | -21.564 | 2 |
-| scalp | 4 | 75% | +4.4 | +17.5 | +0.875 | 0 |
+| scalp | 6 | 83% | +4.8 | +28.5 | +1.425 | 0 |
 | breakout | 4 | 25% | -96.4 | -385.5 | -19.275 | 2 |
 
 ## Recent trades
 
 | Trade | Pair | Dir | Strategy | Open (UTC) | PnL bps | PnL USD |
 |---|---|---|---|---|---|---|
-| EURGBP-Buy-1793882700000-sentiment_follow | EURGBP | Buy | sentiment_follow | 2026-11-05T12:45 | +5.4 | +0.2721 |
-| AUDJPY-Buy-1793909700000-meanrev | AUDJPY | Buy | meanrev | 2026-11-05T20:15 | -2.5 | -0.1250 |
 | AUDUSD-Buy-1793923200000-meanrev | AUDUSD | Buy | meanrev | 2026-11-06T00:00 | -14.6 | -0.7307 |
 | BTCUSD-Buy-1793923200000-meanrev | BTCUSD | Buy | meanrev | 2026-11-06T00:00 | -19.7 | -0.9842 |
 | EURAUD-Buy-1793920500000-breakout | EURAUD | Buy | breakout | 2026-11-05T23:15 | -7.4 | -0.3690 |
@@ -49,3 +47,5 @@ Updated: 2026-11-08T23:13:43.704517+00:00
 | USDJPY-Sell-1793996100000-meanrev | USDJPY | Sell | meanrev | 2026-11-06T20:15 | -1.5 | -0.0750 |
 | EURAUD-Sell-1793998800000-meanrev | EURAUD | Sell | meanrev | 2026-11-06T21:00 | -3.0 | -0.1500 |
 | EURJPY-Buy-1794003300000-meanrev | EURJPY | Buy | meanrev | 2026-11-06T22:15 | -2.0 | -0.1000 |
+| BTCUSD-Sell-1794178800000-scalp | BTCUSD | Sell | scalp | 2026-11-08T23:00 | +5.5 | +0.2750 |
+| ETHUSD-Sell-1794178800000-scalp | ETHUSD | Sell | scalp | 2026-11-08T23:00 | +5.5 | +0.2750 |
