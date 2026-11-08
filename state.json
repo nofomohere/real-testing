@@ -15,7 +15,7 @@
  "alarm_sent": false,
  "auth_alert_sent": false,
  "status_last": 1794084245174,
- "last_summary": "20261107",
+ "last_summary": "20261108",
  "last_update_id": 0,
  "scalp_last": {
   "BTCUSD": 1793763229772,
@@ -132,5 +132,5 @@
   "meanrev|USDJPY|Sell|161.099": true,
   "meanrev|EURAUD|Sell|1.6296": true
  },
- "price_last": 1794094903375
+ "price_last": 1794097053946
 }
