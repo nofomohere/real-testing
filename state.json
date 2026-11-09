@@ -45,6 +45,17 @@
    "tp_bps": 25.0,
    "sl_bps": 50.0,
    "cost_bps": 4.5
+  },
+  "AUDJPY-Buy-1794194100000-meanrev": {
+   "pair": "AUDJPY",
+   "fade_dir": "Buy",
+   "source": "meanrev",
+   "open_t": 1794194100000,
+   "entry_px": 109.017,
+   "exit_t": 1794201300000,
+   "tp_bps": 25.0,
+   "sl_bps": 50.0,
+   "cost_bps": 2.5
   }
  },
  "mfb_last": {
@@ -60,7 +71,7 @@
  "tg_hello_sent": true,
  "alarm_sent": false,
  "auth_alert_sent": false,
- "status_last": 1794179532765,
+ "status_last": 1794194890725,
  "last_summary": "20261109",
  "last_update_id": 0,
  "scalp_last": {
@@ -184,5 +195,5 @@
   "meanrev|USDJPY|Sell|161.089": true,
   "meanrev|ETHUSD|Buy|2153.3": true
  },
- "price_last": 1794191744952
+ "price_last": 1794194890725
 }
