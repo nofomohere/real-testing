@@ -1,19 +1,7 @@
 {
  "version": 3,
  "clusters_seen": {},
- "active": {
-  "USDJPY-Buy-1794211200000-meanrev": {
-   "pair": "USDJPY",
-   "fade_dir": "Buy",
-   "source": "meanrev",
-   "open_t": 1794211200000,
-   "entry_px": 157.37,
-   "exit_t": 1794218400000,
-   "tp_bps": 25.0,
-   "sl_bps": 50.0,
-   "cost_bps": 1.5
-  }
- },
+ "active": {},
  "mfb_last": {
   "EURUSD|Sell": 1794145438239,
   "EURCAD|Sell": 1794145438239,
@@ -156,5 +144,5 @@
   "meanrev|BTCUSD|Buy|74931.7": true,
   "meanrev|USDJPY|Buy|157.37": true
  },
- "price_last": 1794215569749
+ "price_last": 1794219080623
 }
