@@ -23,6 +23,17 @@
    "tp_bps": null,
    "sl_bps": null,
    "cost_bps": 1.5
+  },
+  "USDJPY-Buy-1794211200000-meanrev": {
+   "pair": "USDJPY",
+   "fade_dir": "Buy",
+   "source": "meanrev",
+   "open_t": 1794211200000,
+   "entry_px": 157.37,
+   "exit_t": 1794218400000,
+   "tp_bps": 25.0,
+   "sl_bps": 50.0,
+   "cost_bps": 1.5
   }
  },
  "mfb_last": {
@@ -38,7 +49,7 @@
  "tg_hello_sent": true,
  "alarm_sent": false,
  "auth_alert_sent": false,
- "status_last": 1794194890725,
+ "status_last": 1794211472431,
  "last_summary": "20261109",
  "last_update_id": 0,
  "scalp_last": {
@@ -161,7 +172,8 @@
   "sentiment_follow|USDCAD|Sell|1.41261": true,
   "meanrev|USDJPY|Sell|161.089": true,
   "meanrev|ETHUSD|Buy|2153.3": true,
-  "meanrev|BTCUSD|Buy|74931.7": true
+  "meanrev|BTCUSD|Buy|74931.7": true,
+  "meanrev|USDJPY|Buy|157.37": true
  },
- "price_last": 1794206503859
+ "price_last": 1794211472431
 }
