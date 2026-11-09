@@ -24,17 +24,6 @@
    "sl_bps": null,
    "cost_bps": 1.5
   },
-  "AUDJPY-Buy-1794194100000-meanrev": {
-   "pair": "AUDJPY",
-   "fade_dir": "Buy",
-   "source": "meanrev",
-   "open_t": 1794194100000,
-   "entry_px": 109.017,
-   "exit_t": 1794201300000,
-   "tp_bps": 25.0,
-   "sl_bps": 50.0,
-   "cost_bps": 2.5
-  },
   "BTCUSD-Buy-1794198600000-meanrev": {
    "pair": "BTCUSD",
    "fade_dir": "Buy",
@@ -78,7 +67,7 @@
   "EURJPY": 177.306,
   "AUDUSD": 0.68739,
   "USDJPY": 157.37,
-  "AUDJPY": 108.909,
+  "AUDJPY": 109.017,
   "EURAUD": 1.6296
  },
  "cooldown": {
@@ -100,7 +89,7 @@
   "breakout|AUDJPY": 1793913651358,
   "breakout|BTCUSD": 1793913651358,
   "breakout|ETHUSD": 1793913651358,
-  "meanrev|AUDJPY": 1794002715144,
+  "meanrev|AUDJPY": 1794206259064,
   "breakout|EURAUD": 1793938539017,
   "meanrev|EURAUD": 1794010010432,
   "scalp|EURJPY": 1793984779782,
@@ -185,5 +174,5 @@
   "meanrev|ETHUSD|Buy|2153.3": true,
   "meanrev|BTCUSD|Buy|74931.7": true
  },
- "price_last": 1794198850544
+ "price_last": 1794202659064
 }
