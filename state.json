@@ -1,7 +1,30 @@
 {
  "version": 3,
  "clusters_seen": {},
- "active": {},
+ "active": {
+  "EURCAD-Sell-1794266100000-meanrev": {
+   "pair": "EURCAD",
+   "fade_dir": "Sell",
+   "source": "meanrev",
+   "open_t": 1794266100000,
+   "entry_px": 1.59259,
+   "exit_t": 1794273300000,
+   "tp_bps": 25.0,
+   "sl_bps": 50.0,
+   "cost_bps": 3.0
+  },
+  "EURJPY-Buy-1794266100000-scalp": {
+   "pair": "EURJPY",
+   "fade_dir": "Buy",
+   "source": "scalp",
+   "open_t": 1794266100000,
+   "entry_px": 176.427,
+   "exit_t": 1794267900000,
+   "tp_bps": 10.0,
+   "sl_bps": 25.0,
+   "cost_bps": 2.0
+  }
+ },
  "mfb_last": {
   "EURUSD|Sell": 1794234275158,
   "EURCAD|Sell": 1794145438239,
@@ -23,7 +46,7 @@
   "BTCUSD": 1794241695242,
   "ETHUSD": 1794241695242,
   "USDJPY": 1793813269979,
-  "EURJPY": 1793978202488
+  "EURJPY": 1794266382177
  },
  "last_close": {
   "BTCUSD": 74736.4,
@@ -154,7 +177,9 @@
   "meanrev|ETHUSD|Buy|2117.49": true,
   "scalp|BTCUSD|Buy|74706.9": true,
   "scalp|ETHUSD|Buy|2123.07": true,
-  "meanrev|ETHUSD|Buy|2123.05": true
+  "meanrev|ETHUSD|Buy|2123.05": true,
+  "meanrev|EURCAD|Sell|1.59259": true,
+  "scalp|EURJPY|Buy|176.427": true
  },
- "price_last": 1794263672039
+ "price_last": 1794266382177
 }
