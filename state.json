@@ -61,7 +61,7 @@
  "tg_hello_sent": true,
  "alarm_sent": false,
  "auth_alert_sent": false,
- "status_last": 1794245436021,
+ "status_last": 1794261200724,
  "last_summary": "20261109",
  "last_update_id": 0,
  "scalp_last": {
@@ -201,5 +201,5 @@
   "scalp|ETHUSD|Buy|2123.07": true,
   "meanrev|ETHUSD|Buy|2123.05": true
  },
- "price_last": 1794258387576
+ "price_last": 1794261200724
 }
