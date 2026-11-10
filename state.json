@@ -40,7 +40,7 @@
  "tg_hello_sent": true,
  "alarm_sent": false,
  "auth_alert_sent": false,
- "status_last": 1794278280512,
+ "status_last": 1794296254246,
  "last_summary": "20261110",
  "last_update_id": 0,
  "scalp_last": {
@@ -186,5 +186,5 @@
   "sentiment_follow|USDCAD|Sell|1.41394": true,
   "meanrev|AUDJPY|Sell|109.791": true
  },
- "price_last": 1794291506227
+ "price_last": 1794296254246
 }
