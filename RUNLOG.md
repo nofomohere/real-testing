@@ -314,3 +314,30 @@
 2026-11-10 21:33 | price SPX500: no fresh source (stale/offline)
 2026-11-10 21:33 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=9 new=0 closed=0
 2026-11-10 21:33 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-10 22:17 | tg getMe error: HTTP Error 401: Unauthorized
+2026-11-10 22:20 | price NZDUSD: no fresh source (stale/offline)
+2026-11-10 22:20 | price GBPJPY: no fresh source (stale/offline)
+2026-11-10 22:20 | price AUDCAD: no fresh source (stale/offline)
+2026-11-10 22:20 | price XAUUSD: no fresh source (stale/offline)
+2026-11-10 22:20 | price GBPAUD: no fresh source (stale/offline)
+2026-11-10 22:20 | price GBPCAD: no fresh source (stale/offline)
+2026-11-10 22:20 | price EURTRY: no fresh source (stale/offline)
+2026-11-10 22:20 | price USDTRY: no fresh source (stale/offline)
+2026-11-10 22:20 | price USDZAR: no fresh source (stale/offline)
+2026-11-10 22:20 | price EURNOK: no fresh source (stale/offline)
+2026-11-10 22:20 | price USDNOK: no fresh source (stale/offline)
+2026-11-10 22:20 | price US30: no fresh source (stale/offline)
+2026-11-10 22:20 | price NAS100: no fresh source (stale/offline)
+2026-11-10 22:20 | price SPX500: no fresh source (stale/offline)
+2026-11-10 22:20 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-10 22:20 | CLOSE GBPUSD-Buy-1794340800000-meanrev reason=time pnl=-0.9bps
+2026-11-10 22:20 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-10 22:20 | CLOSE AUDUSD-Buy-1794340800000-meanrev reason=time pnl=-3.2bps
+2026-11-10 22:20 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-10 22:20 | CLOSE EURCAD-Buy-1794340800000-meanrev reason=time pnl=-3.0bps
+2026-11-10 22:20 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-10 22:20 | CLOSE BTCUSD-Buy-1794340800000-meanrev reason=tp pnl=+20.5bps
+2026-11-10 22:20 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-10 22:20 | CLOSE ETHUSD-Buy-1794340800000-meanrev reason=tp pnl=+20.5bps
+2026-11-10 22:20 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=9 new=0 closed=5
+2026-11-10 22:20 | tg sendMessage error: HTTP Error 401: Unauthorized
