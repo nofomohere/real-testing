@@ -1,17 +1,17 @@
 # Fade Bot — paper ledger
 
-Updated: 2026-11-10T22:20:13.531482+00:00
+Updated: 2026-11-10T23:02:45.246454+00:00
 
-- Trades: **111** | Avg: **-10.5 bps** | Win: **43%** | Cum: **-1168.2 bps**
-- Money sim ($10.0 @ 50x): **-58.409 USD** | Liquidations: **6** | Open: **4**
+- Trades: **115** | Avg: **-10.2 bps** | Win: **43%** | Cum: **-1175.2 bps**
+- Money sim ($10.0 @ 50x): **-58.759 USD** | Liquidations: **6** | Open: **1**
 
 ## Results per strategy
 
 | Strategy | Trades | Win% | Avg bps | Cum bps | Cum USD | Liqs |
 |---|---|---|---|---|---|---|
 | meanrev | 64 | 39% | -3.5 | -222.3 | -11.117 | 1 |
-| sentiment | 17 | 35% | -13.1 | -222.5 | -11.126 | 1 |
-| sentiment_follow | 17 | 53% | -22.1 | -375.3 | -18.765 | 2 |
+| sentiment | 19 | 37% | -11.9 | -225.5 | -11.272 | 1 |
+| sentiment_follow | 19 | 53% | -20.0 | -379.4 | -18.969 | 2 |
 | scalp | 9 | 78% | +4.2 | +37.5 | +1.875 | 0 |
 | breakout | 4 | 25% | -96.4 | -385.5 | -19.275 | 2 |
 
@@ -19,10 +19,6 @@ Updated: 2026-11-10T22:20:13.531482+00:00
 
 | Trade | Pair | Dir | Strategy | Open (UTC) | PnL bps | PnL USD |
 |---|---|---|---|---|---|---|
-| ETHUSD-Buy-1794191400000-meanrev | ETHUSD | Buy | meanrev | 2026-11-09T02:30 | -54.5 | -2.7250 |
-| AUDJPY-Buy-1794194100000-meanrev | AUDJPY | Buy | meanrev | 2026-11-09T03:15 | -2.5 | -0.1250 |
-| BTCUSD-Buy-1794198600000-meanrev | BTCUSD | Buy | meanrev | 2026-11-09T04:30 | -54.5 | -2.7250 |
-| USDCAD-Buy-1794183300000-sentiment | USDCAD | Buy | sentiment | 2026-11-09T00:15 | -20.6 | -1.0307 |
 | USDCAD-Sell-1794183300000-sentiment_follow | USDCAD | Sell | sentiment_follow | 2026-11-09T00:15 | +17.6 | +0.8807 |
 | USDJPY-Buy-1794211200000-meanrev | USDJPY | Buy | meanrev | 2026-11-09T08:00 | -1.5 | -0.0750 |
 | BTCUSD-Buy-1794222000000-meanrev | BTCUSD | Buy | meanrev | 2026-11-09T11:00 | +20.5 | +1.0250 |
@@ -49,3 +45,7 @@ Updated: 2026-11-10T22:20:13.531482+00:00
 | EURCAD-Buy-1794340800000-meanrev | EURCAD | Buy | meanrev | 2026-11-10T20:00 | -3.0 | -0.1500 |
 | BTCUSD-Buy-1794340800000-meanrev | BTCUSD | Buy | meanrev | 2026-11-10T20:00 | +20.5 | +1.0250 |
 | ETHUSD-Buy-1794340800000-meanrev | ETHUSD | Buy | meanrev | 2026-11-10T20:00 | +20.5 | +1.0250 |
+| EURUSD-Sell-1794322800000-sentiment | EURUSD | Sell | sentiment | 2026-11-10T15:00 | +9.9 | +0.4977 |
+| EURUSD-Buy-1794322800000-sentiment_follow | EURUSD | Buy | sentiment_follow | 2026-11-10T15:00 | -12.9 | -0.6477 |
+| EURGBP-Sell-1794322800000-sentiment | EURGBP | Sell | sentiment | 2026-11-10T15:00 | -12.9 | -0.6444 |
+| EURGBP-Buy-1794322800000-sentiment_follow | EURGBP | Buy | sentiment_follow | 2026-11-10T15:00 | +8.9 | +0.4444 |

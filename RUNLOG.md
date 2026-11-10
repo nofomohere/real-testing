@@ -341,3 +341,28 @@
 2026-11-10 22:20 | CLOSE ETHUSD-Buy-1794340800000-meanrev reason=tp pnl=+20.5bps
 2026-11-10 22:20 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=9 new=0 closed=5
 2026-11-10 22:20 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-10 22:59 | tg getMe error: HTTP Error 401: Unauthorized
+2026-11-10 23:02 | price NZDUSD: no fresh source (stale/offline)
+2026-11-10 23:02 | price GBPJPY: no fresh source (stale/offline)
+2026-11-10 23:02 | price AUDCAD: no fresh source (stale/offline)
+2026-11-10 23:02 | price XAUUSD: no fresh source (stale/offline)
+2026-11-10 23:02 | price GBPAUD: no fresh source (stale/offline)
+2026-11-10 23:02 | price GBPCAD: no fresh source (stale/offline)
+2026-11-10 23:02 | price EURTRY: no fresh source (stale/offline)
+2026-11-10 23:02 | price USDTRY: no fresh source (stale/offline)
+2026-11-10 23:02 | price USDZAR: no fresh source (stale/offline)
+2026-11-10 23:02 | price EURNOK: no fresh source (stale/offline)
+2026-11-10 23:02 | price USDNOK: no fresh source (stale/offline)
+2026-11-10 23:02 | price US30: no fresh source (stale/offline)
+2026-11-10 23:02 | price NAS100: no fresh source (stale/offline)
+2026-11-10 23:02 | price SPX500: no fresh source (stale/offline)
+2026-11-10 23:02 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-10 23:02 | CLOSE EURUSD-Sell-1794322800000-sentiment reason=time pnl=+10.0bps
+2026-11-10 23:02 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-10 23:02 | CLOSE EURUSD-Buy-1794322800000-sentiment_follow reason=time pnl=-13.0bps
+2026-11-10 23:02 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-10 23:02 | CLOSE EURGBP-Sell-1794322800000-sentiment reason=time pnl=-12.9bps
+2026-11-10 23:02 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-10 23:02 | CLOSE EURGBP-Buy-1794322800000-sentiment_follow reason=time pnl=+8.9bps
+2026-11-10 23:02 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=5 new=0 closed=4
+2026-11-10 23:02 | tg sendMessage error: HTTP Error 401: Unauthorized
