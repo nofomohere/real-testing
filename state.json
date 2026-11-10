@@ -1,30 +1,7 @@
 {
  "version": 3,
  "clusters_seen": {},
- "active": {
-  "USDCAD-Buy-1794271500000-sentiment": {
-   "pair": "USDCAD",
-   "fade_dir": "Buy",
-   "source": "sentiment",
-   "open_t": 1794271500000,
-   "entry_px": 1.41394,
-   "exit_t": 1794300300000,
-   "tp_bps": null,
-   "sl_bps": null,
-   "cost_bps": 1.5
-  },
-  "USDCAD-Sell-1794271500000-sentiment_follow": {
-   "pair": "USDCAD",
-   "fade_dir": "Sell",
-   "source": "sentiment_follow",
-   "open_t": 1794271500000,
-   "entry_px": 1.41394,
-   "exit_t": 1794300300000,
-   "tp_bps": null,
-   "sl_bps": null,
-   "cost_bps": 1.5
-  }
- },
+ "active": {},
  "mfb_last": {
   "EURUSD|Sell": 1794234275158,
   "EURCAD|Sell": 1794145438239,
@@ -60,7 +37,7 @@
   "USDJPY": 157.37,
   "AUDJPY": 109.791,
   "EURAUD": 1.6296,
-  "USDCAD": 1.40965
+  "USDCAD": 1.41352
  },
  "cooldown": {
   "meanrev|BTCUSD": 1794245295242,
@@ -86,8 +63,8 @@
   "meanrev|EURAUD": 1794010010432,
   "scalp|EURJPY": 1794272282975,
   "meanrev|USDJPY": 1794202450544,
-  "sentiment|USDCAD": 1794219169749,
-  "sentiment_follow|USDCAD": 1794219169749,
+  "sentiment|USDCAD": 1794306601123,
+  "sentiment_follow|USDCAD": 1794306601123,
   "meanrev|EURCAD": 1794291746918
  },
  "seen_sigs": {
@@ -186,5 +163,5 @@
   "sentiment_follow|USDCAD|Sell|1.41394": true,
   "meanrev|AUDJPY|Sell|109.791": true
  },
- "price_last": 1794299741495
+ "price_last": 1794303001123
 }
