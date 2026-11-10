@@ -2,17 +2,6 @@
  "version": 3,
  "clusters_seen": {},
  "active": {
-  "EURCAD-Sell-1794266100000-meanrev": {
-   "pair": "EURCAD",
-   "fade_dir": "Sell",
-   "source": "meanrev",
-   "open_t": 1794266100000,
-   "entry_px": 1.59259,
-   "exit_t": 1794273300000,
-   "tp_bps": 25.0,
-   "sl_bps": 50.0,
-   "cost_bps": 3.0
-  },
   "USDCAD-Buy-1794271500000-sentiment": {
    "pair": "USDCAD",
    "fade_dir": "Buy",
@@ -63,7 +52,7 @@
  "last_close": {
   "BTCUSD": 74736.4,
   "EURUSD": 1.1219,
-  "EURCAD": 1.5744,
+  "EURCAD": 1.59259,
   "EURGBP": 0.83522,
   "ETHUSD": 2129.23,
   "EURJPY": 177.363,
@@ -98,7 +87,8 @@
   "scalp|EURJPY": 1794272282975,
   "meanrev|USDJPY": 1794202450544,
   "sentiment|USDCAD": 1794219169749,
-  "sentiment_follow|USDCAD": 1794219169749
+  "sentiment_follow|USDCAD": 1794219169749,
+  "meanrev|EURCAD": 1794279015839
  },
  "seen_sigs": {
   "sentiment|EURUSD|Sell|1.11809": true,
@@ -195,5 +185,5 @@
   "sentiment|USDCAD|Buy|1.41394": true,
   "sentiment_follow|USDCAD|Sell|1.41394": true
  },
- "price_last": 1794271590080
+ "price_last": 1794275415839
 }
