@@ -52,7 +52,7 @@
   "EURCAD|Sell": 1794145438239,
   "EURGBP|Sell": 1794323409997,
   "NZDUSD|Sell": 1794234275158,
-  "GBPAUD|Buy": 1794241695242,
+  "GBPAUD|Buy": 1794328993345,
   "ETHUSD|Sell": 1793832102153,
   "USDCAD|Buy": 1794271590080,
   "GBPCAD|Buy": 1794255323064,
@@ -62,7 +62,7 @@
  "tg_hello_sent": true,
  "alarm_sent": false,
  "auth_alert_sent": false,
- "status_last": 1794312529451,
+ "status_last": 1794328993345,
  "last_summary": "20261110",
  "last_update_id": 0,
  "scalp_last": {
@@ -213,5 +213,5 @@
   "sentiment|EURGBP|Sell|0.83582": true,
   "sentiment_follow|EURGBP|Buy|0.83582": true
  },
- "price_last": 1794326193167
+ "price_last": 1794328993345
 }
