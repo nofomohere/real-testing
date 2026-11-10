@@ -1,15 +1,15 @@
 # Fade Bot — paper ledger
 
-Updated: 2026-11-10T19:21:58.541728+00:00
+Updated: 2026-11-10T20:13:16.225357+00:00
 
-- Trades: **105** | Avg: **-11.7 bps** | Win: **43%** | Cum: **-1225.5 bps**
-- Money sim ($10.0 @ 50x): **-61.276 USD** | Liquidations: **6** | Open: **5**
+- Trades: **106** | Avg: **-11.3 bps** | Win: **43%** | Cum: **-1202.0 bps**
+- Money sim ($10.0 @ 50x): **-60.101 USD** | Liquidations: **6** | Open: **9**
 
 ## Results per strategy
 
 | Strategy | Trades | Win% | Avg bps | Cum bps | Cum USD | Liqs |
 |---|---|---|---|---|---|---|
-| meanrev | 58 | 38% | -4.8 | -279.7 | -13.985 | 1 |
+| meanrev | 59 | 39% | -4.3 | -256.2 | -12.810 | 1 |
 | sentiment | 17 | 35% | -13.1 | -222.5 | -11.126 | 1 |
 | sentiment_follow | 17 | 53% | -22.1 | -375.3 | -18.765 | 2 |
 | scalp | 9 | 78% | +4.2 | +37.5 | +1.875 | 0 |
@@ -19,7 +19,6 @@ Updated: 2026-11-10T19:21:58.541728+00:00
 
 | Trade | Pair | Dir | Strategy | Open (UTC) | PnL bps | PnL USD |
 |---|---|---|---|---|---|---|
-| USDJPY-Sell-1793996100000-meanrev | USDJPY | Sell | meanrev | 2026-11-06T20:15 | -1.5 | -0.0750 |
 | EURAUD-Sell-1793998800000-meanrev | EURAUD | Sell | meanrev | 2026-11-06T21:00 | -3.0 | -0.1500 |
 | EURJPY-Buy-1794003300000-meanrev | EURJPY | Buy | meanrev | 2026-11-06T22:15 | -2.0 | -0.1000 |
 | BTCUSD-Sell-1794178800000-scalp | BTCUSD | Sell | scalp | 2026-11-08T23:00 | +5.5 | +0.2750 |
@@ -49,3 +48,4 @@ Updated: 2026-11-10T19:21:58.541728+00:00
 | USDCAD-Buy-1794271500000-sentiment | USDCAD | Buy | sentiment | 2026-11-10T00:45 | -13.2 | -0.6620 |
 | USDCAD-Sell-1794271500000-sentiment_follow | USDCAD | Sell | sentiment_follow | 2026-11-10T00:45 | +10.2 | +0.5120 |
 | BTCUSD-Buy-1794315600000-meanrev | BTCUSD | Buy | meanrev | 2026-11-10T13:00 | -200.0 | -10.0000 |
+| USDJPY-Buy-1794331800000-meanrev | USDJPY | Buy | meanrev | 2026-11-10T17:30 | +23.5 | +1.1750 |
