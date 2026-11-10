@@ -1,6 +1,6 @@
 # Fade Bot — paper ledger
 
-Updated: 2026-11-10T17:33:22.418867+00:00
+Updated: 2026-11-10T18:19:23.667266+00:00
 
 - Trades: **105** | Avg: **-11.7 bps** | Win: **43%** | Cum: **-1225.5 bps**
 - Money sim ($10.0 @ 50x): **-61.276 USD** | Liquidations: **6** | Open: **5**
