@@ -45,6 +45,17 @@
    "tp_bps": null,
    "sl_bps": null,
    "cost_bps": 2.0
+  },
+  "EURCAD-Sell-1794423600000-meanrev": {
+   "pair": "EURCAD",
+   "fade_dir": "Sell",
+   "source": "meanrev",
+   "open_t": 1794423600000,
+   "entry_px": 1.5817,
+   "exit_t": 1794430800000,
+   "tp_bps": 25.0,
+   "sl_bps": 50.0,
+   "cost_bps": 3.0
   }
  },
  "mfb_last": {
@@ -62,7 +73,7 @@
  "tg_hello_sent": true,
  "alarm_sent": false,
  "auth_alert_sent": false,
- "status_last": 1794407535818,
+ "status_last": 1794423949353,
  "last_summary": "20261111",
  "last_update_id": 0,
  "scalp_last": {
@@ -237,5 +248,5 @@
   "sentiment|EURGBP|Sell|0.83525": true,
   "sentiment_follow|EURGBP|Buy|0.83525": true
  },
- "price_last": 1794420661781
+ "price_last": 1794423949353
 }
