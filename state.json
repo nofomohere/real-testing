@@ -1,7 +1,19 @@
 {
  "version": 3,
  "clusters_seen": {},
- "active": {},
+ "active": {
+  "EURCAD-Sell-1794410100000-meanrev": {
+   "pair": "EURCAD",
+   "fade_dir": "Sell",
+   "source": "meanrev",
+   "open_t": 1794410100000,
+   "entry_px": 1.5817,
+   "exit_t": 1794417300000,
+   "tp_bps": 25.0,
+   "sl_bps": 50.0,
+   "cost_bps": 3.0
+  }
+ },
  "mfb_last": {
   "EURUSD|Sell": 1794323409997,
   "EURCAD|Sell": 1794145438239,
@@ -185,7 +197,8 @@
   "sentiment_follow|USDCAD|Sell|1.4201": true,
   "scalp|EURCAD|Buy|1.5775": true,
   "meanrev|EURCAD|Sell|1.5775": true,
-  "meanrev|USDJPY|Buy|157.36": true
+  "meanrev|USDJPY|Buy|157.36": true,
+  "meanrev|EURCAD|Sell|1.5817": true
  },
- "price_last": 1794407535818
+ "price_last": 1794410526695
 }
