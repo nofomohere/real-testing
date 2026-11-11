@@ -23,6 +23,17 @@
    "tp_bps": null,
    "sl_bps": null,
    "cost_bps": 1.5
+  },
+  "EURCAD-Buy-1794366000000-scalp": {
+   "pair": "EURCAD",
+   "fade_dir": "Buy",
+   "source": "scalp",
+   "open_t": 1794366000000,
+   "entry_px": 1.5775,
+   "exit_t": 1794367800000,
+   "tp_bps": 10.0,
+   "sl_bps": 25.0,
+   "cost_bps": 3.0
   }
  },
  "mfb_last": {
@@ -47,7 +58,8 @@
   "BTCUSD": 1794241695242,
   "ETHUSD": 1794241695242,
   "USDJPY": 1794353761573,
-  "EURJPY": 1794266382177
+  "EURJPY": 1794266382177,
+  "EURCAD": 1794366731554
  },
  "last_close": {
   "BTCUSD": 73329.0,
@@ -203,7 +215,8 @@
   "meanrev|ETHUSD|Buy|2048.05": true,
   "scalp|USDJPY|Sell|161.5": true,
   "sentiment|USDCAD|Buy|1.4201": true,
-  "sentiment_follow|USDCAD|Sell|1.4201": true
+  "sentiment_follow|USDCAD|Sell|1.4201": true,
+  "scalp|EURCAD|Buy|1.5775": true
  },
- "price_last": 1794363512229
+ "price_last": 1794366731554
 }
