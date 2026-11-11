@@ -56,17 +56,6 @@
    "tp_bps": 25.0,
    "sl_bps": 50.0,
    "cost_bps": 4.5
-  },
-  "USDJPY-Sell-1794353400000-scalp": {
-   "pair": "USDJPY",
-   "fade_dir": "Sell",
-   "source": "scalp",
-   "open_t": 1794353400000,
-   "entry_px": 161.5,
-   "exit_t": 1794355200000,
-   "tp_bps": 10.0,
-   "sl_bps": 25.0,
-   "cost_bps": 1.5
   }
  },
  "mfb_last": {
@@ -85,7 +74,7 @@
  "alarm_sent": false,
  "auth_alert_sent": false,
  "status_last": 1794344158393,
- "last_summary": "20261110",
+ "last_summary": "20261111",
  "last_update_id": 0,
  "scalp_last": {
   "BTCUSD": 1794241695242,
@@ -247,5 +236,5 @@
   "meanrev|ETHUSD|Buy|2048.05": true,
   "scalp|USDJPY|Sell|161.5": true
  },
- "price_last": 1794353761573
+ "price_last": 1794356019416
 }
