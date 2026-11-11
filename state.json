@@ -34,6 +34,17 @@
    "tp_bps": 25.0,
    "sl_bps": 50.0,
    "cost_bps": 3.0
+  },
+  "USDJPY-Buy-1794376800000-meanrev": {
+   "pair": "USDJPY",
+   "fade_dir": "Buy",
+   "source": "meanrev",
+   "open_t": 1794376800000,
+   "entry_px": 157.36,
+   "exit_t": 1794384000000,
+   "tp_bps": 25.0,
+   "sl_bps": 50.0,
+   "cost_bps": 1.5
   }
  },
  "mfb_last": {
@@ -51,7 +62,7 @@
  "tg_hello_sent": true,
  "alarm_sent": false,
  "auth_alert_sent": false,
- "status_last": 1794359952376,
+ "status_last": 1794376770761,
  "last_summary": "20261111",
  "last_update_id": 0,
  "scalp_last": {
@@ -218,7 +229,8 @@
   "sentiment|USDCAD|Buy|1.4201": true,
   "sentiment_follow|USDCAD|Sell|1.4201": true,
   "scalp|EURCAD|Buy|1.5775": true,
-  "meanrev|EURCAD|Sell|1.5775": true
+  "meanrev|EURCAD|Sell|1.5775": true,
+  "meanrev|USDJPY|Buy|157.36": true
  },
- "price_last": 1794373326077
+ "price_last": 1794376770761
 }
