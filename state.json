@@ -46,16 +46,16 @@
    "sl_bps": null,
    "cost_bps": 2.0
   },
-  "EURCAD-Sell-1794423600000-meanrev": {
-   "pair": "EURCAD",
+  "ETHUSD-Sell-1794432600000-meanrev": {
+   "pair": "ETHUSD",
    "fade_dir": "Sell",
    "source": "meanrev",
-   "open_t": 1794423600000,
-   "entry_px": 1.5817,
-   "exit_t": 1794430800000,
+   "open_t": 1794432600000,
+   "entry_px": 2077.04,
+   "exit_t": 1794439800000,
    "tp_bps": 25.0,
    "sl_bps": 50.0,
-   "cost_bps": 3.0
+   "cost_bps": 4.5
   }
  },
  "mfb_last": {
@@ -123,7 +123,7 @@
   "meanrev|USDJPY": 1794367112229,
   "sentiment|USDCAD": 1794392325477,
   "sentiment_follow|USDCAD": 1794392325477,
-  "meanrev|EURCAD": 1794421180053,
+  "meanrev|EURCAD": 1794436519792,
   "meanrev|GBPUSD": 1794352720202,
   "scalp|EURCAD": 1794373550928
  },
@@ -246,7 +246,8 @@
   "sentiment|EURUSD|Sell|1.10942": true,
   "sentiment_follow|EURUSD|Buy|1.10942": true,
   "sentiment|EURGBP|Sell|0.83525": true,
-  "sentiment_follow|EURGBP|Buy|0.83525": true
+  "sentiment_follow|EURGBP|Buy|0.83525": true,
+  "meanrev|ETHUSD|Sell|2077.04": true
  },
- "price_last": 1794427347138
+ "price_last": 1794432919792
 }
