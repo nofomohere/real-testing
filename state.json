@@ -2,50 +2,6 @@
  "version": 3,
  "clusters_seen": {},
  "active": {
-  "USDJPY-Sell-1794353400000-meanrev": {
-   "pair": "USDJPY",
-   "fade_dir": "Sell",
-   "source": "meanrev",
-   "open_t": 1794353400000,
-   "entry_px": 161.5,
-   "exit_t": 1794360600000,
-   "tp_bps": 25.0,
-   "sl_bps": 50.0,
-   "cost_bps": 1.5
-  },
-  "EURCAD-Buy-1794353400000-meanrev": {
-   "pair": "EURCAD",
-   "fade_dir": "Buy",
-   "source": "meanrev",
-   "open_t": 1794353400000,
-   "entry_px": 1.5395,
-   "exit_t": 1794360600000,
-   "tp_bps": 25.0,
-   "sl_bps": 50.0,
-   "cost_bps": 3.0
-  },
-  "BTCUSD-Buy-1794353400000-meanrev": {
-   "pair": "BTCUSD",
-   "fade_dir": "Buy",
-   "source": "meanrev",
-   "open_t": 1794353400000,
-   "entry_px": 73632.7,
-   "exit_t": 1794360600000,
-   "tp_bps": 25.0,
-   "sl_bps": 50.0,
-   "cost_bps": 4.5
-  },
-  "ETHUSD-Buy-1794353400000-meanrev": {
-   "pair": "ETHUSD",
-   "fade_dir": "Buy",
-   "source": "meanrev",
-   "open_t": 1794353400000,
-   "entry_px": 2048.05,
-   "exit_t": 1794360600000,
-   "tp_bps": 25.0,
-   "sl_bps": 50.0,
-   "cost_bps": 4.5
-  },
   "USDCAD-Buy-1794359700000-sentiment": {
    "pair": "USDCAD",
    "fade_dir": "Buy",
@@ -94,28 +50,28 @@
   "EURJPY": 1794266382177
  },
  "last_close": {
-  "BTCUSD": 73771.6,
+  "BTCUSD": 73329.0,
   "EURUSD": 1.11626,
-  "EURCAD": 1.5395,
+  "EURCAD": 1.586,
   "EURGBP": 0.83673,
-  "ETHUSD": 2054.69,
+  "ETHUSD": 2048.33,
   "EURJPY": 177.363,
   "AUDUSD": 0.68683,
-  "USDJPY": 161.6,
+  "USDJPY": 157.361,
   "AUDJPY": 109.791,
   "EURAUD": 1.6296,
   "USDCAD": 1.41352,
   "GBPUSD": 1.33387
  },
  "cooldown": {
-  "meanrev|BTCUSD": 1794352720202,
+  "meanrev|BTCUSD": 1794367112229,
   "sentiment|EURUSD": 1794355281134,
   "sentiment_follow|EURUSD": 1794355281134,
   "sentiment|EURCAD": 1794004988239,
   "sentiment_follow|EURCAD": 1794004988239,
   "sentiment|EURGBP": 1794355281134,
   "sentiment_follow|EURGBP": 1794355281134,
-  "meanrev|ETHUSD": 1794352720202,
+  "meanrev|ETHUSD": 1794367112229,
   "scalp|BTCUSD": 1794249036021,
   "scalp|ETHUSD": 1794249036021,
   "meanrev|EURJPY": 1794014434955,
@@ -130,10 +86,10 @@
   "breakout|EURAUD": 1793938539017,
   "meanrev|EURAUD": 1794363552376,
   "scalp|EURJPY": 1794272282975,
-  "meanrev|USDJPY": 1794345105279,
+  "meanrev|USDJPY": 1794367112229,
   "sentiment|USDCAD": 1794306601123,
   "sentiment_follow|USDCAD": 1794306601123,
-  "meanrev|EURCAD": 1794352720202,
+  "meanrev|EURCAD": 1794367112229,
   "meanrev|GBPUSD": 1794352720202
  },
  "seen_sigs": {
@@ -249,5 +205,5 @@
   "sentiment|USDCAD|Buy|1.4201": true,
   "sentiment_follow|USDCAD|Sell|1.4201": true
  },
- "price_last": 1794359952376
+ "price_last": 1794363512229
 }
