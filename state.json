@@ -51,7 +51,7 @@
   "EURUSD|Sell": 1794413835010,
   "EURCAD|Sell": 1794145438239,
   "EURGBP|Sell": 1794413835010,
-  "NZDUSD|Sell": 1794331915902,
+  "NZDUSD|Sell": 1794420661781,
   "GBPAUD|Buy": 1794417580053,
   "ETHUSD|Sell": 1793832102153,
   "USDCAD|Buy": 1794359952376,
@@ -237,5 +237,5 @@
   "sentiment|EURGBP|Sell|0.83525": true,
   "sentiment_follow|EURGBP|Buy|0.83525": true
  },
- "price_last": 1794417580053
+ "price_last": 1794420661781
 }
