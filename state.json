@@ -24,16 +24,27 @@
    "sl_bps": null,
    "cost_bps": 1.5
   },
-  "USDJPY-Buy-1794376800000-meanrev": {
-   "pair": "USDJPY",
-   "fade_dir": "Buy",
+  "AUDJPY-Sell-1794384900000-meanrev": {
+   "pair": "AUDJPY",
+   "fade_dir": "Sell",
    "source": "meanrev",
-   "open_t": 1794376800000,
-   "entry_px": 157.36,
-   "exit_t": 1794384000000,
+   "open_t": 1794384900000,
+   "entry_px": 109.791,
+   "exit_t": 1794392100000,
    "tp_bps": 25.0,
    "sl_bps": 50.0,
-   "cost_bps": 1.5
+   "cost_bps": 2.5
+  },
+  "EURCAD-Sell-1794384900000-meanrev": {
+   "pair": "EURCAD",
+   "fade_dir": "Sell",
+   "source": "meanrev",
+   "open_t": 1794384900000,
+   "entry_px": 1.5775,
+   "exit_t": 1794392100000,
+   "tp_bps": 25.0,
+   "sl_bps": 50.0,
+   "cost_bps": 3.0
   }
  },
  "mfb_last": {
@@ -221,5 +232,5 @@
   "meanrev|EURCAD|Sell|1.5775": true,
   "meanrev|USDJPY|Buy|157.36": true
  },
- "price_last": 1794380557478
+ "price_last": 1794385240050
 }
