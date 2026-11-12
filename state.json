@@ -23,17 +23,6 @@
    "tp_bps": 40.0,
    "sl_bps": 20.0,
    "cost_bps": 4.5
-  },
-  "USDJPY-Buy-1794486600000-meanrev": {
-   "pair": "USDJPY",
-   "fade_dir": "Buy",
-   "source": "meanrev",
-   "open_t": 1794486600000,
-   "entry_px": 159.0,
-   "exit_t": 1794493800000,
-   "tp_bps": 25.0,
-   "sl_bps": 50.0,
-   "cost_bps": 1.5
   }
  },
  "mfb_last": {
@@ -236,5 +225,5 @@
   "breakout|ETHUSD|Sell|2026.76": true,
   "meanrev|AUDJPY|Buy|108.632": true
  },
- "price_last": 1794491841449
+ "price_last": 1794494994225
 }
