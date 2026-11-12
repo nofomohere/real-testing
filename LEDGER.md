@@ -1,15 +1,15 @@
 # Fade Bot — paper ledger
 
-Updated: 2026-11-12T20:26:48.319137+00:00
+Updated: 2026-11-12T21:17:57.940582+00:00
 
-- Trades: **145** | Avg: **-9.0 bps** | Win: **39%** | Cum: **-1310.5 bps**
-- Money sim ($10.0 @ 50x): **-65.525 USD** | Liquidations: **6** | Open: **10**
+- Trades: **147** | Avg: **-9.7 bps** | Win: **39%** | Cum: **-1419.5 bps**
+- Money sim ($10.0 @ 50x): **-70.975 USD** | Liquidations: **6** | Open: **8**
 
 ## Results per strategy
 
 | Strategy | Trades | Win% | Avg bps | Cum bps | Cum USD | Liqs |
 |---|---|---|---|---|---|---|
-| meanrev | 82 | 35% | -3.5 | -285.0 | -14.249 | 1 |
+| meanrev | 84 | 35% | -4.7 | -394.0 | -19.699 | 1 |
 | sentiment | 23 | 39% | -9.7 | -223.4 | -11.171 | 1 |
 | sentiment_follow | 23 | 48% | -17.1 | -394.4 | -19.720 | 2 |
 | scalp | 11 | 64% | +2.4 | +26.8 | +1.340 | 0 |
@@ -19,8 +19,6 @@ Updated: 2026-11-12T20:26:48.319137+00:00
 
 | Trade | Pair | Dir | Strategy | Open (UTC) | PnL bps | PnL USD |
 |---|---|---|---|---|---|---|
-| USDJPY-Sell-1794353400000-scalp | USDJPY | Sell | scalp | 2026-11-10T23:30 | -7.7 | -0.3846 |
-| EURAUD-Sell-1794351600000-meanrev | EURAUD | Sell | meanrev | 2026-11-10T23:00 | -3.0 | -0.1500 |
 | USDJPY-Sell-1794353400000-meanrev | USDJPY | Sell | meanrev | 2026-11-10T23:30 | -1.5 | -0.0750 |
 | EURCAD-Buy-1794353400000-meanrev | EURCAD | Buy | meanrev | 2026-11-10T23:30 | +22.0 | +1.1000 |
 | BTCUSD-Buy-1794353400000-meanrev | BTCUSD | Buy | meanrev | 2026-11-10T23:30 | -54.5 | -2.7250 |
@@ -49,3 +47,5 @@ Updated: 2026-11-12T20:26:48.319137+00:00
 | USDJPY-Buy-1794486600000-meanrev | USDJPY | Buy | meanrev | 2026-11-12T12:30 | -1.5 | -0.0750 |
 | BTCUSD-Sell-1794483000000-breakout | BTCUSD | Sell | breakout | 2026-11-12T11:30 | -24.5 | -1.2250 |
 | ETHUSD-Sell-1794483000000-breakout | ETHUSD | Sell | breakout | 2026-11-12T11:30 | -24.5 | -1.2250 |
+| BTCUSD-Buy-1794508200000-meanrev | BTCUSD | Buy | meanrev | 2026-11-12T18:30 | -54.5 | -2.7250 |
+| ETHUSD-Buy-1794508200000-meanrev | ETHUSD | Buy | meanrev | 2026-11-12T18:30 | -54.5 | -2.7250 |
