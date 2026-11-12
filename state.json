@@ -51,7 +51,7 @@
  "tg_hello_sent": true,
  "alarm_sent": false,
  "auth_alert_sent": false,
- "status_last": 1794439611725,
+ "status_last": 1794457431327,
  "last_summary": "20261112",
  "last_update_id": 0,
  "scalp_last": {
@@ -230,5 +230,5 @@
   "sentiment_follow|USDCAD|Sell|1.42604": true,
   "meanrev|ETHUSD|Buy|2049.08": true
  },
- "price_last": 1794453790711
+ "price_last": 1794457431327
 }
