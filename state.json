@@ -45,14 +45,36 @@
    "tp_bps": null,
    "sl_bps": null,
    "cost_bps": 2.0
+  },
+  "EURCAD-Sell-1794504600000-sentiment": {
+   "pair": "EURCAD",
+   "fade_dir": "Sell",
+   "source": "sentiment",
+   "open_t": 1794504600000,
+   "entry_px": 1.5775,
+   "exit_t": 1794533400000,
+   "tp_bps": null,
+   "sl_bps": null,
+   "cost_bps": 3.0
+  },
+  "EURCAD-Buy-1794504600000-sentiment_follow": {
+   "pair": "EURCAD",
+   "fade_dir": "Buy",
+   "source": "sentiment_follow",
+   "open_t": 1794504600000,
+   "entry_px": 1.5775,
+   "exit_t": 1794533400000,
+   "tp_bps": null,
+   "sl_bps": null,
+   "cost_bps": 3.0
   }
  },
  "mfb_last": {
   "EURUSD|Sell": 1794501914759,
-  "EURCAD|Sell": 1794145438239,
+  "EURCAD|Sell": 1794505130027,
   "EURGBP|Sell": 1794501914759,
   "NZDUSD|Sell": 1794420661781,
-  "GBPAUD|Buy": 1794417580053,
+  "GBPAUD|Buy": 1794505130027,
   "ETHUSD|Sell": 1793832102153,
   "USDCAD|Buy": 1794447078718,
   "GBPCAD|Buy": 1794255323064,
@@ -249,7 +271,9 @@
   "sentiment|EURUSD|Sell|1.10521": true,
   "sentiment_follow|EURUSD|Buy|1.10521": true,
   "sentiment|EURGBP|Sell|0.83504": true,
-  "sentiment_follow|EURGBP|Buy|0.83504": true
+  "sentiment_follow|EURGBP|Buy|0.83504": true,
+  "sentiment|EURCAD|Sell|1.5775": true,
+  "sentiment_follow|EURCAD|Buy|1.5775": true
  },
- "price_last": 1794501914759
+ "price_last": 1794505130027
 }
