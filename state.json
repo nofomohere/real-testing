@@ -89,6 +89,17 @@
    "tp_bps": null,
    "sl_bps": null,
    "cost_bps": 1.5
+  },
+  "ETHUSD-Buy-1794526200000-meanrev": {
+   "pair": "ETHUSD",
+   "fade_dir": "Buy",
+   "source": "meanrev",
+   "open_t": 1794526200000,
+   "entry_px": 2015.06,
+   "exit_t": 1794533400000,
+   "tp_bps": 25.0,
+   "sl_bps": 50.0,
+   "cost_bps": 4.5
   }
  },
  "mfb_last": {
@@ -300,7 +311,8 @@
   "meanrev|BTCUSD|Buy|71882.6": true,
   "meanrev|ETHUSD|Buy|2020.05": true,
   "sentiment|AUDUSD|Sell|0.68062": true,
-  "sentiment_follow|AUDUSD|Buy|0.68062": true
+  "sentiment_follow|AUDUSD|Buy|0.68062": true,
+  "meanrev|ETHUSD|Buy|2015.06": true
  },
- "price_last": 1794523703187
+ "price_last": 1794526114988
 }
