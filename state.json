@@ -2,17 +2,6 @@
  "version": 3,
  "clusters_seen": {},
  "active": {
-  "BTCUSD-Buy-1794480300000-meanrev": {
-   "pair": "BTCUSD",
-   "fade_dir": "Buy",
-   "source": "meanrev",
-   "open_t": 1794480300000,
-   "entry_px": 73408.7,
-   "exit_t": 1794487500000,
-   "tp_bps": 25.0,
-   "sl_bps": 50.0,
-   "cost_bps": 4.5
-  },
   "BTCUSD-Sell-1794483000000-breakout": {
    "pair": "BTCUSD",
    "fade_dir": "Sell",
@@ -34,17 +23,6 @@
    "tp_bps": 40.0,
    "sl_bps": 20.0,
    "cost_bps": 4.5
-  },
-  "AUDJPY-Buy-1794483000000-meanrev": {
-   "pair": "AUDJPY",
-   "fade_dir": "Buy",
-   "source": "meanrev",
-   "open_t": 1794483000000,
-   "entry_px": 108.632,
-   "exit_t": 1794490200000,
-   "tp_bps": 25.0,
-   "sl_bps": 50.0,
-   "cost_bps": 2.5
   },
   "USDJPY-Buy-1794486600000-meanrev": {
    "pair": "USDJPY",
@@ -73,7 +51,7 @@
  "tg_hello_sent": true,
  "alarm_sent": false,
  "auth_alert_sent": false,
- "status_last": 1794473229615,
+ "status_last": 1794491841449,
  "last_summary": "20261112",
  "last_update_id": 0,
  "scalp_last": {
@@ -84,7 +62,7 @@
   "EURCAD": 1794366731554
  },
  "last_close": {
-  "BTCUSD": 73329.0,
+  "BTCUSD": 72365.7,
   "EURUSD": 1.10917,
   "EURCAD": 1.5817,
   "EURGBP": 0.83565,
@@ -92,13 +70,13 @@
   "EURJPY": 177.363,
   "AUDUSD": 0.68683,
   "USDJPY": 159.0,
-  "AUDJPY": 109.791,
+  "AUDJPY": 108.632,
   "EURAUD": 1.6296,
   "USDCAD": 1.42583,
   "GBPUSD": 1.33387
  },
  "cooldown": {
-  "meanrev|BTCUSD": 1794367112229,
+  "meanrev|BTCUSD": 1794495441449,
   "sentiment|EURUSD": 1794446133480,
   "sentiment_follow|EURUSD": 1794446133480,
   "sentiment|EURCAD": 1794004988239,
@@ -116,7 +94,7 @@
   "breakout|AUDJPY": 1793913651358,
   "breakout|BTCUSD": 1793913651358,
   "breakout|ETHUSD": 1793913651358,
-  "meanrev|AUDJPY": 1794396070448,
+  "meanrev|AUDJPY": 1794495441449,
   "breakout|EURAUD": 1793938539017,
   "meanrev|EURAUD": 1794363552376,
   "scalp|EURJPY": 1794272282975,
@@ -258,5 +236,5 @@
   "breakout|ETHUSD|Sell|2026.76": true,
   "meanrev|AUDJPY|Buy|108.632": true
  },
- "price_last": 1794487258159
+ "price_last": 1794491841449
 }
