@@ -307,3 +307,24 @@
 2026-11-12 08:48 | tg sendMessage error: HTTP Error 401: Unauthorized
 2026-11-12 08:48 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=4 new=1 closed=0
 2026-11-12 08:48 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-12 09:42 | tg getMe error: HTTP Error 401: Unauthorized
+2026-11-12 09:45 | price NZDUSD: no fresh source (stale/offline)
+2026-11-12 09:45 | price GBPJPY: no fresh source (stale/offline)
+2026-11-12 09:45 | price AUDCAD: no fresh source (stale/offline)
+2026-11-12 09:45 | price XAUUSD: no fresh source (stale/offline)
+2026-11-12 09:45 | price GBPAUD: no fresh source (stale/offline)
+2026-11-12 09:45 | price GBPCAD: no fresh source (stale/offline)
+2026-11-12 09:45 | price EURTRY: no fresh source (stale/offline)
+2026-11-12 09:45 | price USDTRY: no fresh source (stale/offline)
+2026-11-12 09:45 | price USDZAR: no fresh source (stale/offline)
+2026-11-12 09:45 | price EURNOK: no fresh source (stale/offline)
+2026-11-12 09:45 | price USDNOK: no fresh source (stale/offline)
+2026-11-12 09:45 | price US30: no fresh source (stale/offline)
+2026-11-12 09:45 | price NAS100: no fresh source (stale/offline)
+2026-11-12 09:45 | price SPX500: no fresh source (stale/offline)
+2026-11-12 09:45 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-12 09:45 | CLOSE USDCAD-Buy-1794447000000-sentiment reason=time pnl=-3.0bps
+2026-11-12 09:45 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-12 09:45 | CLOSE USDCAD-Sell-1794447000000-sentiment_follow reason=time pnl=-0.0bps
+2026-11-12 09:45 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=4 new=0 closed=2
+2026-11-12 09:45 | tg sendMessage error: HTTP Error 401: Unauthorized

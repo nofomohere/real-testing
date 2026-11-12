@@ -1,17 +1,17 @@
 # Fade Bot — paper ledger
 
-Updated: 2026-11-12T08:48:31.974606+00:00
+Updated: 2026-11-12T09:45:22.015054+00:00
 
-- Trades: **136** | Avg: **-8.7 bps** | Win: **42%** | Cum: **-1187.3 bps**
-- Money sim ($10.0 @ 50x): **-59.365 USD** | Liquidations: **6** | Open: **4**
+- Trades: **138** | Avg: **-8.6 bps** | Win: **41%** | Cum: **-1190.3 bps**
+- Money sim ($10.0 @ 50x): **-59.515 USD** | Liquidations: **6** | Open: **2**
 
 ## Results per strategy
 
 | Strategy | Trades | Win% | Avg bps | Cum bps | Cum USD | Liqs |
 |---|---|---|---|---|---|---|
 | meanrev | 77 | 38% | -2.8 | -213.8 | -10.689 | 1 |
-| sentiment | 22 | 41% | -10.0 | -220.5 | -11.022 | 1 |
-| sentiment_follow | 22 | 50% | -17.9 | -394.4 | -19.719 | 2 |
+| sentiment | 23 | 39% | -9.7 | -223.4 | -11.171 | 1 |
+| sentiment_follow | 23 | 48% | -17.1 | -394.4 | -19.720 | 2 |
 | scalp | 11 | 64% | +2.4 | +26.8 | +1.340 | 0 |
 | breakout | 4 | 25% | -96.4 | -385.5 | -19.275 | 2 |
 
@@ -19,8 +19,6 @@ Updated: 2026-11-12T08:48:31.974606+00:00
 
 | Trade | Pair | Dir | Strategy | Open (UTC) | PnL bps | PnL USD |
 |---|---|---|---|---|---|---|
-| GBPUSD-Buy-1794340800000-meanrev | GBPUSD | Buy | meanrev | 2026-11-10T20:00 | -0.9 | -0.0450 |
-| AUDUSD-Buy-1794340800000-meanrev | AUDUSD | Buy | meanrev | 2026-11-10T20:00 | -3.2 | -0.1624 |
 | EURCAD-Buy-1794340800000-meanrev | EURCAD | Buy | meanrev | 2026-11-10T20:00 | -3.0 | -0.1500 |
 | BTCUSD-Buy-1794340800000-meanrev | BTCUSD | Buy | meanrev | 2026-11-10T20:00 | +20.5 | +1.0250 |
 | ETHUSD-Buy-1794340800000-meanrev | ETHUSD | Buy | meanrev | 2026-11-10T20:00 | +20.5 | +1.0250 |
@@ -49,3 +47,5 @@ Updated: 2026-11-12T08:48:31.974606+00:00
 | EURGBP-Buy-1794413700000-sentiment_follow | EURGBP | Buy | sentiment_follow | 2026-11-11T16:15 | +2.8 | +0.1394 |
 | ETHUSD-Sell-1794432600000-meanrev | ETHUSD | Sell | meanrev | 2026-11-11T21:30 | +20.5 | +1.0250 |
 | ETHUSD-Buy-1794453300000-meanrev | ETHUSD | Buy | meanrev | 2026-11-12T03:15 | +20.5 | +1.0250 |
+| USDCAD-Buy-1794447000000-sentiment | USDCAD | Buy | sentiment | 2026-11-12T01:30 | -3.0 | -0.1486 |
+| USDCAD-Sell-1794447000000-sentiment_follow | USDCAD | Sell | sentiment_follow | 2026-11-12T01:30 | -0.0 | -0.0014 |
