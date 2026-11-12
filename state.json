@@ -12,6 +12,39 @@
    "tp_bps": 25.0,
    "sl_bps": 50.0,
    "cost_bps": 4.5
+  },
+  "BTCUSD-Sell-1794483000000-breakout": {
+   "pair": "BTCUSD",
+   "fade_dir": "Sell",
+   "source": "breakout",
+   "open_t": 1794483000000,
+   "entry_px": 72874.4,
+   "exit_t": 1794497400000,
+   "tp_bps": 40.0,
+   "sl_bps": 20.0,
+   "cost_bps": 4.5
+  },
+  "ETHUSD-Sell-1794483000000-breakout": {
+   "pair": "ETHUSD",
+   "fade_dir": "Sell",
+   "source": "breakout",
+   "open_t": 1794483000000,
+   "entry_px": 2026.76,
+   "exit_t": 1794497400000,
+   "tp_bps": 40.0,
+   "sl_bps": 20.0,
+   "cost_bps": 4.5
+  },
+  "AUDJPY-Buy-1794483000000-meanrev": {
+   "pair": "AUDJPY",
+   "fade_dir": "Buy",
+   "source": "meanrev",
+   "open_t": 1794483000000,
+   "entry_px": 108.632,
+   "exit_t": 1794490200000,
+   "tp_bps": 25.0,
+   "sl_bps": 50.0,
+   "cost_bps": 2.5
   }
  },
  "mfb_last": {
@@ -209,7 +242,10 @@
   "meanrev|ETHUSD|Buy|2049.08": true,
   "meanrev|USDJPY|Buy|159.0": true,
   "meanrev|ETHUSD|Buy|2046.94": true,
-  "meanrev|BTCUSD|Buy|73408.7": true
+  "meanrev|BTCUSD|Buy|73408.7": true,
+  "breakout|BTCUSD|Sell|72874.4": true,
+  "breakout|ETHUSD|Sell|2026.76": true,
+  "meanrev|AUDJPY|Buy|108.632": true
  },
- "price_last": 1794480304489
+ "price_last": 1794483735121
 }
