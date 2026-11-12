@@ -107,7 +107,7 @@
  "tg_hello_sent": true,
  "alarm_sent": false,
  "auth_alert_sent": false,
- "status_last": 1794508280443,
+ "status_last": 1794523703187,
  "last_summary": "20261112",
  "last_update_id": 0,
  "scalp_last": {
@@ -302,5 +302,5 @@
   "sentiment|AUDUSD|Sell|0.68062": true,
   "sentiment_follow|AUDUSD|Buy|0.68062": true
  },
- "price_last": 1794521050467
+ "price_last": 1794523703187
 }
