@@ -23,6 +23,28 @@
    "tp_bps": null,
    "sl_bps": null,
    "cost_bps": 1.5
+  },
+  "BTCUSD-Sell-1794585600000-scalp": {
+   "pair": "BTCUSD",
+   "fade_dir": "Sell",
+   "source": "scalp",
+   "open_t": 1794585600000,
+   "entry_px": 68652.5,
+   "exit_t": 1794587400000,
+   "tp_bps": 10.0,
+   "sl_bps": 25.0,
+   "cost_bps": 4.5
+  },
+  "ETHUSD-Sell-1794585600000-scalp": {
+   "pair": "ETHUSD",
+   "fade_dir": "Sell",
+   "source": "scalp",
+   "open_t": 1794585600000,
+   "entry_px": 1930.2,
+   "exit_t": 1794587400000,
+   "tp_bps": 10.0,
+   "sl_bps": 25.0,
+   "cost_bps": 4.5
   }
  },
  "mfb_last": {
@@ -46,8 +68,8 @@
  "last_summary": "20261113",
  "last_update_id": 0,
  "scalp_last": {
-  "BTCUSD": 1794241695242,
-  "ETHUSD": 1794241695242,
+  "BTCUSD": 1794585980026,
+  "ETHUSD": 1794585980026,
   "USDJPY": 1794353761573,
   "EURJPY": 1794266382177,
   "EURCAD": 1794366731554
@@ -248,7 +270,9 @@
   "meanrev|BTCUSD|Buy|69159.4": true,
   "meanrev|ETHUSD|Buy|1954.41": true,
   "sentiment|USDCHF|Buy|0.83894": true,
-  "sentiment_follow|USDCHF|Sell|0.83894": true
+  "sentiment_follow|USDCHF|Sell|0.83894": true,
+  "scalp|BTCUSD|Sell|68652.5": true,
+  "scalp|ETHUSD|Sell|1930.2": true
  },
- "price_last": 1794582961718
+ "price_last": 1794585980026
 }
