@@ -63,7 +63,7 @@
  "tg_hello_sent": true,
  "alarm_sent": false,
  "auth_alert_sent": false,
- "status_last": 1794523703187,
+ "status_last": 1794539479466,
  "last_summary": "20261113",
  "last_update_id": 0,
  "scalp_last": {
@@ -261,5 +261,5 @@
   "sentiment|USDCAD|Buy|1.42638": true,
   "sentiment_follow|USDCAD|Sell|1.42638": true
  },
- "price_last": 1794536452483
+ "price_last": 1794539479466
 }
