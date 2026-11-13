@@ -23,6 +23,28 @@
    "tp_bps": 25.0,
    "sl_bps": 50.0,
    "cost_bps": 4.5
+  },
+  "USDCHF-Buy-1794579300000-sentiment": {
+   "pair": "USDCHF",
+   "fade_dir": "Buy",
+   "source": "sentiment",
+   "open_t": 1794579300000,
+   "entry_px": 0.83894,
+   "exit_t": 1794608100000,
+   "tp_bps": null,
+   "sl_bps": null,
+   "cost_bps": 1.5
+  },
+  "USDCHF-Sell-1794579300000-sentiment_follow": {
+   "pair": "USDCHF",
+   "fade_dir": "Sell",
+   "source": "sentiment_follow",
+   "open_t": 1794579300000,
+   "entry_px": 0.83894,
+   "exit_t": 1794608100000,
+   "tp_bps": null,
+   "sl_bps": null,
+   "cost_bps": 1.5
   }
  },
  "mfb_last": {
@@ -35,7 +57,8 @@
   "USDCAD|Buy": 1794536452483,
   "GBPCAD|Buy": 1794255323064,
   "AUDCAD|Buy": 1794271590080,
-  "AUDUSD|Sell": 1794515118405
+  "AUDUSD|Sell": 1794515118405,
+  "USDCHF|Buy": 1794580003672
  },
  "chat_id": 1192863557,
  "tg_hello_sent": true,
@@ -245,7 +268,9 @@
   "meanrev|ETHUSD|Buy|1931.35": true,
   "meanrev|BTCUSD|Buy|68740.0": true,
   "meanrev|BTCUSD|Buy|69159.4": true,
-  "meanrev|ETHUSD|Buy|1954.41": true
+  "meanrev|ETHUSD|Buy|1954.41": true,
+  "sentiment|USDCHF|Buy|0.83894": true,
+  "sentiment_follow|USDCHF|Sell|0.83894": true
  },
- "price_last": 1794575591743
+ "price_last": 1794580003672
 }
