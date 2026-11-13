@@ -34,6 +34,17 @@
    "tp_bps": 40.0,
    "sl_bps": 20.0,
    "cost_bps": 4.5
+  },
+  "EURAUD-Sell-1794552300000-meanrev": {
+   "pair": "EURAUD",
+   "fade_dir": "Sell",
+   "source": "meanrev",
+   "open_t": 1794552300000,
+   "entry_px": 1.63227,
+   "exit_t": 1794559500000,
+   "tp_bps": 25.0,
+   "sl_bps": 50.0,
+   "cost_bps": 3.0
   }
  },
  "mfb_last": {
@@ -251,7 +262,8 @@
   "meanrev|ETHUSD|Buy|2015.06": true,
   "sentiment|USDCAD|Buy|1.42638": true,
   "sentiment_follow|USDCAD|Sell|1.42638": true,
-  "breakout|BTCUSD|Sell|68045.9": true
+  "breakout|BTCUSD|Sell|68045.9": true,
+  "meanrev|EURAUD|Sell|1.63227": true
  },
- "price_last": 1794549355647
+ "price_last": 1794552981261
 }
