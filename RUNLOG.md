@@ -322,3 +322,29 @@
 2026-11-13 10:15 | CLOSE BTCUSD-Sell-1794548700000-breakout reason=stop pnl=-24.5bps
 2026-11-13 10:15 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=5 new=0 closed=1
 2026-11-13 10:15 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-13 11:13 | FX quote check: USDJPY breaks 2 cross-rate triangles -> banished (bad venue quote)
+2026-11-13 11:13 | tg getMe error: HTTP Error 401: Unauthorized
+2026-11-13 11:15 | FX quote check: USDJPY breaks 2 cross-rate triangles -> banished (bad venue quote)
+2026-11-13 11:16 | price USDJPY: no fresh source (stale/offline)
+2026-11-13 11:16 | price NZDUSD: no fresh source (stale/offline)
+2026-11-13 11:16 | price GBPJPY: no fresh source (stale/offline)
+2026-11-13 11:16 | price AUDCAD: no fresh source (stale/offline)
+2026-11-13 11:16 | price XAUUSD: no fresh source (stale/offline)
+2026-11-13 11:16 | price GBPAUD: no fresh source (stale/offline)
+2026-11-13 11:16 | price GBPCAD: no fresh source (stale/offline)
+2026-11-13 11:16 | price EURTRY: no fresh source (stale/offline)
+2026-11-13 11:16 | price USDTRY: no fresh source (stale/offline)
+2026-11-13 11:16 | price USDZAR: no fresh source (stale/offline)
+2026-11-13 11:16 | price EURNOK: no fresh source (stale/offline)
+2026-11-13 11:16 | price USDNOK: no fresh source (stale/offline)
+2026-11-13 11:16 | price US30: no fresh source (stale/offline)
+2026-11-13 11:16 | price NAS100: no fresh source (stale/offline)
+2026-11-13 11:16 | price SPX500: no fresh source (stale/offline)
+2026-11-13 11:16 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-13 11:16 | CLOSE USDCAD-Buy-1794536100000-sentiment reason=time pnl=+3.3bps
+2026-11-13 11:16 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-13 11:16 | CLOSE USDCAD-Sell-1794536100000-sentiment_follow reason=time pnl=-6.3bps
+2026-11-13 11:16 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-13 11:16 | CLOSE ETHUSD-Buy-1794557700000-meanrev reason=tp pnl=+20.5bps
+2026-11-13 11:16 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=4 new=0 closed=3
+2026-11-13 11:16 | tg sendMessage error: HTTP Error 401: Unauthorized
