@@ -1,9 +1,9 @@
 # Fade Bot — paper ledger
 
-Updated: 2026-11-13T17:00:06.580128+00:00
+Updated: 2026-11-13T17:46:40.899105+00:00
 
-- Trades: **166** | Avg: **-9.0 bps** | Win: **39%** | Cum: **-1497.5 bps**
-- Money sim ($10.0 @ 50x): **-74.875 USD** | Liquidations: **6** | Open: **6**
+- Trades: **167** | Avg: **-8.0 bps** | Win: **40%** | Cum: **-1338.2 bps**
+- Money sim ($10.0 @ 50x): **-66.911 USD** | Liquidations: **6** | Open: **5**
 
 ## Results per strategy
 
@@ -12,14 +12,13 @@ Updated: 2026-11-13T17:00:06.580128+00:00
 | meanrev | 90 | 37% | -4.1 | -369.5 | -18.474 | 1 |
 | sentiment | 28 | 46% | -7.5 | -210.0 | -10.500 | 1 |
 | sentiment_follow | 28 | 39% | -15.2 | -426.8 | -21.341 | 2 |
-| scalp | 13 | 54% | -2.5 | -32.2 | -1.610 | 0 |
+| scalp | 14 | 57% | +9.1 | +127.1 | +6.354 | 0 |
 | breakout | 7 | 14% | -65.6 | -459.0 | -22.950 | 2 |
 
 ## Recent trades
 
 | Trade | Pair | Dir | Strategy | Open (UTC) | PnL bps | PnL USD |
 |---|---|---|---|---|---|---|
-| USDCAD-Buy-1794447000000-sentiment | USDCAD | Buy | sentiment | 2026-11-12T01:30 | -3.0 | -0.1486 |
 | USDCAD-Sell-1794447000000-sentiment_follow | USDCAD | Sell | sentiment_follow | 2026-11-12T01:30 | -0.0 | -0.0014 |
 | USDJPY-Buy-1794469500000-meanrev | USDJPY | Buy | meanrev | 2026-11-12T07:45 | -1.5 | -0.0750 |
 | ETHUSD-Buy-1794473100000-meanrev | ETHUSD | Buy | meanrev | 2026-11-12T08:45 | -11.2 | -0.5596 |
@@ -49,3 +48,4 @@ Updated: 2026-11-13T17:00:06.580128+00:00
 | ETHUSD-Buy-1794574800000-meanrev | ETHUSD | Buy | meanrev | 2026-11-13T13:00 | +20.5 | +1.0250 |
 | BTCUSD-Sell-1794585600000-scalp | BTCUSD | Sell | scalp | 2026-11-13T16:00 | -29.5 | -1.4750 |
 | ETHUSD-Sell-1794585600000-scalp | ETHUSD | Sell | scalp | 2026-11-13T16:00 | -29.5 | -1.4750 |
+| USDJPY-Sell-1794589200000-scalp | USDJPY | Sell | scalp | 2026-11-13T17:00 | +159.3 | +7.9635 |
