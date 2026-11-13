@@ -2,28 +2,6 @@
  "version": 3,
  "clusters_seen": {},
  "active": {
-  "USDCHF-Buy-1794579300000-sentiment": {
-   "pair": "USDCHF",
-   "fade_dir": "Buy",
-   "source": "sentiment",
-   "open_t": 1794579300000,
-   "entry_px": 0.83894,
-   "exit_t": 1794608100000,
-   "tp_bps": null,
-   "sl_bps": null,
-   "cost_bps": 1.5
-  },
-  "USDCHF-Sell-1794579300000-sentiment_follow": {
-   "pair": "USDCHF",
-   "fade_dir": "Sell",
-   "source": "sentiment_follow",
-   "open_t": 1794579300000,
-   "entry_px": 0.83894,
-   "exit_t": 1794608100000,
-   "tp_bps": null,
-   "sl_bps": null,
-   "cost_bps": 1.5
-  },
   "EURGBP-Sell-1794588300000-sentiment": {
    "pair": "EURGBP",
    "fade_dir": "Sell",
@@ -130,7 +108,8 @@
   "AUDJPY": 108.632,
   "EURAUD": 1.63227,
   "USDCAD": 1.42776,
-  "GBPUSD": 1.33387
+  "GBPUSD": 1.33387,
+  "USDCHF": 0.83983
  },
  "cooldown": {
   "meanrev|BTCUSD": 1794611231445,
@@ -162,7 +141,9 @@
   "meanrev|GBPUSD": 1794352720202,
   "scalp|EURCAD": 1794373550928,
   "sentiment|AUDUSD": 1794549534918,
-  "sentiment_follow|AUDUSD": 1794549534918
+  "sentiment_follow|AUDUSD": 1794549534918,
+  "sentiment|USDCHF": 1794613745315,
+  "sentiment_follow|USDCHF": 1794613745315
  },
  "seen_sigs": {
   "sentiment|EURUSD|Sell|1.11809": true,
@@ -328,5 +309,5 @@
   "sentiment|AUDUSD|Sell|0.6774": true,
   "sentiment_follow|AUDUSD|Buy|0.6774": true
  },
- "price_last": 1794607631445
+ "price_last": 1794610145315
 }
