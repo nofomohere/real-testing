@@ -2,28 +2,6 @@
  "version": 3,
  "clusters_seen": {},
  "active": {
-  "AUDUSD-Sell-1794514500000-sentiment": {
-   "pair": "AUDUSD",
-   "fade_dir": "Sell",
-   "source": "sentiment",
-   "open_t": 1794514500000,
-   "entry_px": 0.68062,
-   "exit_t": 1794543300000,
-   "tp_bps": null,
-   "sl_bps": null,
-   "cost_bps": 1.5
-  },
-  "AUDUSD-Buy-1794514500000-sentiment_follow": {
-   "pair": "AUDUSD",
-   "fade_dir": "Buy",
-   "source": "sentiment_follow",
-   "open_t": 1794514500000,
-   "entry_px": 0.68062,
-   "exit_t": 1794543300000,
-   "tp_bps": null,
-   "sl_bps": null,
-   "cost_bps": 1.5
-  },
   "USDCAD-Buy-1794536100000-sentiment": {
    "pair": "USDCAD",
    "fade_dir": "Buy",
@@ -80,7 +58,7 @@
   "EURGBP": 0.83513,
   "ETHUSD": 2003.5,
   "EURJPY": 177.363,
-  "AUDUSD": 0.68683,
+  "AUDUSD": 0.68048,
   "USDJPY": 159.0,
   "AUDJPY": 108.632,
   "EURAUD": 1.6296,
@@ -115,7 +93,9 @@
   "sentiment_follow|USDCAD": 1794480245051,
   "meanrev|EURCAD": 1794436519792,
   "meanrev|GBPUSD": 1794352720202,
-  "scalp|EURCAD": 1794373550928
+  "scalp|EURCAD": 1794373550928,
+  "sentiment|AUDUSD": 1794549534918,
+  "sentiment_follow|AUDUSD": 1794549534918
  },
  "seen_sigs": {
   "sentiment|EURUSD|Sell|1.11809": true,
@@ -261,5 +241,5 @@
   "sentiment|USDCAD|Buy|1.42638": true,
   "sentiment_follow|USDCAD|Sell|1.42638": true
  },
- "price_last": 1794542490790
+ "price_last": 1794545934918
 }

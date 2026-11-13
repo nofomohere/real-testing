@@ -1,17 +1,17 @@
 # Fade Bot — paper ledger
 
-Updated: 2026-11-13T04:02:54.257909+00:00
+Updated: 2026-11-13T05:00:18.123703+00:00
 
-- Trades: **154** | Avg: **-9.7 bps** | Win: **38%** | Cum: **-1487.0 bps**
-- Money sim ($10.0 @ 50x): **-74.350 USD** | Liquidations: **6** | Open: **4**
+- Trades: **156** | Avg: **-9.6 bps** | Win: **38%** | Cum: **-1490.0 bps**
+- Money sim ($10.0 @ 50x): **-74.500 USD** | Liquidations: **6** | Open: **2**
 
 ## Results per strategy
 
 | Strategy | Trades | Win% | Avg bps | Cum bps | Cum USD | Liqs |
 |---|---|---|---|---|---|---|
 | meanrev | 85 | 34% | -5.3 | -448.5 | -22.424 | 1 |
-| sentiment | 26 | 42% | -8.4 | -218.2 | -10.911 | 1 |
-| sentiment_follow | 26 | 42% | -15.9 | -412.6 | -20.629 | 2 |
+| sentiment | 27 | 44% | -7.9 | -213.3 | -10.663 | 1 |
+| sentiment_follow | 27 | 41% | -15.6 | -420.5 | -21.028 | 2 |
 | scalp | 11 | 64% | +2.4 | +26.8 | +1.340 | 0 |
 | breakout | 6 | 17% | -72.4 | -434.5 | -21.725 | 2 |
 
@@ -19,8 +19,6 @@ Updated: 2026-11-13T04:02:54.257909+00:00
 
 | Trade | Pair | Dir | Strategy | Open (UTC) | PnL bps | PnL USD |
 |---|---|---|---|---|---|---|
-| USDCAD-Buy-1794359700000-sentiment | USDCAD | Buy | sentiment | 2026-11-11T01:15 | +11.0 | +0.5517 |
-| USDCAD-Sell-1794359700000-sentiment_follow | USDCAD | Sell | sentiment_follow | 2026-11-11T01:15 | -14.0 | -0.7017 |
 | AUDJPY-Sell-1794384900000-meanrev | AUDJPY | Sell | meanrev | 2026-11-11T08:15 | -2.5 | -0.1250 |
 | EURCAD-Sell-1794384900000-meanrev | EURCAD | Sell | meanrev | 2026-11-11T08:15 | -3.0 | -0.1500 |
 | EURCAD-Sell-1794410100000-meanrev | EURCAD | Sell | meanrev | 2026-11-11T15:15 | -3.0 | -0.1500 |
@@ -49,3 +47,5 @@ Updated: 2026-11-13T04:02:54.257909+00:00
 | EURCAD-Sell-1794504600000-sentiment | EURCAD | Sell | sentiment | 2026-11-12T17:30 | +6.5 | +0.3254 |
 | EURCAD-Buy-1794504600000-sentiment_follow | EURCAD | Buy | sentiment_follow | 2026-11-12T17:30 | -12.5 | -0.6254 |
 | ETHUSD-Buy-1794526200000-meanrev | ETHUSD | Buy | meanrev | 2026-11-12T23:30 | -54.5 | -2.7250 |
+| AUDUSD-Sell-1794514500000-sentiment | AUDUSD | Sell | sentiment | 2026-11-12T20:15 | +5.0 | +0.2482 |
+| AUDUSD-Buy-1794514500000-sentiment_follow | AUDUSD | Buy | sentiment_follow | 2026-11-12T20:15 | -8.0 | -0.3982 |
