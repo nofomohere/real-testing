@@ -23,6 +23,17 @@
    "tp_bps": null,
    "sl_bps": null,
    "cost_bps": 1.5
+  },
+  "BTCUSD-Sell-1794548700000-breakout": {
+   "pair": "BTCUSD",
+   "fade_dir": "Sell",
+   "source": "breakout",
+   "open_t": 1794548700000,
+   "entry_px": 68045.9,
+   "exit_t": 1794563100000,
+   "tp_bps": 40.0,
+   "sl_bps": 20.0,
+   "cost_bps": 4.5
   }
  },
  "mfb_last": {
@@ -239,7 +250,8 @@
   "sentiment_follow|AUDUSD|Buy|0.68062": true,
   "meanrev|ETHUSD|Buy|2015.06": true,
   "sentiment|USDCAD|Buy|1.42638": true,
-  "sentiment_follow|USDCAD|Sell|1.42638": true
+  "sentiment_follow|USDCAD|Sell|1.42638": true,
+  "breakout|BTCUSD|Sell|68045.9": true
  },
- "price_last": 1794545934918
+ "price_last": 1794549355647
 }
