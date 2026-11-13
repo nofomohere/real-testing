@@ -1,15 +1,15 @@
 # Fade Bot — paper ledger
 
-Updated: 2026-11-13T21:22:12.907380+00:00
+Updated: 2026-11-13T22:08:28.082922+00:00
 
-- Trades: **168** | Avg: **-7.0 bps** | Win: **40%** | Cum: **-1179.0 bps**
-- Money sim ($10.0 @ 50x): **-58.948 USD** | Liquidations: **6** | Open: **10**
+- Trades: **170** | Avg: **-7.1 bps** | Win: **40%** | Cum: **-1213.0 bps**
+- Money sim ($10.0 @ 50x): **-60.648 USD** | Liquidations: **6** | Open: **8**
 
 ## Results per strategy
 
 | Strategy | Trades | Win% | Avg bps | Cum bps | Cum USD | Liqs |
 |---|---|---|---|---|---|---|
-| meanrev | 91 | 37% | -2.3 | -210.2 | -10.510 | 1 |
+| meanrev | 93 | 38% | -2.6 | -244.2 | -12.210 | 1 |
 | sentiment | 28 | 46% | -7.5 | -210.0 | -10.500 | 1 |
 | sentiment_follow | 28 | 39% | -15.2 | -426.8 | -21.341 | 2 |
 | scalp | 14 | 57% | +9.1 | +127.1 | +6.354 | 0 |
@@ -19,8 +19,6 @@ Updated: 2026-11-13T21:22:12.907380+00:00
 
 | Trade | Pair | Dir | Strategy | Open (UTC) | PnL bps | PnL USD |
 |---|---|---|---|---|---|---|
-| USDJPY-Buy-1794469500000-meanrev | USDJPY | Buy | meanrev | 2026-11-12T07:45 | -1.5 | -0.0750 |
-| ETHUSD-Buy-1794473100000-meanrev | ETHUSD | Buy | meanrev | 2026-11-12T08:45 | -11.2 | -0.5596 |
 | BTCUSD-Buy-1794480300000-meanrev | BTCUSD | Buy | meanrev | 2026-11-12T10:45 | -54.5 | -2.7250 |
 | AUDJPY-Buy-1794483000000-meanrev | AUDJPY | Buy | meanrev | 2026-11-12T11:30 | -2.5 | -0.1250 |
 | USDJPY-Buy-1794486600000-meanrev | USDJPY | Buy | meanrev | 2026-11-12T12:30 | -1.5 | -0.0750 |
@@ -49,3 +47,5 @@ Updated: 2026-11-13T21:22:12.907380+00:00
 | ETHUSD-Sell-1794585600000-scalp | ETHUSD | Sell | scalp | 2026-11-13T16:00 | -29.5 | -1.4750 |
 | USDJPY-Sell-1794589200000-scalp | USDJPY | Sell | scalp | 2026-11-13T17:00 | +159.3 | +7.9635 |
 | USDJPY-Sell-1794589200000-meanrev | USDJPY | Sell | meanrev | 2026-11-13T17:00 | +159.3 | +7.9635 |
+| BTCUSD-Buy-1794598200000-meanrev | BTCUSD | Buy | meanrev | 2026-11-13T19:30 | -54.5 | -2.7250 |
+| ETHUSD-Buy-1794598200000-meanrev | ETHUSD | Buy | meanrev | 2026-11-13T19:30 | +20.5 | +1.0250 |
