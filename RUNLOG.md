@@ -346,3 +346,29 @@
 2026-11-13 18:34 | price SPX500: no fresh source (stale/offline)
 2026-11-13 18:34 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=7 new=0 closed=0
 2026-11-13 18:34 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-13 19:30 | FX quote check: USDJPY breaks 2 cross-rate triangles -> banished (bad venue quote)
+2026-11-13 19:30 | tg getMe error: HTTP Error 401: Unauthorized
+2026-11-13 19:32 | FX quote check: USDJPY breaks 2 cross-rate triangles -> banished (bad venue quote)
+2026-11-13 19:33 | price USDJPY: no fresh source (stale/offline)
+2026-11-13 19:33 | price NZDUSD: no fresh source (stale/offline)
+2026-11-13 19:33 | price GBPJPY: no fresh source (stale/offline)
+2026-11-13 19:33 | price AUDCAD: no fresh source (stale/offline)
+2026-11-13 19:33 | price XAUUSD: no fresh source (stale/offline)
+2026-11-13 19:33 | price GBPAUD: no fresh source (stale/offline)
+2026-11-13 19:33 | price GBPCAD: no fresh source (stale/offline)
+2026-11-13 19:33 | price EURTRY: no fresh source (stale/offline)
+2026-11-13 19:33 | price USDTRY: no fresh source (stale/offline)
+2026-11-13 19:33 | price USDZAR: no fresh source (stale/offline)
+2026-11-13 19:33 | price EURNOK: no fresh source (stale/offline)
+2026-11-13 19:33 | price USDNOK: no fresh source (stale/offline)
+2026-11-13 19:33 | price US30: no fresh source (stale/offline)
+2026-11-13 19:33 | price NAS100: no fresh source (stale/offline)
+2026-11-13 19:33 | price SPX500: no fresh source (stale/offline)
+2026-11-13 19:33 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-13 19:33 | OPEN BTCUSD-Buy-1794598200000-meanrev Buy @ 68968.2
+2026-11-13 19:33 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-13 19:33 | OPEN ETHUSD-Buy-1794598200000-meanrev Buy @ 1949.0
+2026-11-13 19:33 | CLOSE USDJPY-Sell-1794589200000-meanrev no_data fallback pnl=+159.3bps
+2026-11-13 19:33 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-13 19:33 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=9 new=2 closed=1
+2026-11-13 19:33 | tg sendMessage error: <urlopen error [Errno 104] Connection reset by peer>
