@@ -1,15 +1,15 @@
 # Fade Bot — paper ledger
 
-Updated: 2026-11-14T11:14:54.851095+00:00
+Updated: 2026-11-14T11:53:42.757703+00:00
 
-- Trades: **183** | Avg: **-9.6 bps** | Win: **40%** | Cum: **-1765.3 bps**
-- Money sim ($10.0 @ 50x): **-88.266 USD** | Liquidations: **9** | Open: **2**
+- Trades: **185** | Avg: **-10.0 bps** | Win: **39%** | Cum: **-1848.1 bps**
+- Money sim ($10.0 @ 50x): **-92.407 USD** | Liquidations: **9** | Open: **0**
 
 ## Results per strategy
 
 | Strategy | Trades | Win% | Avg bps | Cum bps | Cum USD | Liqs |
 |---|---|---|---|---|---|---|
-| meanrev | 97 | 38% | -6.2 | -603.2 | -30.160 | 3 |
+| meanrev | 99 | 37% | -6.9 | -686.0 | -34.302 | 3 |
 | sentiment | 32 | 50% | -4.6 | -145.7 | -7.284 | 1 |
 | sentiment_follow | 32 | 34% | -20.5 | -655.0 | -32.750 | 3 |
 | scalp | 15 | 53% | +6.5 | +97.6 | +4.879 | 0 |
@@ -19,8 +19,6 @@ Updated: 2026-11-14T11:14:54.851095+00:00
 
 | Trade | Pair | Dir | Strategy | Open (UTC) | PnL bps | PnL USD |
 |---|---|---|---|---|---|---|
-| ETHUSD-Buy-1794526200000-meanrev | ETHUSD | Buy | meanrev | 2026-11-12T23:30 | -54.5 | -2.7250 |
-| AUDUSD-Sell-1794514500000-sentiment | AUDUSD | Sell | sentiment | 2026-11-12T20:15 | +5.0 | +0.2482 |
 | AUDUSD-Buy-1794514500000-sentiment_follow | AUDUSD | Buy | sentiment_follow | 2026-11-12T20:15 | -8.0 | -0.3982 |
 | EURAUD-Sell-1794552300000-meanrev | EURAUD | Sell | meanrev | 2026-11-13T06:45 | -3.0 | -0.1500 |
 | BTCUSD-Sell-1794548700000-breakout | BTCUSD | Sell | breakout | 2026-11-13T05:45 | -24.5 | -1.2250 |
@@ -49,3 +47,5 @@ Updated: 2026-11-14T11:14:54.851095+00:00
 | ETHUSD-Buy-1794621600000-meanrev | ETHUSD | Buy | meanrev | 2026-11-14T02:00 | -200.0 | -10.0000 |
 | BTCUSD-Buy-1794636900000-meanrev | BTCUSD | Buy | meanrev | 2026-11-14T06:15 | +20.5 | +1.0250 |
 | ETHUSD-Buy-1794636900000-meanrev | ETHUSD | Buy | meanrev | 2026-11-14T06:15 | +20.5 | +1.0250 |
+| BTCUSD-Buy-1794649500000-meanrev | BTCUSD | Buy | meanrev | 2026-11-14T09:45 | -28.3 | -1.4166 |
+| ETHUSD-Buy-1794649500000-meanrev | ETHUSD | Buy | meanrev | 2026-11-14T09:45 | -54.5 | -2.7250 |
