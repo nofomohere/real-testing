@@ -1,9 +1,9 @@
 # Fade Bot — paper ledger
 
-Updated: 2026-11-14T17:31:30.242549+00:00
+Updated: 2026-11-14T18:08:53.033095+00:00
 
-- Trades: **185** | Avg: **-10.0 bps** | Win: **39%** | Cum: **-1848.1 bps**
-- Money sim ($10.0 @ 50x): **-92.407 USD** | Liquidations: **9** | Open: **2**
+- Trades: **187** | Avg: **-10.2 bps** | Win: **39%** | Cum: **-1907.1 bps**
+- Money sim ($10.0 @ 50x): **-95.358 USD** | Liquidations: **9** | Open: **0**
 
 ## Results per strategy
 
@@ -12,15 +12,13 @@ Updated: 2026-11-14T17:31:30.242549+00:00
 | meanrev | 99 | 37% | -6.9 | -686.0 | -34.302 | 3 |
 | sentiment | 32 | 50% | -4.6 | -145.7 | -7.284 | 1 |
 | sentiment_follow | 32 | 34% | -20.5 | -655.0 | -32.750 | 3 |
-| scalp | 15 | 53% | +6.5 | +97.6 | +4.879 | 0 |
+| scalp | 17 | 47% | +2.3 | +38.6 | +1.929 | 0 |
 | breakout | 7 | 14% | -65.6 | -459.0 | -22.950 | 2 |
 
 ## Recent trades
 
 | Trade | Pair | Dir | Strategy | Open (UTC) | PnL bps | PnL USD |
 |---|---|---|---|---|---|---|
-| AUDUSD-Buy-1794514500000-sentiment_follow | AUDUSD | Buy | sentiment_follow | 2026-11-12T20:15 | -8.0 | -0.3982 |
-| EURAUD-Sell-1794552300000-meanrev | EURAUD | Sell | meanrev | 2026-11-13T06:45 | -3.0 | -0.1500 |
 | BTCUSD-Sell-1794548700000-breakout | BTCUSD | Sell | breakout | 2026-11-13T05:45 | -24.5 | -1.2250 |
 | USDCAD-Buy-1794536100000-sentiment | USDCAD | Buy | sentiment | 2026-11-13T02:15 | +3.3 | +0.1634 |
 | USDCAD-Sell-1794536100000-sentiment_follow | USDCAD | Sell | sentiment_follow | 2026-11-13T02:15 | -6.3 | -0.3134 |
@@ -49,3 +47,5 @@ Updated: 2026-11-14T17:31:30.242549+00:00
 | ETHUSD-Buy-1794636900000-meanrev | ETHUSD | Buy | meanrev | 2026-11-14T06:15 | +20.5 | +1.0250 |
 | BTCUSD-Buy-1794649500000-meanrev | BTCUSD | Buy | meanrev | 2026-11-14T09:45 | -28.3 | -1.4166 |
 | ETHUSD-Buy-1794649500000-meanrev | ETHUSD | Buy | meanrev | 2026-11-14T09:45 | -54.5 | -2.7250 |
+| BTCUSD-Sell-1794677400000-scalp | BTCUSD | Sell | scalp | 2026-11-14T17:30 | -29.5 | -1.4750 |
+| ETHUSD-Sell-1794677400000-scalp | ETHUSD | Sell | scalp | 2026-11-14T17:30 | -29.5 | -1.4750 |
