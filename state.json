@@ -87,7 +87,7 @@
  "alarm_sent": false,
  "auth_alert_sent": false,
  "status_last": 1794607631445,
- "last_summary": "20261113",
+ "last_summary": "20261114",
  "last_update_id": 0,
  "scalp_last": {
   "BTCUSD": 1794585980026,
@@ -309,5 +309,5 @@
   "sentiment|AUDUSD|Sell|0.6774": true,
   "sentiment_follow|AUDUSD|Buy|0.6774": true
  },
- "price_last": 1794612451220
+ "price_last": 1794614671003
 }
