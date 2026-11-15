@@ -1,15 +1,15 @@
 # Fade Bot — paper ledger
 
-Updated: 2026-11-15T04:24:28.392121+00:00
+Updated: 2026-11-15T05:21:25.264505+00:00
 
-- Trades: **191** | Avg: **-9.7 bps** | Win: **40%** | Cum: **-1855.1 bps**
-- Money sim ($10.0 @ 50x): **-92.758 USD** | Liquidations: **9** | Open: **3**
+- Trades: **193** | Avg: **-9.4 bps** | Win: **41%** | Cum: **-1814.1 bps**
+- Money sim ($10.0 @ 50x): **-90.708 USD** | Liquidations: **9** | Open: **1**
 
 ## Results per strategy
 
 | Strategy | Trades | Win% | Avg bps | Cum bps | Cum USD | Liqs |
 |---|---|---|---|---|---|---|
-| meanrev | 101 | 39% | -6.4 | -645.0 | -32.252 | 3 |
+| meanrev | 103 | 40% | -5.9 | -604.0 | -30.202 | 3 |
 | sentiment | 32 | 50% | -4.6 | -145.7 | -7.284 | 1 |
 | sentiment_follow | 32 | 34% | -20.5 | -655.0 | -32.750 | 3 |
 | scalp | 19 | 53% | +2.6 | +49.6 | +2.479 | 0 |
@@ -19,8 +19,6 @@ Updated: 2026-11-15T04:24:28.392121+00:00
 
 | Trade | Pair | Dir | Strategy | Open (UTC) | PnL bps | PnL USD |
 |---|---|---|---|---|---|---|
-| BTCUSD-Buy-1794561300000-meanrev | BTCUSD | Buy | meanrev | 2026-11-13T09:15 | +20.5 | +1.0250 |
-| BTCUSD-Buy-1794574800000-meanrev | BTCUSD | Buy | meanrev | 2026-11-13T13:00 | +20.5 | +1.0250 |
 | ETHUSD-Buy-1794574800000-meanrev | ETHUSD | Buy | meanrev | 2026-11-13T13:00 | +20.5 | +1.0250 |
 | BTCUSD-Sell-1794585600000-scalp | BTCUSD | Sell | scalp | 2026-11-13T16:00 | -29.5 | -1.4750 |
 | ETHUSD-Sell-1794585600000-scalp | ETHUSD | Sell | scalp | 2026-11-13T16:00 | -29.5 | -1.4750 |
@@ -49,3 +47,5 @@ Updated: 2026-11-15T04:24:28.392121+00:00
 | ETHUSD-Buy-1794686400000-meanrev | ETHUSD | Buy | meanrev | 2026-11-14T20:00 | +20.5 | +1.0250 |
 | BTCUSD-Sell-1794699900000-scalp | BTCUSD | Sell | scalp | 2026-11-14T23:45 | +5.5 | +0.2750 |
 | ETHUSD-Sell-1794699900000-scalp | ETHUSD | Sell | scalp | 2026-11-14T23:45 | +5.5 | +0.2750 |
+| BTCUSD-Buy-1794709800000-meanrev | BTCUSD | Buy | meanrev | 2026-11-15T02:30 | +20.5 | +1.0250 |
+| ETHUSD-Buy-1794709800000-meanrev | ETHUSD | Buy | meanrev | 2026-11-15T02:30 | +20.5 | +1.0250 |
