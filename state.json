@@ -4,10 +4,10 @@
  "active": {},
  "mfb_last": {
   "EURUSD|Sell": 1794764905682,
-  "EURCAD|Sell": 1794682157237,
+  "EURCAD|Sell": 1794770070367,
   "EURGBP|Sell": 1794764905682,
-  "NZDUSD|Sell": 1794682157237,
-  "GBPAUD|Buy": 1794682157237,
+  "NZDUSD|Sell": 1794770070367,
+  "GBPAUD|Buy": 1794770070367,
   "ETHUSD|Sell": 1793832102153,
   "USDCAD|Buy": 1794713052519,
   "GBPCAD|Buy": 1794255323064,
@@ -19,7 +19,7 @@
  "tg_hello_sent": true,
  "alarm_sent": false,
  "auth_alert_sent": false,
- "status_last": 1794755611871,
+ "status_last": 1794770070367,
  "last_summary": "20261115",
  "last_update_id": 0,
  "scalp_last": {
@@ -263,5 +263,5 @@
   "meanrev|BTCUSD|Sell|65404.2": true,
   "meanrev|ETHUSD|Sell|1819.84": true
  },
- "price_last": 1794767019057
+ "price_last": 1794770070367
 }
