@@ -1,19 +1,7 @@
 {
  "version": 3,
  "clusters_seen": {},
- "active": {
-  "ETHUSD-Sell-1794777300000-meanrev": {
-   "pair": "ETHUSD",
-   "fade_dir": "Sell",
-   "source": "meanrev",
-   "open_t": 1794777300000,
-   "entry_px": 1815.71,
-   "exit_t": 1794784500000,
-   "tp_bps": 25.0,
-   "sl_bps": 50.0,
-   "cost_bps": 4.5
-  }
- },
+ "active": {},
  "mfb_last": {
   "EURUSD|Sell": 1794764905682,
   "EURCAD|Sell": 1794770070367,
@@ -31,7 +19,7 @@
  "tg_hello_sent": true,
  "alarm_sent": false,
  "auth_alert_sent": false,
- "status_last": 1794770070367,
+ "status_last": 1794786687843,
  "last_summary": "20261115",
  "last_update_id": 0,
  "scalp_last": {
@@ -46,7 +34,7 @@
   "EURUSD": 1.10558,
   "EURCAD": 1.5717,
   "EURGBP": 0.83356,
-  "ETHUSD": 1815.87,
+  "ETHUSD": 1832.76,
   "EURJPY": 177.363,
   "AUDUSD": 0.6725,
   "USDJPY": 159.0,
@@ -64,7 +52,7 @@
   "sentiment_follow|EURCAD": 1794628037978,
   "sentiment|EURGBP": 1794621637404,
   "sentiment_follow|EURGBP": 1794621637404,
-  "meanrev|ETHUSD": 1794770619057,
+  "meanrev|ETHUSD": 1794790287843,
   "scalp|BTCUSD": 1794730712705,
   "scalp|ETHUSD": 1794750584422,
   "meanrev|EURJPY": 1794014434955,
@@ -276,5 +264,5 @@
   "meanrev|ETHUSD|Sell|1819.84": true,
   "meanrev|ETHUSD|Sell|1815.71": true
  },
- "price_last": 1794784053004
+ "price_last": 1794786687843
 }
