@@ -1,9 +1,9 @@
 # Fade Bot — paper ledger
 
-Updated: 2026-11-14T23:52:03.139379+00:00
+Updated: 2026-11-15T00:25:38.930292+00:00
 
-- Trades: **189** | Avg: **-9.9 bps** | Win: **40%** | Cum: **-1866.1 bps**
-- Money sim ($10.0 @ 50x): **-93.308 USD** | Liquidations: **9** | Open: **2**
+- Trades: **191** | Avg: **-9.7 bps** | Win: **40%** | Cum: **-1855.1 bps**
+- Money sim ($10.0 @ 50x): **-92.758 USD** | Liquidations: **9** | Open: **0**
 
 ## Results per strategy
 
@@ -12,15 +12,13 @@ Updated: 2026-11-14T23:52:03.139379+00:00
 | meanrev | 101 | 39% | -6.4 | -645.0 | -32.252 | 3 |
 | sentiment | 32 | 50% | -4.6 | -145.7 | -7.284 | 1 |
 | sentiment_follow | 32 | 34% | -20.5 | -655.0 | -32.750 | 3 |
-| scalp | 17 | 47% | +2.3 | +38.6 | +1.929 | 0 |
+| scalp | 19 | 53% | +2.6 | +49.6 | +2.479 | 0 |
 | breakout | 7 | 14% | -65.6 | -459.0 | -22.950 | 2 |
 
 ## Recent trades
 
 | Trade | Pair | Dir | Strategy | Open (UTC) | PnL bps | PnL USD |
 |---|---|---|---|---|---|---|
-| USDCAD-Sell-1794536100000-sentiment_follow | USDCAD | Sell | sentiment_follow | 2026-11-13T02:15 | -6.3 | -0.3134 |
-| ETHUSD-Buy-1794557700000-meanrev | ETHUSD | Buy | meanrev | 2026-11-13T08:15 | +20.5 | +1.0250 |
 | BTCUSD-Buy-1794561300000-meanrev | BTCUSD | Buy | meanrev | 2026-11-13T09:15 | +20.5 | +1.0250 |
 | BTCUSD-Buy-1794574800000-meanrev | BTCUSD | Buy | meanrev | 2026-11-13T13:00 | +20.5 | +1.0250 |
 | ETHUSD-Buy-1794574800000-meanrev | ETHUSD | Buy | meanrev | 2026-11-13T13:00 | +20.5 | +1.0250 |
@@ -49,3 +47,5 @@ Updated: 2026-11-14T23:52:03.139379+00:00
 | ETHUSD-Sell-1794677400000-scalp | ETHUSD | Sell | scalp | 2026-11-14T17:30 | -29.5 | -1.4750 |
 | BTCUSD-Buy-1794686400000-meanrev | BTCUSD | Buy | meanrev | 2026-11-14T20:00 | +20.5 | +1.0250 |
 | ETHUSD-Buy-1794686400000-meanrev | ETHUSD | Buy | meanrev | 2026-11-14T20:00 | +20.5 | +1.0250 |
+| BTCUSD-Sell-1794699900000-scalp | BTCUSD | Sell | scalp | 2026-11-14T23:45 | +5.5 | +0.2750 |
+| ETHUSD-Sell-1794699900000-scalp | ETHUSD | Sell | scalp | 2026-11-14T23:45 | +5.5 | +0.2750 |
