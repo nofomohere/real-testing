@@ -1,15 +1,15 @@
 # Fade Bot — paper ledger
 
-Updated: 2026-11-16T04:14:06.401773+00:00
+Updated: 2026-11-16T05:42:18.049951+00:00
 
-- Trades: **201** | Avg: **-9.3 bps** | Win: **41%** | Cum: **-1872.6 bps**
-- Money sim ($10.0 @ 50x): **-93.633 USD** | Liquidations: **9** | Open: **6**
+- Trades: **203** | Avg: **-9.1 bps** | Win: **41%** | Cum: **-1853.1 bps**
+- Money sim ($10.0 @ 50x): **-92.657 USD** | Liquidations: **9** | Open: **4**
 
 ## Results per strategy
 
 | Strategy | Trades | Win% | Avg bps | Cum bps | Cum USD | Liqs |
 |---|---|---|---|---|---|---|
-| meanrev | 106 | 41% | -5.8 | -617.5 | -30.877 | 3 |
+| meanrev | 108 | 41% | -5.5 | -598.0 | -29.902 | 3 |
 | sentiment | 32 | 50% | -4.6 | -145.7 | -7.284 | 1 |
 | sentiment_follow | 32 | 34% | -20.5 | -655.0 | -32.750 | 3 |
 | scalp | 23 | 52% | +1.3 | +29.1 | +1.454 | 0 |
@@ -19,8 +19,6 @@ Updated: 2026-11-16T04:14:06.401773+00:00
 
 | Trade | Pair | Dir | Strategy | Open (UTC) | PnL bps | PnL USD |
 |---|---|---|---|---|---|---|
-| USDCHF-Sell-1794579300000-sentiment_follow | USDCHF | Sell | sentiment_follow | 2026-11-13T14:15 | -11.0 | -0.5518 |
-| EURGBP-Sell-1794588300000-sentiment | EURGBP | Sell | sentiment | 2026-11-13T16:45 | +9.5 | +0.4752 |
 | EURGBP-Buy-1794588300000-sentiment_follow | EURGBP | Buy | sentiment_follow | 2026-11-13T16:45 | -13.5 | -0.6752 |
 | EURCAD-Sell-1794594600000-sentiment | EURCAD | Sell | sentiment | 2026-11-13T18:30 | -2.4 | -0.1182 |
 | EURCAD-Buy-1794594600000-sentiment_follow | EURCAD | Buy | sentiment_follow | 2026-11-13T18:30 | -3.6 | -0.1818 |
@@ -49,3 +47,5 @@ Updated: 2026-11-16T04:14:06.401773+00:00
 | ETHUSD-Sell-1794759300000-meanrev | ETHUSD | Sell | meanrev | 2026-11-15T16:15 | +20.5 | +1.0250 |
 | ETHUSD-Sell-1794777300000-meanrev | ETHUSD | Sell | meanrev | 2026-11-15T21:15 | -54.5 | -2.7250 |
 | EURJPY-Buy-1794794400000-scalp | EURJPY | Buy | scalp | 2026-11-16T02:00 | -2.0 | -0.1000 |
+| AUDJPY-Sell-1794798000000-meanrev | AUDJPY | Sell | meanrev | 2026-11-16T03:00 | +22.5 | +1.1250 |
+| EURAUD-Buy-1794798000000-meanrev | EURAUD | Buy | meanrev | 2026-11-16T03:00 | -3.0 | -0.1500 |
