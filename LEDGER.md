@@ -1,27 +1,24 @@
 # Fade Bot — paper ledger
 
-Updated: 2026-11-17T16:43:48.172140+00:00
+Updated: 2026-11-17T17:46:02.157682+00:00
 
-- Trades: **228** | Avg: **-11.0 bps** | Win: **40%** | Cum: **-2515.5 bps**
-- Money sim ($10.0 @ 50x): **-125.774 USD** | Liquidations: **12** | Open: **7**
+- Trades: **231** | Avg: **-10.8 bps** | Win: **41%** | Cum: **-2486.5 bps**
+- Money sim ($10.0 @ 50x): **-124.324 USD** | Liquidations: **12** | Open: **4**
 
 ## Results per strategy
 
 | Strategy | Trades | Win% | Avg bps | Cum bps | Cum USD | Liqs |
 |---|---|---|---|---|---|---|
-| meanrev | 112 | 42% | -4.9 | -548.2 | -27.412 | 3 |
+| meanrev | 114 | 42% | -4.6 | -527.7 | -26.387 | 3 |
 | sentiment | 40 | 50% | -6.9 | -274.1 | -13.704 | 2 |
 | sentiment_follow | 40 | 28% | -24.8 | -990.7 | -49.536 | 4 |
-| scalp | 27 | 48% | -7.3 | -196.9 | -9.846 | 1 |
+| scalp | 28 | 50% | -6.7 | -188.4 | -9.421 | 1 |
 | breakout | 9 | 11% | -56.2 | -505.5 | -25.275 | 2 |
 
 ## Recent trades
 
 | Trade | Pair | Dir | Strategy | Open (UTC) | PnL bps | PnL USD |
 |---|---|---|---|---|---|---|
-| ETHUSD-Sell-1794759300000-meanrev | ETHUSD | Sell | meanrev | 2026-11-15T16:15 | +20.5 | +1.0250 |
-| ETHUSD-Sell-1794777300000-meanrev | ETHUSD | Sell | meanrev | 2026-11-15T21:15 | -54.5 | -2.7250 |
-| EURJPY-Buy-1794794400000-scalp | EURJPY | Buy | scalp | 2026-11-16T02:00 | -2.0 | -0.1000 |
 | AUDJPY-Sell-1794798000000-meanrev | AUDJPY | Sell | meanrev | 2026-11-16T03:00 | +22.5 | +1.1250 |
 | EURAUD-Buy-1794798000000-meanrev | EURAUD | Buy | meanrev | 2026-11-16T03:00 | -3.0 | -0.1500 |
 | ETHUSD-Sell-1794789000000-sentiment | ETHUSD | Sell | sentiment | 2026-11-16T00:30 | -200.0 | -10.0000 |
@@ -49,3 +46,6 @@ Updated: 2026-11-17T16:43:48.172140+00:00
 | ETHUSD-Buy-1794897000000-scalp | ETHUSD | Buy | scalp | 2026-11-17T06:30 | -29.5 | -1.4750 |
 | EURJPY-Sell-1794902400000-breakout | EURJPY | Sell | breakout | 2026-11-17T08:00 | -22.0 | -1.1000 |
 | ETHUSD-Sell-1794915000000-scalp | ETHUSD | Sell | scalp | 2026-11-17T11:30 | +5.5 | +0.2750 |
+| USDJPY-Sell-1794926700000-meanrev | USDJPY | Sell | meanrev | 2026-11-17T14:45 | +23.5 | +1.1750 |
+| EURAUD-Buy-1794929400000-meanrev | EURAUD | Buy | meanrev | 2026-11-17T15:30 | -3.0 | -0.1500 |
+| USDJPY-Sell-1794933000000-scalp | USDJPY | Sell | scalp | 2026-11-17T16:30 | +8.5 | +0.4250 |
