@@ -1,41 +1,7 @@
 {
  "version": 3,
  "clusters_seen": {},
- "active": {
-  "AUDUSD-Sell-1794863700000-sentiment": {
-   "pair": "AUDUSD",
-   "fade_dir": "Sell",
-   "source": "sentiment",
-   "open_t": 1794863700000,
-   "entry_px": 0.67332,
-   "exit_t": 1794892500000,
-   "tp_bps": null,
-   "sl_bps": null,
-   "cost_bps": 1.5
-  },
-  "AUDUSD-Buy-1794863700000-sentiment_follow": {
-   "pair": "AUDUSD",
-   "fade_dir": "Buy",
-   "source": "sentiment_follow",
-   "open_t": 1794863700000,
-   "entry_px": 0.67332,
-   "exit_t": 1794892500000,
-   "tp_bps": null,
-   "sl_bps": null,
-   "cost_bps": 1.5
-  },
-  "EURJPY-Buy-1794889800000-scalp": {
-   "pair": "EURJPY",
-   "fade_dir": "Buy",
-   "source": "scalp",
-   "open_t": 1794889800000,
-   "entry_px": 175.062,
-   "exit_t": 1794891600000,
-   "tp_bps": 10.0,
-   "sl_bps": 25.0,
-   "cost_bps": 2.0
-  }
- },
+ "active": {},
  "mfb_last": {
   "EURUSD|Sell": 1794851904673,
   "EURCAD|Sell": 1794858377380,
@@ -71,8 +37,8 @@
   "EURCAD": 1.5817,
   "EURGBP": 0.83422,
   "ETHUSD": 1820.06,
-  "EURJPY": 175.726,
-  "AUDUSD": 0.6725,
+  "EURJPY": 175.062,
+  "AUDUSD": 0.67455,
   "USDJPY": 159.0,
   "AUDJPY": 107.106,
   "EURAUD": 1.6269,
@@ -102,15 +68,15 @@
   "meanrev|AUDJPY": 1794811251652,
   "breakout|EURAUD": 1793938539017,
   "meanrev|EURAUD": 1794811251652,
-  "scalp|EURJPY": 1794801760983,
+  "scalp|EURJPY": 1794897481451,
   "meanrev|USDJPY": 1794483904489,
   "sentiment|USDCAD": 1794836177768,
   "sentiment_follow|USDCAD": 1794836177768,
   "meanrev|EURCAD": 1794884017863,
   "meanrev|GBPUSD": 1794352720202,
   "scalp|EURCAD": 1794373550928,
-  "sentiment|AUDUSD": 1794634228513,
-  "sentiment_follow|AUDUSD": 1794634228513,
+  "sentiment|AUDUSD": 1794897481451,
+  "sentiment_follow|AUDUSD": 1794897481451,
   "sentiment|USDCHF": 1794613745315,
   "sentiment_follow|USDCHF": 1794613745315,
   "sentiment|AUDJPY": 1794847283506,
@@ -329,5 +295,5 @@
   "scalp|USDJPY|Buy|159.902": true,
   "scalp|EURJPY|Buy|175.062": true
  },
- "price_last": 1794890175914
+ "price_last": 1794893881451
 }
