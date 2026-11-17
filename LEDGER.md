@@ -1,9 +1,9 @@
 # Fade Bot — paper ledger
 
-Updated: 2026-11-17T11:42:15.117043+00:00
+Updated: 2026-11-17T12:38:28.789426+00:00
 
-- Trades: **226** | Avg: **-11.1 bps** | Win: **40%** | Cum: **-2499.0 bps**
-- Money sim ($10.0 @ 50x): **-124.949 USD** | Liquidations: **12** | Open: **6**
+- Trades: **228** | Avg: **-11.0 bps** | Win: **40%** | Cum: **-2515.5 bps**
+- Money sim ($10.0 @ 50x): **-125.774 USD** | Liquidations: **12** | Open: **4**
 
 ## Results per strategy
 
@@ -12,15 +12,13 @@ Updated: 2026-11-17T11:42:15.117043+00:00
 | meanrev | 112 | 42% | -4.9 | -548.2 | -27.412 | 3 |
 | sentiment | 40 | 50% | -6.9 | -274.1 | -13.704 | 2 |
 | sentiment_follow | 40 | 28% | -24.8 | -990.7 | -49.536 | 4 |
-| scalp | 26 | 46% | -7.8 | -202.4 | -10.121 | 1 |
-| breakout | 8 | 12% | -60.4 | -483.5 | -24.175 | 2 |
+| scalp | 27 | 48% | -7.3 | -196.9 | -9.846 | 1 |
+| breakout | 9 | 11% | -56.2 | -505.5 | -25.275 | 2 |
 
 ## Recent trades
 
 | Trade | Pair | Dir | Strategy | Open (UTC) | PnL bps | PnL USD |
 |---|---|---|---|---|---|---|
-| ETHUSD-Buy-1794744000000-scalp | ETHUSD | Buy | scalp | 2026-11-15T12:00 | -29.5 | -1.4750 |
-| BTCUSD-Sell-1794749400000-meanrev | BTCUSD | Sell | meanrev | 2026-11-15T13:30 | +20.5 | +1.0250 |
 | ETHUSD-Sell-1794759300000-meanrev | ETHUSD | Sell | meanrev | 2026-11-15T16:15 | +20.5 | +1.0250 |
 | ETHUSD-Sell-1794777300000-meanrev | ETHUSD | Sell | meanrev | 2026-11-15T21:15 | -54.5 | -2.7250 |
 | EURJPY-Buy-1794794400000-scalp | EURJPY | Buy | scalp | 2026-11-16T02:00 | -2.0 | -0.1000 |
@@ -49,3 +47,5 @@ Updated: 2026-11-17T11:42:15.117043+00:00
 | AUDUSD-Buy-1794863700000-sentiment_follow | AUDUSD | Buy | sentiment_follow | 2026-11-16T21:15 | -200.0 | -10.0000 |
 | EURJPY-Buy-1794889800000-scalp | EURJPY | Buy | scalp | 2026-11-17T04:30 | -2.0 | -0.1000 |
 | ETHUSD-Buy-1794897000000-scalp | ETHUSD | Buy | scalp | 2026-11-17T06:30 | -29.5 | -1.4750 |
+| EURJPY-Sell-1794902400000-breakout | EURJPY | Sell | breakout | 2026-11-17T08:00 | -22.0 | -1.1000 |
+| ETHUSD-Sell-1794915000000-scalp | ETHUSD | Sell | scalp | 2026-11-17T11:30 | +5.5 | +0.2750 |
