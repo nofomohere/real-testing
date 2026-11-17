@@ -12,6 +12,50 @@
    "tp_bps": 40.0,
    "sl_bps": 20.0,
    "cost_bps": 2.0
+  },
+  "USDCAD-Buy-1794912300000-sentiment": {
+   "pair": "USDCAD",
+   "fade_dir": "Buy",
+   "source": "sentiment",
+   "open_t": 1794912300000,
+   "entry_px": 1.4309,
+   "exit_t": 1794941100000,
+   "tp_bps": null,
+   "sl_bps": null,
+   "cost_bps": 1.5
+  },
+  "USDCAD-Sell-1794912300000-sentiment_follow": {
+   "pair": "USDCAD",
+   "fade_dir": "Sell",
+   "source": "sentiment_follow",
+   "open_t": 1794912300000,
+   "entry_px": 1.4309,
+   "exit_t": 1794941100000,
+   "tp_bps": null,
+   "sl_bps": null,
+   "cost_bps": 1.5
+  },
+  "AUDJPY-Sell-1794912300000-sentiment": {
+   "pair": "AUDJPY",
+   "fade_dir": "Sell",
+   "source": "sentiment",
+   "open_t": 1794912300000,
+   "entry_px": 107.711,
+   "exit_t": 1794941100000,
+   "tp_bps": null,
+   "sl_bps": null,
+   "cost_bps": 2.5
+  },
+  "AUDJPY-Buy-1794912300000-sentiment_follow": {
+   "pair": "AUDJPY",
+   "fade_dir": "Buy",
+   "source": "sentiment_follow",
+   "open_t": 1794912300000,
+   "entry_px": 107.711,
+   "exit_t": 1794941100000,
+   "tp_bps": null,
+   "sl_bps": null,
+   "cost_bps": 2.5
   }
  },
  "mfb_last": {
@@ -21,12 +65,12 @@
   "NZDUSD|Sell": 1794858377380,
   "GBPAUD|Buy": 1794858377380,
   "ETHUSD|Sell": 1794789699036,
-  "USDCAD|Buy": 1794802358961,
+  "USDCAD|Buy": 1794912902224,
   "GBPCAD|Buy": 1794255323064,
   "AUDCAD|Buy": 1794271590080,
   "AUDUSD|Sell": 1794864548212,
   "USDCHF|Buy": 1794580003672,
-  "AUDJPY|Sell": 1794813679144,
+  "AUDJPY|Sell": 1794912902224,
   "BTCUSD|Sell": 1794851904673
  },
  "chat_id": 1192863557,
@@ -307,7 +351,11 @@
   "scalp|USDJPY|Buy|159.902": true,
   "scalp|EURJPY|Buy|175.062": true,
   "scalp|ETHUSD|Buy|1820.21": true,
-  "breakout|EURJPY|Sell|174.5": true
+  "breakout|EURJPY|Sell|174.5": true,
+  "sentiment|USDCAD|Buy|1.4309": true,
+  "sentiment_follow|USDCAD|Sell|1.4309": true,
+  "sentiment|AUDJPY|Sell|107.711": true,
+  "sentiment_follow|AUDJPY|Buy|107.711": true
  },
- "price_last": 1794909397890
+ "price_last": 1794912902224
 }
