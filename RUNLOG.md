@@ -1,104 +1,3 @@
-2026-11-16 23:09 | price EURUSD: no fresh source (stale/offline)
-2026-11-16 23:09 | price NZDUSD: no fresh source (stale/offline)
-2026-11-16 23:09 | price GBPJPY: no fresh source (stale/offline)
-2026-11-16 23:09 | price AUDCAD: no fresh source (stale/offline)
-2026-11-16 23:09 | price XAUUSD: no fresh source (stale/offline)
-2026-11-16 23:09 | price GBPAUD: no fresh source (stale/offline)
-2026-11-16 23:09 | price GBPCAD: no fresh source (stale/offline)
-2026-11-16 23:09 | price EURTRY: no fresh source (stale/offline)
-2026-11-16 23:09 | price USDTRY: no fresh source (stale/offline)
-2026-11-16 23:09 | price USDZAR: no fresh source (stale/offline)
-2026-11-16 23:09 | price EURNOK: no fresh source (stale/offline)
-2026-11-16 23:09 | price USDNOK: no fresh source (stale/offline)
-2026-11-16 23:09 | price US30: no fresh source (stale/offline)
-2026-11-16 23:09 | price NAS100: no fresh source (stale/offline)
-2026-11-16 23:09 | price SPX500: no fresh source (stale/offline)
-2026-11-16 23:09 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=11 new=0 closed=0
-2026-11-16 23:09 | tg sendMessage error: HTTP Error 401: Unauthorized
-2026-11-16 23:47 | tg getMe error: HTTP Error 401: Unauthorized
-2026-11-16 23:50 | price NZDUSD: no fresh source (stale/offline)
-2026-11-16 23:50 | price GBPJPY: no fresh source (stale/offline)
-2026-11-16 23:50 | price AUDCAD: no fresh source (stale/offline)
-2026-11-16 23:50 | price XAUUSD: no fresh source (stale/offline)
-2026-11-16 23:50 | price GBPAUD: no fresh source (stale/offline)
-2026-11-16 23:50 | price GBPCAD: no fresh source (stale/offline)
-2026-11-16 23:50 | price EURTRY: no fresh source (stale/offline)
-2026-11-16 23:50 | price USDTRY: no fresh source (stale/offline)
-2026-11-16 23:50 | price USDZAR: no fresh source (stale/offline)
-2026-11-16 23:50 | price EURNOK: no fresh source (stale/offline)
-2026-11-16 23:50 | price USDNOK: no fresh source (stale/offline)
-2026-11-16 23:50 | price US30: no fresh source (stale/offline)
-2026-11-16 23:50 | price NAS100: no fresh source (stale/offline)
-2026-11-16 23:50 | price SPX500: no fresh source (stale/offline)
-2026-11-16 23:50 | tg sendMessage error: HTTP Error 401: Unauthorized
-2026-11-16 23:50 | OPEN EURCAD-Sell-1794872700000-meanrev Sell @ 1.59365
-2026-11-16 23:50 | tg sendMessage error: HTTP Error 401: Unauthorized
-2026-11-16 23:50 | CLOSE ETHUSD-Sell-1794864600000-meanrev reason=stop pnl=-54.5bps
-2026-11-16 23:50 | tg sendMessage error: HTTP Error 401: Unauthorized
-2026-11-16 23:50 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=12 new=1 closed=1
-2026-11-16 23:50 | tg sendMessage error: HTTP Error 401: Unauthorized
-2026-11-17 00:31 | FX quote check: EURUSD breaks 2 cross-rate triangles -> banished (bad venue quote)
-2026-11-17 00:31 | price EURUSD: no fresh source (stale/offline)
-2026-11-17 00:31 | tg getMe error: HTTP Error 401: Unauthorized
-2026-11-17 00:33 | FX quote check: EURUSD breaks 2 cross-rate triangles -> banished (bad venue quote)
-2026-11-17 00:33 | price EURUSD: no fresh source (stale/offline)
-2026-11-17 00:33 | price NZDUSD: no fresh source (stale/offline)
-2026-11-17 00:33 | price GBPJPY: no fresh source (stale/offline)
-2026-11-17 00:33 | price AUDCAD: no fresh source (stale/offline)
-2026-11-17 00:33 | price XAUUSD: no fresh source (stale/offline)
-2026-11-17 00:33 | price GBPAUD: no fresh source (stale/offline)
-2026-11-17 00:33 | price GBPCAD: no fresh source (stale/offline)
-2026-11-17 00:33 | price EURTRY: no fresh source (stale/offline)
-2026-11-17 00:33 | price USDTRY: no fresh source (stale/offline)
-2026-11-17 00:33 | price USDZAR: no fresh source (stale/offline)
-2026-11-17 00:33 | price EURNOK: no fresh source (stale/offline)
-2026-11-17 00:33 | price USDNOK: no fresh source (stale/offline)
-2026-11-17 00:33 | price US30: no fresh source (stale/offline)
-2026-11-17 00:33 | price NAS100: no fresh source (stale/offline)
-2026-11-17 00:33 | price SPX500: no fresh source (stale/offline)
-2026-11-17 00:33 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=11 new=0 closed=0
-2026-11-17 00:33 | tg sendMessage error: HTTP Error 401: Unauthorized
-2026-11-17 01:52 | FX quote check: EURUSD breaks 2 cross-rate triangles -> banished (bad venue quote)
-2026-11-17 01:52 | price EURUSD: no fresh source (stale/offline)
-2026-11-17 01:52 | tg getMe error: HTTP Error 401: Unauthorized
-2026-11-17 01:54 | FX quote check: USDJPY breaks 2 cross-rate triangles -> banished (bad venue quote)
-2026-11-17 01:54 | price USDJPY: no fresh source (stale/offline)
-2026-11-17 01:54 | price NZDUSD: no fresh source (stale/offline)
-2026-11-17 01:54 | price GBPJPY: no fresh source (stale/offline)
-2026-11-17 01:54 | price AUDCAD: no fresh source (stale/offline)
-2026-11-17 01:54 | price XAUUSD: no fresh source (stale/offline)
-2026-11-17 01:54 | price GBPAUD: no fresh source (stale/offline)
-2026-11-17 01:54 | price GBPCAD: no fresh source (stale/offline)
-2026-11-17 01:54 | price EURTRY: no fresh source (stale/offline)
-2026-11-17 01:54 | price USDTRY: no fresh source (stale/offline)
-2026-11-17 01:54 | price USDZAR: no fresh source (stale/offline)
-2026-11-17 01:54 | price EURNOK: no fresh source (stale/offline)
-2026-11-17 01:54 | price USDNOK: no fresh source (stale/offline)
-2026-11-17 01:54 | price US30: no fresh source (stale/offline)
-2026-11-17 01:54 | price NAS100: no fresh source (stale/offline)
-2026-11-17 01:54 | price SPX500: no fresh source (stale/offline)
-2026-11-17 01:54 | tg sendMessage error: HTTP Error 401: Unauthorized
-2026-11-17 01:54 | CLOSE EURUSD-Sell-1794851100000-sentiment reason=time pnl=+7.7bps
-2026-11-17 01:54 | tg sendMessage error: HTTP Error 401: Unauthorized
-2026-11-17 01:54 | CLOSE EURUSD-Buy-1794851100000-sentiment_follow reason=time pnl=-10.7bps
-2026-11-17 01:54 | tg sendMessage error: HTTP Error 401: Unauthorized
-2026-11-17 01:54 | CLOSE EURGBP-Sell-1794851100000-sentiment reason=time pnl=-0.4bps
-2026-11-17 01:54 | tg sendMessage error: HTTP Error 401: Unauthorized
-2026-11-17 01:54 | CLOSE EURGBP-Buy-1794851100000-sentiment_follow reason=time pnl=-3.6bps
-2026-11-17 01:54 | tg sendMessage error: HTTP Error 401: Unauthorized
-2026-11-17 01:54 | CLOSE BTCUSD-Sell-1794851100000-sentiment reason=time pnl=+10.9bps
-2026-11-17 01:54 | tg sendMessage error: HTTP Error 401: Unauthorized
-2026-11-17 01:54 | CLOSE BTCUSD-Buy-1794851100000-sentiment_follow reason=time pnl=-19.9bps
-2026-11-17 01:54 | tg sendMessage error: HTTP Error 401: Unauthorized
-2026-11-17 01:54 | CLOSE EURCAD-Sell-1794872700000-meanrev reason=tp pnl=+22.0bps
-2026-11-17 01:54 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=11 new=0 closed=7
-2026-11-17 01:54 | tg sendMessage error: HTTP Error 401: Unauthorized
-2026-11-17 02:42 | tg getMe error: HTTP Error 401: Unauthorized
-2026-11-17 02:45 | price NZDUSD: no fresh source (stale/offline)
-2026-11-17 02:45 | price GBPJPY: no fresh source (stale/offline)
-2026-11-17 02:45 | price AUDCAD: no fresh source (stale/offline)
-2026-11-17 02:45 | price XAUUSD: no fresh source (stale/offline)
-2026-11-17 02:45 | price GBPAUD: no fresh source (stale/offline)
 2026-11-17 02:45 | price GBPCAD: no fresh source (stale/offline)
 2026-11-17 02:45 | price EURTRY: no fresh source (stale/offline)
 2026-11-17 02:45 | price USDTRY: no fresh source (stale/offline)
@@ -395,3 +294,26 @@
 2026-11-17 14:47 | OPEN USDJPY-Sell-1794926700000-meanrev Sell @ 161.0
 2026-11-17 14:47 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=5 new=1 closed=0
 2026-11-17 14:48 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-17 15:38 | FX quote check: EURUSD breaks 2 cross-rate triangles -> banished (bad venue quote)
+2026-11-17 15:38 | price EURUSD: no fresh source (stale/offline)
+2026-11-17 15:38 | tg getMe error: HTTP Error 401: Unauthorized
+2026-11-17 15:40 | FX quote check: EURUSD breaks 2 cross-rate triangles -> banished (bad venue quote)
+2026-11-17 15:40 | price EURUSD: no fresh source (stale/offline)
+2026-11-17 15:41 | price NZDUSD: no fresh source (stale/offline)
+2026-11-17 15:41 | price GBPJPY: no fresh source (stale/offline)
+2026-11-17 15:41 | price AUDCAD: no fresh source (stale/offline)
+2026-11-17 15:41 | price XAUUSD: no fresh source (stale/offline)
+2026-11-17 15:41 | price GBPAUD: no fresh source (stale/offline)
+2026-11-17 15:41 | price GBPCAD: no fresh source (stale/offline)
+2026-11-17 15:41 | price EURTRY: no fresh source (stale/offline)
+2026-11-17 15:41 | price USDTRY: no fresh source (stale/offline)
+2026-11-17 15:41 | price USDZAR: no fresh source (stale/offline)
+2026-11-17 15:41 | price EURNOK: no fresh source (stale/offline)
+2026-11-17 15:41 | price USDNOK: no fresh source (stale/offline)
+2026-11-17 15:41 | price US30: no fresh source (stale/offline)
+2026-11-17 15:41 | price NAS100: no fresh source (stale/offline)
+2026-11-17 15:41 | price SPX500: no fresh source (stale/offline)
+2026-11-17 15:41 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-17 15:41 | OPEN EURAUD-Buy-1794929400000-meanrev Buy @ 1.6182
+2026-11-17 15:41 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=6 new=1 closed=0
+2026-11-17 15:41 | tg sendMessage error: HTTP Error 401: Unauthorized
