@@ -45,6 +45,17 @@
    "tp_bps": null,
    "sl_bps": null,
    "cost_bps": 1.5
+  },
+  "USDJPY-Buy-1794883500000-scalp": {
+   "pair": "USDJPY",
+   "fade_dir": "Buy",
+   "source": "scalp",
+   "open_t": 1794883500000,
+   "entry_px": 159.902,
+   "exit_t": 1794885300000,
+   "tp_bps": 10.0,
+   "sl_bps": 25.0,
+   "cost_bps": 1.5
   }
  },
  "mfb_last": {
@@ -72,7 +83,7 @@
  "scalp_last": {
   "BTCUSD": 1794723193035,
   "ETHUSD": 1794744115694,
-  "USDJPY": 1794589120257,
+  "USDJPY": 1794883466660,
   "EURJPY": 1794795028257,
   "EURCAD": 1794366731554
  },
@@ -336,7 +347,8 @@
   "sentiment|AUDUSD|Sell|0.67332": true,
   "sentiment_follow|AUDUSD|Buy|0.67332": true,
   "meanrev|ETHUSD|Sell|1825.15": true,
-  "meanrev|EURCAD|Sell|1.59365": true
+  "meanrev|EURCAD|Sell|1.59365": true,
+  "scalp|USDJPY|Buy|159.902": true
  },
- "price_last": 1794880417863
+ "price_last": 1794883466660
 }
