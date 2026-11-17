@@ -66,7 +66,7 @@
  "tg_hello_sent": true,
  "alarm_sent": false,
  "auth_alert_sent": false,
- "status_last": 1794905862311,
+ "status_last": 1794923622031,
  "last_summary": "20261117",
  "last_update_id": 0,
  "scalp_last": {
@@ -348,5 +348,5 @@
   "sentiment_follow|AUDJPY|Buy|107.711": true,
   "scalp|ETHUSD|Sell|1815.19": true
  },
- "price_last": 1794919025385
+ "price_last": 1794923622031
 }
