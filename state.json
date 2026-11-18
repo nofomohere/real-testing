@@ -45,17 +45,6 @@
    "tp_bps": null,
    "sl_bps": null,
    "cost_bps": 2.5
-  },
-  "USDCHF-Buy-1795013100000-scalp": {
-   "pair": "USDCHF",
-   "fade_dir": "Buy",
-   "source": "scalp",
-   "open_t": 1795013100000,
-   "entry_px": 0.84191,
-   "exit_t": 1795014900000,
-   "tp_bps": 10.0,
-   "sl_bps": 25.0,
-   "cost_bps": 1.5
   }
  },
  "mfb_last": {
@@ -101,7 +90,7 @@
   "EURAUD": 1.6384,
   "USDCAD": 1.42996,
   "GBPUSD": 1.33387,
-  "USDCHF": 0.83983
+  "USDCHF": 0.84325
  },
  "cooldown": {
   "meanrev|BTCUSD": 1794961145287,
@@ -140,7 +129,8 @@
   "sentiment_follow|AUDJPY": 1794948163530,
   "sentiment|BTCUSD": 1794884017863,
   "sentiment_follow|BTCUSD": 1794884017863,
-  "breakout|EURJPY": 1794922625385
+  "breakout|EURJPY": 1794922625385,
+  "scalp|USDCHF": 1795020291176
  },
  "seen_sigs": {
   "sentiment|EURUSD|Sell|1.11809": true,
@@ -381,5 +371,5 @@
   "sentiment_follow|USDCAD|Sell|1.43183": true,
   "scalp|USDCHF|Buy|0.84191": true
  },
- "price_last": 1795013346609
+ "price_last": 1795016691176
 }
