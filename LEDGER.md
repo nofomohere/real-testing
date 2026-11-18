@@ -1,15 +1,15 @@
 # Fade Bot — paper ledger
 
-Updated: 2026-11-18T12:43:10.357191+00:00
+Updated: 2026-11-18T13:59:19.543364+00:00
 
-- Trades: **250** | Avg: **-10.3 bps** | Win: **41%** | Cum: **-2568.1 bps**
-- Money sim ($10.0 @ 50x): **-128.406 USD** | Liquidations: **13** | Open: **6**
+- Trades: **252** | Avg: **-10.1 bps** | Win: **41%** | Cum: **-2554.6 bps**
+- Money sim ($10.0 @ 50x): **-127.731 USD** | Liquidations: **13** | Open: **4**
 
 ## Results per strategy
 
 | Strategy | Trades | Win% | Avg bps | Cum bps | Cum USD | Liqs |
 |---|---|---|---|---|---|---|
-| meanrev | 122 | 43% | -4.2 | -517.5 | -25.876 | 3 |
+| meanrev | 124 | 44% | -4.1 | -504.0 | -25.201 | 3 |
 | sentiment | 45 | 51% | -3.0 | -133.2 | -6.657 | 2 |
 | sentiment_follow | 45 | 27% | -27.1 | -1221.0 | -61.051 | 5 |
 | scalp | 28 | 50% | -6.7 | -188.4 | -9.421 | 1 |
@@ -19,8 +19,6 @@ Updated: 2026-11-18T12:43:10.357191+00:00
 
 | Trade | Pair | Dir | Strategy | Open (UTC) | PnL bps | PnL USD |
 |---|---|---|---|---|---|---|
-| EURCAD-Sell-1794858300000-sentiment | EURCAD | Sell | sentiment | 2026-11-16T19:45 | +72.0 | +3.5993 |
-| EURCAD-Buy-1794858300000-sentiment_follow | EURCAD | Buy | sentiment_follow | 2026-11-16T19:45 | -78.0 | -3.8993 |
 | AUDUSD-Sell-1794863700000-sentiment | AUDUSD | Sell | sentiment | 2026-11-16T21:15 | -18.1 | -0.9067 |
 | AUDUSD-Buy-1794863700000-sentiment_follow | AUDUSD | Buy | sentiment_follow | 2026-11-16T21:15 | -200.0 | -10.0000 |
 | EURJPY-Buy-1794889800000-scalp | EURJPY | Buy | scalp | 2026-11-17T04:30 | -2.0 | -0.1000 |
@@ -49,3 +47,5 @@ Updated: 2026-11-18T12:43:10.357191+00:00
 | AUDJPY-Sell-1794978900000-breakout | AUDJPY | Sell | breakout | 2026-11-18T05:15 | -2.5 | -0.1250 |
 | AUDJPY-Buy-1794995100000-meanrev | AUDJPY | Buy | meanrev | 2026-11-18T09:45 | +22.5 | +1.1250 |
 | EURAUD-Sell-1794995100000-meanrev | EURAUD | Sell | meanrev | 2026-11-18T09:45 | -3.0 | -0.1500 |
+| USDJPY-Sell-1794998700000-meanrev | USDJPY | Sell | meanrev | 2026-11-18T10:45 | +23.5 | +1.1750 |
+| EURCAD-Buy-1794998700000-meanrev | EURCAD | Buy | meanrev | 2026-11-18T10:45 | -10.0 | -0.5003 |

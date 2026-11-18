@@ -320,3 +320,28 @@
 2026-11-18 12:43 | tg sendMessage error: HTTP Error 401: Unauthorized
 2026-11-18 12:43 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=8 new=0 closed=2
 2026-11-18 12:43 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-18 13:56 | FX quote check: EURUSD breaks 2 cross-rate triangles -> banished (bad venue quote)
+2026-11-18 13:56 | price EURUSD: no fresh source (stale/offline)
+2026-11-18 13:56 | tg getMe error: HTTP Error 401: Unauthorized
+2026-11-18 13:58 | FX quote check: EURUSD breaks 2 cross-rate triangles -> banished (bad venue quote)
+2026-11-18 13:58 | price EURUSD: no fresh source (stale/offline)
+2026-11-18 13:59 | price NZDUSD: no fresh source (stale/offline)
+2026-11-18 13:59 | price GBPJPY: no fresh source (stale/offline)
+2026-11-18 13:59 | price AUDCAD: no fresh source (stale/offline)
+2026-11-18 13:59 | price XAUUSD: no fresh source (stale/offline)
+2026-11-18 13:59 | price GBPAUD: no fresh source (stale/offline)
+2026-11-18 13:59 | price GBPCAD: no fresh source (stale/offline)
+2026-11-18 13:59 | price EURTRY: no fresh source (stale/offline)
+2026-11-18 13:59 | price USDTRY: no fresh source (stale/offline)
+2026-11-18 13:59 | price USDZAR: no fresh source (stale/offline)
+2026-11-18 13:59 | price EURNOK: no fresh source (stale/offline)
+2026-11-18 13:59 | price USDNOK: no fresh source (stale/offline)
+2026-11-18 13:59 | price US30: no fresh source (stale/offline)
+2026-11-18 13:59 | price NAS100: no fresh source (stale/offline)
+2026-11-18 13:59 | price SPX500: no fresh source (stale/offline)
+2026-11-18 13:59 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-18 13:59 | CLOSE USDJPY-Sell-1794998700000-meanrev reason=tp pnl=+23.5bps
+2026-11-18 13:59 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-18 13:59 | CLOSE EURCAD-Buy-1794998700000-meanrev reason=time pnl=-10.0bps
+2026-11-18 13:59 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=6 new=0 closed=2
+2026-11-18 13:59 | tg sendMessage error: HTTP Error 401: Unauthorized
