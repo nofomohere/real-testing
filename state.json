@@ -56,6 +56,17 @@
    "tp_bps": 25.0,
    "sl_bps": 50.0,
    "cost_bps": 3.0
+  },
+  "ETHUSD-Buy-1795026600000-meanrev": {
+   "pair": "ETHUSD",
+   "fade_dir": "Buy",
+   "source": "meanrev",
+   "open_t": 1795026600000,
+   "entry_px": 1767.41,
+   "exit_t": 1795033800000,
+   "tp_bps": 25.0,
+   "sl_bps": 50.0,
+   "cost_bps": 4.5
   }
  },
  "mfb_last": {
@@ -381,7 +392,8 @@
   "sentiment|USDCAD|Buy|1.43183": true,
   "sentiment_follow|USDCAD|Sell|1.43183": true,
   "scalp|USDCHF|Buy|0.84191": true,
-  "meanrev|EURCAD|Buy|1.5689": true
+  "meanrev|EURCAD|Buy|1.5689": true,
+  "meanrev|ETHUSD|Buy|1767.41": true
  },
- "price_last": 1795023862368
+ "price_last": 1795026824996
 }
