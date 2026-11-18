@@ -13,17 +13,6 @@
    "sl_bps": 20.0,
    "cost_bps": 2.5
   },
-  "USDJPY-Buy-1794978900000-meanrev": {
-   "pair": "USDJPY",
-   "fade_dir": "Buy",
-   "source": "meanrev",
-   "open_t": 1794978900000,
-   "entry_px": 157.77,
-   "exit_t": 1794986100000,
-   "tp_bps": 25.0,
-   "sl_bps": 50.0,
-   "cost_bps": 1.5
-  },
   "EURCAD-Buy-1794983400000-meanrev": {
    "pair": "EURCAD",
    "fade_dir": "Buy",
@@ -55,7 +44,7 @@
  "tg_hello_sent": true,
  "alarm_sent": false,
  "auth_alert_sent": false,
- "status_last": 1794972156204,
+ "status_last": 1794988401084,
  "last_summary": "20261118",
  "last_update_id": 0,
  "scalp_last": {
@@ -352,5 +341,5 @@
   "meanrev|USDJPY|Buy|157.77": true,
   "meanrev|EURCAD|Buy|1.57": true
  },
- "price_last": 1794983578406
+ "price_last": 1794988401084
 }
