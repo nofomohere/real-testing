@@ -45,6 +45,17 @@
    "tp_bps": 25.0,
    "sl_bps": 50.0,
    "cost_bps": 1.5
+  },
+  "ETHUSD-Sell-1795077900000-meanrev": {
+   "pair": "ETHUSD",
+   "fade_dir": "Sell",
+   "source": "meanrev",
+   "open_t": 1795077900000,
+   "entry_px": 1796.83,
+   "exit_t": 1795085100000,
+   "tp_bps": 25.0,
+   "sl_bps": 50.0,
+   "cost_bps": 4.5
   }
  },
  "mfb_last": {
@@ -388,7 +399,8 @@
   "scalp|USDJPY|Buy|159.717": true,
   "sentiment|GBPUSD|Sell|1.31469": true,
   "sentiment_follow|GBPUSD|Buy|1.31469": true,
-  "meanrev|USDJPY|Sell|159.803": true
+  "meanrev|USDJPY|Sell|159.803": true,
+  "meanrev|ETHUSD|Sell|1796.83": true
  },
- "price_last": 1795074695262
+ "price_last": 1795078218571
 }
