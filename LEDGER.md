@@ -1,17 +1,17 @@
 # Fade Bot — paper ledger
 
-Updated: 2026-11-19T14:55:15.946546+00:00
+Updated: 2026-11-19T15:49:15.443269+00:00
 
-- Trades: **275** | Avg: **-10.4 bps** | Win: **41%** | Cum: **-2853.1 bps**
-- Money sim ($10.0 @ 50x): **-142.657 USD** | Liquidations: **14** | Open: **7**
+- Trades: **277** | Avg: **-10.3 bps** | Win: **41%** | Cum: **-2856.1 bps**
+- Money sim ($10.0 @ 50x): **-142.807 USD** | Liquidations: **14** | Open: **5**
 
 ## Results per strategy
 
 | Strategy | Trades | Win% | Avg bps | Cum bps | Cum USD | Liqs |
 |---|---|---|---|---|---|---|
 | meanrev | 134 | 43% | -4.2 | -568.5 | -28.427 | 3 |
-| sentiment | 50 | 50% | -3.1 | -153.0 | -7.649 | 2 |
-| sentiment_follow | 50 | 28% | -24.4 | -1222.2 | -61.109 | 5 |
+| sentiment | 51 | 51% | -2.5 | -129.9 | -6.492 | 2 |
+| sentiment_follow | 51 | 27% | -24.5 | -1248.3 | -62.417 | 5 |
 | scalp | 30 | 50% | -12.7 | -379.9 | -18.996 | 2 |
 | breakout | 11 | 9% | -48.1 | -529.5 | -26.475 | 2 |
 
@@ -19,8 +19,6 @@ Updated: 2026-11-19T14:55:15.946546+00:00
 
 | Trade | Pair | Dir | Strategy | Open (UTC) | PnL bps | PnL USD |
 |---|---|---|---|---|---|---|
-| USDJPY-Buy-1794978900000-meanrev | USDJPY | Buy | meanrev | 2026-11-18T05:15 | -92.8 | -4.6386 |
-| EURCAD-Buy-1794983400000-meanrev | EURCAD | Buy | meanrev | 2026-11-18T06:30 | -3.0 | -0.1500 |
 | AUDJPY-Sell-1794978900000-breakout | AUDJPY | Sell | breakout | 2026-11-18T05:15 | -2.5 | -0.1250 |
 | AUDJPY-Buy-1794995100000-meanrev | AUDJPY | Buy | meanrev | 2026-11-18T09:45 | +22.5 | +1.1250 |
 | EURAUD-Sell-1794995100000-meanrev | EURAUD | Sell | meanrev | 2026-11-18T09:45 | -3.0 | -0.1500 |
@@ -49,3 +47,5 @@ Updated: 2026-11-19T14:55:15.946546+00:00
 | USDJPY-Sell-1795074300000-meanrev | USDJPY | Sell | meanrev | 2026-11-19T07:45 | -11.7 | -0.5850 |
 | ETHUSD-Sell-1795077900000-meanrev | ETHUSD | Sell | meanrev | 2026-11-19T08:45 | -54.5 | -2.7250 |
 | ETHUSD-Sell-1795092300000-meanrev | ETHUSD | Sell | meanrev | 2026-11-19T12:45 | -54.5 | -2.7250 |
+| GBPUSD-Sell-1795074300000-sentiment | GBPUSD | Sell | sentiment | 2026-11-19T07:45 | +23.1 | +1.1572 |
+| GBPUSD-Buy-1795074300000-sentiment_follow | GBPUSD | Buy | sentiment_follow | 2026-11-19T07:45 | -26.1 | -1.3072 |
