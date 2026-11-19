@@ -2,50 +2,6 @@
  "version": 3,
  "clusters_seen": {},
  "active": {
-  "USDCAD-Buy-1795091400000-sentiment": {
-   "pair": "USDCAD",
-   "fade_dir": "Buy",
-   "source": "sentiment",
-   "open_t": 1795091400000,
-   "entry_px": 1.43049,
-   "exit_t": 1795120200000,
-   "tp_bps": null,
-   "sl_bps": null,
-   "cost_bps": 1.5
-  },
-  "USDCAD-Sell-1795091400000-sentiment_follow": {
-   "pair": "USDCAD",
-   "fade_dir": "Sell",
-   "source": "sentiment_follow",
-   "open_t": 1795091400000,
-   "entry_px": 1.43049,
-   "exit_t": 1795120200000,
-   "tp_bps": null,
-   "sl_bps": null,
-   "cost_bps": 1.5
-  },
-  "AUDJPY-Sell-1795091400000-sentiment": {
-   "pair": "AUDJPY",
-   "fade_dir": "Sell",
-   "source": "sentiment",
-   "open_t": 1795091400000,
-   "entry_px": 106.925,
-   "exit_t": 1795120200000,
-   "tp_bps": null,
-   "sl_bps": null,
-   "cost_bps": 2.5
-  },
-  "AUDJPY-Buy-1795091400000-sentiment_follow": {
-   "pair": "AUDJPY",
-   "fade_dir": "Buy",
-   "source": "sentiment_follow",
-   "open_t": 1795091400000,
-   "entry_px": 106.925,
-   "exit_t": 1795120200000,
-   "tp_bps": null,
-   "sl_bps": null,
-   "cost_bps": 2.5
-  },
   "EURUSD-Sell-1795117500000-sentiment": {
    "pair": "EURUSD",
    "fade_dir": "Sell",
@@ -89,6 +45,17 @@
    "tp_bps": null,
    "sl_bps": null,
    "cost_bps": 2.0
+  },
+  "USDJPY-Buy-1795120200000-meanrev": {
+   "pair": "USDJPY",
+   "fade_dir": "Buy",
+   "source": "meanrev",
+   "open_t": 1795120200000,
+   "entry_px": 156.823,
+   "exit_t": 1795127400000,
+   "tp_bps": 25.0,
+   "sl_bps": 50.0,
+   "cost_bps": 1.5
   }
  },
  "mfb_last": {
@@ -132,9 +99,9 @@
   "EURJPY": 174.5,
   "AUDUSD": 0.67054,
   "USDJPY": 159.966,
-  "AUDJPY": 107.486,
+  "AUDJPY": 106.664,
   "EURAUD": 1.6384,
-  "USDCAD": 1.4341,
+  "USDCAD": 1.43508,
   "GBPUSD": 1.31145,
   "USDCHF": 0.84325
  },
@@ -162,8 +129,8 @@
   "meanrev|EURAUD": 1795058523287,
   "scalp|EURJPY": 1794897481451,
   "meanrev|USDJPY": 1795085285679,
-  "sentiment|USDCAD": 1795034187741,
-  "sentiment_follow|USDCAD": 1795034187741,
+  "sentiment|USDCAD": 1795124348364,
+  "sentiment_follow|USDCAD": 1795124348364,
   "meanrev|EURCAD": 1795034187741,
   "meanrev|GBPUSD": 1794352720202,
   "scalp|EURCAD": 1794373550928,
@@ -171,8 +138,8 @@
   "sentiment_follow|AUDUSD": 1795078295262,
   "sentiment|USDCHF": 1794613745315,
   "sentiment_follow|USDCHF": 1794613745315,
-  "sentiment|AUDJPY": 1795034187741,
-  "sentiment_follow|AUDJPY": 1795034187741,
+  "sentiment|AUDJPY": 1795124348364,
+  "sentiment_follow|AUDJPY": 1795124348364,
   "sentiment|BTCUSD": 1794884017863,
   "sentiment_follow|BTCUSD": 1794884017863,
   "breakout|EURJPY": 1794922625385,
@@ -448,7 +415,8 @@
   "sentiment|EURUSD|Sell|1.09721": true,
   "sentiment_follow|EURUSD|Buy|1.09721": true,
   "sentiment|EURGBP|Sell|0.83766": true,
-  "sentiment_follow|EURGBP|Buy|0.83766": true
+  "sentiment_follow|EURGBP|Buy|0.83766": true,
+  "meanrev|USDJPY|Buy|156.823": true
  },
- "price_last": 1795117543790
+ "price_last": 1795120748364
 }

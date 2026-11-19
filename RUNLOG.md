@@ -345,3 +345,33 @@
 2026-11-19 19:47 | tg sendMessage error: HTTP Error 401: Unauthorized
 2026-11-19 19:47 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=10 new=0 closed=2
 2026-11-19 19:47 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-19 20:37 | FX quote check: USDJPY breaks 2 cross-rate triangles -> banished (bad venue quote)
+2026-11-19 20:37 | tg getMe error: HTTP Error 401: Unauthorized
+2026-11-19 20:40 | FX quote check: EURUSD breaks 2 cross-rate triangles -> banished (bad venue quote)
+2026-11-19 20:40 | price EURUSD: no fresh source (stale/offline)
+2026-11-19 20:40 | price NZDUSD: no fresh source (stale/offline)
+2026-11-19 20:40 | price GBPJPY: no fresh source (stale/offline)
+2026-11-19 20:40 | price AUDCAD: no fresh source (stale/offline)
+2026-11-19 20:40 | price XAUUSD: no fresh source (stale/offline)
+2026-11-19 20:40 | price GBPAUD: no fresh source (stale/offline)
+2026-11-19 20:40 | price GBPCAD: no fresh source (stale/offline)
+2026-11-19 20:40 | price EURTRY: no fresh source (stale/offline)
+2026-11-19 20:40 | price USDTRY: no fresh source (stale/offline)
+2026-11-19 20:40 | price USDZAR: no fresh source (stale/offline)
+2026-11-19 20:40 | price EURNOK: no fresh source (stale/offline)
+2026-11-19 20:40 | price USDNOK: no fresh source (stale/offline)
+2026-11-19 20:40 | price US30: no fresh source (stale/offline)
+2026-11-19 20:40 | price NAS100: no fresh source (stale/offline)
+2026-11-19 20:40 | price SPX500: no fresh source (stale/offline)
+2026-11-19 20:40 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-19 20:40 | OPEN USDJPY-Buy-1795120200000-meanrev Buy @ 156.823
+2026-11-19 20:40 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-19 20:40 | CLOSE USDCAD-Buy-1795091400000-sentiment reason=time pnl=+30.6bps
+2026-11-19 20:40 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-19 20:40 | CLOSE USDCAD-Sell-1795091400000-sentiment_follow reason=time pnl=-33.6bps
+2026-11-19 20:40 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-19 20:40 | CLOSE AUDJPY-Sell-1795091400000-sentiment reason=time pnl=+21.9bps
+2026-11-19 20:40 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-19 20:40 | CLOSE AUDJPY-Buy-1795091400000-sentiment_follow reason=time pnl=-26.9bps
+2026-11-19 20:40 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=9 new=1 closed=4
+2026-11-19 20:40 | tg sendMessage error: HTTP Error 401: Unauthorized
