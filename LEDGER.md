@@ -1,17 +1,17 @@
 # Fade Bot — paper ledger
 
-Updated: 2026-11-19T03:18:11.214274+00:00
+Updated: 2026-11-19T04:20:25.595720+00:00
 
-- Trades: **264** | Avg: **-9.5 bps** | Win: **42%** | Cum: **-2497.9 bps**
-- Money sim ($10.0 @ 50x): **-124.897 USD** | Liquidations: **13** | Open: **6**
+- Trades: **266** | Avg: **-9.4 bps** | Win: **42%** | Cum: **-2501.9 bps**
+- Money sim ($10.0 @ 50x): **-125.097 USD** | Liquidations: **13** | Open: **4**
 
 ## Results per strategy
 
 | Strategy | Trades | Win% | Avg bps | Cum bps | Cum USD | Liqs |
 |---|---|---|---|---|---|---|
 | meanrev | 131 | 44% | -3.4 | -447.8 | -22.392 | 3 |
-| sentiment | 47 | 51% | -3.3 | -156.8 | -7.838 | 2 |
-| sentiment_follow | 47 | 28% | -25.6 | -1205.4 | -60.270 | 5 |
+| sentiment | 48 | 50% | -3.4 | -161.0 | -8.046 | 2 |
+| sentiment_follow | 48 | 29% | -25.1 | -1205.2 | -60.262 | 5 |
 | scalp | 29 | 52% | -6.2 | -179.9 | -8.996 | 1 |
 | breakout | 10 | 10% | -50.8 | -508.0 | -25.400 | 2 |
 
@@ -19,8 +19,6 @@ Updated: 2026-11-19T03:18:11.214274+00:00
 
 | Trade | Pair | Dir | Strategy | Open (UTC) | PnL bps | PnL USD |
 |---|---|---|---|---|---|---|
-| AUDJPY-Buy-1794912300000-sentiment_follow | AUDJPY | Buy | sentiment_follow | 2026-11-17T10:45 | -2.5 | -0.1250 |
-| EURAUD-Buy-1794943800000-meanrev | EURAUD | Buy | meanrev | 2026-11-17T19:30 | +22.0 | +1.1000 |
 | ETHUSD-Buy-1794943800000-meanrev | ETHUSD | Buy | meanrev | 2026-11-17T19:30 | +20.5 | +1.0250 |
 | USDJPY-Sell-1794947400000-meanrev | USDJPY | Sell | meanrev | 2026-11-17T20:30 | +23.5 | +1.1750 |
 | BTCUSD-Buy-1794947400000-meanrev | BTCUSD | Buy | meanrev | 2026-11-17T20:30 | +20.5 | +1.0250 |
@@ -49,3 +47,5 @@ Updated: 2026-11-19T03:18:11.214274+00:00
 | ETHUSD-Buy-1795043700000-meanrev | ETHUSD | Buy | meanrev | 2026-11-18T23:15 | +20.5 | +1.0250 |
 | EURAUD-Buy-1795046400000-meanrev | EURAUD | Buy | meanrev | 2026-11-19T00:00 | +22.0 | +1.1000 |
 | BTCUSD-Buy-1795050000000-meanrev | BTCUSD | Buy | meanrev | 2026-11-19T01:00 | +20.5 | +1.0250 |
+| EURGBP-Sell-1795030200000-sentiment | EURGBP | Sell | sentiment | 2026-11-18T19:30 | -4.2 | -0.2078 |
+| EURGBP-Buy-1795030200000-sentiment_follow | EURGBP | Buy | sentiment_follow | 2026-11-18T19:30 | +0.2 | +0.0078 |
