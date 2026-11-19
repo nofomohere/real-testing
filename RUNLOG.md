@@ -352,3 +352,30 @@
 2026-11-19 11:42 | price SPX500: no fresh source (stale/offline)
 2026-11-19 11:42 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=2 new=0 closed=0
 2026-11-19 11:42 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-19 12:42 | tg getMe error: HTTP Error 401: Unauthorized
+2026-11-19 12:44 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-19 12:44 | OPEN USDCAD-Buy-1795091400000-sentiment Buy @ 1.43049
+2026-11-19 12:44 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-19 12:44 | OPEN USDCAD-Sell-1795091400000-sentiment_follow Sell @ 1.43049
+2026-11-19 12:45 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-19 12:45 | OPEN AUDJPY-Sell-1795091400000-sentiment Sell @ 106.925
+2026-11-19 12:45 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-19 12:45 | OPEN AUDJPY-Buy-1795091400000-sentiment_follow Buy @ 106.925
+2026-11-19 12:45 | price NZDUSD: no fresh source (stale/offline)
+2026-11-19 12:45 | price GBPJPY: no fresh source (stale/offline)
+2026-11-19 12:45 | price AUDCAD: no fresh source (stale/offline)
+2026-11-19 12:45 | price XAUUSD: no fresh source (stale/offline)
+2026-11-19 12:45 | price GBPAUD: no fresh source (stale/offline)
+2026-11-19 12:45 | price GBPCAD: no fresh source (stale/offline)
+2026-11-19 12:45 | price EURTRY: no fresh source (stale/offline)
+2026-11-19 12:45 | price USDTRY: no fresh source (stale/offline)
+2026-11-19 12:45 | price USDZAR: no fresh source (stale/offline)
+2026-11-19 12:45 | price EURNOK: no fresh source (stale/offline)
+2026-11-19 12:45 | price USDNOK: no fresh source (stale/offline)
+2026-11-19 12:45 | price US30: no fresh source (stale/offline)
+2026-11-19 12:45 | price NAS100: no fresh source (stale/offline)
+2026-11-19 12:45 | price SPX500: no fresh source (stale/offline)
+2026-11-19 12:45 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-19 12:45 | OPEN ETHUSD-Sell-1795092300000-meanrev Sell @ 1796.46
+2026-11-19 12:45 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=7 new=1 closed=0
+2026-11-19 12:45 | tg sendMessage error: HTTP Error 401: Unauthorized
