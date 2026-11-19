@@ -1,26 +1,24 @@
 # Fade Bot — paper ledger
 
-Updated: 2026-11-19T08:51:41.163800+00:00
+Updated: 2026-11-19T09:49:25.851048+00:00
 
-- Trades: **271** | Avg: **-10.0 bps** | Win: **42%** | Cum: **-2710.9 bps**
-- Money sim ($10.0 @ 50x): **-135.547 USD** | Liquidations: **14** | Open: **5**
+- Trades: **273** | Avg: **-10.1 bps** | Win: **41%** | Cum: **-2744.1 bps**
+- Money sim ($10.0 @ 50x): **-137.207 USD** | Liquidations: **14** | Open: **3**
 
 ## Results per strategy
 
 | Strategy | Trades | Win% | Avg bps | Cum bps | Cum USD | Liqs |
 |---|---|---|---|---|---|---|
-| meanrev | 131 | 44% | -3.4 | -447.8 | -22.392 | 3 |
+| meanrev | 132 | 44% | -3.5 | -459.5 | -22.977 | 3 |
 | sentiment | 50 | 50% | -3.1 | -153.0 | -7.649 | 2 |
 | sentiment_follow | 50 | 28% | -24.4 | -1222.2 | -61.109 | 5 |
 | scalp | 30 | 50% | -12.7 | -379.9 | -18.996 | 2 |
-| breakout | 10 | 10% | -50.8 | -508.0 | -25.400 | 2 |
+| breakout | 11 | 9% | -48.1 | -529.5 | -26.475 | 2 |
 
 ## Recent trades
 
 | Trade | Pair | Dir | Strategy | Open (UTC) | PnL bps | PnL USD |
 |---|---|---|---|---|---|---|
-| EURCAD-Sell-1794947400000-sentiment | EURCAD | Sell | sentiment | 2026-11-17T20:30 | +125.6 | +6.2821 |
-| EURCAD-Buy-1794947400000-sentiment_follow | EURCAD | Buy | sentiment_follow | 2026-11-17T20:30 | -200.0 | -10.0000 |
 | AUDUSD-Sell-1794953700000-sentiment | AUDUSD | Sell | sentiment | 2026-11-17T22:15 | +26.2 | +1.3121 |
 | AUDUSD-Buy-1794953700000-sentiment_follow | AUDUSD | Buy | sentiment_follow | 2026-11-17T22:15 | -29.2 | -1.4621 |
 | USDJPY-Buy-1794978900000-meanrev | USDJPY | Buy | meanrev | 2026-11-18T05:15 | -92.8 | -4.6386 |
@@ -49,3 +47,5 @@ Updated: 2026-11-19T08:51:41.163800+00:00
 | AUDUSD-Sell-1795043700000-sentiment | AUDUSD | Sell | sentiment | 2026-11-18T23:15 | +9.7 | +0.4837 |
 | AUDUSD-Buy-1795043700000-sentiment_follow | AUDUSD | Buy | sentiment_follow | 2026-11-18T23:15 | -12.7 | -0.6337 |
 | USDJPY-Buy-1795068900000-scalp | USDJPY | Buy | scalp | 2026-11-19T06:15 | -200.0 | -10.0000 |
+| USDJPY-Buy-1795065300000-breakout | USDJPY | Buy | breakout | 2026-11-19T05:15 | -21.5 | -1.0750 |
+| USDJPY-Sell-1795074300000-meanrev | USDJPY | Sell | meanrev | 2026-11-19T07:45 | -11.7 | -0.5850 |
