@@ -346,3 +346,30 @@
 2026-11-19 23:15 | CLOSE ETHUSD-Sell-1795126500000-scalp reason=stop pnl=-29.5bps
 2026-11-19 23:15 | run: mfb=0 cookie=set tz=39p opens=0 closes=0 active_before=10 new=0 closed=3
 2026-11-19 23:15 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-19 23:53 | FX quote check: USDJPY breaks 2 cross-rate triangles -> banished (bad venue quote)
+2026-11-19 23:53 | tg getMe error: HTTP Error 401: Unauthorized
+2026-11-19 23:56 | FX quote check: USDJPY breaks 2 cross-rate triangles -> banished (bad venue quote)
+2026-11-19 23:56 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-19 23:56 | OPEN AUDUSD-Sell-1795131900000-sentiment Sell @ 0.66566
+2026-11-19 23:56 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-19 23:56 | OPEN AUDUSD-Buy-1795131900000-sentiment_follow Buy @ 0.66566
+2026-11-19 23:56 | price USDJPY: no fresh source (stale/offline)
+2026-11-19 23:56 | price NZDUSD: no fresh source (stale/offline)
+2026-11-19 23:56 | price GBPJPY: no fresh source (stale/offline)
+2026-11-19 23:56 | price AUDCAD: no fresh source (stale/offline)
+2026-11-19 23:56 | price XAUUSD: no fresh source (stale/offline)
+2026-11-19 23:56 | price GBPAUD: no fresh source (stale/offline)
+2026-11-19 23:56 | price GBPCAD: no fresh source (stale/offline)
+2026-11-19 23:56 | price EURTRY: no fresh source (stale/offline)
+2026-11-19 23:56 | price USDTRY: no fresh source (stale/offline)
+2026-11-19 23:56 | price USDZAR: no fresh source (stale/offline)
+2026-11-19 23:56 | price EURNOK: no fresh source (stale/offline)
+2026-11-19 23:56 | price USDNOK: no fresh source (stale/offline)
+2026-11-19 23:56 | price US30: no fresh source (stale/offline)
+2026-11-19 23:56 | price NAS100: no fresh source (stale/offline)
+2026-11-19 23:56 | price SPX500: no fresh source (stale/offline)
+2026-11-19 23:56 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-19 23:56 | CLOSE AUDJPY-Buy-1795123800000-meanrev reason=time pnl=-2.5bps
+2026-11-19 23:56 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-19 23:56 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=9 new=0 closed=1
+2026-11-19 23:56 | tg sendMessage error: HTTP Error 401: Unauthorized

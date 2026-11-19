@@ -68,16 +68,27 @@
    "sl_bps": null,
    "cost_bps": 3.0
   },
-  "AUDJPY-Buy-1795123800000-meanrev": {
-   "pair": "AUDJPY",
+  "AUDUSD-Sell-1795131900000-sentiment": {
+   "pair": "AUDUSD",
+   "fade_dir": "Sell",
+   "source": "sentiment",
+   "open_t": 1795131900000,
+   "entry_px": 0.66566,
+   "exit_t": 1795160700000,
+   "tp_bps": null,
+   "sl_bps": null,
+   "cost_bps": 1.5
+  },
+  "AUDUSD-Buy-1795131900000-sentiment_follow": {
+   "pair": "AUDUSD",
    "fade_dir": "Buy",
-   "source": "meanrev",
-   "open_t": 1795123800000,
-   "entry_px": 106.664,
-   "exit_t": 1795131000000,
-   "tp_bps": 25.0,
-   "sl_bps": 50.0,
-   "cost_bps": 2.5
+   "source": "sentiment_follow",
+   "open_t": 1795131900000,
+   "entry_px": 0.66566,
+   "exit_t": 1795160700000,
+   "tp_bps": null,
+   "sl_bps": null,
+   "cost_bps": 1.5
   }
  },
  "mfb_last": {
@@ -90,7 +101,7 @@
   "USDCAD|Buy": 1795092224874,
   "GBPCAD|Buy": 1794255323064,
   "AUDCAD|Buy": 1794271590080,
-  "AUDUSD|Sell": 1795043721490,
+  "AUDUSD|Sell": 1795132518766,
   "USDCHF|Buy": 1794580003672,
   "AUDJPY|Sell": 1795092224874,
   "BTCUSD|Sell": 1794851904673,
@@ -101,7 +112,7 @@
  "tg_hello_sent": true,
  "alarm_sent": false,
  "auth_alert_sent": false,
- "status_last": 1795117543790,
+ "status_last": 1795132518766,
  "last_summary": "20261119",
  "last_update_id": 0,
  "scalp_last": {
@@ -146,7 +157,7 @@
   "breakout|AUDJPY": 1794998708103,
   "breakout|BTCUSD": 1794726793035,
   "breakout|ETHUSD": 1794501843448,
-  "meanrev|AUDJPY": 1795009312925,
+  "meanrev|AUDJPY": 1795136118766,
   "breakout|EURAUD": 1793938539017,
   "meanrev|EURAUD": 1795058523287,
   "scalp|EURJPY": 1794897481451,
@@ -441,7 +452,9 @@
   "meanrev|USDJPY|Buy|156.823": true,
   "meanrev|AUDJPY|Buy|106.664": true,
   "scalp|BTCUSD|Sell|61987.9": true,
-  "scalp|ETHUSD|Sell|1754.85": true
+  "scalp|ETHUSD|Sell|1754.85": true,
+  "sentiment|AUDUSD|Sell|0.66566": true,
+  "sentiment_follow|AUDUSD|Buy|0.66566": true
  },
- "price_last": 1795129956117
+ "price_last": 1795132518766
 }
