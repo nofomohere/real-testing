@@ -1,27 +1,24 @@
 # Fade Bot — paper ledger
 
-Updated: 2026-11-19T06:29:12.397399+00:00
+Updated: 2026-11-19T07:53:04.465719+00:00
 
-- Trades: **268** | Avg: **-9.4 bps** | Win: **42%** | Cum: **-2507.9 bps**
-- Money sim ($10.0 @ 50x): **-125.397 USD** | Liquidations: **13** | Open: **4**
+- Trades: **271** | Avg: **-10.0 bps** | Win: **42%** | Cum: **-2710.9 bps**
+- Money sim ($10.0 @ 50x): **-135.547 USD** | Liquidations: **14** | Open: **4**
 
 ## Results per strategy
 
 | Strategy | Trades | Win% | Avg bps | Cum bps | Cum USD | Liqs |
 |---|---|---|---|---|---|---|
 | meanrev | 131 | 44% | -3.4 | -447.8 | -22.392 | 3 |
-| sentiment | 49 | 49% | -3.3 | -162.7 | -8.133 | 2 |
-| sentiment_follow | 49 | 29% | -24.7 | -1209.5 | -60.476 | 5 |
-| scalp | 29 | 52% | -6.2 | -179.9 | -8.996 | 1 |
+| sentiment | 50 | 50% | -3.1 | -153.0 | -7.649 | 2 |
+| sentiment_follow | 50 | 28% | -24.4 | -1222.2 | -61.109 | 5 |
+| scalp | 30 | 50% | -12.7 | -379.9 | -18.996 | 2 |
 | breakout | 10 | 10% | -50.8 | -508.0 | -25.400 | 2 |
 
 ## Recent trades
 
 | Trade | Pair | Dir | Strategy | Open (UTC) | PnL bps | PnL USD |
 |---|---|---|---|---|---|---|
-| BTCUSD-Buy-1794947400000-meanrev | BTCUSD | Buy | meanrev | 2026-11-17T20:30 | +20.5 | +1.0250 |
-| EURGBP-Sell-1794940200000-sentiment | EURGBP | Sell | sentiment | 2026-11-17T18:30 | +1.7 | +0.0861 |
-| EURGBP-Buy-1794940200000-sentiment_follow | EURGBP | Buy | sentiment_follow | 2026-11-17T18:30 | -5.7 | -0.2861 |
 | EURCAD-Sell-1794947400000-sentiment | EURCAD | Sell | sentiment | 2026-11-17T20:30 | +125.6 | +6.2821 |
 | EURCAD-Buy-1794947400000-sentiment_follow | EURCAD | Buy | sentiment_follow | 2026-11-17T20:30 | -200.0 | -10.0000 |
 | AUDUSD-Sell-1794953700000-sentiment | AUDUSD | Sell | sentiment | 2026-11-17T22:15 | +26.2 | +1.3121 |
@@ -49,3 +46,6 @@ Updated: 2026-11-19T06:29:12.397399+00:00
 | EURGBP-Buy-1795030200000-sentiment_follow | EURGBP | Buy | sentiment_follow | 2026-11-18T19:30 | +0.2 | +0.0078 |
 | EURCAD-Sell-1795036500000-sentiment | EURCAD | Sell | sentiment | 2026-11-18T21:15 | -1.7 | -0.0865 |
 | EURCAD-Buy-1795036500000-sentiment_follow | EURCAD | Buy | sentiment_follow | 2026-11-18T21:15 | -4.3 | -0.2135 |
+| AUDUSD-Sell-1795043700000-sentiment | AUDUSD | Sell | sentiment | 2026-11-18T23:15 | +9.7 | +0.4837 |
+| AUDUSD-Buy-1795043700000-sentiment_follow | AUDUSD | Buy | sentiment_follow | 2026-11-18T23:15 | -12.7 | -0.6337 |
+| USDJPY-Buy-1795068900000-scalp | USDJPY | Buy | scalp | 2026-11-19T06:15 | -200.0 | -10.0000 |

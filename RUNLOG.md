@@ -347,3 +347,32 @@
 2026-11-19 06:29 | tg sendMessage error: HTTP Error 401: Unauthorized
 2026-11-19 06:29 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=4 new=1 closed=0
 2026-11-19 06:29 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-19 07:50 | tg getMe error: HTTP Error 401: Unauthorized
+2026-11-19 07:52 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-19 07:52 | OPEN GBPUSD-Sell-1795074300000-sentiment Sell @ 1.31469
+2026-11-19 07:52 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-19 07:52 | OPEN GBPUSD-Buy-1795074300000-sentiment_follow Buy @ 1.31469
+2026-11-19 07:53 | price NZDUSD: no fresh source (stale/offline)
+2026-11-19 07:53 | price GBPJPY: no fresh source (stale/offline)
+2026-11-19 07:53 | price AUDCAD: no fresh source (stale/offline)
+2026-11-19 07:53 | price XAUUSD: no fresh source (stale/offline)
+2026-11-19 07:53 | price GBPAUD: no fresh source (stale/offline)
+2026-11-19 07:53 | price GBPCAD: no fresh source (stale/offline)
+2026-11-19 07:53 | price EURTRY: no fresh source (stale/offline)
+2026-11-19 07:53 | price USDTRY: no fresh source (stale/offline)
+2026-11-19 07:53 | price USDZAR: no fresh source (stale/offline)
+2026-11-19 07:53 | price EURNOK: no fresh source (stale/offline)
+2026-11-19 07:53 | price USDNOK: no fresh source (stale/offline)
+2026-11-19 07:53 | price US30: no fresh source (stale/offline)
+2026-11-19 07:53 | price NAS100: no fresh source (stale/offline)
+2026-11-19 07:53 | price SPX500: no fresh source (stale/offline)
+2026-11-19 07:53 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-19 07:53 | OPEN USDJPY-Sell-1795074300000-meanrev Sell @ 159.803
+2026-11-19 07:53 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-19 07:53 | CLOSE AUDUSD-Sell-1795043700000-sentiment reason=time pnl=+9.7bps
+2026-11-19 07:53 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-19 07:53 | CLOSE AUDUSD-Buy-1795043700000-sentiment_follow reason=time pnl=-12.7bps
+2026-11-19 07:53 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-19 07:53 | CLOSE USDJPY-Buy-1795068900000-scalp reason=liq pnl=-200.0bps
+2026-11-19 07:53 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=7 new=1 closed=3
+2026-11-19 07:53 | tg sendMessage error: HTTP Error 401: Unauthorized
