@@ -1,9 +1,9 @@
 # Fade Bot — paper ledger
 
-Updated: 2026-11-19T18:43:03.629655+00:00
+Updated: 2026-11-19T19:47:01.569914+00:00
 
-- Trades: **278** | Avg: **-10.5 bps** | Win: **41%** | Cum: **-2910.6 bps**
-- Money sim ($10.0 @ 50x): **-145.532 USD** | Liquidations: **14** | Open: **6**
+- Trades: **280** | Avg: **-10.6 bps** | Win: **41%** | Cum: **-2969.6 bps**
+- Money sim ($10.0 @ 50x): **-148.482 USD** | Liquidations: **14** | Open: **8**
 
 ## Results per strategy
 
@@ -12,15 +12,13 @@ Updated: 2026-11-19T18:43:03.629655+00:00
 | meanrev | 135 | 43% | -4.6 | -623.0 | -31.152 | 3 |
 | sentiment | 51 | 51% | -2.5 | -129.9 | -6.492 | 2 |
 | sentiment_follow | 51 | 27% | -24.5 | -1248.3 | -62.417 | 5 |
-| scalp | 30 | 50% | -12.7 | -379.9 | -18.996 | 2 |
+| scalp | 32 | 47% | -13.7 | -438.9 | -21.946 | 2 |
 | breakout | 11 | 9% | -48.1 | -529.5 | -26.475 | 2 |
 
 ## Recent trades
 
 | Trade | Pair | Dir | Strategy | Open (UTC) | PnL bps | PnL USD |
 |---|---|---|---|---|---|---|
-| AUDJPY-Buy-1794995100000-meanrev | AUDJPY | Buy | meanrev | 2026-11-18T09:45 | +22.5 | +1.1250 |
-| EURAUD-Sell-1794995100000-meanrev | EURAUD | Sell | meanrev | 2026-11-18T09:45 | -3.0 | -0.1500 |
 | USDJPY-Sell-1794998700000-meanrev | USDJPY | Sell | meanrev | 2026-11-18T10:45 | +23.5 | +1.1750 |
 | EURCAD-Buy-1794998700000-meanrev | EURCAD | Buy | meanrev | 2026-11-18T10:45 | -10.0 | -0.5003 |
 | USDCHF-Buy-1795013100000-scalp | USDCHF | Buy | scalp | 2026-11-18T14:45 | +8.5 | +0.4250 |
@@ -49,3 +47,5 @@ Updated: 2026-11-19T18:43:03.629655+00:00
 | GBPUSD-Sell-1795074300000-sentiment | GBPUSD | Sell | sentiment | 2026-11-19T07:45 | +23.1 | +1.1572 |
 | GBPUSD-Buy-1795074300000-sentiment_follow | GBPUSD | Buy | sentiment_follow | 2026-11-19T07:45 | -26.1 | -1.3072 |
 | BTCUSD-Sell-1795099500000-meanrev | BTCUSD | Sell | meanrev | 2026-11-19T14:45 | -54.5 | -2.7250 |
+| BTCUSD-Sell-1795113000000-scalp | BTCUSD | Sell | scalp | 2026-11-19T18:30 | -29.5 | -1.4750 |
+| ETHUSD-Sell-1795113000000-scalp | ETHUSD | Sell | scalp | 2026-11-19T18:30 | -29.5 | -1.4750 |

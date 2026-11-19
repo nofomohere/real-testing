@@ -312,3 +312,36 @@
 2026-11-19 18:43 | OPEN ETHUSD-Sell-1795113000000-scalp Sell @ 1783.43
 2026-11-19 18:43 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=6 new=2 closed=0
 2026-11-19 18:43 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-19 19:44 | FX quote check: USDJPY breaks 2 cross-rate triangles -> banished (bad venue quote)
+2026-11-19 19:44 | tg getMe error: HTTP Error 401: Unauthorized
+2026-11-19 19:46 | FX quote check: USDJPY breaks 2 cross-rate triangles -> banished (bad venue quote)
+2026-11-19 19:46 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-19 19:46 | OPEN EURUSD-Sell-1795117500000-sentiment Sell @ 1.09721
+2026-11-19 19:46 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-19 19:46 | OPEN EURUSD-Buy-1795117500000-sentiment_follow Buy @ 1.09721
+2026-11-19 19:46 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-19 19:46 | OPEN EURGBP-Sell-1795117500000-sentiment Sell @ 0.83766
+2026-11-19 19:46 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-19 19:46 | OPEN EURGBP-Buy-1795117500000-sentiment_follow Buy @ 0.83766
+2026-11-19 19:46 | price USDJPY: no fresh source (stale/offline)
+2026-11-19 19:46 | price NZDUSD: no fresh source (stale/offline)
+2026-11-19 19:47 | price GBPJPY: no fresh source (stale/offline)
+2026-11-19 19:47 | price AUDCAD: no fresh source (stale/offline)
+2026-11-19 19:47 | price XAUUSD: no fresh source (stale/offline)
+2026-11-19 19:47 | price GBPAUD: no fresh source (stale/offline)
+2026-11-19 19:47 | price GBPCAD: no fresh source (stale/offline)
+2026-11-19 19:47 | price EURTRY: no fresh source (stale/offline)
+2026-11-19 19:47 | price USDTRY: no fresh source (stale/offline)
+2026-11-19 19:47 | price USDZAR: no fresh source (stale/offline)
+2026-11-19 19:47 | price EURNOK: no fresh source (stale/offline)
+2026-11-19 19:47 | price USDNOK: no fresh source (stale/offline)
+2026-11-19 19:47 | price US30: no fresh source (stale/offline)
+2026-11-19 19:47 | price NAS100: no fresh source (stale/offline)
+2026-11-19 19:47 | price SPX500: no fresh source (stale/offline)
+2026-11-19 19:47 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-19 19:47 | CLOSE BTCUSD-Sell-1795113000000-scalp reason=stop pnl=-29.5bps
+2026-11-19 19:47 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-19 19:47 | CLOSE ETHUSD-Sell-1795113000000-scalp reason=stop pnl=-29.5bps
+2026-11-19 19:47 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-19 19:47 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=10 new=0 closed=2
+2026-11-19 19:47 | tg sendMessage error: HTTP Error 401: Unauthorized
