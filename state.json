@@ -78,6 +78,17 @@
    "tp_bps": 25.0,
    "sl_bps": 50.0,
    "cost_bps": 4.5
+  },
+  "EURAUD-Buy-1795046400000-meanrev": {
+   "pair": "EURAUD",
+   "fade_dir": "Buy",
+   "source": "meanrev",
+   "open_t": 1795046400000,
+   "entry_px": 1.62262,
+   "exit_t": 1795053600000,
+   "tp_bps": 25.0,
+   "sl_bps": 50.0,
+   "cost_bps": 3.0
   }
  },
  "mfb_last": {
@@ -100,7 +111,7 @@
  "alarm_sent": false,
  "auth_alert_sent": false,
  "status_last": 1795037290566,
- "last_summary": "20261118",
+ "last_summary": "20261119",
  "last_update_id": 0,
  "scalp_last": {
   "BTCUSD": 1794723193035,
@@ -415,5 +426,5 @@
   "sentiment_follow|AUDUSD|Buy|0.67115": true,
   "meanrev|ETHUSD|Buy|1764.92": true
  },
- "price_last": 1795043721490
+ "price_last": 1795046651265
 }
