@@ -67,6 +67,17 @@
    "tp_bps": null,
    "sl_bps": null,
    "cost_bps": 2.5
+  },
+  "BTCUSD-Sell-1795186800000-breakout": {
+   "pair": "BTCUSD",
+   "fade_dir": "Sell",
+   "source": "breakout",
+   "open_t": 1795186800000,
+   "entry_px": 61025.9,
+   "exit_t": 1795201200000,
+   "tp_bps": 40.0,
+   "sl_bps": 20.0,
+   "cost_bps": 4.5
   }
  },
  "mfb_last": {
@@ -443,7 +454,8 @@
   "sentiment|USDCAD|Buy|1.42814": true,
   "sentiment_follow|USDCAD|Sell|1.42814": true,
   "sentiment|AUDJPY|Sell|106.351": true,
-  "sentiment_follow|AUDJPY|Buy|106.351": true
+  "sentiment_follow|AUDJPY|Buy|106.351": true,
+  "breakout|BTCUSD|Sell|61025.9": true
  },
- "price_last": 1795184075151
+ "price_last": 1795187480755
 }
