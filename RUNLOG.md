@@ -317,3 +317,31 @@
 2026-11-20 22:21 | OPEN BTCUSD-Buy-1795212900000-meanrev Buy @ 59144.9
 2026-11-20 22:21 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=8 new=1 closed=0
 2026-11-20 22:21 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-20 23:07 | FX quote check: EURUSD breaks 2 cross-rate triangles -> banished (bad venue quote)
+2026-11-20 23:07 | price EURUSD: no fresh source (stale/offline)
+2026-11-20 23:07 | tg getMe error: HTTP Error 401: Unauthorized
+2026-11-20 23:10 | FX quote check: EURUSD breaks 2 cross-rate triangles -> banished (bad venue quote)
+2026-11-20 23:10 | price EURUSD: no fresh source (stale/offline)
+2026-11-20 23:10 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-20 23:10 | OPEN USDCAD-Sell-1795215600000-breakout Sell @ 1.22939
+2026-11-20 23:10 | price NZDUSD: no fresh source (stale/offline)
+2026-11-20 23:10 | price GBPJPY: no fresh source (stale/offline)
+2026-11-20 23:10 | price AUDCAD: no fresh source (stale/offline)
+2026-11-20 23:10 | price XAUUSD: no fresh source (stale/offline)
+2026-11-20 23:10 | price GBPAUD: no fresh source (stale/offline)
+2026-11-20 23:10 | price GBPCAD: no fresh source (stale/offline)
+2026-11-20 23:10 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-20 23:10 | OPEN EURCAD-Sell-1795215600000-breakout Sell @ 1.34327
+2026-11-20 23:10 | price EURTRY: no fresh source (stale/offline)
+2026-11-20 23:10 | price USDTRY: no fresh source (stale/offline)
+2026-11-20 23:10 | price USDZAR: no fresh source (stale/offline)
+2026-11-20 23:10 | price EURNOK: no fresh source (stale/offline)
+2026-11-20 23:10 | price USDNOK: no fresh source (stale/offline)
+2026-11-20 23:10 | price US30: no fresh source (stale/offline)
+2026-11-20 23:10 | price NAS100: no fresh source (stale/offline)
+2026-11-20 23:10 | price SPX500: no fresh source (stale/offline)
+2026-11-20 23:10 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-20 23:10 | OPEN ETHUSD-Buy-1795215600000-meanrev Buy @ 1620.53
+2026-11-20 23:10 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-20 23:10 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=11 new=3 closed=0
+2026-11-20 23:10 | tg sendMessage error: HTTP Error 401: Unauthorized
