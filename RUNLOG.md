@@ -360,3 +360,32 @@
 2026-11-20 03:39 | price SPX500: no fresh source (stale/offline)
 2026-11-20 03:39 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=8 new=0 closed=0
 2026-11-20 03:39 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-20 04:39 | FX quote check: USDJPY breaks 2 cross-rate triangles -> banished (bad venue quote)
+2026-11-20 04:39 | tg getMe error: HTTP Error 401: Unauthorized
+2026-11-20 04:41 | FX quote check: USDJPY breaks 2 cross-rate triangles -> banished (bad venue quote)
+2026-11-20 04:41 | price USDJPY: no fresh source (stale/offline)
+2026-11-20 04:41 | price NZDUSD: no fresh source (stale/offline)
+2026-11-20 04:41 | price GBPJPY: no fresh source (stale/offline)
+2026-11-20 04:41 | price AUDCAD: no fresh source (stale/offline)
+2026-11-20 04:41 | price XAUUSD: no fresh source (stale/offline)
+2026-11-20 04:41 | price GBPAUD: no fresh source (stale/offline)
+2026-11-20 04:41 | price GBPCAD: no fresh source (stale/offline)
+2026-11-20 04:41 | price EURTRY: no fresh source (stale/offline)
+2026-11-20 04:41 | price USDTRY: no fresh source (stale/offline)
+2026-11-20 04:41 | price USDZAR: no fresh source (stale/offline)
+2026-11-20 04:41 | price EURNOK: no fresh source (stale/offline)
+2026-11-20 04:41 | price USDNOK: no fresh source (stale/offline)
+2026-11-20 04:41 | price US30: no fresh source (stale/offline)
+2026-11-20 04:41 | price NAS100: no fresh source (stale/offline)
+2026-11-20 04:41 | price SPX500: no fresh source (stale/offline)
+2026-11-20 04:41 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-20 04:41 | CLOSE EURUSD-Sell-1795117500000-sentiment reason=time pnl=-0.5bps
+2026-11-20 04:42 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-20 04:42 | CLOSE EURUSD-Buy-1795117500000-sentiment_follow reason=time pnl=-2.5bps
+2026-11-20 04:42 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-20 04:42 | CLOSE EURGBP-Sell-1795117500000-sentiment reason=time pnl=-0.8bps
+2026-11-20 04:42 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-20 04:42 | CLOSE EURGBP-Buy-1795117500000-sentiment_follow reason=time pnl=-3.2bps
+2026-11-20 04:42 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-20 04:42 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=8 new=0 closed=4
+2026-11-20 04:42 | tg sendMessage error: HTTP Error 401: Unauthorized
