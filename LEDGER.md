@@ -1,17 +1,17 @@
 # Fade Bot — paper ledger
 
-Updated: 2026-11-20T20:38:44.096315+00:00
+Updated: 2026-11-20T21:30:47.724048+00:00
 
-- Trades: **305** | Avg: **-10.0 bps** | Win: **40%** | Cum: **-3036.2 bps**
-- Money sim ($10.0 @ 50x): **-151.811 USD** | Liquidations: **15** | Open: **9**
+- Trades: **309** | Avg: **-10.6 bps** | Win: **40%** | Cum: **-3265.4 bps**
+- Money sim ($10.0 @ 50x): **-163.270 USD** | Liquidations: **17** | Open: **5**
 
 ## Results per strategy
 
 | Strategy | Trades | Win% | Avg bps | Cum bps | Cum USD | Liqs |
 |---|---|---|---|---|---|---|
 | meanrev | 141 | 45% | -2.4 | -344.6 | -17.232 | 3 |
-| sentiment | 58 | 50% | -1.8 | -107.0 | -5.350 | 2 |
-| sentiment_follow | 58 | 26% | -22.4 | -1298.1 | -64.908 | 5 |
+| sentiment | 60 | 50% | -3.7 | -222.7 | -11.131 | 3 |
+| sentiment_follow | 60 | 27% | -23.5 | -1411.7 | -70.586 | 6 |
 | scalp | 36 | 42% | -15.5 | -556.9 | -27.846 | 2 |
 | breakout | 12 | 8% | -60.8 | -729.5 | -36.475 | 3 |
 
@@ -19,10 +19,6 @@ Updated: 2026-11-20T20:38:44.096315+00:00
 
 | Trade | Pair | Dir | Strategy | Open (UTC) | PnL bps | PnL USD |
 |---|---|---|---|---|---|---|
-| GBPUSD-Sell-1795074300000-sentiment | GBPUSD | Sell | sentiment | 2026-11-19T07:45 | +23.1 | +1.1572 |
-| GBPUSD-Buy-1795074300000-sentiment_follow | GBPUSD | Buy | sentiment_follow | 2026-11-19T07:45 | -26.1 | -1.3072 |
-| BTCUSD-Sell-1795099500000-meanrev | BTCUSD | Sell | meanrev | 2026-11-19T14:45 | -54.5 | -2.7250 |
-| BTCUSD-Sell-1795113000000-scalp | BTCUSD | Sell | scalp | 2026-11-19T18:30 | -29.5 | -1.4750 |
 | ETHUSD-Sell-1795113000000-scalp | ETHUSD | Sell | scalp | 2026-11-19T18:30 | -29.5 | -1.4750 |
 | USDCAD-Buy-1795091400000-sentiment | USDCAD | Buy | sentiment | 2026-11-19T12:30 | +30.6 | +1.5293 |
 | USDCAD-Sell-1795091400000-sentiment_follow | USDCAD | Sell | sentiment_follow | 2026-11-19T12:30 | -33.6 | -1.6793 |
@@ -49,3 +45,7 @@ Updated: 2026-11-20T20:38:44.096315+00:00
 | GBPUSD-Buy-1795161600000-sentiment_follow | GBPUSD | Buy | sentiment_follow | 2026-11-20T08:00 | -7.2 | -0.3573 |
 | BTCUSD-Sell-1795186800000-breakout | BTCUSD | Sell | breakout | 2026-11-20T15:00 | -200.0 | -10.0000 |
 | ETHUSD-Sell-1795203900000-scalp | ETHUSD | Sell | scalp | 2026-11-20T19:45 | -29.5 | -1.4750 |
+| USDCAD-Buy-1795178700000-sentiment | USDCAD | Buy | sentiment | 2026-11-20T12:45 | -200.0 | -10.0000 |
+| USDCAD-Sell-1795178700000-sentiment_follow | USDCAD | Sell | sentiment_follow | 2026-11-20T12:45 | +86.5 | +4.3223 |
+| AUDJPY-Sell-1795178700000-sentiment | AUDJPY | Sell | sentiment | 2026-11-20T12:45 | +84.4 | +4.2191 |
+| AUDJPY-Buy-1795178700000-sentiment_follow | AUDJPY | Buy | sentiment_follow | 2026-11-20T12:45 | -200.0 | -10.0000 |
