@@ -23,6 +23,50 @@
    "tp_bps": null,
    "sl_bps": null,
    "cost_bps": 1.5
+  },
+  "USDCAD-Buy-1795178700000-sentiment": {
+   "pair": "USDCAD",
+   "fade_dir": "Buy",
+   "source": "sentiment",
+   "open_t": 1795178700000,
+   "entry_px": 1.42814,
+   "exit_t": 1795207500000,
+   "tp_bps": null,
+   "sl_bps": null,
+   "cost_bps": 1.5
+  },
+  "USDCAD-Sell-1795178700000-sentiment_follow": {
+   "pair": "USDCAD",
+   "fade_dir": "Sell",
+   "source": "sentiment_follow",
+   "open_t": 1795178700000,
+   "entry_px": 1.42814,
+   "exit_t": 1795207500000,
+   "tp_bps": null,
+   "sl_bps": null,
+   "cost_bps": 1.5
+  },
+  "AUDJPY-Sell-1795178700000-sentiment": {
+   "pair": "AUDJPY",
+   "fade_dir": "Sell",
+   "source": "sentiment",
+   "open_t": 1795178700000,
+   "entry_px": 106.351,
+   "exit_t": 1795207500000,
+   "tp_bps": null,
+   "sl_bps": null,
+   "cost_bps": 2.5
+  },
+  "AUDJPY-Buy-1795178700000-sentiment_follow": {
+   "pair": "AUDJPY",
+   "fade_dir": "Buy",
+   "source": "sentiment_follow",
+   "open_t": 1795178700000,
+   "entry_px": 106.351,
+   "exit_t": 1795207500000,
+   "tp_bps": null,
+   "sl_bps": null,
+   "cost_bps": 2.5
   }
  },
  "mfb_last": {
@@ -32,12 +76,12 @@
   "NZDUSD|Sell": 1795123823878,
   "GBPAUD|Buy": 1795123823878,
   "ETHUSD|Sell": 1794789699036,
-  "USDCAD|Buy": 1795092224874,
+  "USDCAD|Buy": 1795179470281,
   "GBPCAD|Buy": 1794255323064,
   "AUDCAD|Buy": 1794271590080,
   "AUDUSD|Sell": 1795132518766,
   "USDCHF|Buy": 1794580003672,
-  "AUDJPY|Sell": 1795092224874,
+  "AUDJPY|Sell": 1795179470281,
   "BTCUSD|Sell": 1794851904673,
   "AUDCAD|Sell": 1795145929152,
   "GBPUSD|Sell": 1795161676330
@@ -395,7 +439,11 @@
   "sentiment|GBPUSD|Sell|1.31086": true,
   "sentiment_follow|GBPUSD|Buy|1.31086": true,
   "meanrev|ETHUSD|Buy|1749.07": true,
-  "meanrev|BTCUSD|Buy|61765.4": true
+  "meanrev|BTCUSD|Buy|61765.4": true,
+  "sentiment|USDCAD|Buy|1.42814": true,
+  "sentiment_follow|USDCAD|Sell|1.42814": true,
+  "sentiment|AUDJPY|Sell|106.351": true,
+  "sentiment_follow|AUDJPY|Buy|106.351": true
  },
- "price_last": 1795175860509
+ "price_last": 1795179470281
 }
