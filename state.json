@@ -79,7 +79,7 @@
  "tg_hello_sent": true,
  "alarm_sent": false,
  "auth_alert_sent": false,
- "status_last": 1795184075151,
+ "status_last": 1795200891677,
  "last_summary": "20261120",
  "last_update_id": 0,
  "scalp_last": {
@@ -435,5 +435,5 @@
   "sentiment_follow|AUDJPY|Buy|106.351": true,
   "breakout|BTCUSD|Sell|61025.9": true
  },
- "price_last": 1795197496681
+ "price_last": 1795200891677
 }
