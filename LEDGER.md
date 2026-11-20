@@ -1,26 +1,24 @@
 # Fade Bot — paper ledger
 
-Updated: 2026-11-20T01:59:03.117048+00:00
+Updated: 2026-11-20T02:48:05.829026+00:00
 
-- Trades: **288** | Avg: **-9.9 bps** | Win: **41%** | Cum: **-2840.2 bps**
-- Money sim ($10.0 @ 50x): **-142.011 USD** | Liquidations: **14** | Open: **10**
+- Trades: **290** | Avg: **-9.8 bps** | Win: **41%** | Cum: **-2849.2 bps**
+- Money sim ($10.0 @ 50x): **-142.461 USD** | Liquidations: **14** | Open: **8**
 
 ## Results per strategy
 
 | Strategy | Trades | Win% | Avg bps | Cum bps | Cum USD | Liqs |
 |---|---|---|---|---|---|---|
-| meanrev | 137 | 43% | -3.1 | -426.6 | -21.332 | 3 |
+| meanrev | 138 | 43% | -2.9 | -406.1 | -20.307 | 3 |
 | sentiment | 53 | 53% | -1.5 | -77.4 | -3.867 | 2 |
 | sentiment_follow | 53 | 26% | -24.7 | -1308.8 | -65.442 | 5 |
-| scalp | 34 | 44% | -14.6 | -497.9 | -24.896 | 2 |
+| scalp | 35 | 43% | -15.1 | -527.4 | -26.371 | 2 |
 | breakout | 11 | 9% | -48.1 | -529.5 | -26.475 | 2 |
 
 ## Recent trades
 
 | Trade | Pair | Dir | Strategy | Open (UTC) | PnL bps | PnL USD |
 |---|---|---|---|---|---|---|
-| ETHUSD-Buy-1795026600000-meanrev | ETHUSD | Buy | meanrev | 2026-11-18T18:30 | +20.5 | +1.0250 |
-| EURAUD-Buy-1795030200000-meanrev | EURAUD | Buy | meanrev | 2026-11-18T19:30 | -3.0 | -0.1500 |
 | BTCUSD-Buy-1795033800000-meanrev | BTCUSD | Buy | meanrev | 2026-11-18T20:30 | -21.3 | -1.0662 |
 | ETHUSD-Buy-1795043700000-meanrev | ETHUSD | Buy | meanrev | 2026-11-18T23:15 | +20.5 | +1.0250 |
 | EURAUD-Buy-1795046400000-meanrev | EURAUD | Buy | meanrev | 2026-11-19T00:00 | +22.0 | +1.1000 |
@@ -49,3 +47,5 @@ Updated: 2026-11-20T01:59:03.117048+00:00
 | BTCUSD-Sell-1795126500000-scalp | BTCUSD | Sell | scalp | 2026-11-19T22:15 | -29.5 | -1.4750 |
 | ETHUSD-Sell-1795126500000-scalp | ETHUSD | Sell | scalp | 2026-11-19T22:15 | -29.5 | -1.4750 |
 | AUDJPY-Buy-1795123800000-meanrev | AUDJPY | Buy | meanrev | 2026-11-19T21:30 | -2.5 | -0.1250 |
+| BTCUSD-Buy-1795135500000-meanrev | BTCUSD | Buy | meanrev | 2026-11-20T00:45 | +20.5 | +1.0250 |
+| BTCUSD-Buy-1795139100000-scalp | BTCUSD | Buy | scalp | 2026-11-20T01:45 | -29.5 | -1.4750 |
