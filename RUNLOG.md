@@ -317,3 +317,28 @@
 2026-11-21 09:30 | price SPX500: no fresh source (stale/offline)
 2026-11-21 09:30 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=2 new=0 closed=0
 2026-11-21 09:30 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-21 10:18 | FX quote check: EURUSD breaks 2 cross-rate triangles -> banished (bad venue quote)
+2026-11-21 10:18 | price EURUSD: no fresh source (stale/offline)
+2026-11-21 10:18 | tg getMe error: HTTP Error 401: Unauthorized
+2026-11-21 10:21 | FX quote check: USDJPY breaks 2 cross-rate triangles -> banished (bad venue quote)
+2026-11-21 10:21 | price USDJPY: no fresh source (stale/offline)
+2026-11-21 10:21 | price NZDUSD: no fresh source (stale/offline)
+2026-11-21 10:21 | price GBPJPY: no fresh source (stale/offline)
+2026-11-21 10:21 | price AUDCAD: no fresh source (stale/offline)
+2026-11-21 10:21 | price XAUUSD: no fresh source (stale/offline)
+2026-11-21 10:21 | price GBPAUD: no fresh source (stale/offline)
+2026-11-21 10:21 | price GBPCAD: no fresh source (stale/offline)
+2026-11-21 10:21 | price EURTRY: no fresh source (stale/offline)
+2026-11-21 10:21 | price USDTRY: no fresh source (stale/offline)
+2026-11-21 10:21 | price USDZAR: no fresh source (stale/offline)
+2026-11-21 10:21 | price EURNOK: no fresh source (stale/offline)
+2026-11-21 10:21 | price USDNOK: no fresh source (stale/offline)
+2026-11-21 10:21 | price US30: no fresh source (stale/offline)
+2026-11-21 10:21 | price NAS100: no fresh source (stale/offline)
+2026-11-21 10:21 | price SPX500: no fresh source (stale/offline)
+2026-11-21 10:21 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-21 10:21 | CLOSE BTCUSD-Buy-1795247100000-meanrev reason=stop pnl=-54.5bps
+2026-11-21 10:21 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-21 10:21 | CLOSE ETHUSD-Buy-1795247100000-meanrev reason=stop pnl=-54.5bps
+2026-11-21 10:21 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=2 new=0 closed=2
+2026-11-21 10:21 | tg sendMessage error: HTTP Error 401: Unauthorized
