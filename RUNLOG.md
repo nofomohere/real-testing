@@ -343,3 +343,37 @@
 2026-11-21 06:36 | CLOSE EURCAD-Buy-1795212900000-sentiment_follow reason=liq pnl=-200.0bps
 2026-11-21 06:36 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=6 new=2 closed=2
 2026-11-21 06:36 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-21 07:48 | FX quote check: EURUSD breaks 3 cross-rate triangles -> banished (bad venue quote)
+2026-11-21 07:48 | price EURUSD: no fresh source (stale/offline)
+2026-11-21 07:48 | tg getMe error: HTTP Error 401: Unauthorized
+2026-11-21 07:51 | FX quote check: EURUSD breaks 3 cross-rate triangles -> banished (bad venue quote)
+2026-11-21 07:51 | price EURUSD: no fresh source (stale/offline)
+2026-11-21 07:51 | price NZDUSD: no fresh source (stale/offline)
+2026-11-21 07:51 | price GBPJPY: no fresh source (stale/offline)
+2026-11-21 07:51 | price AUDCAD: no fresh source (stale/offline)
+2026-11-21 07:51 | price XAUUSD: no fresh source (stale/offline)
+2026-11-21 07:51 | price GBPAUD: no fresh source (stale/offline)
+2026-11-21 07:51 | price GBPCAD: no fresh source (stale/offline)
+2026-11-21 07:51 | price EURTRY: no fresh source (stale/offline)
+2026-11-21 07:51 | price USDTRY: no fresh source (stale/offline)
+2026-11-21 07:51 | price USDZAR: no fresh source (stale/offline)
+2026-11-21 07:51 | price EURNOK: no fresh source (stale/offline)
+2026-11-21 07:51 | price USDNOK: no fresh source (stale/offline)
+2026-11-21 07:51 | price US30: no fresh source (stale/offline)
+2026-11-21 07:51 | price NAS100: no fresh source (stale/offline)
+2026-11-21 07:51 | price SPX500: no fresh source (stale/offline)
+2026-11-21 07:51 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-21 07:51 | OPEN BTCUSD-Buy-1795247100000-meanrev Buy @ 57900.8
+2026-11-21 07:51 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-21 07:51 | OPEN ETHUSD-Buy-1795247100000-meanrev Buy @ 1630.01
+2026-11-21 07:51 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-21 07:51 | CLOSE BTCUSD-Sell-1795231800000-breakout reason=liq pnl=-200.0bps
+2026-11-21 07:51 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-21 07:51 | CLOSE ETHUSD-Sell-1795231800000-breakout reason=liq pnl=-200.0bps
+2026-11-21 07:51 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-21 07:51 | CLOSE BTCUSD-Sell-1795242600000-scalp reason=liq pnl=-200.0bps
+2026-11-21 07:51 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-21 07:51 | CLOSE ETHUSD-Sell-1795242600000-scalp reason=liq pnl=-200.0bps
+2026-11-21 07:51 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-21 07:51 | run: mfb=0 cookie=set tz=39p opens=0 closes=0 active_before=6 new=2 closed=4
+2026-11-21 07:51 | tg sendMessage error: HTTP Error 401: Unauthorized

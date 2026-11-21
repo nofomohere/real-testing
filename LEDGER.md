@@ -1,9 +1,9 @@
 # Fade Bot — paper ledger
 
-Updated: 2026-11-21T06:36:49.042695+00:00
+Updated: 2026-11-21T07:51:44.985527+00:00
 
-- Trades: **320** | Avg: **-12.9 bps** | Win: **40%** | Cum: **-4128.9 bps**
-- Money sim ($10.0 @ 50x): **-206.445 USD** | Liquidations: **21** | Open: **4**
+- Trades: **324** | Avg: **-15.2 bps** | Win: **40%** | Cum: **-4928.9 bps**
+- Money sim ($10.0 @ 50x): **-246.445 USD** | Liquidations: **25** | Open: **2**
 
 ## Results per strategy
 
@@ -12,17 +12,13 @@ Updated: 2026-11-21T06:36:49.042695+00:00
 | meanrev | 143 | 45% | -2.6 | -378.6 | -18.932 | 3 |
 | sentiment | 63 | 49% | -6.9 | -435.4 | -21.767 | 4 |
 | sentiment_follow | 63 | 27% | -25.5 | -1606.0 | -80.300 | 7 |
-| scalp | 36 | 42% | -15.5 | -556.9 | -27.846 | 2 |
-| breakout | 15 | 7% | -76.8 | -1152.0 | -57.600 | 5 |
+| scalp | 38 | 39% | -25.2 | -956.9 | -47.846 | 4 |
+| breakout | 17 | 6% | -91.3 | -1552.0 | -77.600 | 7 |
 
 ## Recent trades
 
 | Trade | Pair | Dir | Strategy | Open (UTC) | PnL bps | PnL USD |
 |---|---|---|---|---|---|---|
-| EURUSD-Sell-1795117500000-sentiment | EURUSD | Sell | sentiment | 2026-11-19T19:45 | -0.5 | -0.0249 |
-| EURUSD-Buy-1795117500000-sentiment_follow | EURUSD | Buy | sentiment_follow | 2026-11-19T19:45 | -2.5 | -0.1251 |
-| EURGBP-Sell-1795117500000-sentiment | EURGBP | Sell | sentiment | 2026-11-19T19:45 | -0.8 | -0.0403 |
-| EURGBP-Buy-1795117500000-sentiment_follow | EURGBP | Buy | sentiment_follow | 2026-11-19T19:45 | -3.2 | -0.1597 |
 | EURCAD-Sell-1795123800000-sentiment | EURCAD | Sell | sentiment | 2026-11-19T21:30 | -4.3 | -0.2136 |
 | EURCAD-Buy-1795123800000-sentiment_follow | EURCAD | Buy | sentiment_follow | 2026-11-19T21:30 | -1.7 | -0.0864 |
 | AUDUSD-Sell-1795131900000-sentiment | AUDUSD | Sell | sentiment | 2026-11-19T23:45 | -28.2 | -1.4120 |
@@ -49,3 +45,7 @@ Updated: 2026-11-21T06:36:49.042695+00:00
 | EURGBP-Buy-1795203900000-sentiment_follow | EURGBP | Buy | sentiment_follow | 2026-11-20T19:45 | -6.7 | -0.3329 |
 | EURCAD-Sell-1795212900000-sentiment | EURCAD | Sell | sentiment | 2026-11-20T22:15 | -200.0 | -10.0000 |
 | EURCAD-Buy-1795212900000-sentiment_follow | EURCAD | Buy | sentiment_follow | 2026-11-20T22:15 | -200.0 | -10.0000 |
+| BTCUSD-Sell-1795231800000-breakout | BTCUSD | Sell | breakout | 2026-11-21T03:30 | -200.0 | -10.0000 |
+| ETHUSD-Sell-1795231800000-breakout | ETHUSD | Sell | breakout | 2026-11-21T03:30 | -200.0 | -10.0000 |
+| BTCUSD-Sell-1795242600000-scalp | BTCUSD | Sell | scalp | 2026-11-21T06:30 | -200.0 | -10.0000 |
+| ETHUSD-Sell-1795242600000-scalp | ETHUSD | Sell | scalp | 2026-11-21T06:30 | -200.0 | -10.0000 |
