@@ -335,3 +335,33 @@
 2026-11-21 02:48 | price SPX500: no fresh source (stale/offline)
 2026-11-21 02:48 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=8 new=0 closed=0
 2026-11-21 02:48 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-21 03:36 | FX quote check: EURUSD breaks 2 cross-rate triangles -> banished (bad venue quote)
+2026-11-21 03:36 | price EURUSD: no fresh source (stale/offline)
+2026-11-21 03:36 | tg getMe error: HTTP Error 401: Unauthorized
+2026-11-21 03:39 | FX quote check: EURUSD breaks 2 cross-rate triangles -> banished (bad venue quote)
+2026-11-21 03:39 | price EURUSD: no fresh source (stale/offline)
+2026-11-21 03:39 | price NZDUSD: no fresh source (stale/offline)
+2026-11-21 03:39 | price GBPJPY: no fresh source (stale/offline)
+2026-11-21 03:39 | price AUDCAD: no fresh source (stale/offline)
+2026-11-21 03:39 | price XAUUSD: no fresh source (stale/offline)
+2026-11-21 03:39 | price GBPAUD: no fresh source (stale/offline)
+2026-11-21 03:39 | price GBPCAD: no fresh source (stale/offline)
+2026-11-21 03:39 | price EURTRY: no fresh source (stale/offline)
+2026-11-21 03:39 | price USDTRY: no fresh source (stale/offline)
+2026-11-21 03:39 | price USDZAR: no fresh source (stale/offline)
+2026-11-21 03:39 | price EURNOK: no fresh source (stale/offline)
+2026-11-21 03:39 | price USDNOK: no fresh source (stale/offline)
+2026-11-21 03:39 | price US30: no fresh source (stale/offline)
+2026-11-21 03:39 | price NAS100: no fresh source (stale/offline)
+2026-11-21 03:39 | price SPX500: no fresh source (stale/offline)
+2026-11-21 03:39 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-21 03:39 | OPEN BTCUSD-Sell-1795231800000-breakout Sell @ 56991.7
+2026-11-21 03:39 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-21 03:39 | OPEN ETHUSD-Sell-1795231800000-breakout Sell @ 1568.09
+2026-11-21 03:39 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-21 03:39 | CLOSE USDCAD-Sell-1795215600000-breakout reason=liq pnl=-200.0bps
+2026-11-21 03:39 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-21 03:39 | CLOSE EURCAD-Sell-1795215600000-breakout reason=liq pnl=-200.0bps
+2026-11-21 03:39 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-21 03:39 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=10 new=2 closed=2
+2026-11-21 03:39 | tg sendMessage error: HTTP Error 401: Unauthorized
