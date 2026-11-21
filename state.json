@@ -40,7 +40,7 @@
   "AUDJPY|Sell": 1795179470281,
   "BTCUSD|Sell": 1794851904673,
   "AUDCAD|Sell": 1795235835625,
-  "GBPUSD|Sell": 1795161676330
+  "GBPUSD|Sell": 1795250307365
  },
  "chat_id": 1192863557,
  "tg_hello_sent": true,
@@ -271,5 +271,5 @@
   "meanrev|BTCUSD|Buy|57900.8": true,
   "meanrev|ETHUSD|Buy|1630.01": true
  },
- "price_last": 1795247413167
+ "price_last": 1795250307365
 }
