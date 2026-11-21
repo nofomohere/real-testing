@@ -1,19 +1,7 @@
 {
  "version": 3,
  "clusters_seen": {},
- "active": {
-  "BTCUSD-Buy-1795261500000-meanrev": {
-   "pair": "BTCUSD",
-   "fade_dir": "Buy",
-   "source": "meanrev",
-   "open_t": 1795261500000,
-   "entry_px": 58067.2,
-   "exit_t": 1795268700000,
-   "tp_bps": 25.0,
-   "sl_bps": 50.0,
-   "cost_bps": 4.5
-  }
- },
+ "active": {},
  "mfb_last": {
   "EURUSD|Sell": 1795204269124,
   "EURCAD|Sell": 1795213187241,
@@ -47,7 +35,7 @@
   "USDCHF": 1795013346609
  },
  "last_close": {
-  "BTCUSD": 57830.8,
+  "BTCUSD": 60282.5,
   "EURUSD": 1.09738,
   "EURCAD": 0.96985,
   "EURGBP": 0.837,
@@ -62,7 +50,7 @@
   "USDCHF": 0.84325
  },
  "cooldown": {
-  "meanrev|BTCUSD": 1795260007427,
+  "meanrev|BTCUSD": 1795275062636,
   "sentiment|EURUSD": 1795153246413,
   "sentiment_follow|EURUSD": 1795153246413,
   "sentiment|EURCAD": 1795246520925,
@@ -261,5 +249,5 @@
   "meanrev|ETHUSD|Buy|1630.01": true,
   "meanrev|BTCUSD|Buy|58067.2": true
  },
- "price_last": 1795268421890
+ "price_last": 1795271462636
 }
