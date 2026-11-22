@@ -23,7 +23,7 @@
  "tg_hello_sent": true,
  "alarm_sent": false,
  "auth_alert_sent": false,
- "status_last": 1795374336615,
+ "status_last": 1795390282742,
  "last_summary": "20261122",
  "last_update_id": 0,
  "scalp_last": {
@@ -259,5 +259,5 @@
   "meanrev|BTCUSD|Sell|60620.1": true,
   "meanrev|ETHUSD|Sell|1712.76": true
  },
- "price_last": 1795387872971
+ "price_last": 1795390282742
 }
