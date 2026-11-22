@@ -1,15 +1,15 @@
 # Fade Bot — paper ledger
 
-Updated: 2026-11-22T01:54:48.477759+00:00
+Updated: 2026-11-22T02:44:13.223000+00:00
 
-- Trades: **331** | Avg: **-14.9 bps** | Win: **40%** | Cum: **-4939.2 bps**
-- Money sim ($10.0 @ 50x): **-246.962 USD** | Liquidations: **25** | Open: **1**
+- Trades: **332** | Avg: **-14.8 bps** | Win: **40%** | Cum: **-4918.7 bps**
+- Money sim ($10.0 @ 50x): **-245.937 USD** | Liquidations: **25** | Open: **0**
 
 ## Results per strategy
 
 | Strategy | Trades | Win% | Avg bps | Cum bps | Cum USD | Liqs |
 |---|---|---|---|---|---|---|
-| meanrev | 150 | 46% | -2.6 | -389.0 | -19.449 | 3 |
+| meanrev | 151 | 46% | -2.4 | -368.5 | -18.424 | 3 |
 | sentiment | 63 | 49% | -6.9 | -435.4 | -21.767 | 4 |
 | sentiment_follow | 63 | 27% | -25.5 | -1606.0 | -80.300 | 7 |
 | scalp | 38 | 39% | -25.2 | -956.9 | -47.846 | 4 |
@@ -19,7 +19,6 @@ Updated: 2026-11-22T01:54:48.477759+00:00
 
 | Trade | Pair | Dir | Strategy | Open (UTC) | PnL bps | PnL USD |
 |---|---|---|---|---|---|---|
-| GBPUSD-Sell-1795161600000-sentiment | GBPUSD | Sell | sentiment | 2026-11-20T08:00 | +4.2 | +0.2073 |
 | GBPUSD-Buy-1795161600000-sentiment_follow | GBPUSD | Buy | sentiment_follow | 2026-11-20T08:00 | -7.2 | -0.3573 |
 | BTCUSD-Sell-1795186800000-breakout | BTCUSD | Sell | breakout | 2026-11-20T15:00 | -200.0 | -10.0000 |
 | ETHUSD-Sell-1795203900000-scalp | ETHUSD | Sell | scalp | 2026-11-20T19:45 | -29.5 | -1.4750 |
@@ -49,3 +48,4 @@ Updated: 2026-11-22T01:54:48.477759+00:00
 | ETHUSD-Sell-1795282200000-meanrev | ETHUSD | Sell | meanrev | 2026-11-21T17:30 | +20.5 | +1.0250 |
 | ETHUSD-Sell-1795295700000-meanrev | ETHUSD | Sell | meanrev | 2026-11-21T21:15 | +20.5 | +1.0250 |
 | BTCUSD-Sell-1795302900000-meanrev | BTCUSD | Sell | meanrev | 2026-11-21T23:15 | +16.6 | +0.8327 |
+| ETHUSD-Sell-1795307400000-meanrev | ETHUSD | Sell | meanrev | 2026-11-22T00:30 | +20.5 | +1.0250 |
