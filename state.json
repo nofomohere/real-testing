@@ -26,9 +26,9 @@
   }
  },
  "mfb_last": {
-  "EURUSD|Sell": 1795292928400,
+  "EURUSD|Sell": 1795379667307,
   "EURCAD|Sell": 1795300364841,
-  "EURGBP|Sell": 1795292928400,
+  "EURGBP|Sell": 1795379667307,
   "NZDUSD|Sell": 1795300364841,
   "GBPAUD|Buy": 1795123823878,
   "ETHUSD|Sell": 1794789699036,
@@ -282,5 +282,5 @@
   "meanrev|BTCUSD|Sell|60620.1": true,
   "meanrev|ETHUSD|Sell|1712.76": true
  },
- "price_last": 1795377227901
+ "price_last": 1795379667307
 }
