@@ -12,6 +12,17 @@
    "tp_bps": 25.0,
    "sl_bps": 50.0,
    "cost_bps": 4.5
+  },
+  "ETHUSD-Sell-1795376700000-meanrev": {
+   "pair": "ETHUSD",
+   "fade_dir": "Sell",
+   "source": "meanrev",
+   "open_t": 1795376700000,
+   "entry_px": 1712.76,
+   "exit_t": 1795383900000,
+   "tp_bps": 25.0,
+   "sl_bps": 50.0,
+   "cost_bps": 4.5
   }
  },
  "mfb_last": {
@@ -268,7 +279,8 @@
   "meanrev|BTCUSD|Sell|60760.8": true,
   "meanrev|ETHUSD|Sell|1705.61": true,
   "scalp|BTCUSD|Buy|60710.6": true,
-  "meanrev|BTCUSD|Sell|60620.1": true
+  "meanrev|BTCUSD|Sell|60620.1": true,
+  "meanrev|ETHUSD|Sell|1712.76": true
  },
- "price_last": 1795374336615
+ "price_last": 1795377227901
 }
