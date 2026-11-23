@@ -1,9 +1,9 @@
 # Fade Bot — paper ledger
 
-Updated: 2026-11-23T00:19:57.062188+00:00
+Updated: 2026-11-23T01:44:11.987008+00:00
 
-- Trades: **337** | Avg: **-14.7 bps** | Win: **41%** | Cum: **-4965.6 bps**
-- Money sim ($10.0 @ 50x): **-248.279 USD** | Liquidations: **25** | Open: **2**
+- Trades: **339** | Avg: **-14.6 bps** | Win: **41%** | Cum: **-4948.6 bps**
+- Money sim ($10.0 @ 50x): **-247.429 USD** | Liquidations: **25** | Open: **3**
 
 ## Results per strategy
 
@@ -12,15 +12,13 @@ Updated: 2026-11-23T00:19:57.062188+00:00
 | meanrev | 155 | 46% | -2.7 | -420.8 | -21.040 | 3 |
 | sentiment | 63 | 49% | -6.9 | -435.4 | -21.767 | 4 |
 | sentiment_follow | 63 | 27% | -25.5 | -1606.0 | -80.300 | 7 |
-| scalp | 39 | 41% | -24.4 | -951.4 | -47.571 | 4 |
+| scalp | 41 | 44% | -22.8 | -934.4 | -46.721 | 4 |
 | breakout | 17 | 6% | -91.3 | -1552.0 | -77.600 | 7 |
 
 ## Recent trades
 
 | Trade | Pair | Dir | Strategy | Open (UTC) | PnL bps | PnL USD |
 |---|---|---|---|---|---|---|
-| AUDJPY-Sell-1795178700000-sentiment | AUDJPY | Sell | sentiment | 2026-11-20T12:45 | +84.4 | +4.2191 |
-| AUDJPY-Buy-1795178700000-sentiment_follow | AUDJPY | Buy | sentiment_follow | 2026-11-20T12:45 | -200.0 | -10.0000 |
 | AUDJPY-Sell-1795206600000-breakout | AUDJPY | Sell | breakout | 2026-11-20T20:30 | -22.5 | -1.1250 |
 | BTCUSD-Buy-1795212900000-meanrev | BTCUSD | Buy | meanrev | 2026-11-20T22:15 | -54.5 | -2.7250 |
 | ETHUSD-Buy-1795215600000-meanrev | ETHUSD | Buy | meanrev | 2026-11-20T23:00 | +20.5 | +1.0250 |
@@ -49,3 +47,5 @@ Updated: 2026-11-23T00:19:57.062188+00:00
 | BTCUSD-Buy-1795367700000-scalp | BTCUSD | Buy | scalp | 2026-11-22T17:15 | +5.5 | +0.2750 |
 | BTCUSD-Sell-1795373100000-meanrev | BTCUSD | Sell | meanrev | 2026-11-22T18:45 | -38.8 | -1.9414 |
 | ETHUSD-Sell-1795376700000-meanrev | ETHUSD | Sell | meanrev | 2026-11-22T19:45 | -54.5 | -2.7250 |
+| AUDUSD-Buy-1795392900000-scalp | AUDUSD | Buy | scalp | 2026-11-23T00:15 | +8.5 | +0.4250 |
+| USDCAD-Buy-1795392900000-scalp | USDCAD | Buy | scalp | 2026-11-23T00:15 | +8.5 | +0.4250 |

@@ -2,27 +2,38 @@
  "version": 3,
  "clusters_seen": {},
  "active": {
-  "AUDUSD-Buy-1795392900000-scalp": {
-   "pair": "AUDUSD",
+  "USDJPY-Buy-1795397400000-meanrev": {
+   "pair": "USDJPY",
    "fade_dir": "Buy",
-   "source": "scalp",
-   "open_t": 1795392900000,
-   "entry_px": 0.66037,
-   "exit_t": 1795394700000,
-   "tp_bps": 10.0,
-   "sl_bps": 25.0,
+   "source": "meanrev",
+   "open_t": 1795397400000,
+   "entry_px": 157.77,
+   "exit_t": 1795404600000,
+   "tp_bps": 25.0,
+   "sl_bps": 50.0,
    "cost_bps": 1.5
   },
-  "USDCAD-Buy-1795392900000-scalp": {
-   "pair": "USDCAD",
-   "fade_dir": "Buy",
-   "source": "scalp",
-   "open_t": 1795392900000,
-   "entry_px": 1.42621,
-   "exit_t": 1795394700000,
-   "tp_bps": 10.0,
-   "sl_bps": 25.0,
-   "cost_bps": 1.5
+  "BTCUSD-Sell-1795397400000-meanrev": {
+   "pair": "BTCUSD",
+   "fade_dir": "Sell",
+   "source": "meanrev",
+   "open_t": 1795397400000,
+   "entry_px": 60951.3,
+   "exit_t": 1795404600000,
+   "tp_bps": 25.0,
+   "sl_bps": 50.0,
+   "cost_bps": 4.5
+  },
+  "ETHUSD-Sell-1795397400000-meanrev": {
+   "pair": "ETHUSD",
+   "fade_dir": "Sell",
+   "source": "meanrev",
+   "open_t": 1795397400000,
+   "entry_px": 1712.16,
+   "exit_t": 1795404600000,
+   "tp_bps": 25.0,
+   "sl_bps": 50.0,
+   "cost_bps": 4.5
   }
  },
  "mfb_last": {
@@ -66,11 +77,11 @@
   "EURGBP": 0.837,
   "ETHUSD": 1713.16,
   "EURJPY": 174.5,
-  "AUDUSD": 0.6673,
+  "AUDUSD": 0.66044,
   "USDJPY": 159.966,
   "AUDJPY": 104.858,
   "EURAUD": 1.6384,
-  "USDCAD": 1.01997,
+  "USDCAD": 1.42997,
   "GBPUSD": 1.31012,
   "USDCHF": 0.84325
  },
@@ -117,7 +128,9 @@
   "sentiment|GBPUSD": 1795194329700,
   "sentiment_follow|GBPUSD": 1795194329700,
   "breakout|USDCAD": 1795235892601,
-  "breakout|EURCAD": 1795235892601
+  "breakout|EURCAD": 1795235892601,
+  "scalp|AUDUSD": 1795401763113,
+  "scalp|USDCAD": 1795401763113
  },
  "seen_sigs": {
   "scalp|ETHUSD|Sell|1930.2": true,
@@ -284,7 +297,9 @@
   "meanrev|BTCUSD|Sell|60620.1": true,
   "meanrev|ETHUSD|Sell|1712.76": true,
   "scalp|AUDUSD|Buy|0.66037": true,
-  "scalp|USDCAD|Buy|1.42621": true
+  "scalp|USDCAD|Buy|1.42621": true,
+  "meanrev|BTCUSD|Sell|60951.3": true,
+  "meanrev|ETHUSD|Sell|1712.16": true
  },
- "price_last": 1795393131307
+ "price_last": 1795398163113
 }
