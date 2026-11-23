@@ -67,6 +67,17 @@
    "tp_bps": 40.0,
    "sl_bps": 20.0,
    "cost_bps": 3.0
+  },
+  "USDJPY-Sell-1795465800000-meanrev": {
+   "pair": "USDJPY",
+   "fade_dir": "Sell",
+   "source": "meanrev",
+   "open_t": 1795465800000,
+   "entry_px": 161.295,
+   "exit_t": 1795473000000,
+   "tp_bps": 25.0,
+   "sl_bps": 50.0,
+   "cost_bps": 1.5
   }
  },
  "mfb_last": {
@@ -351,7 +362,8 @@
   "scalp|BTCUSD|Buy|62324.6": true,
   "scalp|ETHUSD|Buy|1752.81": true,
   "meanrev|ETHUSD|Sell|1743.63": true,
-  "breakout|EURAUD|Sell|1.63032": true
+  "breakout|EURAUD|Sell|1.63032": true,
+  "meanrev|USDJPY|Sell|161.295": true
  },
- "price_last": 1795462617942
+ "price_last": 1795465743952
 }
