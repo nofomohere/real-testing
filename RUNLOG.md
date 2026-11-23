@@ -315,3 +315,28 @@
 2026-11-23 17:39 | tg sendMessage error: HTTP Error 401: Unauthorized
 2026-11-23 17:39 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=9 new=1 closed=4
 2026-11-23 17:39 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-23 18:30 | FX quote check: EURUSD breaks 3 cross-rate triangles -> banished (bad venue quote)
+2026-11-23 18:30 | price EURUSD: no fresh source (stale/offline)
+2026-11-23 18:30 | tg getMe error: HTTP Error 401: Unauthorized
+2026-11-23 18:32 | FX quote check: EURUSD breaks 3 cross-rate triangles -> banished (bad venue quote)
+2026-11-23 18:32 | price EURUSD: no fresh source (stale/offline)
+2026-11-23 18:32 | price NZDUSD: no fresh source (stale/offline)
+2026-11-23 18:32 | price GBPJPY: no fresh source (stale/offline)
+2026-11-23 18:32 | price AUDCAD: no fresh source (stale/offline)
+2026-11-23 18:32 | price XAUUSD: no fresh source (stale/offline)
+2026-11-23 18:32 | price GBPAUD: no fresh source (stale/offline)
+2026-11-23 18:32 | price GBPCAD: no fresh source (stale/offline)
+2026-11-23 18:33 | price EURTRY: no fresh source (stale/offline)
+2026-11-23 18:33 | price USDTRY: no fresh source (stale/offline)
+2026-11-23 18:33 | price USDZAR: no fresh source (stale/offline)
+2026-11-23 18:33 | price EURNOK: no fresh source (stale/offline)
+2026-11-23 18:33 | price USDNOK: no fresh source (stale/offline)
+2026-11-23 18:33 | price US30: no fresh source (stale/offline)
+2026-11-23 18:33 | price NAS100: no fresh source (stale/offline)
+2026-11-23 18:33 | price SPX500: no fresh source (stale/offline)
+2026-11-23 18:33 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-23 18:33 | OPEN ETHUSD-Sell-1795458600000-meanrev Sell @ 1743.63
+2026-11-23 18:33 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-23 18:33 | CLOSE ETHUSD-Buy-1795455000000-scalp reason=liq pnl=-200.0bps
+2026-11-23 18:33 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=6 new=1 closed=1
+2026-11-23 18:33 | tg sendMessage error: HTTP Error 401: Unauthorized

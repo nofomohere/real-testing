@@ -46,15 +46,15 @@
    "sl_bps": null,
    "cost_bps": 2.5
   },
-  "ETHUSD-Buy-1795455000000-scalp": {
+  "ETHUSD-Sell-1795458600000-meanrev": {
    "pair": "ETHUSD",
-   "fade_dir": "Buy",
-   "source": "scalp",
-   "open_t": 1795455000000,
-   "entry_px": 1752.81,
-   "exit_t": 1795456800000,
-   "tp_bps": 10.0,
-   "sl_bps": 25.0,
+   "fade_dir": "Sell",
+   "source": "meanrev",
+   "open_t": 1795458600000,
+   "entry_px": 1743.63,
+   "exit_t": 1795465800000,
+   "tp_bps": 25.0,
+   "sl_bps": 50.0,
    "cost_bps": 4.5
   }
  },
@@ -97,7 +97,7 @@
   "EURUSD": 1.09738,
   "EURCAD": 0.96985,
   "EURGBP": 0.837,
-  "ETHUSD": 1720.46,
+  "ETHUSD": 1743.63,
   "EURJPY": 174.449,
   "AUDUSD": 0.66306,
   "USDJPY": 161.399,
@@ -117,7 +117,7 @@
   "sentiment_follow|EURGBP": 1795239435625,
   "meanrev|ETHUSD": 1795431684923,
   "scalp|BTCUSD": 1795459077838,
-  "scalp|ETHUSD": 1795251013167,
+  "scalp|ETHUSD": 1795462304306,
   "meanrev|EURJPY": 1794014434955,
   "meanrev|AUDUSD": 1794352720202,
   "scalp|USDJPY": 1795078295262,
@@ -338,7 +338,8 @@
   "scalp|EURJPY|Sell|174.449": true,
   "meanrev|USDJPY|Sell|160.616": true,
   "scalp|BTCUSD|Buy|62324.6": true,
-  "scalp|ETHUSD|Buy|1752.81": true
+  "scalp|ETHUSD|Buy|1752.81": true,
+  "meanrev|ETHUSD|Sell|1743.63": true
  },
- "price_last": 1795455477838
+ "price_last": 1795458704306
 }
