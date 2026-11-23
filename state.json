@@ -24,13 +24,24 @@
    "sl_bps": null,
    "cost_bps": 1.5
   },
-  "BTCUSD-Sell-1795409100000-meanrev": {
-   "pair": "BTCUSD",
+  "AUDJPY-Sell-1795418100000-meanrev": {
+   "pair": "AUDJPY",
    "fade_dir": "Sell",
    "source": "meanrev",
-   "open_t": 1795409100000,
-   "entry_px": 61174.9,
-   "exit_t": 1795416300000,
+   "open_t": 1795418100000,
+   "entry_px": 105.628,
+   "exit_t": 1795425300000,
+   "tp_bps": 25.0,
+   "sl_bps": 50.0,
+   "cost_bps": 2.5
+  },
+  "ETHUSD-Sell-1795418100000-meanrev": {
+   "pair": "ETHUSD",
+   "fade_dir": "Sell",
+   "source": "meanrev",
+   "open_t": 1795418100000,
+   "entry_px": 1723.89,
+   "exit_t": 1795425300000,
    "tp_bps": 25.0,
    "sl_bps": 50.0,
    "cost_bps": 4.5
@@ -71,7 +82,7 @@
   "USDCAD": 1795393131307
  },
  "last_close": {
-  "BTCUSD": 61257.0,
+  "BTCUSD": 61426.6,
   "EURUSD": 1.09738,
   "EURCAD": 0.96985,
   "EURGBP": 0.837,
@@ -86,7 +97,7 @@
   "USDCHF": 0.84325
  },
  "cooldown": {
-  "meanrev|BTCUSD": 1795408919298,
+  "meanrev|BTCUSD": 1795421782297,
   "sentiment|EURUSD": 1795153246413,
   "sentiment_follow|EURUSD": 1795153246413,
   "sentiment|EURCAD": 1795246520925,
@@ -303,7 +314,8 @@
   "sentiment|AUDUSD|Sell|0.66337": true,
   "sentiment_follow|AUDUSD|Buy|0.66337": true,
   "meanrev|AUDJPY|Sell|105.628": true,
-  "meanrev|BTCUSD|Sell|61174.9": true
+  "meanrev|BTCUSD|Sell|61174.9": true,
+  "meanrev|ETHUSD|Sell|1723.89": true
  },
- "price_last": 1795413401061
+ "price_last": 1795418182297
 }
