@@ -2,50 +2,6 @@
  "version": 3,
  "clusters_seen": {},
  "active": {
-  "USDCAD-Buy-1795444200000-sentiment": {
-   "pair": "USDCAD",
-   "fade_dir": "Buy",
-   "source": "sentiment",
-   "open_t": 1795444200000,
-   "entry_px": 1.43373,
-   "exit_t": 1795473000000,
-   "tp_bps": null,
-   "sl_bps": null,
-   "cost_bps": 1.5
-  },
-  "USDCAD-Sell-1795444200000-sentiment_follow": {
-   "pair": "USDCAD",
-   "fade_dir": "Sell",
-   "source": "sentiment_follow",
-   "open_t": 1795444200000,
-   "entry_px": 1.43373,
-   "exit_t": 1795473000000,
-   "tp_bps": null,
-   "sl_bps": null,
-   "cost_bps": 1.5
-  },
-  "AUDJPY-Sell-1795444200000-sentiment": {
-   "pair": "AUDJPY",
-   "fade_dir": "Sell",
-   "source": "sentiment",
-   "open_t": 1795444200000,
-   "entry_px": 105.602,
-   "exit_t": 1795473000000,
-   "tp_bps": null,
-   "sl_bps": null,
-   "cost_bps": 2.5
-  },
-  "AUDJPY-Buy-1795444200000-sentiment_follow": {
-   "pair": "AUDJPY",
-   "fade_dir": "Buy",
-   "source": "sentiment_follow",
-   "open_t": 1795444200000,
-   "entry_px": 105.602,
-   "exit_t": 1795473000000,
-   "tp_bps": null,
-   "sl_bps": null,
-   "cost_bps": 2.5
-  },
   "EURAUD-Sell-1795462200000-breakout": {
    "pair": "EURAUD",
    "fade_dir": "Sell",
@@ -56,17 +12,6 @@
    "tp_bps": 40.0,
    "sl_bps": 20.0,
    "cost_bps": 3.0
-  },
-  "USDJPY-Sell-1795465800000-meanrev": {
-   "pair": "USDJPY",
-   "fade_dir": "Sell",
-   "source": "meanrev",
-   "open_t": 1795465800000,
-   "entry_px": 161.295,
-   "exit_t": 1795473000000,
-   "tp_bps": 25.0,
-   "sl_bps": 50.0,
-   "cost_bps": 1.5
   },
   "EURGBP-Sell-1795468500000-sentiment": {
    "pair": "EURGBP",
@@ -89,13 +34,35 @@
    "tp_bps": null,
    "sl_bps": null,
    "cost_bps": 2.0
+  },
+  "EURCAD-Sell-1795474800000-sentiment": {
+   "pair": "EURCAD",
+   "fade_dir": "Sell",
+   "source": "sentiment",
+   "open_t": 1795474800000,
+   "entry_px": 1.5451,
+   "exit_t": 1795503600000,
+   "tp_bps": null,
+   "sl_bps": null,
+   "cost_bps": 3.0
+  },
+  "EURCAD-Buy-1795474800000-sentiment_follow": {
+   "pair": "EURCAD",
+   "fade_dir": "Buy",
+   "source": "sentiment_follow",
+   "open_t": 1795474800000,
+   "entry_px": 1.5451,
+   "exit_t": 1795503600000,
+   "tp_bps": null,
+   "sl_bps": null,
+   "cost_bps": 3.0
   }
  },
  "mfb_last": {
   "EURUSD|Sell": 1795468911517,
-  "EURCAD|Sell": 1795387872971,
+  "EURCAD|Sell": 1795475445596,
   "EURGBP|Sell": 1795468911517,
-  "NZDUSD|Sell": 1795387872971,
+  "NZDUSD|Sell": 1795475445596,
   "GBPAUD|Buy": 1795423883504,
   "ETHUSD|Sell": 1794789699036,
   "USDCAD|Buy": 1795444562059,
@@ -133,10 +100,10 @@
   "ETHUSD": 1718.64,
   "EURJPY": 174.449,
   "AUDUSD": 0.66306,
-  "USDJPY": 161.399,
+  "USDJPY": 156.391,
   "AUDJPY": 105.602,
   "EURAUD": 1.6384,
-  "USDCAD": 1.42997,
+  "USDCAD": 1.43577,
   "GBPUSD": 1.30208,
   "USDCHF": 0.84325
  },
@@ -163,9 +130,9 @@
   "breakout|EURAUD": 1793938539017,
   "meanrev|EURAUD": 1795058523287,
   "scalp|EURJPY": 1795452208805,
-  "meanrev|USDJPY": 1795459077838,
-  "sentiment|USDCAD": 1795213756211,
-  "sentiment_follow|USDCAD": 1795213756211,
+  "meanrev|USDJPY": 1795479045596,
+  "sentiment|USDCAD": 1795479045596,
+  "sentiment_follow|USDCAD": 1795479045596,
   "meanrev|EURCAD": 1795034187741,
   "meanrev|GBPUSD": 1794352720202,
   "scalp|EURCAD": 1794373550928,
@@ -173,8 +140,8 @@
   "sentiment_follow|AUDUSD": 1795438875753,
   "sentiment|USDCHF": 1794613745315,
   "sentiment_follow|USDCHF": 1794613745315,
-  "sentiment|AUDJPY": 1795213756211,
-  "sentiment_follow|AUDJPY": 1795213756211,
+  "sentiment|AUDJPY": 1795479045596,
+  "sentiment_follow|AUDJPY": 1795479045596,
   "sentiment|BTCUSD": 1794884017863,
   "sentiment_follow|BTCUSD": 1794884017863,
   "breakout|EURJPY": 1794922625385,
@@ -376,7 +343,9 @@
   "breakout|EURAUD|Sell|1.63032": true,
   "meanrev|USDJPY|Sell|161.295": true,
   "sentiment|EURGBP|Sell|0.83635": true,
-  "sentiment_follow|EURGBP|Buy|0.83635": true
+  "sentiment_follow|EURGBP|Buy|0.83635": true,
+  "sentiment|EURCAD|Sell|1.5451": true,
+  "sentiment_follow|EURCAD|Buy|1.5451": true
  },
- "price_last": 1795472128462
+ "price_last": 1795475445596
 }
