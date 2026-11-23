@@ -56,6 +56,17 @@
    "tp_bps": 25.0,
    "sl_bps": 50.0,
    "cost_bps": 4.5
+  },
+  "EURAUD-Sell-1795462200000-breakout": {
+   "pair": "EURAUD",
+   "fade_dir": "Sell",
+   "source": "breakout",
+   "open_t": 1795462200000,
+   "entry_px": 1.63032,
+   "exit_t": 1795476600000,
+   "tp_bps": 40.0,
+   "sl_bps": 20.0,
+   "cost_bps": 3.0
   }
  },
  "mfb_last": {
@@ -339,7 +350,8 @@
   "meanrev|USDJPY|Sell|160.616": true,
   "scalp|BTCUSD|Buy|62324.6": true,
   "scalp|ETHUSD|Buy|1752.81": true,
-  "meanrev|ETHUSD|Sell|1743.63": true
+  "meanrev|ETHUSD|Sell|1743.63": true,
+  "breakout|EURAUD|Sell|1.63032": true
  },
- "price_last": 1795458704306
+ "price_last": 1795462617942
 }
