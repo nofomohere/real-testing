@@ -45,6 +45,28 @@
    "tp_bps": 25.0,
    "sl_bps": 50.0,
    "cost_bps": 4.5
+  },
+  "GBPUSD-Sell-1795423500000-sentiment": {
+   "pair": "GBPUSD",
+   "fade_dir": "Sell",
+   "source": "sentiment",
+   "open_t": 1795423500000,
+   "entry_px": 1.31349,
+   "exit_t": 1795452300000,
+   "tp_bps": null,
+   "sl_bps": null,
+   "cost_bps": 1.5
+  },
+  "GBPUSD-Buy-1795423500000-sentiment_follow": {
+   "pair": "GBPUSD",
+   "fade_dir": "Buy",
+   "source": "sentiment_follow",
+   "open_t": 1795423500000,
+   "entry_px": 1.31349,
+   "exit_t": 1795452300000,
+   "tp_bps": null,
+   "sl_bps": null,
+   "cost_bps": 1.5
   }
  },
  "mfb_last": {
@@ -52,7 +74,7 @@
   "EURCAD|Sell": 1795387872971,
   "EURGBP|Sell": 1795379667307,
   "NZDUSD|Sell": 1795387872971,
-  "GBPAUD|Buy": 1795123823878,
+  "GBPAUD|Buy": 1795423883504,
   "ETHUSD|Sell": 1794789699036,
   "USDCAD|Buy": 1795357850786,
   "GBPCAD|Buy": 1794255323064,
@@ -62,13 +84,13 @@
   "AUDJPY|Sell": 1795357850786,
   "BTCUSD|Sell": 1794851904673,
   "AUDCAD|Sell": 1795409688161,
-  "GBPUSD|Sell": 1795336757071
+  "GBPUSD|Sell": 1795423883504
  },
  "chat_id": 1192863557,
  "tg_hello_sent": true,
  "alarm_sent": false,
  "auth_alert_sent": false,
- "status_last": 1795405319298,
+ "status_last": 1795423883504,
  "last_summary": "20261123",
  "last_update_id": 0,
  "scalp_last": {
@@ -315,7 +337,9 @@
   "sentiment_follow|AUDUSD|Buy|0.66337": true,
   "meanrev|AUDJPY|Sell|105.628": true,
   "meanrev|BTCUSD|Sell|61174.9": true,
-  "meanrev|ETHUSD|Sell|1723.89": true
+  "meanrev|ETHUSD|Sell|1723.89": true,
+  "sentiment|GBPUSD|Sell|1.31349": true,
+  "sentiment_follow|GBPUSD|Buy|1.31349": true
  },
- "price_last": 1795418182297
+ "price_last": 1795423883504
 }
