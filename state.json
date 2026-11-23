@@ -34,6 +34,17 @@
    "tp_bps": 25.0,
    "sl_bps": 50.0,
    "cost_bps": 2.5
+  },
+  "BTCUSD-Sell-1795409100000-meanrev": {
+   "pair": "BTCUSD",
+   "fade_dir": "Sell",
+   "source": "meanrev",
+   "open_t": 1795409100000,
+   "entry_px": 61174.9,
+   "exit_t": 1795416300000,
+   "tp_bps": 25.0,
+   "sl_bps": 50.0,
+   "cost_bps": 4.5
   }
  },
  "mfb_last": {
@@ -50,7 +61,7 @@
   "USDCHF|Buy": 1794580003672,
   "AUDJPY|Sell": 1795357850786,
   "BTCUSD|Sell": 1794851904673,
-  "AUDCAD|Sell": 1795322301016,
+  "AUDCAD|Sell": 1795409688161,
   "GBPUSD|Sell": 1795336757071
  },
  "chat_id": 1192863557,
@@ -302,7 +313,8 @@
   "meanrev|ETHUSD|Sell|1712.16": true,
   "sentiment|AUDUSD|Sell|0.66337": true,
   "sentiment_follow|AUDUSD|Buy|0.66337": true,
-  "meanrev|AUDJPY|Sell|105.628": true
+  "meanrev|AUDJPY|Sell|105.628": true,
+  "meanrev|BTCUSD|Sell|61174.9": true
  },
- "price_last": 1795405319298
+ "price_last": 1795409688161
 }
