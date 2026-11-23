@@ -1,9 +1,9 @@
 # Fade Bot — paper ledger
 
-Updated: 2026-11-23T14:37:27.837590+00:00
+Updated: 2026-11-23T15:44:56.079363+00:00
 
-- Trades: **350** | Avg: **-14.5 bps** | Win: **41%** | Cum: **-5069.5 bps**
-- Money sim ($10.0 @ 50x): **-253.476 USD** | Liquidations: **26** | Open: **7**
+- Trades: **351** | Avg: **-14.4 bps** | Win: **41%** | Cum: **-5071.5 bps**
+- Money sim ($10.0 @ 50x): **-253.576 USD** | Liquidations: **26** | Open: **7**
 
 ## Results per strategy
 
@@ -12,14 +12,13 @@ Updated: 2026-11-23T14:37:27.837590+00:00
 | meanrev | 164 | 47% | -3.3 | -538.8 | -26.938 | 4 |
 | sentiment | 64 | 50% | -6.8 | -434.2 | -21.706 | 4 |
 | sentiment_follow | 64 | 27% | -25.2 | -1610.2 | -80.511 | 7 |
-| scalp | 41 | 44% | -22.8 | -934.4 | -46.721 | 4 |
+| scalp | 42 | 43% | -22.3 | -936.4 | -46.821 | 4 |
 | breakout | 17 | 6% | -91.3 | -1552.0 | -77.600 | 7 |
 
 ## Recent trades
 
 | Trade | Pair | Dir | Strategy | Open (UTC) | PnL bps | PnL USD |
 |---|---|---|---|---|---|---|
-| BTCUSD-Sell-1795231800000-breakout | BTCUSD | Sell | breakout | 2026-11-21T03:30 | -200.0 | -10.0000 |
 | ETHUSD-Sell-1795231800000-breakout | ETHUSD | Sell | breakout | 2026-11-21T03:30 | -200.0 | -10.0000 |
 | BTCUSD-Sell-1795242600000-scalp | BTCUSD | Sell | scalp | 2026-11-21T06:30 | -200.0 | -10.0000 |
 | ETHUSD-Sell-1795242600000-scalp | ETHUSD | Sell | scalp | 2026-11-21T06:30 | -200.0 | -10.0000 |
@@ -49,3 +48,4 @@ Updated: 2026-11-23T14:37:27.837590+00:00
 | AUDUSD-Buy-1795404600000-sentiment_follow | AUDUSD | Buy | sentiment_follow | 2026-11-23T03:30 | -4.2 | -0.2107 |
 | BTCUSD-Sell-1795428000000-meanrev | BTCUSD | Sell | meanrev | 2026-11-23T10:00 | +5.1 | +0.2543 |
 | AUDJPY-Sell-1795431600000-meanrev | AUDJPY | Sell | meanrev | 2026-11-23T11:00 | -2.5 | -0.1250 |
+| EURJPY-Sell-1795444200000-scalp | EURJPY | Sell | scalp | 2026-11-23T14:30 | -2.0 | -0.1000 |

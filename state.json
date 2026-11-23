@@ -68,16 +68,16 @@
    "sl_bps": null,
    "cost_bps": 2.5
   },
-  "EURJPY-Sell-1795444200000-scalp": {
-   "pair": "EURJPY",
+  "USDJPY-Sell-1795447800000-meanrev": {
+   "pair": "USDJPY",
    "fade_dir": "Sell",
-   "source": "scalp",
-   "open_t": 1795444200000,
-   "entry_px": 174.449,
-   "exit_t": 1795446000000,
-   "tp_bps": 10.0,
-   "sl_bps": 25.0,
-   "cost_bps": 2.0
+   "source": "meanrev",
+   "open_t": 1795447800000,
+   "entry_px": 160.616,
+   "exit_t": 1795455000000,
+   "tp_bps": 25.0,
+   "sl_bps": 50.0,
+   "cost_bps": 1.5
   }
  },
  "mfb_last": {
@@ -120,7 +120,7 @@
   "EURCAD": 0.96985,
   "EURGBP": 0.837,
   "ETHUSD": 1720.46,
-  "EURJPY": 174.5,
+  "EURJPY": 174.449,
   "AUDUSD": 0.66306,
   "USDJPY": 155.839,
   "AUDJPY": 105.602,
@@ -151,7 +151,7 @@
   "meanrev|AUDJPY": 1795443385956,
   "breakout|EURAUD": 1793938539017,
   "meanrev|EURAUD": 1795058523287,
-  "scalp|EURJPY": 1794897481451,
+  "scalp|EURJPY": 1795452208805,
   "meanrev|USDJPY": 1795408919298,
   "sentiment|USDCAD": 1795213756211,
   "sentiment_follow|USDCAD": 1795213756211,
@@ -357,7 +357,8 @@
   "sentiment_follow|USDCAD|Sell|1.43373": true,
   "sentiment|AUDJPY|Sell|105.602": true,
   "sentiment_follow|AUDJPY|Buy|105.602": true,
-  "scalp|EURJPY|Sell|174.449": true
+  "scalp|EURJPY|Sell|174.449": true,
+  "meanrev|USDJPY|Sell|160.616": true
  },
- "price_last": 1795444562059
+ "price_last": 1795448608805
 }
