@@ -45,6 +45,28 @@
    "tp_bps": null,
    "sl_bps": null,
    "cost_bps": 3.0
+  },
+  "BTCUSD-Sell-1795489200000-breakout": {
+   "pair": "BTCUSD",
+   "fade_dir": "Sell",
+   "source": "breakout",
+   "open_t": 1795489200000,
+   "entry_px": 59669.2,
+   "exit_t": 1795503600000,
+   "tp_bps": 40.0,
+   "sl_bps": 20.0,
+   "cost_bps": 4.5
+  },
+  "ETHUSD-Sell-1795489200000-breakout": {
+   "pair": "ETHUSD",
+   "fade_dir": "Sell",
+   "source": "breakout",
+   "open_t": 1795489200000,
+   "entry_px": 1673.77,
+   "exit_t": 1795503600000,
+   "tp_bps": 40.0,
+   "sl_bps": 20.0,
+   "cost_bps": 4.5
   }
  },
  "mfb_last": {
@@ -68,7 +90,7 @@
  "tg_hello_sent": true,
  "alarm_sent": false,
  "auth_alert_sent": false,
- "status_last": 1795472128462,
+ "status_last": 1795489682323,
  "last_summary": "20261124",
  "last_update_id": 0,
  "scalp_last": {
@@ -334,7 +356,9 @@
   "sentiment|EURGBP|Sell|0.83635": true,
   "sentiment_follow|EURGBP|Buy|0.83635": true,
   "sentiment|EURCAD|Sell|1.5451": true,
-  "sentiment_follow|EURCAD|Buy|1.5451": true
+  "sentiment_follow|EURCAD|Buy|1.5451": true,
+  "breakout|BTCUSD|Sell|59669.2": true,
+  "breakout|ETHUSD|Sell|1673.77": true
  },
- "price_last": 1795486501389
+ "price_last": 1795489682323
 }
