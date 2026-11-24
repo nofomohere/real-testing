@@ -2,17 +2,6 @@
  "version": 3,
  "clusters_seen": {},
  "active": {
-  "EURAUD-Sell-1795462200000-breakout": {
-   "pair": "EURAUD",
-   "fade_dir": "Sell",
-   "source": "breakout",
-   "open_t": 1795462200000,
-   "entry_px": 1.63032,
-   "exit_t": 1795476600000,
-   "tp_bps": 40.0,
-   "sl_bps": 20.0,
-   "cost_bps": 3.0
-  },
   "EURGBP-Sell-1795468500000-sentiment": {
    "pair": "EURGBP",
    "fade_dir": "Sell",
@@ -80,7 +69,7 @@
  "alarm_sent": false,
  "auth_alert_sent": false,
  "status_last": 1795472128462,
- "last_summary": "20261123",
+ "last_summary": "20261124",
  "last_update_id": 0,
  "scalp_last": {
   "BTCUSD": 1795451930646,
@@ -102,7 +91,7 @@
   "AUDUSD": 0.66306,
   "USDJPY": 156.391,
   "AUDJPY": 105.602,
-  "EURAUD": 1.6384,
+  "EURAUD": 1.6473,
   "USDCAD": 1.43577,
   "GBPUSD": 1.30208,
   "USDCHF": 0.84325
@@ -127,7 +116,7 @@
   "breakout|BTCUSD": 1795251013167,
   "breakout|ETHUSD": 1795251013167,
   "meanrev|AUDJPY": 1795443385956,
-  "breakout|EURAUD": 1793938539017,
+  "breakout|EURAUD": 1795481929436,
   "meanrev|EURAUD": 1795058523287,
   "scalp|EURJPY": 1795452208805,
   "meanrev|USDJPY": 1795479045596,
@@ -347,5 +336,5 @@
   "sentiment|EURCAD|Sell|1.5451": true,
   "sentiment_follow|EURCAD|Buy|1.5451": true
  },
- "price_last": 1795475445596
+ "price_last": 1795478329436
 }
