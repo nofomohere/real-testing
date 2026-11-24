@@ -1,17 +1,17 @@
 # Fade Bot — paper ledger
 
-Updated: 2026-11-24T11:42:37.547836+00:00
+Updated: 2026-11-24T12:48:42.896060+00:00
 
-- Trades: **372** | Avg: **-14.9 bps** | Win: **41%** | Cum: **-5525.8 bps**
-- Money sim ($10.0 @ 50x): **-276.289 USD** | Liquidations: **28** | Open: **4**
+- Trades: **374** | Avg: **-14.8 bps** | Win: **41%** | Cum: **-5528.8 bps**
+- Money sim ($10.0 @ 50x): **-276.439 USD** | Liquidations: **28** | Open: **4**
 
 ## Results per strategy
 
 | Strategy | Trades | Win% | Avg bps | Cum bps | Cum USD | Liqs |
 |---|---|---|---|---|---|---|
 | meanrev | 170 | 48% | -3.3 | -555.5 | -27.775 | 4 |
-| sentiment | 69 | 49% | -7.8 | -539.7 | -26.983 | 5 |
-| sentiment_follow | 69 | 26% | -23.8 | -1640.6 | -82.034 | 7 |
+| sentiment | 70 | 49% | -7.9 | -554.2 | -27.707 | 5 |
+| sentiment_follow | 70 | 27% | -23.3 | -1629.2 | -81.460 | 7 |
 | scalp | 44 | 41% | -26.5 | -1165.9 | -58.296 | 5 |
 | breakout | 20 | 5% | -81.2 | -1624.0 | -81.200 | 7 |
 
@@ -19,8 +19,6 @@ Updated: 2026-11-24T11:42:37.547836+00:00
 
 | Trade | Pair | Dir | Strategy | Open (UTC) | PnL bps | PnL USD |
 |---|---|---|---|---|---|---|
-| AUDJPY-Sell-1795404600000-meanrev | AUDJPY | Sell | meanrev | 2026-11-23T03:30 | -2.5 | -0.1250 |
-| BTCUSD-Sell-1795409100000-meanrev | BTCUSD | Sell | meanrev | 2026-11-23T04:45 | +20.5 | +1.0250 |
 | AUDJPY-Sell-1795418100000-meanrev | AUDJPY | Sell | meanrev | 2026-11-23T07:15 | -0.0 | -0.0019 |
 | ETHUSD-Sell-1795418100000-meanrev | ETHUSD | Sell | meanrev | 2026-11-23T07:15 | +20.5 | +1.0250 |
 | AUDUSD-Sell-1795404600000-sentiment | AUDUSD | Sell | sentiment | 2026-11-23T03:30 | +1.2 | +0.0607 |
@@ -49,3 +47,5 @@ Updated: 2026-11-24T11:42:37.547836+00:00
 | USDJPY-Buy-1795500000000-meanrev | USDJPY | Buy | meanrev | 2026-11-24T06:00 | +23.5 | +1.1750 |
 | BTCUSD-Buy-1795504500000-meanrev | BTCUSD | Buy | meanrev | 2026-11-24T07:15 | -54.5 | -2.7250 |
 | ETHUSD-Buy-1795504500000-meanrev | ETHUSD | Buy | meanrev | 2026-11-24T07:15 | +20.5 | +1.0250 |
+| AUDUSD-Sell-1795492800000-sentiment | AUDUSD | Sell | sentiment | 2026-11-24T04:00 | -14.5 | -0.7237 |
+| AUDUSD-Buy-1795492800000-sentiment_follow | AUDUSD | Buy | sentiment_follow | 2026-11-24T04:00 | +11.5 | +0.5737 |

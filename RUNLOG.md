@@ -342,3 +342,31 @@
 2026-11-24 11:42 | tg sendMessage error: HTTP Error 401: Unauthorized
 2026-11-24 11:42 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=4 new=0 closed=0
 2026-11-24 11:42 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-24 12:45 | FX quote check: USDJPY breaks 2 cross-rate triangles -> banished (bad venue quote)
+2026-11-24 12:45 | tg getMe error: HTTP Error 401: Unauthorized
+2026-11-24 12:48 | FX quote check: USDJPY breaks 2 cross-rate triangles -> banished (bad venue quote)
+2026-11-24 12:48 | price USDJPY: no fresh source (stale/offline)
+2026-11-24 12:48 | price NZDUSD: no fresh source (stale/offline)
+2026-11-24 12:48 | price GBPJPY: no fresh source (stale/offline)
+2026-11-24 12:48 | price AUDCAD: no fresh source (stale/offline)
+2026-11-24 12:48 | price XAUUSD: no fresh source (stale/offline)
+2026-11-24 12:48 | price GBPAUD: no fresh source (stale/offline)
+2026-11-24 12:48 | price GBPCAD: no fresh source (stale/offline)
+2026-11-24 12:48 | price EURTRY: no fresh source (stale/offline)
+2026-11-24 12:48 | price USDTRY: no fresh source (stale/offline)
+2026-11-24 12:48 | price USDZAR: no fresh source (stale/offline)
+2026-11-24 12:48 | price EURNOK: no fresh source (stale/offline)
+2026-11-24 12:48 | price USDNOK: no fresh source (stale/offline)
+2026-11-24 12:48 | price US30: no fresh source (stale/offline)
+2026-11-24 12:48 | price NAS100: no fresh source (stale/offline)
+2026-11-24 12:48 | price SPX500: no fresh source (stale/offline)
+2026-11-24 12:48 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-24 12:48 | OPEN BTCUSD-Buy-1795524300000-meanrev Buy @ 60366.2
+2026-11-24 12:48 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-24 12:48 | OPEN ETHUSD-Buy-1795524300000-meanrev Buy @ 1699.4
+2026-11-24 12:48 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-24 12:48 | CLOSE AUDUSD-Sell-1795492800000-sentiment reason=time pnl=-14.5bps
+2026-11-24 12:48 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-24 12:48 | CLOSE AUDUSD-Buy-1795492800000-sentiment_follow reason=time pnl=+11.5bps
+2026-11-24 12:48 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=6 new=2 closed=2
+2026-11-24 12:48 | tg sendMessage error: HTTP Error 401: Unauthorized
