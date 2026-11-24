@@ -1,15 +1,15 @@
 # Fade Bot — paper ledger
 
-Updated: 2026-11-24T14:06:07.843876+00:00
+Updated: 2026-11-24T15:05:40.657235+00:00
 
-- Trades: **374** | Avg: **-14.8 bps** | Win: **41%** | Cum: **-5528.8 bps**
-- Money sim ($10.0 @ 50x): **-276.439 USD** | Liquidations: **28** | Open: **4**
+- Trades: **376** | Avg: **-14.6 bps** | Win: **41%** | Cum: **-5487.8 bps**
+- Money sim ($10.0 @ 50x): **-274.389 USD** | Liquidations: **28** | Open: **6**
 
 ## Results per strategy
 
 | Strategy | Trades | Win% | Avg bps | Cum bps | Cum USD | Liqs |
 |---|---|---|---|---|---|---|
-| meanrev | 170 | 48% | -3.3 | -555.5 | -27.775 | 4 |
+| meanrev | 172 | 48% | -3.0 | -514.5 | -25.725 | 4 |
 | sentiment | 70 | 49% | -7.9 | -554.2 | -27.707 | 5 |
 | sentiment_follow | 70 | 27% | -23.3 | -1629.2 | -81.460 | 7 |
 | scalp | 44 | 41% | -26.5 | -1165.9 | -58.296 | 5 |
@@ -19,8 +19,6 @@ Updated: 2026-11-24T14:06:07.843876+00:00
 
 | Trade | Pair | Dir | Strategy | Open (UTC) | PnL bps | PnL USD |
 |---|---|---|---|---|---|---|
-| AUDJPY-Sell-1795418100000-meanrev | AUDJPY | Sell | meanrev | 2026-11-23T07:15 | -0.0 | -0.0019 |
-| ETHUSD-Sell-1795418100000-meanrev | ETHUSD | Sell | meanrev | 2026-11-23T07:15 | +20.5 | +1.0250 |
 | AUDUSD-Sell-1795404600000-sentiment | AUDUSD | Sell | sentiment | 2026-11-23T03:30 | +1.2 | +0.0607 |
 | AUDUSD-Buy-1795404600000-sentiment_follow | AUDUSD | Buy | sentiment_follow | 2026-11-23T03:30 | -4.2 | -0.2107 |
 | BTCUSD-Sell-1795428000000-meanrev | BTCUSD | Sell | meanrev | 2026-11-23T10:00 | +5.1 | +0.2543 |
@@ -49,3 +47,5 @@ Updated: 2026-11-24T14:06:07.843876+00:00
 | ETHUSD-Buy-1795504500000-meanrev | ETHUSD | Buy | meanrev | 2026-11-24T07:15 | +20.5 | +1.0250 |
 | AUDUSD-Sell-1795492800000-sentiment | AUDUSD | Sell | sentiment | 2026-11-24T04:00 | -14.5 | -0.7237 |
 | AUDUSD-Buy-1795492800000-sentiment_follow | AUDUSD | Buy | sentiment_follow | 2026-11-24T04:00 | +11.5 | +0.5737 |
+| BTCUSD-Buy-1795524300000-meanrev | BTCUSD | Buy | meanrev | 2026-11-24T12:45 | +20.5 | +1.0250 |
+| ETHUSD-Buy-1795524300000-meanrev | ETHUSD | Buy | meanrev | 2026-11-24T12:45 | +20.5 | +1.0250 |
