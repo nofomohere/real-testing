@@ -67,6 +67,28 @@
    "tp_bps": 40.0,
    "sl_bps": 20.0,
    "cost_bps": 4.5
+  },
+  "AUDUSD-Sell-1795492800000-sentiment": {
+   "pair": "AUDUSD",
+   "fade_dir": "Sell",
+   "source": "sentiment",
+   "open_t": 1795492800000,
+   "entry_px": 0.66283,
+   "exit_t": 1795521600000,
+   "tp_bps": null,
+   "sl_bps": null,
+   "cost_bps": 1.5
+  },
+  "AUDUSD-Buy-1795492800000-sentiment_follow": {
+   "pair": "AUDUSD",
+   "fade_dir": "Buy",
+   "source": "sentiment_follow",
+   "open_t": 1795492800000,
+   "entry_px": 0.66283,
+   "exit_t": 1795521600000,
+   "tp_bps": null,
+   "sl_bps": null,
+   "cost_bps": 1.5
   }
  },
  "mfb_last": {
@@ -79,7 +101,7 @@
   "USDCAD|Buy": 1795444562059,
   "GBPCAD|Buy": 1794255323064,
   "AUDCAD|Buy": 1794271590080,
-  "AUDUSD|Sell": 1795405319298,
+  "AUDUSD|Sell": 1795493155063,
   "USDCHF|Buy": 1794580003672,
   "AUDJPY|Sell": 1795444562059,
   "BTCUSD|Sell": 1794851904673,
@@ -358,7 +380,9 @@
   "sentiment|EURCAD|Sell|1.5451": true,
   "sentiment_follow|EURCAD|Buy|1.5451": true,
   "breakout|BTCUSD|Sell|59669.2": true,
-  "breakout|ETHUSD|Sell|1673.77": true
+  "breakout|ETHUSD|Sell|1673.77": true,
+  "sentiment|AUDUSD|Sell|0.66283": true,
+  "sentiment_follow|AUDUSD|Buy|0.66283": true
  },
- "price_last": 1795489682323
+ "price_last": 1795493155063
 }
