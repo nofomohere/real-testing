@@ -105,7 +105,7 @@
   "USDCHF|Buy": 1794580003672,
   "AUDJPY|Sell": 1795444562059,
   "BTCUSD|Sell": 1794851904673,
-  "AUDCAD|Sell": 1795409688161,
+  "AUDCAD|Sell": 1795497134159,
   "GBPUSD|Sell": 1795423883504
  },
  "chat_id": 1192863557,
@@ -384,5 +384,5 @@
   "sentiment|AUDUSD|Sell|0.66283": true,
   "sentiment_follow|AUDUSD|Buy|0.66283": true
  },
- "price_last": 1795493155063
+ "price_last": 1795497134159
 }
