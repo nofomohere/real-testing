@@ -1,15 +1,15 @@
 # Fade Bot — paper ledger
 
-Updated: 2026-11-25T18:09:52.537917+00:00
+Updated: 2026-11-25T19:01:18.269997+00:00
 
-- Trades: **406** | Avg: **-14.9 bps** | Win: **42%** | Cum: **-6045.4 bps**
-- Money sim ($10.0 @ 50x): **-302.269 USD** | Liquidations: **31** | Open: **11**
+- Trades: **408** | Avg: **-15.0 bps** | Win: **42%** | Cum: **-6101.9 bps**
+- Money sim ($10.0 @ 50x): **-305.094 USD** | Liquidations: **31** | Open: **9**
 
 ## Results per strategy
 
 | Strategy | Trades | Win% | Avg bps | Cum bps | Cum USD | Liqs |
 |---|---|---|---|---|---|---|
-| meanrev | 183 | 49% | -2.5 | -448.9 | -22.446 | 4 |
+| meanrev | 185 | 49% | -2.7 | -505.4 | -25.271 | 4 |
 | sentiment | 77 | 47% | -10.3 | -796.4 | -39.815 | 6 |
 | sentiment_follow | 77 | 30% | -21.1 | -1621.2 | -81.061 | 7 |
 | scalp | 48 | 42% | -32.3 | -1551.9 | -77.596 | 7 |
@@ -19,8 +19,6 @@ Updated: 2026-11-25T18:09:52.537917+00:00
 
 | Trade | Pair | Dir | Strategy | Open (UTC) | PnL bps | PnL USD |
 |---|---|---|---|---|---|---|
-| BTCUSD-Sell-1795540500000-scalp | BTCUSD | Sell | scalp | 2026-11-24T17:15 | +5.5 | +0.2750 |
-| GBPUSD-Sell-1795516200000-sentiment | GBPUSD | Sell | sentiment | 2026-11-24T10:30 | -39.2 | -1.9580 |
 | GBPUSD-Buy-1795516200000-sentiment_follow | GBPUSD | Buy | sentiment_follow | 2026-11-24T10:30 | +36.2 | +1.8080 |
 | BTCUSD-Buy-1795550400000-meanrev | BTCUSD | Buy | meanrev | 2026-11-24T20:00 | +20.5 | +1.0250 |
 | ETHUSD-Buy-1795550400000-meanrev | ETHUSD | Buy | meanrev | 2026-11-24T20:00 | +20.5 | +1.0250 |
@@ -49,3 +47,5 @@ Updated: 2026-11-25T18:09:52.537917+00:00
 | BTCUSD-Sell-1795618800000-scalp | BTCUSD | Sell | scalp | 2026-11-25T15:00 | -200.0 | -10.0000 |
 | ETHUSD-Sell-1795618800000-scalp | ETHUSD | Sell | scalp | 2026-11-25T15:00 | -200.0 | -10.0000 |
 | EURCAD-Sell-1795610700000-breakout | EURCAD | Sell | breakout | 2026-11-25T12:45 | -3.0 | -0.1500 |
+| EURJPY-Sell-1795623300000-meanrev | EURJPY | Sell | meanrev | 2026-11-25T16:15 | -2.0 | -0.1000 |
+| BTCUSD-Buy-1795623300000-meanrev | BTCUSD | Buy | meanrev | 2026-11-25T16:15 | -54.5 | -2.7250 |
