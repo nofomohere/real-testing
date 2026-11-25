@@ -111,6 +111,17 @@
    "tp_bps": 25.0,
    "sl_bps": 50.0,
    "cost_bps": 3.0
+  },
+  "USDCHF-Buy-1795629600000-meanrev": {
+   "pair": "USDCHF",
+   "fade_dir": "Buy",
+   "source": "meanrev",
+   "open_t": 1795629600000,
+   "entry_px": 0.83036,
+   "exit_t": 1795636800000,
+   "tp_bps": 25.0,
+   "sl_bps": 50.0,
+   "cost_bps": 1.5
   }
  },
  "mfb_last": {
@@ -444,7 +455,8 @@
   "scalp|BTCUSD|Sell|57867.1": true,
   "scalp|ETHUSD|Sell|1633.03": true,
   "meanrev|BTCUSD|Buy|58843.0": true,
-  "meanrev|EURCAD|Buy|1.5562": true
+  "meanrev|EURCAD|Buy|1.5562": true,
+  "meanrev|USDCHF|Buy|0.83036": true
  },
- "price_last": 1795627367084
+ "price_last": 1795630104212
 }
