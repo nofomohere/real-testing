@@ -309,3 +309,23 @@
 2026-11-25 19:55 | CLOSE EURCAD-Buy-1795626900000-meanrev reason=time pnl=-3.0bps
 2026-11-25 19:55 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=9 new=0 closed=4
 2026-11-25 19:55 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-25 20:43 | tg getMe error: HTTP Error 401: Unauthorized
+2026-11-25 20:46 | price NZDUSD: no fresh source (stale/offline)
+2026-11-25 20:46 | price GBPJPY: no fresh source (stale/offline)
+2026-11-25 20:46 | price AUDCAD: no fresh source (stale/offline)
+2026-11-25 20:46 | price XAUUSD: no fresh source (stale/offline)
+2026-11-25 20:46 | price GBPAUD: no fresh source (stale/offline)
+2026-11-25 20:46 | price GBPCAD: no fresh source (stale/offline)
+2026-11-25 20:46 | price EURTRY: no fresh source (stale/offline)
+2026-11-25 20:46 | price USDTRY: no fresh source (stale/offline)
+2026-11-25 20:46 | price USDZAR: no fresh source (stale/offline)
+2026-11-25 20:46 | price EURNOK: no fresh source (stale/offline)
+2026-11-25 20:46 | price USDNOK: no fresh source (stale/offline)
+2026-11-25 20:46 | price US30: no fresh source (stale/offline)
+2026-11-25 20:46 | price NAS100: no fresh source (stale/offline)
+2026-11-25 20:46 | price SPX500: no fresh source (stale/offline)
+2026-11-25 20:46 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-25 20:46 | CLOSE USDCHF-Buy-1795629600000-meanrev reason=time pnl=+13.2bps
+2026-11-25 20:46 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-25 20:46 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=6 new=0 closed=1
+2026-11-25 20:46 | tg sendMessage error: HTTP Error 401: Unauthorized

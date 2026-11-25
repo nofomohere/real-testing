@@ -46,16 +46,16 @@
    "sl_bps": null,
    "cost_bps": 2.5
   },
-  "USDCHF-Buy-1795629600000-meanrev": {
-   "pair": "USDCHF",
-   "fade_dir": "Buy",
+  "EURJPY-Sell-1795639500000-meanrev": {
+   "pair": "EURJPY",
+   "fade_dir": "Sell",
    "source": "meanrev",
-   "open_t": 1795629600000,
-   "entry_px": 0.83036,
-   "exit_t": 1795636800000,
+   "open_t": 1795639500000,
+   "entry_px": 175.396,
+   "exit_t": 1795646700000,
    "tp_bps": 25.0,
    "sl_bps": 50.0,
-   "cost_bps": 1.5
+   "cost_bps": 2.0
   }
  },
  "mfb_last": {
@@ -80,7 +80,7 @@
  "tg_hello_sent": true,
  "alarm_sent": false,
  "auth_alert_sent": false,
- "status_last": 1795623621469,
+ "status_last": 1795639487610,
  "last_summary": "20261125",
  "last_update_id": 0,
  "scalp_last": {
@@ -106,7 +106,7 @@
   "EURAUD": 1.6473,
   "USDCAD": 1.42779,
   "GBPUSD": 1.31211,
-  "USDCHF": 0.83227
+  "USDCHF": 0.83144
  },
  "cooldown": {
   "meanrev|BTCUSD": 1795636760302,
@@ -153,7 +153,8 @@
   "breakout|USDCAD": 1795235892601,
   "breakout|EURCAD": 1795630967084,
   "scalp|AUDUSD": 1795401763113,
-  "scalp|USDCAD": 1795401763113
+  "scalp|USDCAD": 1795401763113,
+  "meanrev|USDCHF": 1795643087610
  },
  "seen_sigs": {
   "scalp|ETHUSD|Sell|1930.2": true,
@@ -392,5 +393,5 @@
   "meanrev|EURCAD|Buy|1.5562": true,
   "meanrev|USDCHF|Buy|0.83036": true
  },
- "price_last": 1795636472161
+ "price_last": 1795639487610
 }
