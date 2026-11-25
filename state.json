@@ -2,28 +2,6 @@
  "version": 3,
  "clusters_seen": {},
  "active": {
-  "EURCAD-Sell-1795563000000-sentiment": {
-   "pair": "EURCAD",
-   "fade_dir": "Sell",
-   "source": "sentiment",
-   "open_t": 1795563000000,
-   "entry_px": 1.5705,
-   "exit_t": 1795591800000,
-   "tp_bps": null,
-   "sl_bps": null,
-   "cost_bps": 3.0
-  },
-  "EURCAD-Buy-1795563000000-sentiment_follow": {
-   "pair": "EURCAD",
-   "fade_dir": "Buy",
-   "source": "sentiment_follow",
-   "open_t": 1795563000000,
-   "entry_px": 1.5705,
-   "exit_t": 1795591800000,
-   "tp_bps": null,
-   "sl_bps": null,
-   "cost_bps": 3.0
-  },
   "AUDUSD-Sell-1795581900000-sentiment": {
    "pair": "AUDUSD",
    "fade_dir": "Sell",
@@ -45,17 +23,6 @@
    "tp_bps": null,
    "sl_bps": null,
    "cost_bps": 1.5
-  },
-  "ETHUSD-Buy-1795585500000-meanrev": {
-   "pair": "ETHUSD",
-   "fade_dir": "Buy",
-   "source": "meanrev",
-   "open_t": 1795585500000,
-   "entry_px": 1655.07,
-   "exit_t": 1795592700000,
-   "tp_bps": 25.0,
-   "sl_bps": 50.0,
-   "cost_bps": 4.5
   },
   "EURJPY-Buy-1795589100000-meanrev": {
    "pair": "EURJPY",
@@ -117,9 +84,9 @@
  "last_close": {
   "BTCUSD": 59137.8,
   "EURUSD": 1.09422,
-  "EURCAD": 1.55777,
+  "EURCAD": 1.5689,
   "EURGBP": 0.83655,
-  "ETHUSD": 1653.24,
+  "ETHUSD": 1638.76,
   "EURJPY": 172.57,
   "AUDUSD": 0.66432,
   "USDJPY": 159.998,
@@ -133,11 +100,11 @@
   "meanrev|BTCUSD": 1795578708190,
   "sentiment|EURUSD": 1795589476894,
   "sentiment_follow|EURUSD": 1795589476894,
-  "sentiment|EURCAD": 1795508802351,
-  "sentiment_follow|EURCAD": 1795508802351,
+  "sentiment|EURCAD": 1795598471731,
+  "sentiment_follow|EURCAD": 1795598471731,
   "sentiment|EURGBP": 1795589476894,
   "sentiment_follow|EURGBP": 1795589476894,
-  "meanrev|ETHUSD": 1795578708190,
+  "meanrev|ETHUSD": 1795598471731,
   "scalp|BTCUSD": 1795547193010,
   "scalp|ETHUSD": 1795462304306,
   "meanrev|EURJPY": 1795586088880,
@@ -397,5 +364,5 @@
   "meanrev|ETHUSD|Buy|1655.07": true,
   "meanrev|BTCUSD|Buy|59169.9": true
  },
- "price_last": 1795589476644
+ "price_last": 1795594871731
 }
