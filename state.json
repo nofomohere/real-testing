@@ -34,6 +34,28 @@
    "tp_bps": 25.0,
    "sl_bps": 50.0,
    "cost_bps": 2.5
+  },
+  "AUDJPY-Sell-1795711500000-sentiment": {
+   "pair": "AUDJPY",
+   "fade_dir": "Sell",
+   "source": "sentiment",
+   "open_t": 1795711500000,
+   "entry_px": 105.976,
+   "exit_t": 1795740300000,
+   "tp_bps": null,
+   "sl_bps": null,
+   "cost_bps": 2.5
+  },
+  "AUDJPY-Buy-1795711500000-sentiment_follow": {
+   "pair": "AUDJPY",
+   "fade_dir": "Buy",
+   "source": "sentiment_follow",
+   "open_t": 1795711500000,
+   "entry_px": 105.976,
+   "exit_t": 1795740300000,
+   "tp_bps": null,
+   "sl_bps": null,
+   "cost_bps": 2.5
   }
  },
  "mfb_last": {
@@ -48,7 +70,7 @@
   "AUDCAD|Buy": 1794271590080,
   "AUDUSD|Sell": 1795671996127,
   "USDCHF|Buy": 1794580003672,
-  "AUDJPY|Sell": 1795619456635,
+  "AUDJPY|Sell": 1795712073817,
   "BTCUSD|Sell": 1794851904673,
   "AUDCAD|Sell": 1795675656192,
   "GBPUSD|Sell": 1795696627182,
@@ -385,7 +407,9 @@
   "meanrev|AUDJPY|Sell|105.976": true,
   "sentiment|GBPUSD|Sell|1.31054": true,
   "sentiment_follow|GBPUSD|Buy|1.31054": true,
-  "meanrev|BTCUSD|Sell|60801.0": true
+  "meanrev|BTCUSD|Sell|60801.0": true,
+  "sentiment|AUDJPY|Sell|105.976": true,
+  "sentiment_follow|AUDJPY|Buy|105.976": true
  },
- "price_last": 1795708276415
+ "price_last": 1795712073817
 }
