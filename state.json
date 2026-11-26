@@ -24,17 +24,6 @@
    "sl_bps": null,
    "cost_bps": 1.5
   },
-  "EURCAD-Sell-1795680900000-meanrev": {
-   "pair": "EURCAD",
-   "fade_dir": "Sell",
-   "source": "meanrev",
-   "open_t": 1795680900000,
-   "entry_px": 1.56889,
-   "exit_t": 1795688100000,
-   "tp_bps": 25.0,
-   "sl_bps": 50.0,
-   "cost_bps": 3.0
-  },
   "BTCUSD-Sell-1795685400000-meanrev": {
    "pair": "BTCUSD",
    "fade_dir": "Sell",
@@ -123,7 +112,7 @@
   "meanrev|USDJPY": 1795513373850,
   "sentiment|USDCAD": 1795653112963,
   "sentiment_follow|USDCAD": 1795653112963,
-  "meanrev|EURCAD": 1795640072161,
+  "meanrev|EURCAD": 1795692939302,
   "meanrev|GBPUSD": 1794352720202,
   "scalp|EURCAD": 1794373550928,
   "sentiment|AUDUSD": 1795614525368,
@@ -394,5 +383,5 @@
   "meanrev|EURCAD|Sell|1.56889": true,
   "meanrev|BTCUSD|Sell|60713.0": true
  },
- "price_last": 1795685543202
+ "price_last": 1795689339302
 }
