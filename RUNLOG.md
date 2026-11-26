@@ -311,3 +311,32 @@
 2026-11-26 04:52 | price SPX500: no fresh source (stale/offline)
 2026-11-26 04:52 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=6 new=0 closed=0
 2026-11-26 04:52 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-26 05:45 | FX quote check: EURUSD breaks 2 cross-rate triangles -> banished (bad venue quote)
+2026-11-26 05:45 | price EURUSD: no fresh source (stale/offline)
+2026-11-26 05:45 | tg getMe error: HTTP Error 401: Unauthorized
+2026-11-26 05:47 | FX quote check: EURUSD breaks 2 cross-rate triangles -> banished (bad venue quote)
+2026-11-26 05:47 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-26 05:47 | OPEN AUDUSD-Sell-1795671900000-sentiment Sell @ 0.6637
+2026-11-26 05:47 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-26 05:47 | OPEN AUDUSD-Buy-1795671900000-sentiment_follow Buy @ 0.6637
+2026-11-26 05:47 | price EURUSD: no fresh source (stale/offline)
+2026-11-26 05:48 | price NZDUSD: no fresh source (stale/offline)
+2026-11-26 05:48 | price GBPJPY: no fresh source (stale/offline)
+2026-11-26 05:48 | price AUDCAD: no fresh source (stale/offline)
+2026-11-26 05:48 | price XAUUSD: no fresh source (stale/offline)
+2026-11-26 05:48 | price GBPAUD: no fresh source (stale/offline)
+2026-11-26 05:48 | price GBPCAD: no fresh source (stale/offline)
+2026-11-26 05:48 | price EURTRY: no fresh source (stale/offline)
+2026-11-26 05:48 | price USDTRY: no fresh source (stale/offline)
+2026-11-26 05:48 | price USDZAR: no fresh source (stale/offline)
+2026-11-26 05:48 | price EURNOK: no fresh source (stale/offline)
+2026-11-26 05:48 | price USDNOK: no fresh source (stale/offline)
+2026-11-26 05:48 | price US30: no fresh source (stale/offline)
+2026-11-26 05:48 | price NAS100: no fresh source (stale/offline)
+2026-11-26 05:48 | price SPX500: no fresh source (stale/offline)
+2026-11-26 05:48 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-26 05:48 | OPEN BTCUSD-Sell-1795671900000-meanrev Sell @ 60756.8
+2026-11-26 05:48 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-26 05:48 | OPEN ETHUSD-Sell-1795671900000-meanrev Sell @ 1694.28
+2026-11-26 05:48 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=10 new=2 closed=0
+2026-11-26 05:48 | tg sendMessage error: HTTP Error 401: Unauthorized
