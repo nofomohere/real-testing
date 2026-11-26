@@ -91,7 +91,7 @@
  "tg_hello_sent": true,
  "alarm_sent": false,
  "auth_alert_sent": false,
- "status_last": 1795639487610,
+ "status_last": 1795657956846,
  "last_summary": "20261126",
  "last_update_id": 0,
  "scalp_last": {
@@ -410,5 +410,5 @@
   "sentiment|EURCAD|Sell|1.5562": true,
   "sentiment_follow|EURCAD|Buy|1.5562": true
  },
- "price_last": 1795652763582
+ "price_last": 1795657956846
 }
