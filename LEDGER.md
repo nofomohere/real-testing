@@ -1,9 +1,9 @@
 # Fade Bot — paper ledger
 
-Updated: 2026-11-27T22:31:39.378619+00:00
+Updated: 2026-11-27T23:28:26.525684+00:00
 
-- Trades: **458** | Avg: **-13.1 bps** | Win: **43%** | Cum: **-6007.5 bps**
-- Money sim ($10.0 @ 50x): **-300.376 USD** | Liquidations: **31** | Open: **4**
+- Trades: **459** | Avg: **-13.1 bps** | Win: **43%** | Cum: **-6009.0 bps**
+- Money sim ($10.0 @ 50x): **-300.451 USD** | Liquidations: **31** | Open: **3**
 
 ## Results per strategy
 
@@ -12,14 +12,13 @@ Updated: 2026-11-27T22:31:39.378619+00:00
 | meanrev | 206 | 50% | -1.8 | -362.6 | -18.128 | 4 |
 | sentiment | 91 | 47% | -9.6 | -870.7 | -43.534 | 6 |
 | sentiment_follow | 91 | 31% | -17.6 | -1600.8 | -80.043 | 7 |
-| scalp | 49 | 43% | -31.6 | -1546.4 | -77.321 | 7 |
+| scalp | 50 | 42% | -31.0 | -1547.9 | -77.396 | 7 |
 | breakout | 21 | 5% | -77.5 | -1627.0 | -81.350 | 7 |
 
 ## Recent trades
 
 | Trade | Pair | Dir | Strategy | Open (UTC) | PnL bps | PnL USD |
 |---|---|---|---|---|---|---|
-| AUDUSD-Sell-1795671900000-sentiment | AUDUSD | Sell | sentiment | 2026-11-26T05:45 | +0.5 | +0.0229 |
 | AUDUSD-Buy-1795671900000-sentiment_follow | AUDUSD | Buy | sentiment_follow | 2026-11-26T05:45 | -3.5 | -0.1729 |
 | AUDJPY-Sell-1795692600000-meanrev | AUDJPY | Sell | meanrev | 2026-11-26T11:30 | -2.5 | -0.1250 |
 | EURCAD-Sell-1795696200000-meanrev | EURCAD | Sell | meanrev | 2026-11-26T12:30 | -3.0 | -0.1500 |
@@ -49,3 +48,4 @@ Updated: 2026-11-27T22:31:39.378619+00:00
 | GBPUSD-Sell-1795787100000-sentiment | GBPUSD | Sell | sentiment | 2026-11-27T13:45 | +17.8 | +0.8891 |
 | GBPUSD-Buy-1795787100000-sentiment_follow | GBPUSD | Buy | sentiment_follow | 2026-11-27T13:45 | -20.8 | -1.0391 |
 | USDJPY-Sell-1795811400000-meanrev | USDJPY | Sell | meanrev | 2026-11-27T20:30 | +23.5 | +1.1750 |
+| USDJPY-Sell-1795818600000-scalp | USDJPY | Sell | scalp | 2026-11-27T22:30 | -1.5 | -0.0750 |
