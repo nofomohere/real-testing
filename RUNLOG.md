@@ -305,3 +305,34 @@
 2026-11-27 12:29 | CLOSE ETHUSD-Sell-1795771800000-meanrev reason=tp pnl=+20.5bps
 2026-11-27 12:29 | run: mfb=0 cookie=set tz=39p opens=0 closes=0 active_before=6 new=0 closed=2
 2026-11-27 12:29 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-27 13:50 | tg getMe error: HTTP Error 401: Unauthorized
+2026-11-27 13:52 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-27 13:52 | OPEN GBPUSD-Sell-1795787100000-sentiment Sell @ 1.31208
+2026-11-27 13:52 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-27 13:52 | OPEN GBPUSD-Buy-1795787100000-sentiment_follow Buy @ 1.31208
+2026-11-27 13:53 | price GBPAUD: no fresh source (stale/offline)
+2026-11-27 13:53 | price NZDUSD: no fresh source (stale/offline)
+2026-11-27 13:53 | price GBPJPY: no fresh source (stale/offline)
+2026-11-27 13:53 | price AUDCAD: no fresh source (stale/offline)
+2026-11-27 13:53 | price XAUUSD: no fresh source (stale/offline)
+2026-11-27 13:53 | price GBPCAD: no fresh source (stale/offline)
+2026-11-27 13:53 | price EURTRY: no fresh source (stale/offline)
+2026-11-27 13:53 | price USDTRY: no fresh source (stale/offline)
+2026-11-27 13:53 | price USDZAR: no fresh source (stale/offline)
+2026-11-27 13:53 | price EURNOK: no fresh source (stale/offline)
+2026-11-27 13:53 | price USDNOK: no fresh source (stale/offline)
+2026-11-27 13:53 | price US30: no fresh source (stale/offline)
+2026-11-27 13:53 | price NAS100: no fresh source (stale/offline)
+2026-11-27 13:53 | price SPX500: no fresh source (stale/offline)
+2026-11-27 13:53 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-27 13:53 | OPEN ETHUSD-Sell-1795787100000-meanrev Sell @ 1725.66
+2026-11-27 13:53 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-27 13:53 | CLOSE AUDUSD-Sell-1795758300000-sentiment reason=time pnl=+36.5bps
+2026-11-27 13:53 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-27 13:53 | CLOSE AUDUSD-Buy-1795758300000-sentiment_follow reason=time pnl=-39.5bps
+2026-11-27 13:53 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-27 13:53 | CLOSE USDJPY-Sell-1795775400000-meanrev reason=time pnl=+5.3bps
+2026-11-27 13:53 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-27 13:53 | CLOSE BTCUSD-Sell-1795775400000-meanrev reason=tp pnl=+20.5bps
+2026-11-27 13:53 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=7 new=1 closed=4
+2026-11-27 13:53 | tg sendMessage error: HTTP Error 401: Unauthorized
