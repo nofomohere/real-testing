@@ -23,6 +23,28 @@
    "tp_bps": null,
    "sl_bps": null,
    "cost_bps": 1.5
+  },
+  "AUDUSD-Sell-1795771800000-meanrev": {
+   "pair": "AUDUSD",
+   "fade_dir": "Sell",
+   "source": "meanrev",
+   "open_t": 1795771800000,
+   "entry_px": 0.66791,
+   "exit_t": 1795779000000,
+   "tp_bps": 25.0,
+   "sl_bps": 50.0,
+   "cost_bps": 1.5
+  },
+  "ETHUSD-Sell-1795771800000-meanrev": {
+   "pair": "ETHUSD",
+   "fade_dir": "Sell",
+   "source": "meanrev",
+   "open_t": 1795771800000,
+   "entry_px": 1733.89,
+   "exit_t": 1795779000000,
+   "tp_bps": 25.0,
+   "sl_bps": 50.0,
+   "cost_bps": 4.5
   }
  },
  "mfb_last": {
@@ -384,7 +406,9 @@
   "sentiment|EURCAD|Sell|1.5642": true,
   "sentiment_follow|EURCAD|Buy|1.5642": true,
   "sentiment|AUDUSD|Sell|0.66876": true,
-  "sentiment_follow|AUDUSD|Buy|0.66876": true
+  "sentiment_follow|AUDUSD|Buy|0.66876": true,
+  "meanrev|AUDUSD|Sell|0.66791": true,
+  "meanrev|ETHUSD|Sell|1733.89": true
  },
- "price_last": 1795767436636
+ "price_last": 1795771949244
 }
