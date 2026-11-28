@@ -2,34 +2,34 @@
  "version": 3,
  "clusters_seen": {},
  "active": {
-  "AUDJPY-Sell-1795800600000-sentiment": {
-   "pair": "AUDJPY",
-   "fade_dir": "Sell",
-   "source": "sentiment",
-   "open_t": 1795800600000,
-   "entry_px": 106.664,
-   "exit_t": 1795829400000,
-   "tp_bps": null,
-   "sl_bps": null,
-   "cost_bps": 2.5
-  },
-  "AUDJPY-Buy-1795800600000-sentiment_follow": {
-   "pair": "AUDJPY",
+  "BTCUSD-Buy-1795830300000-meanrev": {
+   "pair": "BTCUSD",
    "fade_dir": "Buy",
-   "source": "sentiment_follow",
-   "open_t": 1795800600000,
-   "entry_px": 106.664,
-   "exit_t": 1795829400000,
-   "tp_bps": null,
-   "sl_bps": null,
-   "cost_bps": 2.5
+   "source": "meanrev",
+   "open_t": 1795830300000,
+   "entry_px": 60119.7,
+   "exit_t": 1795837500000,
+   "tp_bps": 25.0,
+   "sl_bps": 50.0,
+   "cost_bps": 4.5
+  },
+  "ETHUSD-Buy-1795830300000-meanrev": {
+   "pair": "ETHUSD",
+   "fade_dir": "Buy",
+   "source": "meanrev",
+   "open_t": 1795830300000,
+   "entry_px": 1667.61,
+   "exit_t": 1795837500000,
+   "tp_bps": 25.0,
+   "sl_bps": 50.0,
+   "cost_bps": 4.5
   }
  },
  "mfb_last": {
   "EURUSD|Sell": 1795825154170,
-  "EURCAD|Sell": 1795739255860,
+  "EURCAD|Sell": 1795830238307,
   "EURGBP|Sell": 1795825154170,
-  "NZDUSD|Sell": 1795739255860,
+  "NZDUSD|Sell": 1795830238307,
   "GBPAUD|Buy": 1795787500942,
   "ETHUSD|Sell": 1794789699036,
   "USDCAD|Buy": 1795619456635,
@@ -47,7 +47,7 @@
  "tg_hello_sent": true,
  "alarm_sent": false,
  "auth_alert_sent": false,
- "status_last": 1795811641487,
+ "status_last": 1795830238307,
  "last_summary": "20261128",
  "last_update_id": 0,
  "scalp_last": {
@@ -69,7 +69,7 @@
   "EURJPY": 175.396,
   "AUDUSD": 0.66622,
   "USDJPY": 160.399,
-  "AUDJPY": 105.976,
+  "AUDJPY": 106.664,
   "EURAUD": 1.6473,
   "USDCAD": 1.42212,
   "GBPUSD": 1.30956,
@@ -108,8 +108,8 @@
   "sentiment_follow|AUDUSD": 1795791100942,
   "sentiment|USDCHF": 1794613745315,
   "sentiment_follow|USDCHF": 1794613745315,
-  "sentiment|AUDJPY": 1795748108925,
-  "sentiment_follow|AUDJPY": 1795748108925,
+  "sentiment|AUDJPY": 1795833838307,
+  "sentiment_follow|AUDJPY": 1795833838307,
   "sentiment|BTCUSD": 1794884017863,
   "sentiment_follow|BTCUSD": 1794884017863,
   "breakout|EURJPY": 1794922625385,
@@ -399,7 +399,9 @@
   "meanrev|ETHUSD|Buy|1673.06": true,
   "meanrev|USDJPY|Sell|160.4": true,
   "meanrev|BTCUSD|Buy|59755.7": true,
-  "scalp|USDJPY|Sell|160.231": true
+  "scalp|USDJPY|Sell|160.231": true,
+  "meanrev|BTCUSD|Buy|60119.7": true,
+  "meanrev|ETHUSD|Buy|1667.61": true
  },
- "price_last": 1795825154170
+ "price_last": 1795830238307
 }

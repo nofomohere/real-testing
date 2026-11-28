@@ -364,3 +364,29 @@
 2026-11-28 00:20 | tg sendMessage error: HTTP Error 401: Unauthorized
 2026-11-28 00:20 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=3 new=0 closed=1
 2026-11-28 00:20 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-28 01:42 | tg getMe error: HTTP Error 401: Unauthorized
+2026-11-28 01:45 | price NZDUSD: no fresh source (stale/offline)
+2026-11-28 01:45 | price GBPJPY: no fresh source (stale/offline)
+2026-11-28 01:45 | price AUDCAD: no fresh source (stale/offline)
+2026-11-28 01:45 | price XAUUSD: no fresh source (stale/offline)
+2026-11-28 01:45 | price GBPAUD: no fresh source (stale/offline)
+2026-11-28 01:45 | price GBPCAD: no fresh source (stale/offline)
+2026-11-28 01:45 | price EURTRY: no fresh source (stale/offline)
+2026-11-28 01:45 | price USDTRY: no fresh source (stale/offline)
+2026-11-28 01:45 | price USDZAR: no fresh source (stale/offline)
+2026-11-28 01:45 | price EURNOK: no fresh source (stale/offline)
+2026-11-28 01:45 | price USDNOK: no fresh source (stale/offline)
+2026-11-28 01:45 | price US30: no fresh source (stale/offline)
+2026-11-28 01:45 | price NAS100: no fresh source (stale/offline)
+2026-11-28 01:45 | price SPX500: no fresh source (stale/offline)
+2026-11-28 01:45 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-28 01:45 | OPEN BTCUSD-Buy-1795830300000-meanrev Buy @ 60119.7
+2026-11-28 01:45 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-28 01:45 | OPEN ETHUSD-Buy-1795830300000-meanrev Buy @ 1667.61
+2026-11-28 01:45 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-28 01:45 | CLOSE AUDJPY-Sell-1795800600000-sentiment reason=time pnl=-2.5bps
+2026-11-28 01:45 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-28 01:45 | CLOSE AUDJPY-Buy-1795800600000-sentiment_follow reason=time pnl=-2.5bps
+2026-11-28 01:45 | tg sendMessage error: HTTP Error 401: Unauthorized
+2026-11-28 01:45 | run: mfb=117 cookie=set tz=39p opens=0 closes=0 active_before=4 new=2 closed=2
+2026-11-28 01:45 | tg sendMessage error: HTTP Error 401: Unauthorized
